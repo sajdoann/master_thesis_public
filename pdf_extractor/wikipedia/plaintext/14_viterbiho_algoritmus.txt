@@ -1,0 +1,1554 @@
+Viterbiho algoritmus
+je
+algoritmus
+dynamického programování
+pro hledání/nalezení nejpravděpodobnější posloupnosti skrytých stavů – nazývané
+Viterbiho cesta
+– jehož výsledkem je posloupnost pozorovaných událostí, především v kontextu
+Markovových informačních zdrojů
+a
+skrytých Markovových modelů
+.
+Pojmy „Viterbiho cesta“ a „Viterbiho algoritmus“ se používají i pro další podobné algoritmy dynamického programování, které hledají nejpravděpodobnější vysvětlení určitého pozorování. Například algoritmus dynamického programování pro
+statistické parsování
+lze použít na hledání nejpravděpodobnějšího bezkontextového odvození (parse) řetězce, který se někdy nazývá „Viterbiho odvození“.
+Algoritmus navrhl
+Andrew Viterbi
+v roce 1967 pro dekódování
+konvolučních kódů
+na digitálních komunikačních linkách se šumem
+[
+1
+]
+. Od té doby se používá při dekódování
+konvolučních kódů
+používaných v mobilních sítích
+CDMA
+a
+GSM
+i v běžných
+telefonních modemech
+, pro komunikaci se satelity a kosmickými sondami do vzdáleného vesmíru, i v bezdrátových sítích podle standardu
+802.11
+. Často se používá i při
+rozpoznávání
+a
+syntéze řeči
+, v
+počítačové lingvistice
+, pro
+vyhledávání klíčových slov
+a v
+bioinformatice
+. Například při
+rozpoznávání řeči
+se zvukový signál považuje za pozorovanou posloupnost událostí, a
+textový řetězec
+za „skrytou příčinu“ zvukového signálu. Viterbiho algoritmus hledá nejpravděpodobnější řetězec textu k danému zvukovému signálu.
+Algoritmus
+Předpokládejme, že je dán
+skrytý Markovův model
+(HMM) se stavovým prostorem
+S
+{\displaystyle S}
+, pravděpodobnostmi
+π
+i
+{\displaystyle \pi _{i}}
+začátku ve stavu
+i
+{\displaystyle i}
+(počáteční pravděpodobnosti), pravděpodobnostmi
+a
+i
+,
+j
+{\displaystyle a_{i,j}}
+pro přechod ze stavu
+i
+{\displaystyle i}
+do stavu
+j
+{\displaystyle j}
+(přechodové pravděpodobnosti). Pokud pozorujeme výstupní posloupnost
+y
+1
+,
+…
+,
+y
+T
+{\displaystyle y_{1},\dots ,y_{T}}
+, pak nejpravděpodobnější posloupnost stavů
+x
+1
+,
+…
+,
+x
+T
+{\displaystyle x_{1},\dots ,x_{T}}
+, která produkuje pozorovaný výstup, je dána rekurentními vztahy:
+[
+2
+]
+V
+1
+,
+k
+=
+P
+(
+y
+1
+|
+k
+)
+⋅
+π
+k
+V
+t
+,
+k
+=
+P
+(
+y
+t
+|
+k
+)
+⋅
+max
+x
+∈
+S
+(
+a
+x
+,
+k
+⋅
+V
+t
+−
+1
+,
+x
+)
+{\displaystyle {\begin{array}{rcl}V_{1,k}&=&\mathrm {P} {\big (}y_{1}\ |\ k{\big )}\cdot \pi _{k}\\V_{t,k}&=&\mathrm {P} {\big (}y_{t}\ |\ k{\big )}\cdot \max _{x\in S}\left(a_{x,k}\cdot V_{t-1,x}\right)\end{array}}}
+kde
+V
+t
+,
+k
+{\displaystyle V_{t,k}}
+je pravděpodobnost nejpravděpodobnější posloupnosti stavů odpovědné za prvních
+t
+{\displaystyle t}
+pozorování, jejíž koncový stav je
+k
+{\displaystyle k}
+. Pro získání Viterbiho cesty lze používat zpětné ukazatele, které zachycují, jaký stav
+x
+{\displaystyle x}
+byl použit ve druhé rovnici. Nechť
+P
+t
+r
+(
+k
+,
+t
+)
+{\displaystyle \mathrm {Ptr} (k,t)}
+je funkce, která vrací hodnotu
+x
+{\displaystyle x}
+použitou pro výpočet
+V
+t
+,
+k
+{\displaystyle V_{t,k}}
+pokud
+t
+>
+1
+{\displaystyle t>1}
+, nebo
+k
+{\displaystyle k}
+pokud
+t
+=
+1
+{\displaystyle t=1}
+. Pak:
+x
+T
+=
+arg
+⁡
+max
+x
+∈
+S
+(
+V
+T
+,
+x
+)
+x
+t
+−
+1
+=
+P
+t
+r
+(
+x
+t
+,
+t
+)
+{\displaystyle {\begin{array}{rcl}x_{T}&=&\arg \max _{x\in S}(V_{T,x})\\x_{t-1}&=&\mathrm {Ptr} (x_{t},t)\end{array}}}
+(používáme standardní definici
+arg max
+).
+Složitost tohoto algoritmu je
+O
+(
+T
+×
+|
+S
+|
+2
+)
+{\displaystyle O(T\times \left|{S}\right|^{2})}
+.
+Pseudokód
+Pokud je dán prostor pozorování
+O
+=
+{
+o
+1
+,
+o
+2
+,
+…
+,
+o
+N
+}
+{\displaystyle O=\{o_{1},o_{2},\dots ,o_{N}\}}
+, stavový prostor
+S
+=
+{
+s
+1
+,
+s
+2
+,
+…
+,
+s
+K
+}
+{\displaystyle S=\{s_{1},s_{2},\dots ,s_{K}\}}
+, posloupnost pozorování
+Y
+=
+{
+y
+1
+,
+y
+2
+,
+…
+,
+y
+T
+}
+{\displaystyle Y=\{y_{1},y_{2},\ldots ,y_{T}\}}
+, matice přechodů
+A
+{\displaystyle A}
+velikosti
+K
+×
+K
+{\displaystyle K\times K}
+tak, že
+A
+i
+j
+{\displaystyle A_{ij}}
+obsahuje přechodovou pravděpodobnost přechodu ze stavu
+s
+i
+{\displaystyle s_{i}}
+do stavu
+s
+j
+{\displaystyle s_{j}}
+, výstupní matice
+B
+{\displaystyle B}
+velikosti
+K
+×
+N
+{\displaystyle K\times N}
+taková, že
+B
+i
+j
+{\displaystyle B_{ij}}
+obsahuje pravděpodobnosti pozorování
+o
+j
+{\displaystyle o_{j}}
+ze stavu
+s
+i
+{\displaystyle s_{i}}
+, pole počátečních pravděpodobností
+π
+{\displaystyle \pi }
+velikosti
+K
+{\displaystyle K}
+takové, že
+π
+i
+{\displaystyle \pi _{i}}
+obsahuje pravděpodobnost, že
+x
+1
+==
+s
+i
+{\displaystyle x_{1}==s_{i}}
+. Nechť posloupnost
+X
+=
+{
+x
+1
+,
+x
+2
+,
+…
+,
+x
+T
+}
+{\displaystyle X=\{x_{1},x_{2},\ldots ,x_{T}\}}
+je cestou, která generuje pozorování
+Y
+=
+{
+y
+1
+,
+y
+2
+,
+…
+,
+y
+T
+}
+{\displaystyle Y=\{y_{1},y_{2},\ldots ,y_{T}\}}
+.
+V tomto problému dynamického programování vytváříme dvě dvourozměrné tabulky
+T
+1
+,
+T
+2
+{\displaystyle T_{1},T_{2}}
+velikosti
+K
+×
+T
+{\displaystyle K\times T}
+. Každý prvek
+T
+1
+{\displaystyle T_{1}}
+,
+T
+1
+[
+i
+,
+j
+]
+{\displaystyle T_{1}[i,j]}
+, obsahuje pravděpodobnost zatím nejpravděpodobnější cesty
+X
+^
+=
+{
+x
+^
+1
+,
+x
+^
+2
+,
+…
+,
+x
+^
+j
+}
+{\displaystyle {\hat {X}}=\{{\hat {x}}_{1},{\hat {x}}_{2},\ldots ,{\hat {x}}_{j}\}}
+s
+x
+^
+j
+=
+s
+i
+{\displaystyle {\hat {x}}_{j}=s_{i}}
+, která generuje
+Y
+=
+{
+y
+1
+,
+y
+2
+,
+…
+,
+y
+j
+}
+{\displaystyle Y=\{y_{1},y_{2},\ldots ,y_{j}\}}
+. Každý prvek
+T
+2
+{\displaystyle T_{2}}
+,
+T
+2
+[
+i
+,
+j
+]
+{\displaystyle T_{2}[i,j]}
+, obsahuje
+x
+^
+j
+−
+1
+{\displaystyle {\hat {x}}_{j-1}}
+zatím nejpravděpodobnější cesty
+X
+^
+=
+{
+x
+^
+1
+,
+x
+^
+2
+,
+…
+,
+x
+^
+j
+−
+1
+,
+x
+^
+j
+}
+{\displaystyle {\hat {X}}=\{{\hat {x}}_{1},{\hat {x}}_{2},\ldots ,{\hat {x}}_{j-1},{\hat {x}}_{j}\}}
+pro každé
+j
+,
+2
+≤
+j
+≤
+T
+{\displaystyle j,2\leq j\leq T}
+Naplníme položky dvou tabulek
+T
+1
+[
+i
+,
+j
+]
+,
+T
+2
+[
+i
+,
+j
+]
+{\displaystyle T_{1}[i,j],T_{2}[i,j]}
+rostoucí posloupností
+K
+⋅
+j
++
+i
+{\displaystyle K\cdot j+i}
+.
+T
+1
+[
+i
+,
+j
+]
+=
+max
+k
+(
+T
+1
+[
+k
+,
+j
+−
+1
+]
+⋅
+A
+k
+i
+⋅
+B
+i
+y
+j
+)
+{\displaystyle T_{1}[i,j]=\max _{k}{(T_{1}[k,j-1]\cdot A_{ki}\cdot B_{iy_{j}})}}
+, a
+T
+2
+[
+i
+,
+j
+]
+=
+arg
+⁡
+max
+k
+(
+T
+1
+[
+k
+,
+j
+−
+1
+]
+⋅
+A
+k
+i
+⋅
+B
+i
+y
+j
+)
+{\displaystyle T_{2}[i,j]=\arg \max _{k}{(T_{1}[k,j-1]\cdot A_{ki}\cdot B_{iy_{j}})}}
+VSTUP:  Prostor pozorování
+O
+=
+{
+o
+1
+,
+o
+2
+,
+…
+,
+o
+N
+}
+{\displaystyle O=\{o_{1},o_{2},\dots ,o_{N}\}}
+,
+stavový prostor
+S
+=
+{
+s
+1
+,
+s
+2
+,
+…
+,
+s
+K
+}
+{\displaystyle S=\{s_{1},s_{2},\dots ,s_{K}\}}
+,
+posloupnost pozorování
+Y
+=
+{
+y
+1
+,
+y
+2
+,
+…
+,
+y
+T
+}
+{\displaystyle Y=\{y_{1},y_{2},\ldots ,y_{T}\}}
+taková, že
+y
+t
+==
+i
+{\displaystyle y_{t}==i}
+pokud
+pozorování v čase
+t
+{\displaystyle t}
+je
+o
+i
+{\displaystyle o_{i}}
+,
+matice přechodů
+A
+{\displaystyle A}
+velikosti
+K
+⋅
+K
+{\displaystyle K\cdot K}
+tak, že
+A
+i
+j
+{\displaystyle A_{ij}}
+obsahuje přechodovou
+pravděpodobnost přechodu ze stavu
+s
+i
+{\displaystyle s_{i}}
+do stavu
+s
+j
+{\displaystyle s_{j}}
+,
+emission matrix
+B
+{\displaystyle B}
+velikosti
+K
+⋅
+N
+{\displaystyle K\cdot N}
+tak, že
+B
+i
+j
+{\displaystyle B_{ij}}
+obsahuje pravděpodobnost
+pozorování
+o
+j
+{\displaystyle o_{j}}
+ze stavu
+s
+i
+{\displaystyle s_{i}}
+,
+pole počátečních pravděpodobností
+π
+{\displaystyle \pi }
+velikosti
+K
+{\displaystyle K}
+takové, že
+π
+i
+{\displaystyle \pi _{i}}
+obsahuje pravděpodobnost, že
+x
+1
+==
+s
+i
+{\displaystyle x_{1}==s_{i}}
+VÝSTUP: Nejpravděpodobnější skrytá posloupnost stavů
+X
+=
+{
+x
+1
+,
+x
+2
+,
+…
+,
+x
+T
+}
+{\displaystyle X=\{x_{1},x_{2},\ldots ,x_{T}\}}
+A01
+function
+VITERBI
+(O, S, π, Y, A, B): X
+A02
+for
+each state
+s
+i
+do
+A03
+T
+1
+[i,1]
+←
+π
+i
+⋅
+{\displaystyle \cdot }
+B
+i
+y
+1
+{\displaystyle y_{1}}
+A04
+T
+2
+[i,1]
+←0
+A05
+end for
+A06
+for
+i
+←
+2
+,
+3
+…,
+T
+do
+A07
+for
+each state
+s
+j
+do
+A08
+T
+1
+[j,i]
+←
+max
+k
+(
+T
+1
+[
+k
+,
+i
+−
+1
+]
+⋅
+A
+k
+j
+⋅
+B
+j
+y
+i
+)
+{\displaystyle \max _{k}{(T_{1}[k,i-1]\cdot A_{kj}\cdot B_{jy_{i}})}}
+A09
+T
+2
+[j,i]
+←
+arg
+⁡
+max
+k
+(
+T
+1
+[
+k
+,
+i
+−
+1
+]
+⋅
+A
+k
+j
+⋅
+B
+j
+y
+i
+)
+{\displaystyle \arg \max _{k}{(T_{1}[k,i-1]\cdot A_{kj}\cdot B_{jy_{i}})}}
+A10
+end for
+A11
+end for
+A12
+z
+T
+←
+arg
+⁡
+max
+k
+(
+T
+1
+[
+k
+,
+T
+]
+)
+{\displaystyle \arg \max _{k}{(T_{1}[k,T])}}
+A13
+x
+T
+←s
+z
+T
+A14
+for
+i
+←
+T
+,
+T-1
+…,
+2
+do
+A15
+z
+i-1
+←T
+2
+[z
+i
+,i]
+A16
+x
+i-1
+←
+s
+z
+i-1
+A17
+end for
+A18
+return
+X
+A19
+end function
+Příklad
+Představte si lékaře, který má pečovat o ženu císaře trpící neustále se vracející nemocí. Projevy nemoci lze léčit; tato léčba je nepříjemná, ale nemocné uleví. Problém je, že lékař císařovnu nemůže sám vyšetřit, dostává pouze každý třetí den lísteček s informací, jak se císařovna cítí (výborně, slabě, na umření). Na základě těchto informací má lékař posoudit, zda je císařovna zdravá nebo nemocná a má být podrobena léčbě.
+Lékař se domnívá, že zdravotní stav císařovny se chová jako diskrétní
+Markovův řetězec
+. Situaci, kdy lékař nemůže přímo zkoumat zdravotní stav císařovny, lze popsat jako
+skrytý Markovův model
+(HMM).
+Lékař ví, jaká je pravděpodobnost nemoci císařovny a jak pravděpodobně se cítí, když je zdravá nebo nemocná. Jinak řečeno parametry HMM jsou známé. Mohou být reprezentovány následujícím programem v jazyce
+Python
+:
+states
+=
+(
+'Zdravá'
+,
+'Nemocná'
+)
+observations
+=
+(
+'výborně'
+,
+'slabě'
+,
+'na umření'
+)
+start_probability
+=
+{
+'Zdravá'
+:
+0.6
+,
+'Nemocná'
+:
+0.4
+}
+transition_probability
+=
+{
+'Zdravá'
+:
+{
+'Zdravá'
+:
+0.7
+,
+'Nemocná'
+:
+0.3
+},
+'Nemocná'
+:
+{
+'Zdravá'
+:
+0.4
+,
+'Nemocná'
+:
+0.6
+},
+}
+emission_probability
+=
+{
+'Zdravá'
+:
+{
+'výborně'
+:
+0.5
+,
+'slabě'
+:
+0.4
+,
+'na umření'
+:
+0.1
+},
+'Nemocná'
+:
+{
+'výborně'
+:
+0.1
+,
+'slabě'
+:
+0.3
+,
+'na umření'
+:
+0.6
+},
+}
+V tomto kusu kódu
+start_probability
+reprezentuje lékařovo přesvědčení, v jakém stavu je HMM, když dostal první zprávu o tom, jak se císařovna cítí (jediné, co ví, je, že je častěji zdravá). Zde použité rozložení pravděpodobnosti není vyvážené; podle přechodové pravděpodobnosti by bylo přibližně
+{'Zdravá': 0.57, 'Nemocná': 0.43}
+.
+transition_probability
+reprezentuje změnu zdravotního stavu ve skrytém Markovově řetězci. V tomto příkladě je jenom 30% pravděpodobnost, že za tři dny bude císařovna nemocná, když je dnes zdravá.
+emission_probability
+reprezentuje pravděpodobnosti jednotlivých informací. Pokud je císařovna zdravá, je 50% pravděpodobnost, že se cítí výborně; pokud je nemocná, je 60% pravděpodobnost, že se cítí na umření.
+Na obrázcích jsou použity názvy z původního anglického příkladu (skryté zdravotní stavy jsou Healthy = Zdravá, Fever = Nemocná; oznámené pocity jsou Dizzy = na umření, Cold = slabě, Normal = výborně)
+Grafická reprezentace zadaného HMM
+Lékař dostal s postupně tři zprávy o tom, jak se císařovna cítí, první zpráva byla výborně, druhá slabě, třetí na umření a chce zjistit, jaká je nejpravděpodobnější posloupnost zdravotních stavů císařovny, která by vysvětlila tato pozorování? Odpověď poskytne Viterbiho algoritmus:
+# Vizualizace Viterbiho algoritmu.
+def
+print_dptable
+(
+V
+):
+print
+(
+"    "
+),
+for
+i
+in
+range
+(
+len
+(
+V
+)):
+print
+(
+"
+%7d
+"
+%
+i
+),
+print
+()
+for
+y
+in
+V
+[
+0
+]
+.
+keys
+():
+print
+(
+"
+%.5s
+: "
+%
+y
+),
+for
+t
+in
+range
+(
+len
+(
+V
+)):
+print
+(
+"
+%.7s
+"
+%
+(
+"
+%f
+"
+%
+V
+[
+t
+][
+y
+])),
+print
+()
+def
+viterbi
+(
+obs
+,
+states
+,
+start_p
+,
+trans_p
+,
+emit_p
+):
+V
+=
+[{}]
+path
+=
+{}
+# Initialize base cases (t == 0)
+for
+y
+in
+states
+:
+V
+[
+0
+][
+y
+]
+=
+start_p
+[
+y
+]
+*
+emit_p
+[
+y
+][
+obs
+[
+0
+]]
+path
+[
+y
+]
+=
+[
+y
+]
+# Run Viterbi for t > 0
+for
+t
+in
+range
+(
+1
+,
+len
+(
+obs
+)):
+V
+.
+append
+({})
+newpath
+=
+{}
+for
+y
+in
+states
+:
+(
+prob
+,
+state
+)
+=
+max
+([(
+V
+[
+t
+-
+1
+][
+y0
+]
+*
+trans_p
+[
+y0
+][
+y
+]
+*
+emit_p
+[
+y
+][
+obs
+[
+t
+]],
+y0
+)
+for
+y0
+in
+states
+])
+V
+[
+t
+][
+y
+]
+=
+prob
+newpath
+[
+y
+]
+=
+path
+[
+state
+]
++
+[
+y
+]
+# Don't need to remember the old paths
+path
+=
+newpath
+print_dptable
+(
+V
+)
+(
+prob
+,
+state
+)
+=
+max
+([(
+V
+[
+len
+(
+obs
+)
+-
+1
+][
+y
+],
+y
+)
+for
+y
+in
+states
+])
+return
+(
+prob
+,
+path
+[
+state
+])
+Argumenty funkce
+viterbi
+jsou:
+obs
+je posloupnost pozorování, např.
+['výborně', 'slabě', 'na umření']
+;
+states
+je množina skrytých stavů;
+start_p
+je start pravděpodobnost;
+trans_p
+jsou přechodové pravděpodobnosti; a
+emit_p
+jsou výstupní pravděpodobnosti. Pro jednoduchost kódu předpokládáme, že posloupnost pozorování
+obs
+je neprázdná a že
+trans_p[i][j]
+a
+emit_p[i][j]
+jsou definované pro všechny stavy i,j.
+V našem příkladě se dopředný Viterbiho algoritmus používá takto:
+def
+example
+():
+return
+viterbi
+(
+observations
+,
+states
+,
+start_probability
+,
+transition_probability
+,
+emission_probability
+)
+print
+(
+example
+())
+To ukazuje, že pozorování
+['výborně', 'slabě', 'na umření']
+byla s největší pravděpodobností generována posloupností stavů
+['Zdravá', 'Zdravá', 'Nemocná']
+. Jinými slovy, na základě pozorovaných dat byla císařovna s největší pravděpodobností při odeslání první a druhé zprávy zdravá (poprvé se cítila výborně, podruhé slabě), a při odeslání třetí byla nemocná.
+Funkci Viterbiho algoritmu lze vizualizovat pomocí
+trellis diagramu
+. Viterbiho cesta je v zásadě nejkratší cesta tímto trellisem. Trellis pro příklad s císařovnou je níže; odpovídající Viterbiho cesta je tučně:
+Animace trellis diagramu Viterbiho algoritmu. Po třetí informaci o stavu je nejpravděpodobnější cesta
+['Zdravá', 'Zdravá', 'Nemocná']
+Při implementaci Viterbiho algoritmu je nutné zmínit, že mnoho jazyků používá aritmetiku s
+pohyblivou řádovou čárkou
+– pokud jsou hodnoty pravděpodobností malé, může dojít k
+podtečení
+výsledku. Obvyklá technika, jak se tomu vyhnout, je používat během celého výpočtu
+logaritmus pravděpodobnosti
+, tatáž technika použitá v
+Logarithmic Number System
+. Po skončení algoritmu lze získat správnou hodnotu pomocí
+exponenciální funkce
+.
+Rozšíření
+Zobecnění Viterbiho algoritmu nazývané
+max-sum algoritmus
+(nebo
+max-product algoritmus
+) lze použít pro nalezení nejpravděpodobnějšího přiřazení všech nebo určitých podmnožinách
+skrytých proměnných
+ve velkém množství
+grafických modelů
+, např.
+bayesovské sítě
+,
+Markov náhodná pole
+a
+podmíněná náhodná pole
+. Skryté proměnné musí být obecně propojeny nějakým způsobem na HMM, s omezeným počtem spojení mezi proměnnými a určitým typem lineární struktury mezi proměnnými. Obecný algoritmus využívá mechanismus
+předávání zpráv
+a v zásadě se podobá algoritmu
+belief propagation
+(který je zobecněním
+forward-backward algoritmu
+).
+Pomocí algoritmu nazývaného
+iterativní Viterbiho dekódování
+lze najít podposloupnost pozorování, která vyhovuje nejlépe (v průměru) dané HMM. Tento algoritmus navrhl Qi Wang, etc.
+[
+3
+]
+pro zpracování
+turbo kódů
+. Iterativní Viterbi dekódování pracuje iterativně vyvoláním modifikovaného Viterbiho algoritmu, znovu odhadnutím skóre pro výplňku při konvergenci.
+Nedávno byl navržen alternativní algoritmus,
+líný Viterbiho algoritmus
+[
+4
+]
+. Pro mnoho kódů používaných v praxi, při rozumném šumu, je
+dekodér
+používající líný Viterbiho algoritmus mnohem rychlejší než tradiční Viterbiho dekodér
+[
+5
+]
+. Líný Viterbiho algoritmus neexpanduje uzly, dokud to není opravdu nutné, a obvykle vyžaduje mnohem méně výpočtů, aby došel ke stejnému výsledku jako normální Viterbiho algoritmus – není ho však snadné hardwarově
+paralelizovat
+.
+Existuje rozšíření Viterbiho algoritmu, aby pracoval s deterministickým konečným automatem pro zlepšení rychlosti při stochastické konverzi písmen na fonémy
+[
+6
+]
+.
+Související články
+Baum–Welchův algoritmus
+Forward-backward algoritmus
+Forward algoritmus
+Samoopravný kód
+Viterbiho algoritmus s měkkým výstupem
+Viterbiho dekodér
+Markovův model
+i
+Skrytý Markovův model
+Part-of-speech tagging
+Literatura
+Viterbi AJ. Error bounds for convolutional codes a an asymptotically optimum decoding algorithm.
+IEEE Transactions on Information Theory
+. 1967, s. 260–269.
+Dostupné online
+.
+doi
+:
+10.1109/TIT.1967.1054010
+.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+(note: the Viterbi decoding algoritmus je described in section IV.) Subscription required.
+Feldman J, Abou-Faycal I, Frigo M. A Fast Maximum-Likelihood Decoder for Convolutional Codes.
+Vehicular Technology Conference
+. 2002, s. 371–375.
+doi
+:
+10.1109/VETECF.2002.1040367
+.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+Forney GD. The Viterbi algorithm.
+Proceedings of the IEEE
+. 1973, s. 268–278.
+Dostupné online
+.
+doi
+:
+10.1109/PROC.1973.9030
+.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+Subscription required.
+PRESS, WH; TEUKOLSKY, SA; VETTERLING, WT; FLANNERY, BP.
+Numerical Recipes: The Art of Scientific Computing
+. 3rd. vyd. [s.l.]: Cambridge University Press, 2007.
+ISBN
+978-0-521-88068-8
+. Kapitola
+Section 16.2. Viterbi Decoding
+.
+Je zde použita šablona
+{{
+Cite book
+}}
+označená jako k „pouze dočasnému použití“.
+Rabiner LR. A tutorial on hidden Markov models and selected applications in speech recognition.
+Proceedings of the IEEE
+. 1989, s. 257–286.
+doi
+:
+10.1109/5.18626
+.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+(Describes the forward algoritmus and Viterbi algorithm for HMMs).
+Shinghal, R. a
+Godfried T. Toussaint
+, "Experiments in text recognition with the modified Viterbi algoritmus,"
+IEEE Transactions on Pattern Analysis a Machine Intelligence
+, Vol. PAMI-l, April 1979, pp. 184–193.
+Shinghal, R. a
+Godfried T. Toussaint
+, "The sensitivity of the modified Viterbi algoritmus to the source statistics,"
+IEEE Transactions on Pattern Analysis a Machine Intelligence
+, vol. PAMI-2, March 1980, pp. 181–185.
+Reference
+V tomto článku byl použit
+překlad
+textu z článku
+Viterbi algorithm
+na anglické Wikipedii.
+↑
+29 Apr 2005, G. David Forney Jr: The Viterbi Algorithm: A Personal History
+↑
+Xing E, slide 11
+↑
+Qi Wang, Lei Wei; Rodney A. Kennedy. Iterative Viterbi Decoding, Trellis Shaping,a Multilevel Structure for High-Rate Parity-Concatenated TCM.
+IEEE TRANSACTIONS ON COMMUNICATIONS
+. 2002, s. 48–55.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+↑
+(December 2002) "
+A fast maximum-likelihood decoder for convolutional codes
+" (PDF) in
+Vehicular Technology Conference
+.: 371–375.
+doi
+:
+10.1109/VETECF.2002.1040367
+.
+Je zde použita šablona
+{{
+Cite conference
+}}
+označená jako k „pouze dočasnému použití“.
+↑
+(December 2002) "
+A fast maximum-likelihood decoder for convolutional codes
+" (PDF) in
+Vehicular Technology Conference
+..
+doi
+:
+10.1109/VETECF.2002.1040367
+.
+Je zde použita šablona
+{{
+Cite conference
+}}
+označená jako k „pouze dočasnému použití“.
+↑
+Luk, R.W.P., R.I. Damper. Computational complexity of a fast Viterbi decoding algoritmus for stochastic letter-phoneme transduction.
+IEEE Trans. Speech a Audio Processing
+. 1998, s. 217–225.
+doi
+:
+10.1109/89.668816
+.
+Je zde použita šablona
+{{
+Cite journal
+}}
+označená jako k „pouze dočasnému použití“.
+Implementace
+C a Jazyk symbolických adres
+C
+C++
+C++ a Boost
+autor: Antonio Gulli
+C#
+F#
+Java
+Perl
+Prolog
+VHDL
+Externí odkazy
+Obrázky, zvuky či videa k tématu
+Viterbiho algoritmus
+na Wikimedia Commons
+Implementace v jazyce Java, F#, Clojure, C# na Wikibooks
+Učební text
+[
+nedostupný zdroj
+]
+o konvolučním kódování s Viterbiho dekódováním, autor: Chip Fleming
+Historie Viterbiho algoritmu
+, autor: David Forney
+Jemný úvod do dynamického programování a Viterbiho algoritmu
+Učební text o sadě nástrojů pro modelování skrytého Markovova modelu (implementovaná v jazyce C), který obsahuje popis Viterbiho algoritmu
+Citováno z „
+https://cs.wikipedia.org/w/index.php?title=Viterbiho_algoritmus&oldid=25431057
+“

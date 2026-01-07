@@ -1,0 +1,147 @@
+Z Wikipedie, otevrené encyklopedie Algoritmus je presny navod Ci postup, kterym Ize vyresit dany typ ulohy. Pojem algoritmus se nejcasteji objevuje pri programovani, kdy se jim mysli programovacim jazyce). Obecne se ale algoritmus muze objevit v jakémkoli kucharsky recept. Zpravidla vsak na algoritmy klademe urcita omezeni.
+
+## Vlastnosti algoritmu
+
+V uzsim smyslu se slovem algoritmus oznacuji takové postupy, které splnuji nekteré silnejsi pozadavky: Elementarnost kroku. Konecnost (finitnost) Kady algoritmus musi skoncit v konecném poctu kroku. Tento pocet kroku muze byt libovolné velky (podle rozsahu a hodnot vstupnich udaja), ale pro kady jednotlivy vstup musi byt konecny. Postupy, které Speciálnim prikladem nekonecné vypocetni metody je reaktivni proces, ktery prubene reaguje s okolnim prostredim. Nekteri autori vsak mezi algoritmy zahrnuji i takovéto postupy. Obecnost(hromadnost,masovost,univerzalnost) Algoritmus neresi jeden konkrétni problém (napr. ,jak spocitat 3x7"), ale celych Cisel"), má Sirokou mnozinu moznych vstupu. Determinovanost Algoritmus je determinovany, pokud za stejnych podminek (pro stejné vstupy) poskytuje stejny vystup. Tato vlastnost je pozadovana u velké psoupoueu eueopez yedoeu at py 'yoin es jnsixa :yoin ys (napriklad simulace yrhu kostkou, michani karet, generovani hesel a
+
+nemusi bytdeterminované.
+
+## Determinismus
+
+Kazdy krok algoritmu musi byt jednoznacne a presne definovan; v kazdé naprostou presnost a jednoznacnost vyjadrovani, byly pro zapis algoritmu navrzeny programovaci jazyky, ve kterych má kazdy prikaz jasné definovany vyznam. Vyjádreni vypocetni metody v programovacim jazyce se nazyva program. Nekteré algoritmy jsou sice determinované, ale nejsou deterministické (napriklad radici algoritmus rychlé razeni s nahodnou volbou pivota). Vystup Algoritmus ma alespon jeden vystup, velicinu, ktera je v pozadovaném vztahuk zadanymvstupum, a tim tvori odpoved'na problém,ktery algoritmusresi (algoritmus vede od zpracovani hodnot k vystupu) V praxi jsou proto predmetem zajmu hlavne takové algoritmy, které jsou v poCtem kroku potrebnych pro beh algoritmu, jednoduchost, efektivitu Ci eleganci.Problematikou efektivity algoritmu,tzn. metodami, jak z nekolika znamych algoritmu resicich konkrétni problém vybrat ten vhodny, se zabyvaji
+
+## Metodynavrhu
+
+Algoritmus se navrhuje nekolika moznymi zpusoby:
+
+- Shora dolu - postup reseni rozkladame na jednodussi operace, az dospejeme k elementarnim krokum.
+- Zdola nahoru - z elementarnich kroku vytvarime prostredky, které nakonec umozni zvladnout poadovany problém.
+- Kombinace obou - obvykly postup shora dolu doplnime "Cástecnym krokem" zdola nahoru tim, e se napriklad pouzijf knihovny funkci, vyssi
+
+## Paradigmata navrhu algoritmu
+
+Pri navrhu algoritmu se uplatnuje mnostvi pristupu, které abstrahuji od
+
+## Rozdel a panuj
+
+Souvisejici informace naleznete také v Clanku Rozdel a panuj (algoritmus). Klasicky pripad aplikace postupu odshora dolu. Algoritmy typu rozdel a panuj deli problém na mensi podproblémy, na né se rekurzivné aplikujf (a po trivialni podproblémy, které Ize vyresit primo), po cem se dilci reseni vhodnym zpusobem slouci. disjunktnich podmnozin, které se zpracuji kazda zvlast. Ziskané dilci vysledky se pak spoji a odvodi se z nichreseni pro celou mnozinu V. Klasickym pripadem je binarni vyhledavani nebo radici algoritmus rychlé Yazeni.
+
+## Hladovyalgoritmus
+
+Velice primocary pristup k reseni urcité tridy optimalizacnich úloh. Zpracovavase mnozinaVslozenaz nudaju.Ukolemjenajitpodmnozinu W mnoziny V,ktera vyhovuje urcitym podminkam a pritom optimalizuje predepsanou μcelovou funkci. Jakakoliv mnozina W, vyhovujici danym podminkam, se nazyva pripustné reseni. Pripustné reseni, pro které nabyva ucelova funkce optimalni hodnoty, se nazyva optimalni reseni. z V, a v kadém kroku rozhodne, zda se dany prvek hodi do optimalniho reSeni. Prvky V bude vybirat v poradi urceném jistou vyberovou procedurou. Vyberovaprocedurabudezalozenananejaké optimalizacnimire-funkci, ktera muze byt odvozena od ucelové funkce. V kazdém kroku ale musime dostat pripustné reseni. Jakmile je ucineno takové rozhodnuti, u neni dale revidovano. Prikladem je treba hledani nejkratsi cesty grafu.
+
+## Dynamické programovani
+
+Souvisejici informace naleznete také v Clanku Dynamické programovani.
+
+Dynamické programovani se pouziva v pripadech kdy Ize optimalni reseni jednodussich podproblému mohou mnohokrat opakovat, je nutné zvolit pouziti. vlastnost, e at je pocatecni stav a rozhodnuti jakékoliv, musi byt vsechna nasledujici rozhodnuti optimalni vzhledem k vysledkum rozhodnuti prvniho. jejich prislusné grafové algoritmy.
+
+## Pouziti hrubé sily
+
+U nekterych úloh nezbyvá ne之 postupné probirat vsechna moná reseni - tak zvaná metoda hrubé sily - vygeneruji se vsechny mozné posloupnosti a pak se vybere ta nejlepsi. V nekterych pripadech Ize pouzit metody, které vynechavaji popripade odkladaji prochazeni moznosti, které zrejme nejsou optimalni.
+
+## Hledani s navratem (backtracking)
+
+Souvisejici informace naleznete také v Clanku Backtracking. Hledani s navratem zalozené na prohledavani stavového prostoru problému. prohledaváni do hloubky. Metodu je mozné pouzit v pripade, e resenim je vektor (x1..,xn), jeho jednotlivé slozky vybirame z mnoziny S, x;ES,. Zpravidla je treba najit n-tici, ktera optimalizuje nejakou ucelovou funkci P(x,..,x,). Mohou se ale také hledat vsechny n-tice, které tuto podminku splnujf. Metoda vytvari n-tice jednu slozku po druhé.Pritompouzivaucelovou funkci (nebo nejakou vhodnou pomocnou funkci)a prokazdou novevytvorenou slozku testuje,zda trebauzadny takovyvektor testovat a vezmeme dalsimoznou hodnotu i-té
+
+sloky. Pokud jsou vycerpany vsechny hodnoty i-té slozky, vrati se metoda
+
+Prikladem je treba problém osmi dam nebo chuze kone celou sachovnici.
+
+## Algoritmicka slozitost
+
+Je treba poznamenat, e abstraktni kritérium konecnosti je pro praktické pouziti jeste prilis slabé. V praxi je treba zajistit, aby algoritmus skoncil ,v rozumném" case. Za rozumny cas Ize v praxi povazovat takovy Cas, ktery nam umozni smysluplne vyuzit vysledek. pozici muye hrac na tahu vynutit vitezstvi a zaroven dokáe urcit nejlepsi mozny tah. Tento algoritmus se vsak neda pouzit, protoze by na svou Cinnost potreboval ohromné mnozstvi Casu, jakkoli je toto mnozstvi konecné. Mimoto pocitacova pamet stale narusta, pro nekteré algoritmy ji nebude nikdy dost. Pro vycisleni vypocetni slozitosti algoritmd v zavislosti na velikosti vstupnich dat se pouzivá asymptoticky zapis zavislosti vypocetniho casu na rozsahu ulohy (typicky na poctu vstupnich udaju). Napriklad O(log N) znamenä, e o zvysi ojednu jednotku Casu,pokud budevstupnichdatCtyrikratvice,doba vypoctu se prodlouzi o dve jednotkyCasu, a takdale.To je treba pripad nalezeni jednohoprvkuourcitéhodnotevseznamuprvkuserazenempodle hodnoty (napr. nalezeni jmena v telefonnim seznamu).
+
+## Druhyalgoritmu
+
+Algoritmy muzeme klasifikovat ruznymi zpusoby. Mezi dulezité druhy algoritmu patri:
+
+- Rekurzivni algoritmy, které vyuzivaji (volaji) samy sebe.
+- Pravdepodobnostni algoritmus (nekdy té probabilistické) provadi nekterá rozhodnuti nahodne Ci pseudonahodne.
+- ·V pripade, e mame k dispozici vice pocitacu, muzeme úlohu mezi né rozdelit, co nam umozni ji vyresit rychleji; tomuto cili se vénujf paralelni algoritmy.
+- evolucnich procesu, postupnym ,pestovanim" nejlepsich reseni pomoci mutaci a krizeni. V genetickém programovani se tento postup aplikuje reseni daného problému.
+- Heuristicky algoritmus si za cil neklade nalézt presné reseni, ale pouze nejaké vhodné priblizeni; pouzivá se v situacich, kdy dostupné zdroje (napr. Cas) nepostacuji na vyuziti exaktnich algoritmu (nebo pokud nejsou adné vhodné exaktni algoritmy vubec znamy).
+
+Pritom jeden algoritmus muze patrit zaroven do vice skupin; napriklad mize byt zaroven rekurzivni a geneticky.
+
+## Nekteré znamé algoritmy
+
+- ·Eratosthenovo sito
+- ·Eukliduv algoritmus
+- ·AlgoritmusdeCasteljau
+- ·Dijkstruv algoritmus
+- ·Bellmanuv-Forduv algoritmus
+
+## Etymologie
+
+Slovo algoritmus pochazi zejménavyznamnehoperského matematika zijiciho v prvni polovine 9. stoleti (cca Z80-840), kterym byl Abu 'Abd Allah (i 3r Im mo i? o6m Irrro) iuzuemuo-je esnw uq! pewweunw (doslova ,Otec Abdullaha, Mohamed, syn Mojzisuv, pochazejici z mesta Chwarizm (Chorézm, dnes Chiva)"; tento kraj se nacházi v Uzbekistanu ji2ne od Aralského jezera). Tento ucenec ve svém dile prakticky vytvoril systém arabskych Cislic a zaklady algebry (konkrétne metody reseni linearnich a kvadratickych rovnic), jejiz název pochazi primo z titulu tohoto dila (Kitub aljabr waal-muqubala). Jeho jméno bylo do latiny prevedeno jako algorismus, a puvodne znamenalo ,provadeni aritmetiky pomoci arabskych Cislic"; abacisté pocitali pomoci abaku, algoristé pomoci algorismu.
+
+Postupem Casu se kvuli neznalosti puvodu slova jeho podoba menila, zaménou arabského korene s korenem reckého slova αptθμoc (arithmos) se z algorismu stal algorithmus. (Pozdeji bylo v nekterych jazycich vcetne Cestiny th zmeneno na t, v katalanstine se vratilo s.) Toto slovo se pouzivalo jako nekonecne malych velicin, vynalezenou nemeckym matematikem Leibnizem". Slovo algoritmus v dnesnim vyznamu se pouzivá a zhruba od 20. stoleti.
+
+## Historie: Vyvoj pojmu ,algoritmus" Staroveké Recko
+
+Algoritmy byly pouzity ve starovekém Recku. Napriklad Eratosthenovo sito neboEukleiduvalgoritmus.
+
+## Puvod
+
+Slovo algoritmus pochazi z 9. stoleti a je odvozeno z prijmeni perského matematika Al-Chorezmi. Slovo puvodne odkazovalo na pravidla provadeni aritmetickych operaci s arabskymi Cislicemi, ale vyvinulo se prostrednictvim s   , u  o
+
+## Diskretni a rozeznatelné symboly
+
+Tally-znacky: K pocitani stad, pytlu s obilim a penez ve starovéku se o   a ge eo se pouziva pri kodovani informaci pro Turingovy stroje v teori automatd.
+
+## Mechanicka zarizeni s diskretnimi stavy
+
+l a r ou      y okamzitekmechanickému automatu(zacatek13.stoleti)a nakoneck vypocetnim strojum - diferencni a analyticky stroj (Charles Babbage a Ada Lovelace) v polovine 19. stoleti. Lovelace je pripocitano prvni vytvoreni algoritmu, ktery je zpracovatelny pocitacem. Babbageuv analyticky stroj je povazovan za prvni Turinguv kompletni pocitac. Charles Babbage je nekdy nazyvan jako historicky prvni programator. Logické stroje 1870 - Jevonsovo logické pocitadlo a logicky stroj: Technicky problém byl zjednoduseni logickych rovnice, které bylo predstaveno v podobé podobné tomu, co je nyni znamo jako Karnaughova mapa. Jevons (1880) popisuje prvni jednoduché pocitadlo ze dreva vybavené koliky tak, aby predstavenClenumkralovskéspolecnostiv roce1870. Tkalcovsky stav, derné Stitky, telegrafie a telefonie - elektromechanické relé: Bell a Newell (1971) oznacuji, e tkalcovsky stav (1801), predchudce dérnych Stitku (1887) a telefonni spinaci technologie vedly k vyvoji prvnich pocitacu. abecedu. Telefonnisiteelektromechanickychrelé-GeorgeStibitz(1937)pracovalv Bellovych laboratorich a dokoncil kalkulator, ktery je schopen pracovat s komplexnimi Cisly.
+
+## Matematika v prubehu 19. stoleti a2 do poloviny 20. stoleti
+
+Symbolyapravidla:VrychlémsleduzaseboumatematikaGeorgeBoole, Gottlob Frege a Giuseppe Peano redukovala aritmetiku do sekvence symbolu, se kterymi se manipulovalo pomoci danych pravidel. Peanovo The principles o Heijenoort dava Fregemu (1879) tuto slavu: Fregovo dilo je moná e Paradoxy: Ve stejné dobe se objevila rada znepokojivych elementu v literature, zejména Burali-Fortiho paradox (1897), Russelluv paradox (19021903) a Richarduv paradox. Vysledné uvahy vedly k Godelovym vetam o neuplnosti.
+
+Efektivni vycislitelnost: Ve snaze vyresit Entscheidungsproblem presne definovanym Hilbertem v roce 1928 museli matematici nejprve definovat, co se rozumi pod pojmem ,efektivni metoda" nebo ,efektivni vypocet".V rychlém sledu se objevili Alonzo Church, Stephen Cole Kleene a J. B. Rosser, kteri jsou znami predevsim diky lambda kalkulu. Church pak spolecné s Turingem ukazal, e lambda kalkul (a dalsi vypocetni modely) má vypocetni silu Turingova stroje, co otevrelo cestu k Churchove-Turingové tezi.
+
+## Pravni ustanoveni
+
+Algoritmy nejsou obvykle patentovany. Samotna manipulace s abstraktnimi pojmy, Cisly, Ci dokonce signaly neni v USA (dle USPTO 2006) povaovana za proces. Jinymi slovy Ize rici, e algoritmy nelze patentovat (podobne jako v kauze Gottschalk v. Benson). Nicméne nektera prakticka vyuziti algoritmu Ize algoritmus zpetné vazby na pomoc pri vytvrzovani syntetické gumy. Patentovani softwaru je i pres to velmi kontroverzni. Nekteré patentované
+
+## Reference
+
+1. heslo Algorithmus. Qttuv slovnik naucny I, p. 857
+2. Donald Ervin Knuth: The Art of Computer Programming, Vol 1-3, Addison Wesley 1998. ISBN 0-201-48541-9. Klasické dilo oboru, definitivni prirucka.
+3. Gaston H. Gonnet, Ricardo Baeza-Yates: Zdrojové texty programu v Handbookof Algorithms and DataStructures.
+4. Dictionary of Algorithms and Data Structures. ,Slovnik algoritmu, technik, datovych struktur, typickych problému a prislusnych definic."
+5. United States Patent and Trademark Office (2006), 2106.02 **&gt;Mathematical Algorithms: 2100 Patentability, Manual of Patent Examining Procedure (MPEP). Latest revision August 2006
+
+## Externi odkazy
+
+- ·Obrazky,zvuky Ci videa k tématu algoritmus na Wikimedia Commons
+- ·Téma Algoritmus ve Wikicitatech
+- Slovnikové heslo algoritmus ve Wikislovniku
+- Prvni algoritmus napsala ena. Programovala davno pred prvnim pocitacem
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Alg0ritmus&amp;oldid=24926977" Kategorie:
+
+- Algoritmy
+- Programovani
+
+Skryté kategorie:
+
+- Monitoring:Clanky s identifikatorem NKC
+- Monitoring:Clanky s identifikatorem BNE
+- Monitoring:Clanky s identifikatorem BNF
+- Monitoring:Clanky s identifikatorem GND
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem LNB
+- Monitoring:Clanky s identifikatorem NDL
+- Monitoring:Clanky s identifikatorem NLI
+- Monitoring:1oo0 nejdulezitejsich Clanku/stredni
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+136 jazyku Pridat téma
+
+Algoritmus

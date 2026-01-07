@@ -1,0 +1,199 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Word2Vec – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Word2Vec je způsob zpracování přirozeného jazyka, kdy jsou slova
+
+reprezentována vektory.[1] Bezkontextový model publikovali v roce 2013
+
+společně výzkumníci Tomáš Mikolov, Kai Chen, Greg Corrado, Ilya Sutskever a
+
+Jeff Dean, kteří pracovali pro Google. Algoritmus word2vec využívá model 
+
+neuronové sítě k učení slovních asociací z velkého korpusu textu. Po
+
+natrénování může takový model odhalit synonyma nebo navrhnout další
+
+slova pro další část věty. Word2vec reprezentuje každé odlišné slovo určitým
+
+seznamem čísel, kterému se říká vektor. Vektory jsou pečlivě vybrány tak,
+
+aby zachycovaly sémantické a syntaktické vlastnosti slov; jednoduchá
+
+matematická funkce (kosinus úhlu mezi vektory) tak může indikovat úroveň 
+
+sémantické podobnosti mezi slovy reprezentovanými těmito vektory. 
+
+Bezkontextové modely, jako je word2vec nebo GloVe, vytvářejí pro každé
+
+slovo ve slovníku jedinečnou reprezentaci, přičemž BERT bere v úvahu
+
+kontext pro každý výskyt daného slova. Zatímco vektor pro slovo anglické
+
+slovo "run" bude mít stejnou reprezentaci z word2vec pro oba jeho výskyty
+
+ve větách "He is running a company" a "He is running a marathon", BERT
+
+poskytne kontextové osazení, které se bude lišit v závislosti na větě. Nově se
+
+právě pro vnoření slov používají novější modely jako BERT či GPT-3.[2]
+
+Odkazy
+
+Reference
+
+V tomto článku byl použit překlad textu z článku Word2vec na anglické
+
+Wikipedii.
+
+↑ A Beginner's Guide to Word2Vec and Neural Word Embeddings. 
+
+Pathmind [online]. [cit. 2022-10-29]. Dostupné online. (anglicky)
+
+↑ ALAMMAR, Jay. The Illustrated Word2vec. jalammar.github.io [online].
+
+[cit. 2022-10-29]. Dostupné online.
+
+Externí odkazy
+
+Obrázky, zvuky či videa k tématu Word2Vec na Wikimedia Commons
+
+1. 
+
+2. 
+
+• 
+
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Tom%C3%A1%C5%A1_Mikolov
+/wiki/Ilya_Sutskever
+/w/index.php?title=Jeff_Dean&action=edit&redlink=1
+/wiki/Um%C4%9Bl%C3%A1_neuronov%C3%A1_s%C3%AD%C5%A5
+/wiki/Korpusov%C3%A1_lingvistika
+/wiki/Synonymum
+/wiki/Vektor
+/wiki/Kosinus
+/w/index.php?title=S%C3%A9mantick%C3%A1_podobnost&action=edit&redlink=1
+/w/index.php?title=GloVe&action=edit&redlink=1
+/wiki/BERT
+/wiki/Vno%C5%99en%C3%AD_slov
+/wiki/BERT
+/wiki/GPT-3
+/wiki/Wikipedie:WikiProjekt_P%C5%99eklad/Rady
+https://en.wikipedia.org/wiki/Word2vec?oldid=1116999772
+https://en.wikipedia.org/wiki/Word2vec?oldid=1116999772
+http://wiki.pathmind.com/word2vec
+https://jalammar.github.io/illustrated-word2vec/
+https://commons.wikimedia.org/wiki/Category:Word2vec
+
+Oficiální stránka projektu
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Word2Vec&oldid=24823261“
+
+Kategorie: 
+
+Počítačová lingvistika
+
+Zpracování přirozeného jazyka
+
+Umělé neuronové sítě
+
+Skryté kategorie: 
+
+Monitoring:Články přeložené z enwiki
+
+Monitoring:Autoritní kontrola s 0 identifikátory
+
+Hledání
+
+Hledat
+
+Word2Vec
+
+18 jazyků Přidat téma
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Speciální:Hledání
+
+https://www.tensorflow.org/tutorials/text/word2vec
+https://cs.wikipedia.org/w/index.php?title=Word2Vec&oldid=24823261
+https://cs.wikipedia.org/w/index.php?title=Word2Vec&oldid=24823261
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Po%C4%8D%C3%ADta%C4%8Dov%C3%A1_lingvistika
+/wiki/Kategorie:Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Kategorie:Um%C4%9Bl%C3%A9_neuronov%C3%A9_s%C3%ADt%C4%9B
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_p%C5%99elo%C5%BEen%C3%A9_z_enwiki
+/wiki/Kategorie:Monitoring:Autoritn%C3%AD_kontrola_s_0_identifik%C3%A1tory
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+	Odkazy
+	Reference
+	Externí odkazy
+
+

@@ -1,0 +1,107 @@
+Z Wikipedie,otevrené encyklopedie Muete Wikipedii pomoci tim, e ho yylepsite. Jak by mely Clanky vypadat, ikona Tento Clanek potrebuje upravy. popisuji stranky Vzhled a styl, Encyklopedicky styl a Odkazy. Konkretni problémy: nedostatecneozdrojovano; heslovitésekceprevést na souvislejsi text, pripadne i dokoncit
+
+Strojové uceni je podoblasti umelé inteligence, zabyvajici se algoritmy a technikami, které umoznuji pocitacovému systému ,ucit se". Ucenim v daném kontextu rozumime takovou zmenu vnitrniho stavu systému, ktera zefektivni schopnost prizpusobeni se zmenam okolniho prostredi. Strojové uceni má Siroké uplatneni. Jeho techniky se vyuzivaji pro rozpoznavani obrazu (napr. ve forme pixelu) Ci akustickych (napr. rozpoznavani reCi) nebo elektrickych (napr. EKG, EEG) signálu, dale ke klasifikaci, segmentaci Ci kompresi dat, k predvidani vyvoje Casovych rad (napr. burzovnich indexi), k analyze psaného textu Ci k filtrovani spamu. V lékarstvi slouzi k diagnostice onemocneni a v rizeni pro podporu rozhodovani.
+
+## Zakladni rozdeleni algoritmu uceni
+
+kategorif:
+
+- Uceni s ucitelem (,supervised learning") - pro vstupni data je urcen spravny vystup (trida pro klasifikaci nebo hodnota pro regresi).
+- Uceni bez ucitele (,unsupervised learning") - ke vstupnim datum neni znamy vystup.
+- Kombinace uceni s ucitelem a bez ucitele (,semi-supervised learning") Cást vstupnich dat je se znamym vystupem, ale dalsi data, typicky vetsi, jsou bez nej.
+- ·Zpetnovazebné uceni (,reinforcement learning"), té uceni posilovanim.
+
+Podle zpusobu zpracovani Ize algoritmy rozdelit na:
+
+- davkové: Vsechna data se pozaduji pred zacatkem vypoctu.
+- inkrementalni: Dokáou se ,priucit", tj. upravit model, pokud dostanou nová data, bez prepocitani celého modelu od zacátku.
+
+## Zakladni druhy uloh
+
+- Klasifikace rozdeluje data do dvou nebo nekolika trid (uceni s ucitelem)
+- Regrese odhaduje Ciselné hodnoty vystupu podle vstupu (uceni s ucitelem)
+- Shlukovani zarazuje objekty do skupin s podobnymi vlastnostmi (uceni bez ucitele)
+
+Dalsi typy úloh jsou:
+
+- Ranking urcuje poradi datovych bodu, vysledkem je Cástecné nebo uplné setrideni
+- Uceni strukturovanych dat. Vystupni neboli hledana struktura muze byt napriklad sekvence, strom, graf, matice...
+
+Aplikace jsou napr. uceni syntaktickych stromu ve zpracovani prirozeneho jazyka, zarovnani nekolika sekvenci proteinu v bioinformatice, prevod reci na textovy retézec, tj. na sekvenci znaku, hledani vhodné molekuly reprezentované jako graf v chemoinformatice, vystup zpracovani obrazu jako matice...
+
+## Podoblasti strojového uceni
+
+- Pouzivané modely:
+- . Rozhodovaci stromy
+- o Algoritmus k-nejblizsich sousedu
+- o Podpurné vektory, viz Support vector machines
+- o Linearni diskriminacni analyza (en:Linear discriminant analysis)
+- o Kvadraticka diskriminacni analyza (en:Quadratic discriminant analysis)
+- o Neuronové site, uceni s ucitelem, uceni bez ucitele, hluboké uceni
+- o Bayesovské site
+- Techniky pro kombinaci vice modelu (en:Meta learning)
+- Boosting
+- 。 Stacking
+- ° Bootstrap (Bagging)
+- ·Testovanipresnostimodelu:
+- o Krizova validace
+- o Diskriminacni analyza
+- o Bootstrap (Statistics)
+
+## Terminologie
+
+- Data, body, pripady, méreni
+- Atributy, rysy, promenné, ficury/features
+- Druhy/typy atributu: kategoriálni (napr. ,A", ,B", ,AB" nebo ,O" pro krevni skupiny), ordinalni (napr. ,velky", ,stredni" nebo ,maly"), strukturované, hierarchické, binarni, celociselné (napr. pocet vyskytu slova v emailu) anebo realné (napr. mereni krevniho tlaku)
+
+## Software
+
+RapidMiner, KNiME, Weka, ODM, Shogun Toolbox, Orange, Apache Mahout a Scikit-Learn jsou softwarové baliky, které obsahuji ruzné algoritmy strojového uceni.
+
+Online: Microsoft Azure Machine Learning (Azure ML), TensorFlow (Google)
+
+## Hardware
+
+Optimalni hardwarova implementace provadeni vypoctu umoznuje znacné urychlit nalezeni vysledku. Pouzivaji se ruzné zpusoby:
+
+- Tensor Processing Unit (TPU) [1l od Google jsou specializované vypocetni vykon strojového uceni.
+- Graphics Processing Unit (GPU) je systém procesoru implementovanych na grafické karté, puvodne urceny predevsim pro beh pocitacovych her, kladoucich velké naroky na vypocetni vykon. Na rozdil od CPU majicich k dispozici maximalne 8 nebo 16 vypocetnich vlaken, GPU jich muze vyuzivat a napr. 2 048. Pro algoritmizaci uceni se pak mue uzit tzv.
+
+CUDA platforma, umoznujici programovat v jazycich C+± resp. Fortran, ktera umozni diky velkému poctu dostupnych vypocetnich vlaken vysoky stupen paralelizace vypoctu, Cim zvysi vypocetni vykon strojového uceni.
+
+## Reference
+
+1. ↑ Google developers: Machine Learning Glossary
+
+## Souvisejici lanky
+
+- Data mining
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu strojové uceni na Wikimedia Commons
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Strojové\_uceni&amp;oldid=25304418" Kategorie:
+
+- Strojové uceni
+- Umela inteligence
+
+Skryté kategorie:
+
+- Udrzba:Clanky k úpravé
+- Monitoring:Clanky s identifikatorem NKC
+- Monitoring:Clanky s identifikatorem GND
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem NDL
+- Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+| Hledat   |
+|----------|
+
+Strojové uceni
+
+88 jazyku Pridat téma

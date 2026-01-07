@@ -1,0 +1,489 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Strojové učení – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Tento článek potřebuje úpravy.
+
+Můžete Wikipedii pomoci tím, že ho vylepšíte. Jak by měly články vypadat,
+
+popisují stránky Vzhled a styl, Encyklopedický styl a Odkazy.
+
+Konkrétní problémy: nedostatečně ozdrojováno; heslovité sekce převést na
+
+souvislejší text, případně i dokončit
+
+Strojové učení je podoblastí umělé inteligence, zabývající se algoritmy a
+
+technikami, které umožňují počítačovému systému „učit se“. Učením v
+
+daném kontextu rozumíme takovou změnu vnitřního stavu systému, která
+
+zefektivní schopnost přizpůsobení se změnám okolního prostředí. 
+
+Strojové učení má široké uplatnění. Jeho techniky se využívají pro
+
+rozpoznávání obrazů (např. ve formě pixelů) či akustických (např. 
+
+rozpoznávání řeči) nebo elektrických (např. EKG, EEG) signálů, dále ke 
+
+klasifikaci, segmentaci či kompresi dat, k předvídání vývoje časových řad
+
+(např. burzovních indexů), k analýze psaného textu či k filtrování spamu. V
+
+lékařství slouží k diagnostice onemocnění a v řízení pro podporu rozhodování.
+
+Základní rozdělení algoritmů učení
+
+Algoritmy strojového učení lze podle způsobu učení rozdělit do následujících
+
+kategorií: 
+
+Učení s učitelem („supervised learning“) – pro vstupní data je určen
+
+správný výstup (třída pro klasifikaci nebo hodnota pro regresi).
+
+Učení bez učitele („unsupervised learning“) – ke vstupním datům není
+
+známý výstup.
+
+Kombinace učení s učitelem a bez učitele („semi-supervised learning“) –
+
+část vstupních dat je se známým výstupem, ale další data, typicky větší,
+
+jsou bez něj.
+
+Zpětnovazebné učení („reinforcement learning“), též učení posilováním.
+
+Podle způsobu zpracování lze algoritmy rozdělit na: 
+
+dávkové: Všechna data se požadují před začátkem výpočtu.
+
+ikona
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+https://cs.wikipedia.org/w/index.php?title=Strojov%C3%A9_u%C4%8Den%C3%AD&action=edit
+/wiki/Wikipedie:Vzhled_a_styl
+/wiki/Wikipedie:Encyklopedick%C3%BD_styl
+/wiki/Wikipedie:Pr%C5%AFvodce_(odkazy)
+/wiki/Um%C4%9Bl%C3%A1_inteligence
+/wiki/Algoritmus
+/wiki/Pixel
+/wiki/Akustika
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Elektrokardiogram
+/wiki/Elektroencefalografie
+/wiki/Sign%C3%A1l
+/wiki/Klasifikace_(um%C4%9Bl%C3%A1_inteligence)
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/Komprese_dat
+/wiki/Burzovn%C3%AD_index
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Filtrov%C3%A1n%C3%AD_zpr%C3%A1v
+/wiki/Spam
+/wiki/Syst%C3%A9my_pro_podporu_rozhodov%C3%A1n%C3%AD
+/wiki/Algoritmus
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_bez_u%C4%8Ditele
+/wiki/Zp%C4%9Btnovazebn%C3%AD_u%C4%8Den%C3%AD
+
+inkrementální: Dokážou se „přiučit“, tj. upravit model, pokud dostanou
+
+nová data, bez přepočítání celého modelu od začátku.
+
+Základní druhy úloh
+
+Klasifikace rozděluje data do dvou nebo několika tříd (učení s učitelem)
+
+Regrese odhaduje číselné hodnoty výstupu podle vstupu (učení s
+
+učitelem)
+
+Shlukování zařazuje objekty do skupin s podobnými vlastnostmi (učení
+
+bez učitele)
+
+Další typy úloh jsou: 
+
+Ranking určuje pořadí datových bodů, výsledkem je částečné nebo
+
+úplné setřídění
+
+Učení strukturovaných dat. Výstupní neboli hledaná struktura může být
+
+například sekvence, strom, graf, matice…
+
+Aplikace jsou např. učení syntaktických stromů ve zpracování přirozeného
+
+jazyka, zarovnání několika sekvencí proteinů v bioinformatice, převod řeči na
+
+textový řetězec, tj. na sekvenci znaků, hledání vhodné molekuly
+
+reprezentované jako graf v chemoinformatice, výstup zpracování obrazu jako 
+
+matice… 
+
+Podoblasti strojového učení
+
+Používané modely: 
+
+Rozhodovací stromy
+
+Algoritmus k-nejbližších sousedů
+
+Podpůrné vektory, viz Support vector machines
+
+Lineární diskriminační analýza (en:Linear discriminant analysis)
+
+Kvadratická diskriminační analýza (en:Quadratic discriminant
+
+analysis)
+
+Neuronové sítě, učení s učitelem, učení bez učitele, hluboké učení
+
+Bayesovské sítě
+
+Techniky pro kombinaci více modelů (en:Meta learning) 
+
+Boosting
+
+Stacking
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+• 
+
+◦ 
+
+◦ 
+
+/wiki/Klasifikace_(um%C4%9Bl%C3%A1_inteligence)
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/Regresn%C3%AD_anal%C3%BDza
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/U%C4%8Den%C3%AD_bez_u%C4%8Ditele
+/wiki/U%C4%8Den%C3%AD_bez_u%C4%8Ditele
+/w/index.php?title=Rankink_(strojov%C3%A9_u%C4%8Den%C3%AD)&action=edit&redlink=1
+/wiki/Syntaktick%C3%BD_strom
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Sekvence_nukleov%C3%A9_kyseliny
+/wiki/Bioinformatika
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Posloupnost
+/wiki/Graf_(teorie_graf%C5%AF)
+/wiki/Chemoinformatika
+/wiki/Zpracov%C3%A1n%C3%AD_obrazu
+/wiki/Matice
+/wiki/Rozhodovac%C3%AD_stromy
+/wiki/Algoritmus_k-nejbli%C5%BE%C5%A1%C3%ADch_soused%C5%AF
+/wiki/Support_vector_machines
+/w/index.php?title=Line%C3%A1rn%C3%AD_diskrimina%C4%8Dn%C3%AD_anal%C3%BDza&action=edit&redlink=1
+https://en.wikipedia.org/wiki/Linear_discriminant_analysis
+/w/index.php?title=Kvadratick%C3%A1_diskrimina%C4%8Dn%C3%AD_anal%C3%BDza&action=edit&redlink=1
+https://en.wikipedia.org/wiki/Quadratic_discriminant_analysis
+https://en.wikipedia.org/wiki/Quadratic_discriminant_analysis
+/wiki/Neuronov%C3%A9_s%C3%ADt%C4%9B
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_bez_u%C4%8Ditele
+/wiki/Hlubok%C3%A9_u%C4%8Den%C3%AD
+/wiki/Bayesovsk%C3%A9_s%C3%ADt%C4%9B
+https://en.wikipedia.org/wiki/Meta_learning
+/w/index.php?title=Boosting&action=edit&redlink=1
+/w/index.php?title=Stacking&action=edit&redlink=1
+
+Bootstrap (Bagging)
+
+Testování přesnosti modelu: 
+
+Křížová validace
+
+Diskriminační analýza
+
+Bootstrap (Statistics)
+
+Terminologie
+
+Data, body, případy, měření
+
+Atributy, rysy, proměnné, fíčury/features
+
+Druhy/typy atributů: kategoriální (např. „A“, „B“, „AB“ nebo „O“ pro
+
+krevní skupiny), ordinální (např. „velký“, „střední“ nebo „malý“),
+
+strukturované, hierarchické, binární, celočíselné (např. počet výskytů
+
+slova v emailu) anebo reálné (např. měření krevního tlaku)
+
+Software
+
+RapidMiner, KNIME, Weka, ODM, Shogun Toolbox, Orange, Apache Mahout a 
+
+Scikit-Learn jsou softwarové balíky, které obsahují různé algoritmy strojového
+
+učení. 
+
+Online: Microsoft Azure Machine Learning (Azure ML), TensorFlow (Google) 
+
+Hardware
+
+Optimální hardwarová implementace provádění výpočtů umožňuje značně
+
+urychlit nalezení výsledku. Používají se různé způsoby: 
+
+Tensor Processing Unit (TPU) [1] od Google jsou specializované
+
+integrované obvody ve formě čipů implementovaných v zařízení TPU (An
+
+application-specific integrated circuit (ASIC)), který optimalizuje
+
+výpočetní výkon strojového učení.
+
+Graphics Processing Unit (GPU) je systém procesorů implementovaných
+
+na grafické kartě, původně určený především pro běh počítačových her,
+
+kladoucích velké nároky na výpočetní výkon. Na rozdíl od CPU majících k
+
+dispozici maximálně 8 nebo 16 výpočetních vláken, GPU jich může
+
+využívat až např. 2 048. Pro algoritmizaci učení se pak může užít tzv. 
+
+◦ 
+
+• 
+
+◦ 
+
+◦ 
+
+◦ 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/w/index.php?title=Bootstrap_(Bagging)&action=edit&redlink=1
+/wiki/K%C5%99%C3%AD%C5%BEov%C3%A1_validace
+/wiki/Diskrimina%C4%8Dn%C3%AD_anal%C3%BDza
+/w/index.php?title=Bootstrap_(Statistics)&action=edit&redlink=1
+/wiki/Typy_prom%C4%9Bnn%C3%BDch
+/w/index.php?title=RapidMiner&action=edit&redlink=1
+/w/index.php?title=KNIME&action=edit&redlink=1
+/wiki/Weka
+/w/index.php?title=ODM&action=edit&redlink=1
+/w/index.php?title=Shogun_Toolbox&action=edit&redlink=1
+/wiki/Orange_(software)
+/w/index.php?title=Apache_Mahout&action=edit&redlink=1
+/w/index.php?title=Scikit-Learn&action=edit&redlink=1
+/wiki/Tensor_Processing_Unit
+/wiki/Google
+/wiki/GPU
+/wiki/Centr%C3%A1ln%C3%AD_procesorov%C3%A1_jednotka
+
+CUDA platforma, umožňující programovat v jazycích C++ resp. Fortran,
+
+která umožní díky velkému počtu dostupných výpočetních vláken vysoký
+
+stupeň paralelizace výpočtu, čímž zvýší výpočetní výkon strojového
+
+učení.
+
+Reference
+
+↑ Google developers: Machine Learning Glossary
+
+Související články
+
+Data mining
+
+Externí odkazy
+
+Obrázky, zvuky či videa k tématu strojové učení na Wikimedia
+
+Commons
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Strojové_učení&oldid=25304418“
+
+Kategorie: 
+
+Strojové učení
+
+Umělá inteligence
+
+Skryté kategorie: 
+
+Údržba:Články k úpravě
+
+Monitoring:Články s identifikátorem NKC
+
+Monitoring:Články s identifikátorem GND
+
+Monitoring:Články s identifikátorem LCCN
+
+Monitoring:Články s identifikátorem NDL
+
+Monitoring:Články s identifikátorem NLI
+
+Hledání
+
+1. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Speciální:Hledání
+
+/wiki/CUDA
+/wiki/C%2B%2B
+/wiki/Fortran
+/wiki/Paraleln%C3%AD_v%C3%BDpo%C4%8Dty
+https://developers.google.com/machine-learning/glossary/#t
+/wiki/Data_mining
+https://commons.wikimedia.org/wiki/Category:Machine_learning
+https://cs.wikipedia.org/w/index.php?title=Strojov%C3%A9_u%C4%8Den%C3%AD&oldid=25304418
+https://cs.wikipedia.org/w/index.php?title=Strojov%C3%A9_u%C4%8Den%C3%AD&oldid=25304418
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Strojov%C3%A9_u%C4%8Den%C3%AD
+/wiki/Kategorie:Um%C4%9Bl%C3%A1_inteligence
+/wiki/Kategorie:%C3%9Adr%C5%BEba:%C4%8Cl%C3%A1nky_k_%C3%BAprav%C4%9B
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NKC
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_GND
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_LCCN
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NDL
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NLI
+
+Hledat
+
+Strojové učení
+
+88 jazyků Přidat téma
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+	Základní rozdělení algoritmů učení
+	Základní druhy úloh
+	Podoblasti strojového učení
+	Terminologie
+	Software
+	Hardware
+	Reference
+	Související články
+	Externí odkazy
+

@@ -1,0 +1,1542 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Byte-compiled / optimized / DLL files\n__pycache__/\n*.py[cod]\n*$py.class\n\n# C extensions\n*.so\n\n# Distribution / packaging\n.Python\nbuild/\ndevelop-eggs/\ndist/\ndownloads/\neggs/\n.eggs/\nlib/\nlib64/\nparts/\nsdist/\nvar/\nwheels/\nshare/python-wheels/\n*.egg-info/\n.installed.cfg\n*.egg\nMANIFEST\n\n# PyInstaller\n#  Usually these files are written by a python script from a template\n#  before PyInstaller builds the exe, so as to inject date/other infos into it.\n*.manifest\n*.spec\n\n# Installer logs\npip-log.txt\npip-delete-this-directory.txt\n\n# Unit test / coverage reports\nhtmlcov/\n.tox/\n.nox/\n.coverage\n.coverage.*\n.cache\nnosetests.xml\ncoverage.xml\n*.cover\n*.py,cover\n.hypothesis/\n.pytest_cache/\ncover/\n\n# Translations\n*.mo\n*.pot\n\n# Django stuff:\n*.log\nlocal_settings.py\ndb.sqlite3\ndb.sqlite3-journal\n\n# Flask stuff:\ninstance/\n.webassets-cache\n\n# Scrapy stuff:\n.scrapy\n\n# Sphinx documentation\ndocs/_build/\n\n# PyBuilder\n.pybuilder/\ntarget/\n\n# Jupyter Notebook\n.ipynb_checkpoints\n\n# IPython\nprofile_default/\nipython_config.py\n\n# pyenv\n#   For a library or package, you might want to ignore these files since the code is\n#   intended to run in multiple environments; otherwise, check them in:\n# .python-version\n\n# pipenv\n#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.\n#   However, in case of collaboration, if having platform-specific dependencies or dependencies\n#   having no cross-platform support, pipenv may install dependencies that don't work, or not\n#   install all needed dependencies.\n#Pipfile.lock\n\n# UV\n#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.\n#   This is especially recommended for binary packages to ensure reproducibility, and is more\n#   commonly ignored for libraries.\n#uv.lock\n\n# poetry\n#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.\n#   This is especially recommended for binary packages to ensure reproducibility, and is more\n#   commonly ignored for libraries.\n#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control\n#poetry.lock\n\n# pdm\n#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.\n#pdm.lock\n#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it\n#   in version control.\n#   https://pdm.fming.dev/latest/usage/project/#working-with-version-control\n.pdm.toml\n.pdm-python\n.pdm-build/\n\n# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm\n__pypackages__/\n\n# Celery stuff\ncelerybeat-schedule\ncelerybeat.pid\n\n# SageMath parsed files\n*.sage.py\n\n# Environments\n.env\n.venv\nenv/\nvenv/\nENV/\nenv.bak/\nvenv.bak/\n\n# Spyder project settings\n.spyderproject\n.spyproject\n\n# Rope project settings\n.ropeproject\n\n# mkdocs documentation\n/site\n\n# mypy\n.mypy_cache/\n.dmypy.json\ndmypy.json\n\n# Pyre type checker\n.pyre/\n\n# pytype static type analyzer\n.pytype/\n\n# Cython debug symbols\ncython_debug/\n\n# PyCharm\n#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can\n#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore\n#  and can be added to the global gitignore or merged into this file.  For a more nuclear\n#  option (not recommended) you can uncomment the following to ignore the entire idea folder.\n#.idea/\n\n# Abstra\n# Abstra is an AI-powered process automation framework.\n# Ignore directories containing user credentials, local state, and settings.\n# Learn more at https://abstra.io/docs\n.abstra/\n\n# Visual Studio Code\n#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore \n#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore\n#  and can be added to the global gitignore or merged into this file. However, if you prefer, \n#  you could uncomment the following to ignore the enitre vscode folder\n# .vscode/\n\n# Ruff stuff:\n.ruff_cache/\n\n# PyPI configuration file\n.pypirc\n\n# Cursor\n#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to\n#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data\n#  refer to https://docs.cursor.com/context/ignore-files\n.cursorignore\n.cursorindexingignore
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+--- a/.gitignore	(revision 76afb54dbd23b4b218757950fed5432c28cc26df)
++++ b/.gitignore	(date 1764420707362)
+@@ -191,4 +191,8 @@
+ #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
+ #  refer to https://docs.cursor.com/context/ignore-files
+ .cursorignore
+-.cursorindexingignore
+\ No newline at end of file
++.cursorindexingignore
++
++embedders_experiments/datasets/
++
++
+Index: .gitattributes
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitattributes b/.gitattributes
+new file mode 100644
+--- /dev/null	(date 1764420707422)
++++ b/.gitattributes	(date 1764420707422)
+@@ -0,0 +1,1 @@
++* text eol=lf
+Index: dareczech/eda_small_med.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dareczech/eda_small_med.ipynb b/dareczech/eda_small_med.ipynb
+new file mode 100644
+--- /dev/null	(date 1764420707398)
++++ b/dareczech/eda_small_med.ipynb	(date 1764420707398)
+@@ -0,0 +1,350 @@
++{
++ "cells": [
++  {
++   "cell_type": "code",
++   "id": "initial_id",
++   "metadata": {
++    "collapsed": true,
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:32:48.540059Z",
++     "start_time": "2025-11-25T15:32:47.980865Z"
++    }
++   },
++   "source": [
++    "import numpy as np\n",
++    "import pandas as pd\n",
++    "import os"
++   ],
++   "outputs": [],
++   "execution_count": 1
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:32:48.572124Z",
++     "start_time": "2025-11-25T15:32:48.568004Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "print(os.getcwd())",
++   "id": "37653ddff70e9696",
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "/home/a/codes/master-thesis/dareczech\n"
++     ]
++    }
++   ],
++   "execution_count": 2
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:32:48.692651Z",
++     "start_time": "2025-11-25T15:32:48.672776Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "df = pd.read_json('./data/n1000_queries.jsonl', lines=True)",
++   "id": "7fa1cc2edb1f4bba",
++   "outputs": [],
++   "execution_count": 3
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:32:48.726967Z",
++     "start_time": "2025-11-25T15:32:48.707777Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "df",
++   "id": "a1dc2aee24c11eb9",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "      queryID                          query     docID  \\\n",
++       "0          27        půjčovny střešních boxů  [271304]   \n",
++       "1          30                     allcall w1  [496331]   \n",
++       "2          36                        mahjong  [305839]   \n",
++       "3          81   armani acqua di gioia 100 ml  [458878]   \n",
++       "4         107        weppler trefil kontakty     [107]   \n",
++       "...       ...                            ...       ...   \n",
++       "1071   110794                       autowelt  [818700]   \n",
++       "1072   110800                    antifouling  [819068]   \n",
++       "1073   111227  sekačka na trávu na elektriku  [821399]   \n",
++       "1074   111308          pobočky vodafone brno  [821934]   \n",
++       "1075   111513                 cuketa zavarit  [823301]   \n",
++       "\n",
++       "                                                 source   label  \n",
++       "0     [https://www.fedorauto.cz/pujcovna-stresnich-b...   [0.5]  \n",
++       "1       [http://www.deviceranking.cz/brand/378/allcall]   [0.5]  \n",
++       "2                       [http://www.mahjongminihry.cz/]   [1.0]  \n",
++       "3     [http://parfemy.cenovyradce.cz/armani-acqua-di...   [1.0]  \n",
++       "4     [https://www.wepplergroup.cz/de/weppler-trefil...   [0.5]  \n",
++       "...                                                 ...     ...  \n",
++       "1071          [https://www.huk-autowelt.de/auto_kaufen]   [1.0]  \n",
++       "1072  [https://lodninoviny.cz/Cruising/jak-na-antifo...   [1.0]  \n",
++       "1073       [https://www.nejrychlejsi.cz/s/gardena+32e/]  [0.75]  \n",
++       "1074       [https://www.mapaobchodu.cz/30604/vodafone/]  [0.75]  \n",
++       "1075  [https://www.receptnajidlo.cz/cuketa+zava%C5%9...  [0.75]  \n",
++       "\n",
++       "[1076 rows x 5 columns]"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>queryID</th>\n",
++       "      <th>query</th>\n",
++       "      <th>docID</th>\n",
++       "      <th>source</th>\n",
++       "      <th>label</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>27</td>\n",
++       "      <td>půjčovny střešních boxů</td>\n",
++       "      <td>[271304]</td>\n",
++       "      <td>[https://www.fedorauto.cz/pujcovna-stresnich-b...</td>\n",
++       "      <td>[0.5]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>30</td>\n",
++       "      <td>allcall w1</td>\n",
++       "      <td>[496331]</td>\n",
++       "      <td>[http://www.deviceranking.cz/brand/378/allcall]</td>\n",
++       "      <td>[0.5]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>36</td>\n",
++       "      <td>mahjong</td>\n",
++       "      <td>[305839]</td>\n",
++       "      <td>[http://www.mahjongminihry.cz/]</td>\n",
++       "      <td>[1.0]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>3</th>\n",
++       "      <td>81</td>\n",
++       "      <td>armani acqua di gioia 100 ml</td>\n",
++       "      <td>[458878]</td>\n",
++       "      <td>[http://parfemy.cenovyradce.cz/armani-acqua-di...</td>\n",
++       "      <td>[1.0]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>4</th>\n",
++       "      <td>107</td>\n",
++       "      <td>weppler trefil kontakty</td>\n",
++       "      <td>[107]</td>\n",
++       "      <td>[https://www.wepplergroup.cz/de/weppler-trefil...</td>\n",
++       "      <td>[0.5]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>...</th>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1071</th>\n",
++       "      <td>110794</td>\n",
++       "      <td>autowelt</td>\n",
++       "      <td>[818700]</td>\n",
++       "      <td>[https://www.huk-autowelt.de/auto_kaufen]</td>\n",
++       "      <td>[1.0]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1072</th>\n",
++       "      <td>110800</td>\n",
++       "      <td>antifouling</td>\n",
++       "      <td>[819068]</td>\n",
++       "      <td>[https://lodninoviny.cz/Cruising/jak-na-antifo...</td>\n",
++       "      <td>[1.0]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1073</th>\n",
++       "      <td>111227</td>\n",
++       "      <td>sekačka na trávu na elektriku</td>\n",
++       "      <td>[821399]</td>\n",
++       "      <td>[https://www.nejrychlejsi.cz/s/gardena+32e/]</td>\n",
++       "      <td>[0.75]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1074</th>\n",
++       "      <td>111308</td>\n",
++       "      <td>pobočky vodafone brno</td>\n",
++       "      <td>[821934]</td>\n",
++       "      <td>[https://www.mapaobchodu.cz/30604/vodafone/]</td>\n",
++       "      <td>[0.75]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1075</th>\n",
++       "      <td>111513</td>\n",
++       "      <td>cuketa zavarit</td>\n",
++       "      <td>[823301]</td>\n",
++       "      <td>[https://www.receptnajidlo.cz/cuketa+zava%C5%9...</td>\n",
++       "      <td>[0.75]</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "<p>1076 rows × 5 columns</p>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 4,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 4
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:32:49.391975Z",
++     "start_time": "2025-11-25T15:32:49.375483Z"
++    }
++   },
++   "cell_type": "code",
++   "source": [
++    "df[\"num_docs\"] = df[\"docID\"].apply(len)\n",
++    "\n",
++    "# --- Create the summary table ---\n",
++    "table = (\n",
++    "    df[\"num_docs\"]\n",
++    "    .value_counts()\n",
++    "    .sort_index()\n",
++    "    .reset_index()\n",
++    ")\n",
++    "\n",
++    "table.columns = [\"num_docs\", \"count_queries\"]\n",
++    "\n",
++    "# --- Add percentage of dataset ---\n",
++    "total_queries = len(df)\n",
++    "table[\"percentage\"] = (table[\"count_queries\"] / total_queries) * 100\n",
++    "\n",
++    "# --- Format percentage nicely (optional) ---\n",
++    "table[\"percentage\"] = table[\"percentage\"].round(2)\n",
++    "\n",
++    "table"
++   ],
++   "id": "d216339fabc6c115",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "   num_docs  count_queries  percentage\n",
++       "0         1           1052       97.77\n",
++       "1         2             22        2.04\n",
++       "2         3              2        0.19"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>num_docs</th>\n",
++       "      <th>count_queries</th>\n",
++       "      <th>percentage</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>1</td>\n",
++       "      <td>1052</td>\n",
++       "      <td>97.77</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>2</td>\n",
++       "      <td>22</td>\n",
++       "      <td>2.04</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>3</td>\n",
++       "      <td>2</td>\n",
++       "      <td>0.19</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 5,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 5
++  },
++  {
++   "metadata": {},
++   "cell_type": "code",
++   "outputs": [],
++   "execution_count": null,
++   "source": "",
++   "id": "492fe5ec4afd86d"
++  }
++ ],
++ "metadata": {
++  "kernelspec": {
++   "display_name": "Python 3",
++   "language": "python",
++   "name": "python3"
++  },
++  "language_info": {
++   "codemirror_mode": {
++    "name": "ipython",
++    "version": 2
++   },
++   "file_extension": ".py",
++   "mimetype": "text/x-python",
++   "name": "python",
++   "nbconvert_exporter": "python",
++   "pygments_lexer": "ipython2",
++   "version": "2.7.6"
++  }
++ },
++ "nbformat": 4,
++ "nbformat_minor": 5
++}
+Index: dareczech/eda.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n \"cells\": [\n  {\n   \"cell_type\": \"code\",\n   \"id\": \"initial_id\",\n   \"metadata\": {\n    \"collapsed\": true,\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:01.623408Z\",\n     \"start_time\": \"2025-10-30T15:48:01.619112Z\"\n    }\n   },\n   \"source\": [\n    \"import numpy as np\\n\",\n    \"import pandas as pd\"\n   ],\n   \"outputs\": [],\n   \"execution_count\": 54\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:05.452176Z\",\n     \"start_time\": \"2025-10-30T15:48:01.995650Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"df_train = pd.read_csv(\\\"dev.tsv\\\", sep='\\\\t')\\n\",\n    \"df_test = pd.read_csv(\\\"test.tsv\\\", sep='\\\\t')\"\n   ],\n   \"id\": \"e78211bd8ffd1ac0\",\n   \"outputs\": [],\n   \"execution_count\": 55\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:06.683120Z\",\n     \"start_time\": \"2025-10-30T15:48:06.645879Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"df = pd.concat([df_train, df_test])\\n\",\n    \"df\"\n   ],\n   \"id\": \"3ca6c12ab92e3f3e\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"               id                                           query  \\\\\\n\",\n       \"0           dev_0  je zpoplatněny výpis z lékařské karty pacientů   \\n\",\n       \"1           dev_1                   mechanický předfiltr fws ms31   \\n\",\n       \"2           dev_2          alpentrio tirol grand prix der gefuhle   \\n\",\n       \"3           dev_3          alpentrio tirol grand prix der gefuhle   \\n\",\n       \"4           dev_4                       pojištěštění vozidla vzor   \\n\",\n       \"...           ...                                             ...   \\n\",\n       \"64461  test_64461                     5 léty psychologický výcvik   \\n\",\n       \"64462  test_64462                     5 léty psychologický výcvik   \\n\",\n       \"64463  test_64463                     2 x lomený balkonový profil   \\n\",\n       \"64464  test_64464                     2 x lomený balkonový profil   \\n\",\n       \"64465  test_64465                     2 x lomený balkonový profil   \\n\",\n       \"\\n\",\n       \"                                                     url  \\\\\\n\",\n       \"0      https://adoc.tips/jan-rektoik-a-milan-motl-oce...   \\n\",\n       \"1      https://adoc.tips/vznice-s-ostrahou-pro-vykon-...   \\n\",\n       \"2                   http://heimatklange.nl/playlist.html   \\n\",\n       \"3           https://de.wikipedia.org/wiki/Judith_und_Mel   \\n\",\n       \"4      http://www.buj.cz/Informacni-a-inzertni-server...   \\n\",\n       \"...                                                  ...   \\n\",\n       \"64461                https://www.vlastnicesta.cz/metody/   \\n\",\n       \"64462  https://zpravy.aktualne.cz/zahranici/kopilot-p...   \\n\",\n       \"64463  https://www.kutil.cz/zelezarstvi/zamky-a-kovan...   \\n\",\n       \"64464    https://plotycz.cz/content/21-sklenene-zabradli   \\n\",\n       \"64465  http://www.step-ex.cz/nabidka/ocelove-schody/s...   \\n\",\n       \"\\n\",\n       \"                                                     doc  \\\\\\n\",\n       \"0      title:  url: adoc.tips/jan rektoik a milan mot...   \\n\",\n       \"1      title: věznice s ostrahou pro výkon trestu rap...   \\n\",\n       \"2      title: playlist url: heimatklange.nl/playlist....   \\n\",\n       \"3      title: judith und mel url: de.wikipedia.org/wi...   \\n\",\n       \"4      title: všeobecné informace url: buj.cz/Informa...   \\n\",\n       \"...                                                  ...   \\n\",\n       \"64461  title: výpis metod a norem url: vlastnicesta.c...   \\n\",\n       \"64462  title: kopilot před lety přerušil výcvik důvod...   \\n\",\n       \"64463  title: úchyt zrcadla 2 x lomený url: kutil.cz/...   \\n\",\n       \"64464  title: skleněné zábradlí url: plotycz.cz/conte...   \\n\",\n       \"64465  title: ocelové schody schodiště zábradlí rošto...   \\n\",\n       \"\\n\",\n       \"                                                   title  label  \\n\",\n       \"0                                                    NaN    0.0  \\n\",\n       \"1      věznice s ostrahou pro výkon trestu rapotice p...    0.0  \\n\",\n       \"2                                               playlist    0.0  \\n\",\n       \"3                               judith und mel wikipedia    0.0  \\n\",\n       \"4                                    všeobecné informace    0.0  \\n\",\n       \"...                                                  ...    ...  \\n\",\n       \"64461                  výpis metod a norem vlastní cesta    0.0  \\n\",\n       \"64462  kopilot před lety přerušil výcvik důvod luftha...    0.0  \\n\",\n       \"64463                  úchyt zrcadla 2 x lomený kutil cz    0.0  \\n\",\n       \"64464                       skleněné zábradlí plotycz cz    0.0  \\n\",\n       \"64465  step ex ocelové schody schodiště zábradlí rošt...    0.0  \\n\",\n       \"\\n\",\n       \"[105686 rows x 6 columns]\"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>id</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>url</th>\\n\",\n       \"      <th>doc</th>\\n\",\n       \"      <th>title</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>dev_0</td>\\n\",\n       \"      <td>je zpoplatněny výpis z lékařské karty pacientů</td>\\n\",\n       \"      <td>https://adoc.tips/jan-rektoik-a-milan-motl-oce...</td>\\n\",\n       \"      <td>title:  url: adoc.tips/jan rektoik a milan mot...</td>\\n\",\n       \"      <td>NaN</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>dev_1</td>\\n\",\n       \"      <td>mechanický předfiltr fws ms31</td>\\n\",\n       \"      <td>https://adoc.tips/vznice-s-ostrahou-pro-vykon-...</td>\\n\",\n       \"      <td>title: věznice s ostrahou pro výkon trestu rap...</td>\\n\",\n       \"      <td>věznice s ostrahou pro výkon trestu rapotice p...</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>dev_2</td>\\n\",\n       \"      <td>alpentrio tirol grand prix der gefuhle</td>\\n\",\n       \"      <td>http://heimatklange.nl/playlist.html</td>\\n\",\n       \"      <td>title: playlist url: heimatklange.nl/playlist....</td>\\n\",\n       \"      <td>playlist</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>dev_3</td>\\n\",\n       \"      <td>alpentrio tirol grand prix der gefuhle</td>\\n\",\n       \"      <td>https://de.wikipedia.org/wiki/Judith_und_Mel</td>\\n\",\n       \"      <td>title: judith und mel url: de.wikipedia.org/wi...</td>\\n\",\n       \"      <td>judith und mel wikipedia</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>dev_4</td>\\n\",\n       \"      <td>pojištěštění vozidla vzor</td>\\n\",\n       \"      <td>http://www.buj.cz/Informacni-a-inzertni-server...</td>\\n\",\n       \"      <td>title: všeobecné informace url: buj.cz/Informa...</td>\\n\",\n       \"      <td>všeobecné informace</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>...</th>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64461</th>\\n\",\n       \"      <td>test_64461</td>\\n\",\n       \"      <td>5 léty psychologický výcvik</td>\\n\",\n       \"      <td>https://www.vlastnicesta.cz/metody/</td>\\n\",\n       \"      <td>title: výpis metod a norem url: vlastnicesta.c...</td>\\n\",\n       \"      <td>výpis metod a norem vlastní cesta</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64462</th>\\n\",\n       \"      <td>test_64462</td>\\n\",\n       \"      <td>5 léty psychologický výcvik</td>\\n\",\n       \"      <td>https://zpravy.aktualne.cz/zahranici/kopilot-p...</td>\\n\",\n       \"      <td>title: kopilot před lety přerušil výcvik důvod...</td>\\n\",\n       \"      <td>kopilot před lety přerušil výcvik důvod luftha...</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64463</th>\\n\",\n       \"      <td>test_64463</td>\\n\",\n       \"      <td>2 x lomený balkonový profil</td>\\n\",\n       \"      <td>https://www.kutil.cz/zelezarstvi/zamky-a-kovan...</td>\\n\",\n       \"      <td>title: úchyt zrcadla 2 x lomený url: kutil.cz/...</td>\\n\",\n       \"      <td>úchyt zrcadla 2 x lomený kutil cz</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64464</th>\\n\",\n       \"      <td>test_64464</td>\\n\",\n       \"      <td>2 x lomený balkonový profil</td>\\n\",\n       \"      <td>https://plotycz.cz/content/21-sklenene-zabradli</td>\\n\",\n       \"      <td>title: skleněné zábradlí url: plotycz.cz/conte...</td>\\n\",\n       \"      <td>skleněné zábradlí plotycz cz</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64465</th>\\n\",\n       \"      <td>test_64465</td>\\n\",\n       \"      <td>2 x lomený balkonový profil</td>\\n\",\n       \"      <td>http://www.step-ex.cz/nabidka/ocelove-schody/s...</td>\\n\",\n       \"      <td>title: ocelové schody schodiště zábradlí rošto...</td>\\n\",\n       \"      <td>step ex ocelové schody schodiště zábradlí rošt...</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"<p>105686 rows × 6 columns</p>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 56,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 56\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:09.035244Z\",\n     \"start_time\": \"2025-10-30T15:48:09.030369Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df.columns\",\n   \"id\": \"37007413a8368346\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"Index(['id', 'query', 'url', 'doc', 'title', 'label'], dtype='object')\"\n      ]\n     },\n     \"execution_count\": 57,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 57\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"markdown\",\n   \"source\": \"# Docs\",\n   \"id\": \"64fbc35c7d9eed3b\"\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:11.714972Z\",\n     \"start_time\": \"2025-10-30T15:48:10.814078Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"# get unique docs and assign docID\\n\",\n    \"doc_map = {doc: i for i, doc in enumerate(df['doc'].unique())}\\n\",\n    \"\\n\",\n    \"# add numeric docID column to df\\n\",\n    \"df['docID'] = df['doc'].map(doc_map)\\n\"\n   ],\n   \"id\": \"82cf8a0f757561df\",\n   \"outputs\": [],\n   \"execution_count\": 58\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:48:36.140659Z\",\n     \"start_time\": \"2025-10-30T15:48:35.696302Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"ctr = len(df['doc'].unique())\\n\",\n    \"ll = len(df['doc'])\\n\",\n    \"print(ctr, ll)\\n\",\n    \"print(\\\"number of unique docs: {}\\\".format(ctr))\"\n   ],\n   \"id\": \"89ffd4d56a4bb430\",\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"103236 105686\\n\",\n      \"number of unique docs: 103236\\n\"\n     ]\n    }\n   ],\n   \"execution_count\": 61\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:51:01.882204Z\",\n     \"start_time\": \"2025-10-30T15:51:01.541689Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"\",\n   \"id\": \"3a37b2bdc9859f6a\",\n   \"outputs\": [\n    {\n     \"name\": \"stderr\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"IOPub data rate exceeded.\\n\",\n      \"The Jupyter server will temporarily stop sending output\\n\",\n      \"to the client in order to avoid crashing it.\\n\",\n      \"To change this limit, set the config variable\\n\",\n      \"`--ServerApp.iopub_data_rate_limit`.\\n\",\n      \"\\n\",\n      \"Current values:\\n\",\n      \"ServerApp.iopub_data_rate_limit=1000000.0 (bytes/sec)\\n\",\n      \"ServerApp.rate_limit_window=3.0 (secs)\\n\",\n      \"\\n\"\n     ]\n    }\n   ],\n   \"execution_count\": 65\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:14:58.195576Z\",\n     \"start_time\": \"2025-10-30T15:14:30.312500Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"# Use existing docID instead of reset_index\\n\",\n    \"docs_df = (\\n\",\n    \"    df[['docID', 'doc', 'url']]\\n\",\n    \"    .rename(columns={\\\"url\\\": \\\"source\\\", \\\"doc\\\": \\\"text\\\"})\\n\",\n    \")\\n\",\n    \"\\n\",\n    \"# reorder columns explicitly\\n\",\n    \"docs_df = docs_df[['docID', 'source', 'text']]\\n\",\n    \"\\n\",\n    \"docs_df.to_json(\\\"docs.jsonl\\\", orient=\\\"records\\\", lines=True, force_ascii=False)\"\n   ],\n   \"id\": \"961316ccd8552414\",\n   \"outputs\": [],\n   \"execution_count\": 8\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"code\",\n   \"outputs\": [],\n   \"execution_count\": null,\n   \"source\": \"docs_df\",\n   \"id\": \"e3652c35e8ed2e39\"\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:00.193854Z\",\n     \"start_time\": \"2025-10-30T15:15:00.116825Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"print(len(df['query'].unique()))\\n\",\n    \"print(f\\\"examples:\\\")\\n\",\n    \"df['query'].unique()[:5]\"\n   ],\n   \"id\": \"2bf1a89ae48b7c59\",\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"3112\\n\",\n      \"examples:\\n\"\n     ]\n    },\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"array(['je zpoplatněny výpis z lékařské karty pacientů',\\n\",\n       \"       'mechanický předfiltr fws ms31',\\n\",\n       \"       'alpentrio tirol grand prix der gefuhle',\\n\",\n       \"       'pojištěštění vozidla vzor', 'rossbach bahn lyžování'],\\n\",\n       \"      dtype=object)\"\n      ]\n     },\n     \"execution_count\": 9,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 9\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"markdown\",\n   \"source\": \"# Queries\",\n   \"id\": \"db898085b439f604\"\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:00.271162Z\",\n     \"start_time\": \"2025-10-30T15:15:00.232332Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"# Create unique numeric ID per query\\n\",\n    \"query_map = {q: i for i, q in enumerate(df['query'].unique())}\\n\",\n    \"\\n\",\n    \"# query ID to combine relevant docs for query, later made new as sometimes query does not have relevant docs and I wanted to exclude that and still have nice index which does not skip numbers\\n\",\n    \"df['oldQueryID'] = df['query'].map(query_map)\"\n   ],\n   \"id\": \"28e5de3f55e70784\",\n   \"outputs\": [],\n   \"execution_count\": 10\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:00.321911Z\",\n     \"start_time\": \"2025-10-30T15:15:00.293317Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"print(df['label'].shape)\\n\",\n    \"df['label'].value_counts()\\n\"\n   ],\n   \"id\": \"25f7823cdc55913e\",\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"(105686,)\\n\"\n     ]\n    },\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"label\\n\",\n       \"0.00    40319\\n\",\n       \"1.00    27121\\n\",\n       \"0.75    17912\\n\",\n       \"0.50    12497\\n\",\n       \"0.25     7837\\n\",\n       \"Name: count, dtype: int64\"\n      ]\n     },\n     \"execution_count\": 11,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 11\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:00.709611Z\",\n     \"start_time\": \"2025-10-30T15:15:00.367883Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"# Count relevant documents per query\\n\",\n    \"relevant_per_query = df[df[\\\"label\\\"] != 0].groupby(\\\"query\\\").size()\\n\",\n    \"\\n\",\n    \"relevant_per_query.sort_values(ascending=False)\"\n   ],\n   \"id\": \"9f75f8520d7f190b\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"query\\n\",\n       \"pracovní oděvy                        137\\n\",\n       \"letáky                                131\\n\",\n       \"koupelny                              130\\n\",\n       \"krav maga                             120\\n\",\n       \"cholesterol                           113\\n\",\n       \"                                     ... \\n\",\n       \"Jak se zbavit minulého vztahu?          1\\n\",\n       \"COVID - vypovězení nájemní smlouvy      1\\n\",\n       \"Británie podvod s ockovanim             1\\n\",\n       \"Bolest v okolí lokte i v noci           1\\n\",\n       \"Auto ktere ma vyhrat dakar              1\\n\",\n       \"Length: 2741, dtype: int64\"\n      ]\n     },\n     \"execution_count\": 12,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 12\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:00.998343Z\",\n     \"start_time\": \"2025-10-30T15:15:00.969120Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df[['id','oldQueryID','query', 'label', 'doc']].head()\",\n   \"id\": \"336cc5d5f521f3c1\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"      id  oldQueryID                                           query  label  \\\\\\n\",\n       \"0  dev_0           0  je zpoplatněny výpis z lékařské karty pacientů    0.0   \\n\",\n       \"1  dev_1           1                   mechanický předfiltr fws ms31    0.0   \\n\",\n       \"2  dev_2           2          alpentrio tirol grand prix der gefuhle    0.0   \\n\",\n       \"3  dev_3           2          alpentrio tirol grand prix der gefuhle    0.0   \\n\",\n       \"4  dev_4           3                       pojištěštění vozidla vzor    0.0   \\n\",\n       \"\\n\",\n       \"                                                 doc  \\n\",\n       \"0  title:  url: adoc.tips/jan rektoik a milan mot...  \\n\",\n       \"1  title: věznice s ostrahou pro výkon trestu rap...  \\n\",\n       \"2  title: playlist url: heimatklange.nl/playlist....  \\n\",\n       \"3  title: judith und mel url: de.wikipedia.org/wi...  \\n\",\n       \"4  title: všeobecné informace url: buj.cz/Informa...  \"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>id</th>\\n\",\n       \"      <th>oldQueryID</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"      <th>doc</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>dev_0</td>\\n\",\n       \"      <td>0</td>\\n\",\n       \"      <td>je zpoplatněny výpis z lékařské karty pacientů</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"      <td>title:  url: adoc.tips/jan rektoik a milan mot...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>dev_1</td>\\n\",\n       \"      <td>1</td>\\n\",\n       \"      <td>mechanický předfiltr fws ms31</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"      <td>title: věznice s ostrahou pro výkon trestu rap...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>dev_2</td>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>alpentrio tirol grand prix der gefuhle</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"      <td>title: playlist url: heimatklange.nl/playlist....</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>dev_3</td>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>alpentrio tirol grand prix der gefuhle</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"      <td>title: judith und mel url: de.wikipedia.org/wi...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>dev_4</td>\\n\",\n       \"      <td>3</td>\\n\",\n       \"      <td>pojištěštění vozidla vzor</td>\\n\",\n       \"      <td>0.0</td>\\n\",\n       \"      <td>title: všeobecné informace url: buj.cz/Informa...</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 13,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 13\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:04.751896Z\",\n     \"start_time\": \"2025-10-30T15:15:01.440145Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"def filter_relevant(group):\\n\",\n    \"    # keep only entries with label > 0\\n\",\n    \"    mask = group[\\\"label\\\"] != 0\\n\",\n    \"\\n\",\n    \"    return pd.Series({\\n\",\n    \"        \\\"source\\\": list(group.loc[mask, \\\"url\\\"]),     # file names / URLs\\n\",\n    \"        \\\"docID\\\": list(group.loc[mask, \\\"docID\\\"]),    # numeric doc IDs\\n\",\n    \"        \\\"label\\\": list(group.loc[mask, \\\"label\\\"]),    # weights\\n\",\n    \"    })\\n\",\n    \"\\n\",\n    \"df_queries_grouped = (\\n\",\n    \"    df.groupby([\\\"oldQueryID\\\", \\\"query\\\"])\\n\",\n    \"      .apply(filter_relevant)\\n\",\n    \"      .reset_index()\\n\",\n    \")\"\n   ],\n   \"id\": \"c63a5bdda1f8f5c7\",\n   \"outputs\": [\n    {\n     \"name\": \"stderr\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"/tmp/ipykernel_198273/1991876365.py:13: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.\\n\",\n      \"  .apply(filter_relevant)\\n\"\n     ]\n    }\n   ],\n   \"execution_count\": 14\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:04.919324Z\",\n     \"start_time\": \"2025-10-30T15:15:04.909822Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped\",\n   \"id\": \"c523ef7207c303a1\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"      oldQueryID                                           query  \\\\\\n\",\n       \"0              0  je zpoplatněny výpis z lékařské karty pacientů   \\n\",\n       \"1              1                   mechanický předfiltr fws ms31   \\n\",\n       \"2              2          alpentrio tirol grand prix der gefuhle   \\n\",\n       \"3              3                       pojištěštění vozidla vzor   \\n\",\n       \"4              4                          rossbach bahn lyžování   \\n\",\n       \"...          ...                                             ...   \\n\",\n       \"3107        3107                                       aduv kemp   \\n\",\n       \"3108        3108                                   abraham josef   \\n\",\n       \"3109        3109             5l soudek bernard kde se dá naplnit   \\n\",\n       \"3110        3110                     5 léty psychologický výcvik   \\n\",\n       \"3111        3111                     2 x lomený balkonový profil   \\n\",\n       \"\\n\",\n       \"                                                 source  \\\\\\n\",\n       \"0                                                    []   \\n\",\n       \"1                                                    []   \\n\",\n       \"2                                                    []   \\n\",\n       \"3                                                    []   \\n\",\n       \"4                                                    []   \\n\",\n       \"...                                                 ...   \\n\",\n       \"3107                                                 []   \\n\",\n       \"3108  [https://sdhmladonovice.webnode.cz/products/pr...   \\n\",\n       \"3109                                                 []   \\n\",\n       \"3110                                                 []   \\n\",\n       \"3111                                                 []   \\n\",\n       \"\\n\",\n       \"                                                  docID  \\\\\\n\",\n       \"0                                                    []   \\n\",\n       \"1                                                    []   \\n\",\n       \"2                                                    []   \\n\",\n       \"3                                                    []   \\n\",\n       \"4                                                    []   \\n\",\n       \"...                                                 ...   \\n\",\n       \"3107                                                 []   \\n\",\n       \"3108  [103189, 103192, 103193, 103194, 103196, 10319...   \\n\",\n       \"3109                                                 []   \\n\",\n       \"3110                                                 []   \\n\",\n       \"3111                                                 []   \\n\",\n       \"\\n\",\n       \"                                                  label  \\n\",\n       \"0                                                    []  \\n\",\n       \"1                                                    []  \\n\",\n       \"2                                                    []  \\n\",\n       \"3                                                    []  \\n\",\n       \"4                                                    []  \\n\",\n       \"...                                                 ...  \\n\",\n       \"3107                                                 []  \\n\",\n       \"3108  [0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...  \\n\",\n       \"3109                                                 []  \\n\",\n       \"3110                                                 []  \\n\",\n       \"3111                                                 []  \\n\",\n       \"\\n\",\n       \"[3112 rows x 5 columns]\"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>oldQueryID</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>0</td>\\n\",\n       \"      <td>je zpoplatněny výpis z lékařské karty pacientů</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>1</td>\\n\",\n       \"      <td>mechanický předfiltr fws ms31</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>alpentrio tirol grand prix der gefuhle</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>3</td>\\n\",\n       \"      <td>pojištěštění vozidla vzor</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>4</td>\\n\",\n       \"      <td>rossbach bahn lyžování</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>...</th>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3107</th>\\n\",\n       \"      <td>3107</td>\\n\",\n       \"      <td>aduv kemp</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3108</th>\\n\",\n       \"      <td>3108</td>\\n\",\n       \"      <td>abraham josef</td>\\n\",\n       \"      <td>[https://sdhmladonovice.webnode.cz/products/pr...</td>\\n\",\n       \"      <td>[103189, 103192, 103193, 103194, 103196, 10319...</td>\\n\",\n       \"      <td>[0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3109</th>\\n\",\n       \"      <td>3109</td>\\n\",\n       \"      <td>5l soudek bernard kde se dá naplnit</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3110</th>\\n\",\n       \"      <td>3110</td>\\n\",\n       \"      <td>5 léty psychologický výcvik</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3111</th>\\n\",\n       \"      <td>3111</td>\\n\",\n       \"      <td>2 x lomený balkonový profil</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"      <td>[]</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"<p>3112 rows × 5 columns</p>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 15,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 15\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:05.039231Z\",\n     \"start_time\": \"2025-10-30T15:15:05.032671Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped = df_queries_grouped[df_queries_grouped[\\\"source\\\"].map(len) > 0]\\n\",\n   \"id\": \"3e799408b6d68f8d\",\n   \"outputs\": [],\n   \"execution_count\": 16\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:05.160094Z\",\n     \"start_time\": \"2025-10-30T15:15:05.153475Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"df_queries_grouped = df_queries_grouped.reset_index(drop=True)\\n\",\n    \"df_queries_grouped['queryID'] = df_queries_grouped.index\\n\"\n   ],\n   \"id\": \"8bfb07993f74e4d9\",\n   \"outputs\": [],\n   \"execution_count\": 17\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:05.274119Z\",\n     \"start_time\": \"2025-10-30T15:15:05.268969Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped = df_queries_grouped[[\\\"queryID\\\", \\\"query\\\", \\\"docID\\\",\\\"source\\\", \\\"label\\\"]]\",\n   \"id\": \"96ee37029005894c\",\n   \"outputs\": [],\n   \"execution_count\": 18\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:05.388568Z\",\n     \"start_time\": \"2025-10-30T15:15:05.376835Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped\",\n   \"id\": \"e4d3c3f54ee6a938\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"      queryID                               query  \\\\\\n\",\n       \"0           0                           224943020   \\n\",\n       \"1           1           stolice u nekojených dětí   \\n\",\n       \"2           2        stěhování veselí nad moravou   \\n\",\n       \"3           3  klíčenka me to you hugs and kisses   \\n\",\n       \"4           4                      bols ballerina   \\n\",\n       \"...       ...                                 ...   \\n\",\n       \"2736     2736   aktuálně nehoda třeboň 22.7. 2020   \\n\",\n       \"2737     2737         aktuální leták albert super   \\n\",\n       \"2738     2738               agávový sirup využití   \\n\",\n       \"2739     2739            afrodita rajecké teplice   \\n\",\n       \"2740     2740                       abraham josef   \\n\",\n       \"\\n\",\n       \"                                                  docID  \\\\\\n\",\n       \"0                                              [14, 19]   \\n\",\n       \"1     [28, 30, 31, 32, 34, 36, 37, 38, 40, 46, 49, 5...   \\n\",\n       \"2     [52, 53, 55, 56, 57, 58, 59, 61, 62, 63, 64, 6...   \\n\",\n       \"3                                                  [78]   \\n\",\n       \"4     [80, 81, 83, 86, 88, 90, 91, 93, 94, 96, 97, 100]   \\n\",\n       \"...                                                 ...   \\n\",\n       \"2736                                           [103150]   \\n\",\n       \"2737  [103154, 103155, 7900, 103156, 103157, 7879, 1...   \\n\",\n       \"2738                   [103164, 103166, 103168, 103169]   \\n\",\n       \"2739  [97067, 97085, 97064, 103178, 97088, 97089, 10...   \\n\",\n       \"2740  [103189, 103192, 103193, 103194, 103196, 10319...   \\n\",\n       \"\\n\",\n       \"                                                 source  \\\\\\n\",\n       \"0     [https://www.idatabaze.cz/firma/165493-pivovar...   \\n\",\n       \"1     [https://www.emimino.cz/encyklopedie/stolice-k...   \\n\",\n       \"2     [https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...   \\n\",\n       \"3     [https://www.drogeria-vmd.com/me-to-you-plysov...   \\n\",\n       \"4     [https://www.etsy.com/listing/503424277/vintag...   \\n\",\n       \"...                                                 ...   \\n\",\n       \"2736        [https://ceskobudejovicky.denik.cz/nehody/]   \\n\",\n       \"2737  [https://www.novy-letak.cz/albert/, https://ww...   \\n\",\n       \"2738  [https://www.allnature.cz/allnature-agavovy-si...   \\n\",\n       \"2739  [https://kupele.rajecke-teplice.net/cs/aquapar...   \\n\",\n       \"2740  [https://sdhmladonovice.webnode.cz/products/pr...   \\n\",\n       \"\\n\",\n       \"                                                  label  \\n\",\n       \"0                                            [1.0, 0.5]  \\n\",\n       \"1     [1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...  \\n\",\n       \"2     [1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...  \\n\",\n       \"3                                                 [0.5]  \\n\",\n       \"4     [0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...  \\n\",\n       \"...                                                 ...  \\n\",\n       \"2736                                             [0.25]  \\n\",\n       \"2737         [1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]  \\n\",\n       \"2738                            [0.75, 0.75, 0.75, 1.0]  \\n\",\n       \"2739  [1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...  \\n\",\n       \"2740  [0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...  \\n\",\n       \"\\n\",\n       \"[2741 rows x 5 columns]\"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>queryID</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>0</td>\\n\",\n       \"      <td>224943020</td>\\n\",\n       \"      <td>[14, 19]</td>\\n\",\n       \"      <td>[https://www.idatabaze.cz/firma/165493-pivovar...</td>\\n\",\n       \"      <td>[1.0, 0.5]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>1</td>\\n\",\n       \"      <td>stolice u nekojených dětí</td>\\n\",\n       \"      <td>[28, 30, 31, 32, 34, 36, 37, 38, 40, 46, 49, 5...</td>\\n\",\n       \"      <td>[https://www.emimino.cz/encyklopedie/stolice-k...</td>\\n\",\n       \"      <td>[1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>stěhování veselí nad moravou</td>\\n\",\n       \"      <td>[52, 53, 55, 56, 57, 58, 59, 61, 62, 63, 64, 6...</td>\\n\",\n       \"      <td>[https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...</td>\\n\",\n       \"      <td>[1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>3</td>\\n\",\n       \"      <td>klíčenka me to you hugs and kisses</td>\\n\",\n       \"      <td>[78]</td>\\n\",\n       \"      <td>[https://www.drogeria-vmd.com/me-to-you-plysov...</td>\\n\",\n       \"      <td>[0.5]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>4</td>\\n\",\n       \"      <td>bols ballerina</td>\\n\",\n       \"      <td>[80, 81, 83, 86, 88, 90, 91, 93, 94, 96, 97, 100]</td>\\n\",\n       \"      <td>[https://www.etsy.com/listing/503424277/vintag...</td>\\n\",\n       \"      <td>[0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>...</th>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2736</th>\\n\",\n       \"      <td>2736</td>\\n\",\n       \"      <td>aktuálně nehoda třeboň 22.7. 2020</td>\\n\",\n       \"      <td>[103150]</td>\\n\",\n       \"      <td>[https://ceskobudejovicky.denik.cz/nehody/]</td>\\n\",\n       \"      <td>[0.25]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2737</th>\\n\",\n       \"      <td>2737</td>\\n\",\n       \"      <td>aktuální leták albert super</td>\\n\",\n       \"      <td>[103154, 103155, 7900, 103156, 103157, 7879, 1...</td>\\n\",\n       \"      <td>[https://www.novy-letak.cz/albert/, https://ww...</td>\\n\",\n       \"      <td>[1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2738</th>\\n\",\n       \"      <td>2738</td>\\n\",\n       \"      <td>agávový sirup využití</td>\\n\",\n       \"      <td>[103164, 103166, 103168, 103169]</td>\\n\",\n       \"      <td>[https://www.allnature.cz/allnature-agavovy-si...</td>\\n\",\n       \"      <td>[0.75, 0.75, 0.75, 1.0]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2739</th>\\n\",\n       \"      <td>2739</td>\\n\",\n       \"      <td>afrodita rajecké teplice</td>\\n\",\n       \"      <td>[97067, 97085, 97064, 103178, 97088, 97089, 10...</td>\\n\",\n       \"      <td>[https://kupele.rajecke-teplice.net/cs/aquapar...</td>\\n\",\n       \"      <td>[1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2740</th>\\n\",\n       \"      <td>2740</td>\\n\",\n       \"      <td>abraham josef</td>\\n\",\n       \"      <td>[103189, 103192, 103193, 103194, 103196, 10319...</td>\\n\",\n       \"      <td>[https://sdhmladonovice.webnode.cz/products/pr...</td>\\n\",\n       \"      <td>[0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"<p>2741 rows × 5 columns</p>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 19,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 19\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:15:05.629373Z\",\n     \"start_time\": \"2025-10-30T15:15:05.512890Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped.to_json(\\\"queries.jsonl\\\", orient=\\\"records\\\", lines=True, force_ascii=False)\",\n   \"id\": \"b3088363a8b4e2d3\",\n   \"outputs\": [],\n   \"execution_count\": 20\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:46:48.871435Z\",\n     \"start_time\": \"2025-10-30T15:46:48.854156Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_queries_grouped\",\n   \"id\": \"c96271552920d6ec\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"      queryID                               query  \\\\\\n\",\n       \"0           0                           224943020   \\n\",\n       \"1           1           stolice u nekojených dětí   \\n\",\n       \"2           2        stěhování veselí nad moravou   \\n\",\n       \"3           3  klíčenka me to you hugs and kisses   \\n\",\n       \"4           4                      bols ballerina   \\n\",\n       \"...       ...                                 ...   \\n\",\n       \"2736     2736   aktuálně nehoda třeboň 22.7. 2020   \\n\",\n       \"2737     2737         aktuální leták albert super   \\n\",\n       \"2738     2738               agávový sirup využití   \\n\",\n       \"2739     2739            afrodita rajecké teplice   \\n\",\n       \"2740     2740                       abraham josef   \\n\",\n       \"\\n\",\n       \"                                                  docID  \\\\\\n\",\n       \"0                                              [14, 19]   \\n\",\n       \"1     [28, 30, 31, 32, 34, 36, 37, 38, 40, 46, 49, 5...   \\n\",\n       \"2     [52, 53, 55, 56, 57, 58, 59, 61, 62, 63, 64, 6...   \\n\",\n       \"3                                                  [78]   \\n\",\n       \"4     [80, 81, 83, 86, 88, 90, 91, 93, 94, 96, 97, 100]   \\n\",\n       \"...                                                 ...   \\n\",\n       \"2736                                           [103150]   \\n\",\n       \"2737  [103154, 103155, 7900, 103156, 103157, 7879, 1...   \\n\",\n       \"2738                   [103164, 103166, 103168, 103169]   \\n\",\n       \"2739  [97067, 97085, 97064, 103178, 97088, 97089, 10...   \\n\",\n       \"2740  [103189, 103192, 103193, 103194, 103196, 10319...   \\n\",\n       \"\\n\",\n       \"                                                 source  \\\\\\n\",\n       \"0     [https://www.idatabaze.cz/firma/165493-pivovar...   \\n\",\n       \"1     [https://www.emimino.cz/encyklopedie/stolice-k...   \\n\",\n       \"2     [https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...   \\n\",\n       \"3     [https://www.drogeria-vmd.com/me-to-you-plysov...   \\n\",\n       \"4     [https://www.etsy.com/listing/503424277/vintag...   \\n\",\n       \"...                                                 ...   \\n\",\n       \"2736        [https://ceskobudejovicky.denik.cz/nehody/]   \\n\",\n       \"2737  [https://www.novy-letak.cz/albert/, https://ww...   \\n\",\n       \"2738  [https://www.allnature.cz/allnature-agavovy-si...   \\n\",\n       \"2739  [https://kupele.rajecke-teplice.net/cs/aquapar...   \\n\",\n       \"2740  [https://sdhmladonovice.webnode.cz/products/pr...   \\n\",\n       \"\\n\",\n       \"                                                  label  \\n\",\n       \"0                                            [1.0, 0.5]  \\n\",\n       \"1     [1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...  \\n\",\n       \"2     [1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...  \\n\",\n       \"3                                                 [0.5]  \\n\",\n       \"4     [0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...  \\n\",\n       \"...                                                 ...  \\n\",\n       \"2736                                             [0.25]  \\n\",\n       \"2737         [1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]  \\n\",\n       \"2738                            [0.75, 0.75, 0.75, 1.0]  \\n\",\n       \"2739  [1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...  \\n\",\n       \"2740  [0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...  \\n\",\n       \"\\n\",\n       \"[2741 rows x 5 columns]\"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>queryID</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>0</td>\\n\",\n       \"      <td>224943020</td>\\n\",\n       \"      <td>[14, 19]</td>\\n\",\n       \"      <td>[https://www.idatabaze.cz/firma/165493-pivovar...</td>\\n\",\n       \"      <td>[1.0, 0.5]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>1</td>\\n\",\n       \"      <td>stolice u nekojených dětí</td>\\n\",\n       \"      <td>[28, 30, 31, 32, 34, 36, 37, 38, 40, 46, 49, 5...</td>\\n\",\n       \"      <td>[https://www.emimino.cz/encyklopedie/stolice-k...</td>\\n\",\n       \"      <td>[1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>stěhování veselí nad moravou</td>\\n\",\n       \"      <td>[52, 53, 55, 56, 57, 58, 59, 61, 62, 63, 64, 6...</td>\\n\",\n       \"      <td>[https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...</td>\\n\",\n       \"      <td>[1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>3</td>\\n\",\n       \"      <td>klíčenka me to you hugs and kisses</td>\\n\",\n       \"      <td>[78]</td>\\n\",\n       \"      <td>[https://www.drogeria-vmd.com/me-to-you-plysov...</td>\\n\",\n       \"      <td>[0.5]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>4</td>\\n\",\n       \"      <td>bols ballerina</td>\\n\",\n       \"      <td>[80, 81, 83, 86, 88, 90, 91, 93, 94, 96, 97, 100]</td>\\n\",\n       \"      <td>[https://www.etsy.com/listing/503424277/vintag...</td>\\n\",\n       \"      <td>[0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>...</th>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2736</th>\\n\",\n       \"      <td>2736</td>\\n\",\n       \"      <td>aktuálně nehoda třeboň 22.7. 2020</td>\\n\",\n       \"      <td>[103150]</td>\\n\",\n       \"      <td>[https://ceskobudejovicky.denik.cz/nehody/]</td>\\n\",\n       \"      <td>[0.25]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2737</th>\\n\",\n       \"      <td>2737</td>\\n\",\n       \"      <td>aktuální leták albert super</td>\\n\",\n       \"      <td>[103154, 103155, 7900, 103156, 103157, 7879, 1...</td>\\n\",\n       \"      <td>[https://www.novy-letak.cz/albert/, https://ww...</td>\\n\",\n       \"      <td>[1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2738</th>\\n\",\n       \"      <td>2738</td>\\n\",\n       \"      <td>agávový sirup využití</td>\\n\",\n       \"      <td>[103164, 103166, 103168, 103169]</td>\\n\",\n       \"      <td>[https://www.allnature.cz/allnature-agavovy-si...</td>\\n\",\n       \"      <td>[0.75, 0.75, 0.75, 1.0]</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2739</th>\\n\",\n       \"      <td>2739</td>\\n\",\n       \"      <td>afrodita rajecké teplice</td>\\n\",\n       \"      <td>[97067, 97085, 97064, 103178, 97088, 97089, 10...</td>\\n\",\n       \"      <td>[https://kupele.rajecke-teplice.net/cs/aquapar...</td>\\n\",\n       \"      <td>[1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2740</th>\\n\",\n       \"      <td>2740</td>\\n\",\n       \"      <td>abraham josef</td>\\n\",\n       \"      <td>[103189, 103192, 103193, 103194, 103196, 10319...</td>\\n\",\n       \"      <td>[https://sdhmladonovice.webnode.cz/products/pr...</td>\\n\",\n       \"      <td>[0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"<p>2741 rows × 5 columns</p>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 51,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 51\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:46:49.812709Z\",\n     \"start_time\": \"2025-10-30T15:46:49.802583Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"docs_df\",\n   \"id\": \"2ad9be95387e25a4\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"        docID                                             source  \\\\\\n\",\n       \"0           0  https://adoc.tips/jan-rektoik-a-milan-motl-oce...   \\n\",\n       \"1           1  https://adoc.tips/vznice-s-ostrahou-pro-vykon-...   \\n\",\n       \"2           2               http://heimatklange.nl/playlist.html   \\n\",\n       \"3           3       https://de.wikipedia.org/wiki/Judith_und_Mel   \\n\",\n       \"4           4  http://www.buj.cz/Informacni-a-inzertni-server...   \\n\",\n       \"...       ...                                                ...   \\n\",\n       \"64461  103231                https://www.vlastnicesta.cz/metody/   \\n\",\n       \"64462  103232  https://zpravy.aktualne.cz/zahranici/kopilot-p...   \\n\",\n       \"64463  103233  https://www.kutil.cz/zelezarstvi/zamky-a-kovan...   \\n\",\n       \"64464  103234    https://plotycz.cz/content/21-sklenene-zabradli   \\n\",\n       \"64465  103235  http://www.step-ex.cz/nabidka/ocelove-schody/s...   \\n\",\n       \"\\n\",\n       \"                                                    text  \\n\",\n       \"0      title:  url: adoc.tips/jan rektoik a milan mot...  \\n\",\n       \"1      title: věznice s ostrahou pro výkon trestu rap...  \\n\",\n       \"2      title: playlist url: heimatklange.nl/playlist....  \\n\",\n       \"3      title: judith und mel url: de.wikipedia.org/wi...  \\n\",\n       \"4      title: všeobecné informace url: buj.cz/Informa...  \\n\",\n       \"...                                                  ...  \\n\",\n       \"64461  title: výpis metod a norem url: vlastnicesta.c...  \\n\",\n       \"64462  title: kopilot před lety přerušil výcvik důvod...  \\n\",\n       \"64463  title: úchyt zrcadla 2 x lomený url: kutil.cz/...  \\n\",\n       \"64464  title: skleněné zábradlí url: plotycz.cz/conte...  \\n\",\n       \"64465  title: ocelové schody schodiště zábradlí rošto...  \\n\",\n       \"\\n\",\n       \"[105686 rows x 3 columns]\"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>text</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>0</th>\\n\",\n       \"      <td>0</td>\\n\",\n       \"      <td>https://adoc.tips/jan-rektoik-a-milan-motl-oce...</td>\\n\",\n       \"      <td>title:  url: adoc.tips/jan rektoik a milan mot...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1</th>\\n\",\n       \"      <td>1</td>\\n\",\n       \"      <td>https://adoc.tips/vznice-s-ostrahou-pro-vykon-...</td>\\n\",\n       \"      <td>title: věznice s ostrahou pro výkon trestu rap...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2</th>\\n\",\n       \"      <td>2</td>\\n\",\n       \"      <td>http://heimatklange.nl/playlist.html</td>\\n\",\n       \"      <td>title: playlist url: heimatklange.nl/playlist....</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>3</th>\\n\",\n       \"      <td>3</td>\\n\",\n       \"      <td>https://de.wikipedia.org/wiki/Judith_und_Mel</td>\\n\",\n       \"      <td>title: judith und mel url: de.wikipedia.org/wi...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4</th>\\n\",\n       \"      <td>4</td>\\n\",\n       \"      <td>http://www.buj.cz/Informacni-a-inzertni-server...</td>\\n\",\n       \"      <td>title: všeobecné informace url: buj.cz/Informa...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>...</th>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"      <td>...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64461</th>\\n\",\n       \"      <td>103231</td>\\n\",\n       \"      <td>https://www.vlastnicesta.cz/metody/</td>\\n\",\n       \"      <td>title: výpis metod a norem url: vlastnicesta.c...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64462</th>\\n\",\n       \"      <td>103232</td>\\n\",\n       \"      <td>https://zpravy.aktualne.cz/zahranici/kopilot-p...</td>\\n\",\n       \"      <td>title: kopilot před lety přerušil výcvik důvod...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64463</th>\\n\",\n       \"      <td>103233</td>\\n\",\n       \"      <td>https://www.kutil.cz/zelezarstvi/zamky-a-kovan...</td>\\n\",\n       \"      <td>title: úchyt zrcadla 2 x lomený url: kutil.cz/...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64464</th>\\n\",\n       \"      <td>103234</td>\\n\",\n       \"      <td>https://plotycz.cz/content/21-sklenene-zabradli</td>\\n\",\n       \"      <td>title: skleněné zábradlí url: plotycz.cz/conte...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>64465</th>\\n\",\n       \"      <td>103235</td>\\n\",\n       \"      <td>http://www.step-ex.cz/nabidka/ocelove-schody/s...</td>\\n\",\n       \"      <td>title: ocelové schody schodiště zábradlí rošto...</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"<p>105686 rows × 3 columns</p>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 52,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 52\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:46:53.251231Z\",\n     \"start_time\": \"2025-10-30T15:46:53.223805Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"before = len(docs_df)\\n\",\n    \"tmo = docs_df.drop_duplicates(subset='docID')\\n\",\n    \"after = len(tmo)\\n\",\n    \"\\n\",\n    \"print(f\\\"Rows before: {before}\\\")\\n\",\n    \"print(f\\\"Rows after:  {after}\\\")\\n\",\n    \"print(f\\\"Dropped:     {before - after}\\\")\\n\"\n   ],\n   \"id\": \"18eceeb8e7c56516\",\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"Rows before: 105686\\n\",\n      \"Rows after:  103236\\n\",\n      \"Dropped:     2450\\n\"\n     ]\n    }\n   ],\n   \"execution_count\": 53\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:37:10.778597Z\",\n     \"start_time\": \"2025-10-30T15:37:10.753100Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"import pandas as pd\\n\",\n    \"import random\\n\",\n    \"\\n\",\n    \"# set seed for reproducibility\\n\",\n    \"seed = 42\\n\",\n    \"random.seed(seed)\\n\",\n    \"np.random.seed(seed)\\n\",\n    \"\\n\",\n    \"# choose 20 random docIDs from docs_df\\n\",\n    \"sampled_docIDs = set(random.sample(list(docs_df['docID']), 50))\\n\",\n    \"\\n\",\n    \"# filter queries to keep only those that have at least one of the sampled docs\\n\",\n    \"sampled_queries_df = df_queries_grouped[\\n\",\n    \"    df_queries_grouped['docID'].apply(lambda x: len(set(x) & sampled_docIDs) > 0)\\n\",\n    \"].copy()\\n\",\n    \"\\n\",\n    \"# also modify the docID column so each query only lists relevant docs from the 20 chosen\\n\",\n    \"sampled_queries_df['docID'] = sampled_queries_df['docID'].apply(lambda x: list(set(x) & sampled_docIDs))\\n\",\n    \"\\n\",\n    \"# get only docs from docs_df\\n\",\n    \"sampled_docs_df = docs_df[docs_df['docID'].isin(sampled_docIDs)].copy()\\n\",\n    \"\\n\",\n    \"print(f\\\"Selected docs: {len(sampled_docs_df)}\\\")\\n\",\n    \"print(f\\\"Selected queries: {len(sampled_queries_df)}\\\")\\n\"\n   ],\n   \"id\": \"16f379dae83ccfb6\",\n   \"outputs\": [\n    {\n     \"name\": \"stdout\",\n     \"output_type\": \"stream\",\n     \"text\": [\n      \"Selected docs: 56\\n\",\n      \"Selected queries: 28\\n\"\n     ]\n    }\n   ],\n   \"execution_count\": 43\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:30:11.577475Z\",\n     \"start_time\": \"2025-10-30T15:30:11.568424Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"sampled_docs_df\",\n   \"id\": \"611bb5af32959917\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"        docID                                             source  \\\\\\n\",\n       \"768       754     https://www.benu.cz/lekarny-hlavni-mesto-praha   \\n\",\n       \"2973     2917  https://www.recepty.eu/veprove-maso/veprova-pa...   \\n\",\n       \"4640     4552   https://www.objevit.cz/pixwords-napoveda-t145666   \\n\",\n       \"4641     4552       https://objevit.cz/pixwords-napoveda-t145666   \\n\",\n       \"5369     5260  https://rejstriky.finance.cz/firma-spolecenstv...   \\n\",\n       \"9316     9135  https://www.srovnejleky.cz/pribalovy-letak-sou...   \\n\",\n       \"10318   10117              http://sklipekbozidar.cz/kureci-maso/   \\n\",\n       \"13650   13361  https://aukce.vwfs.cz/priloha/GeneralniPlnaMoc...   \\n\",\n       \"19538   19120        http://www.praha4.cz/Vitani-obcanku-Prahy-4   \\n\",\n       \"21616   21130  https://www.salonnefertiti.cz/inpage/vysoky-kr...   \\n\",\n       \"27589   26964  https://www.csfd.cz/film/238556-josefina-mutze...   \\n\",\n       \"27700   27073           https://www.army24.cz/boty/boty-tactical   \\n\",\n       \"31498   30724  http://www.sazky-pres-mobil.cz/stitky/aplikace...   \\n\",\n       \"34315   33467  https://www.mimibazar.cz/recept/70053/smes-ze-...   \\n\",\n       \"35246   34369         https://www.megastreet.cz/m/nordblanc/pg-2   \\n\",\n       \"38642   37651  https://www.topmode.cz/kategorie/damska-moda/m...   \\n\",\n       \"41035   39923  https://www.denik.cz/z_domova/osudny-valentyn-...   \\n\",\n       \"87      40187         https://stroje.bazos.sk/inzeraty/skoda-30/   \\n\",\n       \"690     40789  https://nabytek.bazos.cz/inzeraty/zahradni-lav...   \\n\",\n       \"1006    41105  https://www.trebonsky-med.cz/sklenice-med-720-...   \\n\",\n       \"2078    42169                 https://www.smszdarma.cz/sms-prani   \\n\",\n       \"7378    47422  https://www.mesec.cz/aktuality/financni-urady-...   \\n\",\n       \"9029    49055  https://herbahouse.cz/potraviny---bio-vegan-gx...   \\n\",\n       \"10865   50842  https://www.investujeme.cz/subjekt/csob-pojist...   \\n\",\n       \"16826   56721  https://balex.eu/cz/znalostni-baze/aktuality/1...   \\n\",\n       \"21368   61222         https://www.pigy.cz/zabava/pigy-u-rybniku/   \\n\",\n       \"22060   61906                   https://twitter.com/RibraRichard   \\n\",\n       \"23381   63212  https://www.mesec.cz/clanky/formular-osetrovne...   \\n\",\n       \"24376   64187  https://www.hledat.cz/detail-nabidky/708510-pr...   \\n\",\n       \"24604   64411  https://svobodne.estranky.cz/clanky/spolecnost...   \\n\",\n       \"26841   66617  http://www.milujivareni.cz/recepty/47168-vepro...   \\n\",\n       \"27400   67171  https://www.ceskainspirace.cz/13_3544_hradec-k...   \\n\",\n       \"27401   67171  https://www.ceskainspirace.cz/13_3544_hradec-k...   \\n\",\n       \"29777   69515  https://www.optimalista.cz/jak-usit-dvouvrstvo...   \\n\",\n       \"32929   72616  http://old.zlin.eu/upload.cs/b/b7958325_0_matr...   \\n\",\n       \"38847   78394                          https://www.jtbanka.sk/en   \\n\",\n       \"38848   78394                         https://www.jtbanka.sk/en/   \\n\",\n       \"39880   79382  http://www.zenax.cz/jak_zvladnout_maturitni_pr...   \\n\",\n       \"39954   79454        https://hundred-worries.com/cs/advices/2343   \\n\",\n       \"43604   82955                       https://www.ferplast.com/it/   \\n\",\n       \"44098   83443  http://www.satforum.cz/f1news-cz/84309-online-...   \\n\",\n       \"44377   83722  https://euc.cz/nase-zarizeni/kliniky/euc-klini...   \\n\",\n       \"46206   85484  https://www.kulinari.cz/forum/uzeni/domaci-klo...   \\n\",\n       \"46930   86203                         https://www.dettol.com.au/   \\n\",\n       \"47374   86631        https://www.youtube.com/watch?v=EJRaJStZ3v8   \\n\",\n       \"48653   87888  http://policiecr.svet-stranek.cz/cizinecka-pol...   \\n\",\n       \"50621   89838           https://kizi.com/games/goodgame-big-farm   \\n\",\n       \"54266   93361                https://www.mff.cuni.cz/koronavirus   \\n\",\n       \"54701   93770  https://info.eidentita.cz/portal/ProfilVznik.aspx   \\n\",\n       \"55421   94461  https://kutilska.poradna.net/questions/2321306...   \\n\",\n       \"59815   98745    https://brusky.heureka.cz/f:p:1227;3777:341537/   \\n\",\n       \"60785   99699        https://www.dobraadresa.cz/2015/DA12_15.pdf   \\n\",\n       \"60788   99699         http://www.dobraadresa.cz/2015/DA12_15.pdf   \\n\",\n       \"61595  100495                  http://tipmix.cz/mapa-koronaviru/   \\n\",\n       \"\\n\",\n       \"                                                    text  \\n\",\n       \"768    title: hlavní město praha url: benu.cz/lekarny...  \\n\",\n       \"2973   title: vepřová panenka na smetanovo houbové om...  \\n\",\n       \"4640   title: pixwords nápověda správné odpovědi k ob...  \\n\",\n       \"4641   title: pixwords nápověda správné odpovědi k ob...  \\n\",\n       \"5369   title: společenství vlastníků jednotek pro dům...  \\n\",\n       \"9316   title: paralen 500 příbalový leták url: srovne...  \\n\",\n       \"10318  title: kuřecí maso url: sklipekbozidar.cz/kure...  \\n\",\n       \"13650  title: spz url: aukce.vwfs.cz/priloha/Generaln...  \\n\",\n       \"19538  title: vítání občánků prahy 4 url: praha4.cz/V...  \\n\",\n       \"21616  title: vysoký krevní tlak url: salonnefertiti....  \\n\",\n       \"27589  title: josefína mutzenbacher jak to skutečně b...  \\n\",\n       \"27700  title: boty tactical ii se zipem desert url: a...  \\n\",\n       \"31498  title: aplikace android url: sazky pres mobil....  \\n\",\n       \"34315  title: směs ze sojového masa url: mimibazar.cz...  \\n\",\n       \"35246  title: nordblanc url: megastreet.cz/m/nordblan...  \\n\",\n       \"38642  title: mikiny url: topmode.cz/kategorie/damska...  \\n\",\n       \"41035  title: osudný valentýn navigační omyl američan...  \\n\",\n       \"87     title: skoda 30 bazár url: stroje.bazos.sk/inz...  \\n\",\n       \"690    title: zahradni lavicka bazar url: nabytek.baz...  \\n\",\n       \"1006   title: sklenice med 720 ml to 82 paleta skleni...  \\n\",\n       \"2078   title:  url: smszdarma.cz/sms prani  bte: SMS ...  \\n\",\n       \"7378   title: finanční úřady budou promíjet penále fi...  \\n\",\n       \"9029   title: bio káva náhrada kávy kakao karob url: ...  \\n\",\n       \"10865  title: čsob pojišťovna url: investujeme.cz/sub...  \\n\",\n       \"16826  title: výhody a použití trapézového plechu url...  \\n\",\n       \"21368  title: pigy u rybníku pigy cz pohádkové rádio ...  \\n\",\n       \"22060  title: richard brabec ribrarichard url: twitte...  \\n\",\n       \"23381  title: žádost o ošetřovné osvč za duben k vypl...  \\n\",\n       \"24376  title: prodej roušek url: hledat.cz/detail nab...  \\n\",\n       \"24604  title: společnost prezident zeman jako religio...  \\n\",\n       \"26841  title: vepřová kýta pečená v alobalu recept ur...  \\n\",\n       \"27400  title: hradec králové městská památková rezerv...  \\n\",\n       \"27401  title: hradec králové městská památková rezerv...  \\n\",\n       \"29777  title: jak ušít dvouvrstvou a dětskou bavlněno...  \\n\",\n       \"32929  title: matrika úmrtí informace pro příbuzné ur...  \\n\",\n       \"38847  title:  url: jtbanka.sk/en  bte: We are a priv...  \\n\",\n       \"38848  title:  url: jtbanka.sk/en  bte: We are a priv...  \\n\",\n       \"39880  title: jak zvládnout maturitní přípravu z domo...  \\n\",\n       \"39954  title: instalujte myčku nádobí sami url: hundr...  \\n\",\n       \"43604  title: cucce per cani collari e guinzagli url:...  \\n\",\n       \"44098  title: online kvalifikace ze singapuru url: sa...  \\n\",\n       \"44377  title: oddělení url: euc.cz/nase zarizeni/klin...  \\n\",\n       \"46206  title: domácí klobásy url: kulinari.cz/forum/u...  \\n\",\n       \"46930                  title:  url: dettol.com.au  bte:   \\n\",\n       \"47374  title:  url: youtube.com/watch?v=EJRaJStZ3v8  ...  \\n\",\n       \"48653  title: Cizinecká policie kontakty a informace ...  \\n\",\n       \"50621  title: goodgame big farm free online game play...  \\n\",\n       \"54266  title: opatření ohledně koronaviru sars cov 2 ...  \\n\",\n       \"54701  title: vznik vašeho identifikačního profilu po...  \\n\",\n       \"55421  title: zapadlý zámek u dveří url: kutilska.por...  \\n\",\n       \"59815  title: brusky od méně než 10 000 kč pásové url...  \\n\",\n       \"60785  title: da 08 00 url: dobraadresa.cz/2015/DA12 ...  \\n\",\n       \"60788  title: da 08 00 url: dobraadresa.cz/2015/DA12 ...  \\n\",\n       \"61595  title: aktuální mapa koronaviru v čr statistik...  \"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>text</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>768</th>\\n\",\n       \"      <td>754</td>\\n\",\n       \"      <td>https://www.benu.cz/lekarny-hlavni-mesto-praha</td>\\n\",\n       \"      <td>title: hlavní město praha url: benu.cz/lekarny...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2973</th>\\n\",\n       \"      <td>2917</td>\\n\",\n       \"      <td>https://www.recepty.eu/veprove-maso/veprova-pa...</td>\\n\",\n       \"      <td>title: vepřová panenka na smetanovo houbové om...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4640</th>\\n\",\n       \"      <td>4552</td>\\n\",\n       \"      <td>https://www.objevit.cz/pixwords-napoveda-t145666</td>\\n\",\n       \"      <td>title: pixwords nápověda správné odpovědi k ob...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>4641</th>\\n\",\n       \"      <td>4552</td>\\n\",\n       \"      <td>https://objevit.cz/pixwords-napoveda-t145666</td>\\n\",\n       \"      <td>title: pixwords nápověda správné odpovědi k ob...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>5369</th>\\n\",\n       \"      <td>5260</td>\\n\",\n       \"      <td>https://rejstriky.finance.cz/firma-spolecenstv...</td>\\n\",\n       \"      <td>title: společenství vlastníků jednotek pro dům...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>9316</th>\\n\",\n       \"      <td>9135</td>\\n\",\n       \"      <td>https://www.srovnejleky.cz/pribalovy-letak-sou...</td>\\n\",\n       \"      <td>title: paralen 500 příbalový leták url: srovne...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>10318</th>\\n\",\n       \"      <td>10117</td>\\n\",\n       \"      <td>http://sklipekbozidar.cz/kureci-maso/</td>\\n\",\n       \"      <td>title: kuřecí maso url: sklipekbozidar.cz/kure...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>13650</th>\\n\",\n       \"      <td>13361</td>\\n\",\n       \"      <td>https://aukce.vwfs.cz/priloha/GeneralniPlnaMoc...</td>\\n\",\n       \"      <td>title: spz url: aukce.vwfs.cz/priloha/Generaln...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>19538</th>\\n\",\n       \"      <td>19120</td>\\n\",\n       \"      <td>http://www.praha4.cz/Vitani-obcanku-Prahy-4</td>\\n\",\n       \"      <td>title: vítání občánků prahy 4 url: praha4.cz/V...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>21616</th>\\n\",\n       \"      <td>21130</td>\\n\",\n       \"      <td>https://www.salonnefertiti.cz/inpage/vysoky-kr...</td>\\n\",\n       \"      <td>title: vysoký krevní tlak url: salonnefertiti....</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>27589</th>\\n\",\n       \"      <td>26964</td>\\n\",\n       \"      <td>https://www.csfd.cz/film/238556-josefina-mutze...</td>\\n\",\n       \"      <td>title: josefína mutzenbacher jak to skutečně b...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>27700</th>\\n\",\n       \"      <td>27073</td>\\n\",\n       \"      <td>https://www.army24.cz/boty/boty-tactical</td>\\n\",\n       \"      <td>title: boty tactical ii se zipem desert url: a...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>31498</th>\\n\",\n       \"      <td>30724</td>\\n\",\n       \"      <td>http://www.sazky-pres-mobil.cz/stitky/aplikace...</td>\\n\",\n       \"      <td>title: aplikace android url: sazky pres mobil....</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>34315</th>\\n\",\n       \"      <td>33467</td>\\n\",\n       \"      <td>https://www.mimibazar.cz/recept/70053/smes-ze-...</td>\\n\",\n       \"      <td>title: směs ze sojového masa url: mimibazar.cz...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>35246</th>\\n\",\n       \"      <td>34369</td>\\n\",\n       \"      <td>https://www.megastreet.cz/m/nordblanc/pg-2</td>\\n\",\n       \"      <td>title: nordblanc url: megastreet.cz/m/nordblan...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>38642</th>\\n\",\n       \"      <td>37651</td>\\n\",\n       \"      <td>https://www.topmode.cz/kategorie/damska-moda/m...</td>\\n\",\n       \"      <td>title: mikiny url: topmode.cz/kategorie/damska...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>41035</th>\\n\",\n       \"      <td>39923</td>\\n\",\n       \"      <td>https://www.denik.cz/z_domova/osudny-valentyn-...</td>\\n\",\n       \"      <td>title: osudný valentýn navigační omyl američan...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>87</th>\\n\",\n       \"      <td>40187</td>\\n\",\n       \"      <td>https://stroje.bazos.sk/inzeraty/skoda-30/</td>\\n\",\n       \"      <td>title: skoda 30 bazár url: stroje.bazos.sk/inz...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>690</th>\\n\",\n       \"      <td>40789</td>\\n\",\n       \"      <td>https://nabytek.bazos.cz/inzeraty/zahradni-lav...</td>\\n\",\n       \"      <td>title: zahradni lavicka bazar url: nabytek.baz...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1006</th>\\n\",\n       \"      <td>41105</td>\\n\",\n       \"      <td>https://www.trebonsky-med.cz/sklenice-med-720-...</td>\\n\",\n       \"      <td>title: sklenice med 720 ml to 82 paleta skleni...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2078</th>\\n\",\n       \"      <td>42169</td>\\n\",\n       \"      <td>https://www.smszdarma.cz/sms-prani</td>\\n\",\n       \"      <td>title:  url: smszdarma.cz/sms prani  bte: SMS ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>7378</th>\\n\",\n       \"      <td>47422</td>\\n\",\n       \"      <td>https://www.mesec.cz/aktuality/financni-urady-...</td>\\n\",\n       \"      <td>title: finanční úřady budou promíjet penále fi...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>9029</th>\\n\",\n       \"      <td>49055</td>\\n\",\n       \"      <td>https://herbahouse.cz/potraviny---bio-vegan-gx...</td>\\n\",\n       \"      <td>title: bio káva náhrada kávy kakao karob url: ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>10865</th>\\n\",\n       \"      <td>50842</td>\\n\",\n       \"      <td>https://www.investujeme.cz/subjekt/csob-pojist...</td>\\n\",\n       \"      <td>title: čsob pojišťovna url: investujeme.cz/sub...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>16826</th>\\n\",\n       \"      <td>56721</td>\\n\",\n       \"      <td>https://balex.eu/cz/znalostni-baze/aktuality/1...</td>\\n\",\n       \"      <td>title: výhody a použití trapézového plechu url...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>21368</th>\\n\",\n       \"      <td>61222</td>\\n\",\n       \"      <td>https://www.pigy.cz/zabava/pigy-u-rybniku/</td>\\n\",\n       \"      <td>title: pigy u rybníku pigy cz pohádkové rádio ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>22060</th>\\n\",\n       \"      <td>61906</td>\\n\",\n       \"      <td>https://twitter.com/RibraRichard</td>\\n\",\n       \"      <td>title: richard brabec ribrarichard url: twitte...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>23381</th>\\n\",\n       \"      <td>63212</td>\\n\",\n       \"      <td>https://www.mesec.cz/clanky/formular-osetrovne...</td>\\n\",\n       \"      <td>title: žádost o ošetřovné osvč za duben k vypl...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>24376</th>\\n\",\n       \"      <td>64187</td>\\n\",\n       \"      <td>https://www.hledat.cz/detail-nabidky/708510-pr...</td>\\n\",\n       \"      <td>title: prodej roušek url: hledat.cz/detail nab...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>24604</th>\\n\",\n       \"      <td>64411</td>\\n\",\n       \"      <td>https://svobodne.estranky.cz/clanky/spolecnost...</td>\\n\",\n       \"      <td>title: společnost prezident zeman jako religio...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>26841</th>\\n\",\n       \"      <td>66617</td>\\n\",\n       \"      <td>http://www.milujivareni.cz/recepty/47168-vepro...</td>\\n\",\n       \"      <td>title: vepřová kýta pečená v alobalu recept ur...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>27400</th>\\n\",\n       \"      <td>67171</td>\\n\",\n       \"      <td>https://www.ceskainspirace.cz/13_3544_hradec-k...</td>\\n\",\n       \"      <td>title: hradec králové městská památková rezerv...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>27401</th>\\n\",\n       \"      <td>67171</td>\\n\",\n       \"      <td>https://www.ceskainspirace.cz/13_3544_hradec-k...</td>\\n\",\n       \"      <td>title: hradec králové městská památková rezerv...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>29777</th>\\n\",\n       \"      <td>69515</td>\\n\",\n       \"      <td>https://www.optimalista.cz/jak-usit-dvouvrstvo...</td>\\n\",\n       \"      <td>title: jak ušít dvouvrstvou a dětskou bavlněno...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>32929</th>\\n\",\n       \"      <td>72616</td>\\n\",\n       \"      <td>http://old.zlin.eu/upload.cs/b/b7958325_0_matr...</td>\\n\",\n       \"      <td>title: matrika úmrtí informace pro příbuzné ur...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>38847</th>\\n\",\n       \"      <td>78394</td>\\n\",\n       \"      <td>https://www.jtbanka.sk/en</td>\\n\",\n       \"      <td>title:  url: jtbanka.sk/en  bte: We are a priv...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>38848</th>\\n\",\n       \"      <td>78394</td>\\n\",\n       \"      <td>https://www.jtbanka.sk/en/</td>\\n\",\n       \"      <td>title:  url: jtbanka.sk/en  bte: We are a priv...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>39880</th>\\n\",\n       \"      <td>79382</td>\\n\",\n       \"      <td>http://www.zenax.cz/jak_zvladnout_maturitni_pr...</td>\\n\",\n       \"      <td>title: jak zvládnout maturitní přípravu z domo...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>39954</th>\\n\",\n       \"      <td>79454</td>\\n\",\n       \"      <td>https://hundred-worries.com/cs/advices/2343</td>\\n\",\n       \"      <td>title: instalujte myčku nádobí sami url: hundr...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>43604</th>\\n\",\n       \"      <td>82955</td>\\n\",\n       \"      <td>https://www.ferplast.com/it/</td>\\n\",\n       \"      <td>title: cucce per cani collari e guinzagli url:...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>44098</th>\\n\",\n       \"      <td>83443</td>\\n\",\n       \"      <td>http://www.satforum.cz/f1news-cz/84309-online-...</td>\\n\",\n       \"      <td>title: online kvalifikace ze singapuru url: sa...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>44377</th>\\n\",\n       \"      <td>83722</td>\\n\",\n       \"      <td>https://euc.cz/nase-zarizeni/kliniky/euc-klini...</td>\\n\",\n       \"      <td>title: oddělení url: euc.cz/nase zarizeni/klin...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>46206</th>\\n\",\n       \"      <td>85484</td>\\n\",\n       \"      <td>https://www.kulinari.cz/forum/uzeni/domaci-klo...</td>\\n\",\n       \"      <td>title: domácí klobásy url: kulinari.cz/forum/u...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>46930</th>\\n\",\n       \"      <td>86203</td>\\n\",\n       \"      <td>https://www.dettol.com.au/</td>\\n\",\n       \"      <td>title:  url: dettol.com.au  bte:</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>47374</th>\\n\",\n       \"      <td>86631</td>\\n\",\n       \"      <td>https://www.youtube.com/watch?v=EJRaJStZ3v8</td>\\n\",\n       \"      <td>title:  url: youtube.com/watch?v=EJRaJStZ3v8  ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>48653</th>\\n\",\n       \"      <td>87888</td>\\n\",\n       \"      <td>http://policiecr.svet-stranek.cz/cizinecka-pol...</td>\\n\",\n       \"      <td>title: Cizinecká policie kontakty a informace ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>50621</th>\\n\",\n       \"      <td>89838</td>\\n\",\n       \"      <td>https://kizi.com/games/goodgame-big-farm</td>\\n\",\n       \"      <td>title: goodgame big farm free online game play...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>54266</th>\\n\",\n       \"      <td>93361</td>\\n\",\n       \"      <td>https://www.mff.cuni.cz/koronavirus</td>\\n\",\n       \"      <td>title: opatření ohledně koronaviru sars cov 2 ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>54701</th>\\n\",\n       \"      <td>93770</td>\\n\",\n       \"      <td>https://info.eidentita.cz/portal/ProfilVznik.aspx</td>\\n\",\n       \"      <td>title: vznik vašeho identifikačního profilu po...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>55421</th>\\n\",\n       \"      <td>94461</td>\\n\",\n       \"      <td>https://kutilska.poradna.net/questions/2321306...</td>\\n\",\n       \"      <td>title: zapadlý zámek u dveří url: kutilska.por...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>59815</th>\\n\",\n       \"      <td>98745</td>\\n\",\n       \"      <td>https://brusky.heureka.cz/f:p:1227;3777:341537/</td>\\n\",\n       \"      <td>title: brusky od méně než 10 000 kč pásové url...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>60785</th>\\n\",\n       \"      <td>99699</td>\\n\",\n       \"      <td>https://www.dobraadresa.cz/2015/DA12_15.pdf</td>\\n\",\n       \"      <td>title: da 08 00 url: dobraadresa.cz/2015/DA12 ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>60788</th>\\n\",\n       \"      <td>99699</td>\\n\",\n       \"      <td>http://www.dobraadresa.cz/2015/DA12_15.pdf</td>\\n\",\n       \"      <td>title: da 08 00 url: dobraadresa.cz/2015/DA12 ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>61595</th>\\n\",\n       \"      <td>100495</td>\\n\",\n       \"      <td>http://tipmix.cz/mapa-koronaviru/</td>\\n\",\n       \"      <td>title: aktuální mapa koronaviru v čr statistik...</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 31,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 31\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:29:08.174645Z\",\n     \"start_time\": \"2025-10-30T15:29:08.153704Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"sampled_queries_df\",\n   \"id\": \"6aca8c75acd167d6\",\n   \"outputs\": [\n    {\n     \"data\": {\n      \"text/plain\": [\n       \"      queryID                       query    docID  \\\\\\n\",\n       \"753       753        dámské sjezdové lyže  [38952]   \\n\",\n       \"1400     1400                     sputnik  [59278]   \\n\",\n       \"1418     1418                silniční daň  [60474]   \\n\",\n       \"1485     1485            pouzdro honor 9x  [64907]   \\n\",\n       \"1530     1530                orkán sabine  [67648]   \\n\",\n       \"1531     1531        orion domácí potřeby  [67711]   \\n\",\n       \"1554     1554                 obklady jas  [69146]   \\n\",\n       \"1592     1592             moneta internet  [71550]   \\n\",\n       \"1723     1723          jahodárna bratčice  [79579]   \\n\",\n       \"1730     1730        internetbanka moneta  [71550]   \\n\",\n       \"1748     1748     hornbach otevírací doba  [81233]   \\n\",\n       \"1758     1758       gymnázium vysoké mýto  [81841]   \\n\",\n       \"1767     1767                futon centre  [82325]   \\n\",\n       \"1853     1853    co je aplikace messenger  [87723]   \\n\",\n       \"2370     2370        rybí pomazánka lehká  [96770]   \\n\",\n       \"2422     2422        procto glyvenol mast  [97642]   \\n\",\n       \"2653     2653  ge moneta money přihlášení  [71550]   \\n\",\n       \"\\n\",\n       \"                                                 source  \\\\\\n\",\n       \"753   [https://www.levnelyze.cz/sjezdove-lyze/dynast...   \\n\",\n       \"1400  [https://de.wikipedia.org/wiki/Sputnik, https:...   \\n\",\n       \"1418  [https://dumfinanci.cz/clanky/478-silnicni-dan...   \\n\",\n       \"1485  [https://www.isaprio.cz/kategorie-produktu/hua...   \\n\",\n       \"1530  [https://strakonicky.denik.cz/zpravy_region/sa...   \\n\",\n       \"1531  [https://www.akcnislevy.cz/prodejny/orion/, ht...   \\n\",\n       \"1554  [https://www.ekatalog.cz/firma/308989-koupelny...   \\n\",\n       \"1592  [https://wiki.e15.cz/internet-banka-moneta,1.h...   \\n\",\n       \"1723  [http://www.jahodarnabratcice.cz/index.html, h...   \\n\",\n       \"1730  [https://wiki.e15.cz/internet-banka-moneta,1.h...   \\n\",\n       \"1748  [https://m.mapaobchodu.cz/12348/hornbach/otevi...   \\n\",\n       \"1758  [https://www.vypracujse.cz/gymnazium-vysoke-my...   \\n\",\n       \"1767  [https://www.facebook.com/FutonCentre/posts, h...   \\n\",\n       \"1853  [https://mujsoubor.cz/socialni-site/facebook-m...   \\n\",\n       \"2370  [http://makova-panenka.cz/recepty/pomazanky-po...   \\n\",\n       \"2422  [https://www.lekarna.cz/procto-glyvenol/, http...   \\n\",\n       \"2653  [https://kratkodobe-pujcky.eu/moneta-money-ban...   \\n\",\n       \"\\n\",\n       \"                                                  label  \\n\",\n       \"753   [0.5, 1.0, 1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 1.0, ...  \\n\",\n       \"1400  [1.0, 0.75, 1.0, 0.75, 1.0, 0.75, 0.75, 1.0, 1...  \\n\",\n       \"1418  [1.0, 0.25, 1.0, 0.75, 0.25, 0.25, 1.0, 0.25, ...  \\n\",\n       \"1485  [0.25, 0.25, 0.25, 0.75, 1.0, 1.0, 0.25, 0.75,...  \\n\",\n       \"1530  [1.0, 0.75, 0.25, 0.75, 0.75, 0.75, 0.25, 0.75...  \\n\",\n       \"1531  [0.75, 1.0, 0.25, 0.75, 1.0, 0.75, 0.25, 0.25,...  \\n\",\n       \"1554  [0.75, 0.75, 0.25, 0.75, 0.25, 0.75, 0.25, 0.7...  \\n\",\n       \"1592  [1.0, 0.75, 1.0, 0.25, 0.25, 1.0, 0.25, 0.75, ...  \\n\",\n       \"1723  [1.0, 0.25, 1.0, 0.75, 0.75, 1.0, 1.0, 0.25, 1...  \\n\",\n       \"1730  [0.75, 1.0, 0.75, 1.0, 0.75, 0.75, 0.25, 0.25,...  \\n\",\n       \"1748  [0.75, 0.75, 0.75, 0.75, 0.75, 1.0, 0.75, 1.0,...  \\n\",\n       \"1758  [1.0, 0.75, 0.75, 0.25, 1.0, 0.25, 0.75, 0.25,...  \\n\",\n       \"1767  [1.0, 0.75, 1.0, 0.75, 0.75, 0.75, 1.0, 1.0, 0...  \\n\",\n       \"1853  [1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 1.0, 0.75, 0.2...  \\n\",\n       \"2370  [0.75, 1.0, 0.75, 0.75, 1.0, 1.0, 0.75, 1.0, 1...  \\n\",\n       \"2422  [0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0, 1.0...  \\n\",\n       \"2653                                 [0.75, 0.75, 0.75]  \"\n      ],\n      \"text/html\": [\n       \"<div>\\n\",\n       \"<style scoped>\\n\",\n       \"    .dataframe tbody tr th:only-of-type {\\n\",\n       \"        vertical-align: middle;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe tbody tr th {\\n\",\n       \"        vertical-align: top;\\n\",\n       \"    }\\n\",\n       \"\\n\",\n       \"    .dataframe thead th {\\n\",\n       \"        text-align: right;\\n\",\n       \"    }\\n\",\n       \"</style>\\n\",\n       \"<table border=\\\"1\\\" class=\\\"dataframe\\\">\\n\",\n       \"  <thead>\\n\",\n       \"    <tr style=\\\"text-align: right;\\\">\\n\",\n       \"      <th></th>\\n\",\n       \"      <th>queryID</th>\\n\",\n       \"      <th>query</th>\\n\",\n       \"      <th>docID</th>\\n\",\n       \"      <th>source</th>\\n\",\n       \"      <th>label</th>\\n\",\n       \"    </tr>\\n\",\n       \"  </thead>\\n\",\n       \"  <tbody>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>753</th>\\n\",\n       \"      <td>753</td>\\n\",\n       \"      <td>dámské sjezdové lyže</td>\\n\",\n       \"      <td>[38952]</td>\\n\",\n       \"      <td>[https://www.levnelyze.cz/sjezdove-lyze/dynast...</td>\\n\",\n       \"      <td>[0.5, 1.0, 1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 1.0, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1400</th>\\n\",\n       \"      <td>1400</td>\\n\",\n       \"      <td>sputnik</td>\\n\",\n       \"      <td>[59278]</td>\\n\",\n       \"      <td>[https://de.wikipedia.org/wiki/Sputnik, https:...</td>\\n\",\n       \"      <td>[1.0, 0.75, 1.0, 0.75, 1.0, 0.75, 0.75, 1.0, 1...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1418</th>\\n\",\n       \"      <td>1418</td>\\n\",\n       \"      <td>silniční daň</td>\\n\",\n       \"      <td>[60474]</td>\\n\",\n       \"      <td>[https://dumfinanci.cz/clanky/478-silnicni-dan...</td>\\n\",\n       \"      <td>[1.0, 0.25, 1.0, 0.75, 0.25, 0.25, 1.0, 0.25, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1485</th>\\n\",\n       \"      <td>1485</td>\\n\",\n       \"      <td>pouzdro honor 9x</td>\\n\",\n       \"      <td>[64907]</td>\\n\",\n       \"      <td>[https://www.isaprio.cz/kategorie-produktu/hua...</td>\\n\",\n       \"      <td>[0.25, 0.25, 0.25, 0.75, 1.0, 1.0, 0.25, 0.75,...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1530</th>\\n\",\n       \"      <td>1530</td>\\n\",\n       \"      <td>orkán sabine</td>\\n\",\n       \"      <td>[67648]</td>\\n\",\n       \"      <td>[https://strakonicky.denik.cz/zpravy_region/sa...</td>\\n\",\n       \"      <td>[1.0, 0.75, 0.25, 0.75, 0.75, 0.75, 0.25, 0.75...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1531</th>\\n\",\n       \"      <td>1531</td>\\n\",\n       \"      <td>orion domácí potřeby</td>\\n\",\n       \"      <td>[67711]</td>\\n\",\n       \"      <td>[https://www.akcnislevy.cz/prodejny/orion/, ht...</td>\\n\",\n       \"      <td>[0.75, 1.0, 0.25, 0.75, 1.0, 0.75, 0.25, 0.25,...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1554</th>\\n\",\n       \"      <td>1554</td>\\n\",\n       \"      <td>obklady jas</td>\\n\",\n       \"      <td>[69146]</td>\\n\",\n       \"      <td>[https://www.ekatalog.cz/firma/308989-koupelny...</td>\\n\",\n       \"      <td>[0.75, 0.75, 0.25, 0.75, 0.25, 0.75, 0.25, 0.7...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1592</th>\\n\",\n       \"      <td>1592</td>\\n\",\n       \"      <td>moneta internet</td>\\n\",\n       \"      <td>[71550]</td>\\n\",\n       \"      <td>[https://wiki.e15.cz/internet-banka-moneta,1.h...</td>\\n\",\n       \"      <td>[1.0, 0.75, 1.0, 0.25, 0.25, 1.0, 0.25, 0.75, ...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1723</th>\\n\",\n       \"      <td>1723</td>\\n\",\n       \"      <td>jahodárna bratčice</td>\\n\",\n       \"      <td>[79579]</td>\\n\",\n       \"      <td>[http://www.jahodarnabratcice.cz/index.html, h...</td>\\n\",\n       \"      <td>[1.0, 0.25, 1.0, 0.75, 0.75, 1.0, 1.0, 0.25, 1...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1730</th>\\n\",\n       \"      <td>1730</td>\\n\",\n       \"      <td>internetbanka moneta</td>\\n\",\n       \"      <td>[71550]</td>\\n\",\n       \"      <td>[https://wiki.e15.cz/internet-banka-moneta,1.h...</td>\\n\",\n       \"      <td>[0.75, 1.0, 0.75, 1.0, 0.75, 0.75, 0.25, 0.25,...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1748</th>\\n\",\n       \"      <td>1748</td>\\n\",\n       \"      <td>hornbach otevírací doba</td>\\n\",\n       \"      <td>[81233]</td>\\n\",\n       \"      <td>[https://m.mapaobchodu.cz/12348/hornbach/otevi...</td>\\n\",\n       \"      <td>[0.75, 0.75, 0.75, 0.75, 0.75, 1.0, 0.75, 1.0,...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1758</th>\\n\",\n       \"      <td>1758</td>\\n\",\n       \"      <td>gymnázium vysoké mýto</td>\\n\",\n       \"      <td>[81841]</td>\\n\",\n       \"      <td>[https://www.vypracujse.cz/gymnazium-vysoke-my...</td>\\n\",\n       \"      <td>[1.0, 0.75, 0.75, 0.25, 1.0, 0.25, 0.75, 0.25,...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1767</th>\\n\",\n       \"      <td>1767</td>\\n\",\n       \"      <td>futon centre</td>\\n\",\n       \"      <td>[82325]</td>\\n\",\n       \"      <td>[https://www.facebook.com/FutonCentre/posts, h...</td>\\n\",\n       \"      <td>[1.0, 0.75, 1.0, 0.75, 0.75, 0.75, 1.0, 1.0, 0...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>1853</th>\\n\",\n       \"      <td>1853</td>\\n\",\n       \"      <td>co je aplikace messenger</td>\\n\",\n       \"      <td>[87723]</td>\\n\",\n       \"      <td>[https://mujsoubor.cz/socialni-site/facebook-m...</td>\\n\",\n       \"      <td>[1.0, 1.0, 0.75, 1.0, 1.0, 1.0, 1.0, 0.75, 0.2...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2370</th>\\n\",\n       \"      <td>2370</td>\\n\",\n       \"      <td>rybí pomazánka lehká</td>\\n\",\n       \"      <td>[96770]</td>\\n\",\n       \"      <td>[http://makova-panenka.cz/recepty/pomazanky-po...</td>\\n\",\n       \"      <td>[0.75, 1.0, 0.75, 0.75, 1.0, 1.0, 0.75, 1.0, 1...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2422</th>\\n\",\n       \"      <td>2422</td>\\n\",\n       \"      <td>procto glyvenol mast</td>\\n\",\n       \"      <td>[97642]</td>\\n\",\n       \"      <td>[https://www.lekarna.cz/procto-glyvenol/, http...</td>\\n\",\n       \"      <td>[0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 0.75, 1.0, 1.0...</td>\\n\",\n       \"    </tr>\\n\",\n       \"    <tr>\\n\",\n       \"      <th>2653</th>\\n\",\n       \"      <td>2653</td>\\n\",\n       \"      <td>ge moneta money přihlášení</td>\\n\",\n       \"      <td>[71550]</td>\\n\",\n       \"      <td>[https://kratkodobe-pujcky.eu/moneta-money-ban...</td>\\n\",\n       \"      <td>[0.75, 0.75, 0.75]</td>\\n\",\n       \"    </tr>\\n\",\n       \"  </tbody>\\n\",\n       \"</table>\\n\",\n       \"</div>\"\n      ]\n     },\n     \"execution_count\": 29,\n     \"metadata\": {},\n     \"output_type\": \"execute_result\"\n    }\n   ],\n   \"execution_count\": 29\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-10-30T15:53:24.367644Z\",\n     \"start_time\": \"2025-10-30T15:53:24.360094Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": [\n    \"sampled_queries_df.to_json(\\\"small_queries.jsonl\\\", orient=\\\"records\\\", lines=True, force_ascii=False)\\n\",\n    \"sampled_docs_df.to_json(\\\"small_docs.jsonl\\\", orient=\\\"records\\\", lines=True, force_ascii=False)\\n\"\n   ],\n   \"id\": \"875d856d47ff6111\",\n   \"outputs\": [],\n   \"execution_count\": 67\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"code\",\n   \"outputs\": [],\n   \"execution_count\": null,\n   \"source\": \"\",\n   \"id\": \"b48ae5c4347be3f8\"\n  }\n ],\n \"metadata\": {\n  \"kernelspec\": {\n   \"display_name\": \"Python 3\",\n   \"language\": \"python\",\n   \"name\": \"python3\"\n  },\n  \"language_info\": {\n   \"codemirror_mode\": {\n    \"name\": \"ipython\",\n    \"version\": 2\n   },\n   \"file_extension\": \".py\",\n   \"mimetype\": \"text/x-python\",\n   \"name\": \"python\",\n   \"nbconvert_exporter\": \"python\",\n   \"pygments_lexer\": \"ipython2\",\n   \"version\": \"2.7.6\"\n  }\n },\n \"nbformat\": 4,\n \"nbformat_minor\": 5\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dareczech/eda.ipynb b/dareczech/eda.ipynb
+--- a/dareczech/eda.ipynb	(revision 76afb54dbd23b4b218757950fed5432c28cc26df)
++++ b/dareczech/eda.ipynb	(date 1764420707486)
+@@ -6,8 +6,8 @@
+    "metadata": {
+     "collapsed": true,
+     "ExecuteTime": {
+-     "end_time": "2025-10-30T15:48:01.623408Z",
+-     "start_time": "2025-10-30T15:48:01.619112Z"
++     "end_time": "2025-11-29T09:05:44.340401Z",
++     "start_time": "2025-11-29T09:05:42.756539Z"
+     }
+    },
+    "source": [
+@@ -15,23 +15,255 @@
+     "import pandas as pd"
+    ],
+    "outputs": [],
+-   "execution_count": 54
++   "execution_count": 1
+   },
+   {
+    "metadata": {
+     "ExecuteTime": {
+-     "end_time": "2025-10-30T15:48:05.452176Z",
+-     "start_time": "2025-10-30T15:48:01.995650Z"
++     "end_time": "2025-11-29T09:06:29.145052Z",
++     "start_time": "2025-11-29T09:06:25.396024Z"
+     }
+    },
+    "cell_type": "code",
+    "source": [
+-    "df_train = pd.read_csv(\"dev.tsv\", sep='\\t')\n",
+-    "df_test = pd.read_csv(\"test.tsv\", sep='\\t')"
++    "df_train = pd.read_csv(\"data/dev.tsv\", sep='\\t')\n",
++    "df_test = pd.read_csv(\"data/test.tsv\", sep='\\t')"
+    ],
+    "id": "e78211bd8ffd1ac0",
+    "outputs": [],
+-   "execution_count": 55
++   "execution_count": 3
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:06:31.805293Z",
++     "start_time": "2025-11-29T09:06:31.787275Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "df_test",
++   "id": "b4ef0e4655b3a4d",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "               id                                           query  \\\n",
++       "0          test_0  žehlička eta digi viento 7284 90000 napařovací   \n",
++       "1          test_1  žehlička eta digi viento 7284 90000 napařovací   \n",
++       "2          test_2  žehlička eta digi viento 7284 90000 napařovací   \n",
++       "3          test_3  žehlička eta digi viento 7284 90000 napařovací   \n",
++       "4          test_4  žehlička eta digi viento 7284 90000 napařovací   \n",
++       "...           ...                                             ...   \n",
++       "64461  test_64461                     5 léty psychologický výcvik   \n",
++       "64462  test_64462                     5 léty psychologický výcvik   \n",
++       "64463  test_64463                     2 x lomený balkonový profil   \n",
++       "64464  test_64464                     2 x lomený balkonový profil   \n",
++       "64465  test_64465                     2 x lomený balkonový profil   \n",
++       "\n",
++       "                                                     url  \\\n",
++       "0      https://www.elektrochram.cz/eta-7284-zehlicka-...   \n",
++       "1      https://www.jamapo.cz/produkt/zehlicka-eta-dig...   \n",
++       "2            https://www.youtube.com/watch?v=PtKzdhsoDa0   \n",
++       "3      https://www.mall.cz/zehlicky/eta-7284-90000-di...   \n",
++       "4      https://www.nejlepsiceny.cz/tema/zehlicka-eta....   \n",
++       "...                                                  ...   \n",
++       "64461                https://www.vlastnicesta.cz/metody/   \n",
++       "64462  https://zpravy.aktualne.cz/zahranici/kopilot-p...   \n",
++       "64463  https://www.kutil.cz/zelezarstvi/zamky-a-kovan...   \n",
++       "64464    https://plotycz.cz/content/21-sklenene-zabradli   \n",
++       "64465  http://www.step-ex.cz/nabidka/ocelove-schody/s...   \n",
++       "\n",
++       "                                                     doc  \\\n",
++       "0      title: eta 7284 žehlička elektrochram cz elmon...   \n",
++       "1      title: žehlička eta digi viento 7284 90000 url...   \n",
++       "2      title: eta 7284 90000 digi viento url: youtube...   \n",
++       "3      title: eta 7284 90000 digi viento zánovní para...   \n",
++       "4      title: žehlička eta url: nejlepsiceny.cz/tema/...   \n",
++       "...                                                  ...   \n",
++       "64461  title: výpis metod a norem url: vlastnicesta.c...   \n",
++       "64462  title: kopilot před lety přerušil výcvik důvod...   \n",
++       "64463  title: úchyt zrcadla 2 x lomený url: kutil.cz/...   \n",
++       "64464  title: skleněné zábradlí url: plotycz.cz/conte...   \n",
++       "64465  title: ocelové schody schodiště zábradlí rošto...   \n",
++       "\n",
++       "                                                   title  label  \n",
++       "0      eta 7284 žehlička elektrochram cz elmont ch sp...    0.0  \n",
++       "1          žehlička eta digi viento 7284 90000 jamapo cz    1.0  \n",
++       "2                     eta 7284 90000 digi viento youtube    0.0  \n",
++       "3      eta 7284 90000 digi viento zánovní parametry m...    1.0  \n",
++       "4                          žehlička eta nejlepší ceny cz    0.0  \n",
++       "...                                                  ...    ...  \n",
++       "64461                  výpis metod a norem vlastní cesta    0.0  \n",
++       "64462  kopilot před lety přerušil výcvik důvod luftha...    0.0  \n",
++       "64463                  úchyt zrcadla 2 x lomený kutil cz    0.0  \n",
++       "64464                       skleněné zábradlí plotycz cz    0.0  \n",
++       "64465  step ex ocelové schody schodiště zábradlí rošt...    0.0  \n",
++       "\n",
++       "[64466 rows x 6 columns]"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>id</th>\n",
++       "      <th>query</th>\n",
++       "      <th>url</th>\n",
++       "      <th>doc</th>\n",
++       "      <th>title</th>\n",
++       "      <th>label</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>test_0</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 napařovací</td>\n",
++       "      <td>https://www.elektrochram.cz/eta-7284-zehlicka-...</td>\n",
++       "      <td>title: eta 7284 žehlička elektrochram cz elmon...</td>\n",
++       "      <td>eta 7284 žehlička elektrochram cz elmont ch sp...</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>test_1</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 napařovací</td>\n",
++       "      <td>https://www.jamapo.cz/produkt/zehlicka-eta-dig...</td>\n",
++       "      <td>title: žehlička eta digi viento 7284 90000 url...</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 jamapo cz</td>\n",
++       "      <td>1.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>test_2</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 napařovací</td>\n",
++       "      <td>https://www.youtube.com/watch?v=PtKzdhsoDa0</td>\n",
++       "      <td>title: eta 7284 90000 digi viento url: youtube...</td>\n",
++       "      <td>eta 7284 90000 digi viento youtube</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>3</th>\n",
++       "      <td>test_3</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 napařovací</td>\n",
++       "      <td>https://www.mall.cz/zehlicky/eta-7284-90000-di...</td>\n",
++       "      <td>title: eta 7284 90000 digi viento zánovní para...</td>\n",
++       "      <td>eta 7284 90000 digi viento zánovní parametry m...</td>\n",
++       "      <td>1.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>4</th>\n",
++       "      <td>test_4</td>\n",
++       "      <td>žehlička eta digi viento 7284 90000 napařovací</td>\n",
++       "      <td>https://www.nejlepsiceny.cz/tema/zehlicka-eta....</td>\n",
++       "      <td>title: žehlička eta url: nejlepsiceny.cz/tema/...</td>\n",
++       "      <td>žehlička eta nejlepší ceny cz</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>...</th>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>64461</th>\n",
++       "      <td>test_64461</td>\n",
++       "      <td>5 léty psychologický výcvik</td>\n",
++       "      <td>https://www.vlastnicesta.cz/metody/</td>\n",
++       "      <td>title: výpis metod a norem url: vlastnicesta.c...</td>\n",
++       "      <td>výpis metod a norem vlastní cesta</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>64462</th>\n",
++       "      <td>test_64462</td>\n",
++       "      <td>5 léty psychologický výcvik</td>\n",
++       "      <td>https://zpravy.aktualne.cz/zahranici/kopilot-p...</td>\n",
++       "      <td>title: kopilot před lety přerušil výcvik důvod...</td>\n",
++       "      <td>kopilot před lety přerušil výcvik důvod luftha...</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>64463</th>\n",
++       "      <td>test_64463</td>\n",
++       "      <td>2 x lomený balkonový profil</td>\n",
++       "      <td>https://www.kutil.cz/zelezarstvi/zamky-a-kovan...</td>\n",
++       "      <td>title: úchyt zrcadla 2 x lomený url: kutil.cz/...</td>\n",
++       "      <td>úchyt zrcadla 2 x lomený kutil cz</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>64464</th>\n",
++       "      <td>test_64464</td>\n",
++       "      <td>2 x lomený balkonový profil</td>\n",
++       "      <td>https://plotycz.cz/content/21-sklenene-zabradli</td>\n",
++       "      <td>title: skleněné zábradlí url: plotycz.cz/conte...</td>\n",
++       "      <td>skleněné zábradlí plotycz cz</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>64465</th>\n",
++       "      <td>test_64465</td>\n",
++       "      <td>2 x lomený balkonový profil</td>\n",
++       "      <td>http://www.step-ex.cz/nabidka/ocelove-schody/s...</td>\n",
++       "      <td>title: ocelové schody schodiště zábradlí rošto...</td>\n",
++       "      <td>step ex ocelové schody schodiště zábradlí rošt...</td>\n",
++       "      <td>0.0</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "<p>64466 rows × 6 columns</p>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 4,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 4
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:07:12.094923Z",
++     "start_time": "2025-11-29T09:07:12.088136Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "len(df_test['query'].unique())",
++   "id": "11df0b2982498625",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "2323"
++      ]
++     },
++     "execution_count": 6,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 6
+   },
+   {
+    "metadata": {
+Index: dareczech/build_dataset.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import csv\nimport json\nfrom collections import defaultdict\nfrom pathlib import Path\nfrom tqdm import tqdm\n\n# --- INPUT FILES ---\nfiles = [\n    \"data/train_big.tsv\",\n    \"data/train_small.tsv\",\n    \"data/dev.tsv\",\n    \"data/test.tsv\"\n]\n\n# --- OUTPUT FILES ---\nDOCS_OUT = \"data/docs_all.jsonl\"\nQUERIES_OUT = \"data/queries_all.jsonl\"\n\n# Internal mappings\ndoc2id = {}\nquery2id = {}\n\nnext_docID = 0\nnext_queryID = 0\n\n# queryID -> { 'query': str, 'docID':[], 'source':[], 'label':[] }\nquery_data = defaultdict(lambda: {\"query\": None, \"docID\": [], \"source\": [], \"label\": []})\n\ndocs_output = []\n\ndef clean(x):\n    return x.strip() if isinstance(x, str) else \"\"\n\ndef count_lines(filepath):\n    with open(filepath, \"rb\") as f:\n        return sum(1 for _ in f)\n\nfor f in files:\n    if not Path(f).exists():\n        print(f\"⚠\uFE0F File not found: {f}\")\n        continue\n\n    total = count_lines(f) - 1  # skip header\n    print(f\"\uD83D\uDCC2 Processing {f} ({total:,} lines)\")\n\n    with open(f, newline='', encoding='utf-8') as tsvfile:\n        reader = csv.DictReader(tsvfile, delimiter='\\t')\n\n        for row in tqdm(reader, total=total, desc=f\"Reading {f}\", unit=\"rows\"):\n            query = clean(row.get(\"query\"))\n            url = clean(row.get(\"url\"))\n            title = clean(row.get(\"title\"))\n            doc = clean(row.get(\"doc\"))\n            label = float(row.get(\"label\"))\n\n            # skip non-relevant pairs\n            if label <= 0:\n                continue\n\n            # ---- Assign query ID ----\n            if query not in query2id:\n                query2id[query] = next_queryID\n                next_queryID += 1\n            qid = query2id[query]\n\n            # ---- Build full text field for doc ----\n            full_text = f\"title: {title}\\nurl: {url}\\ntext: {doc}\"\n\n            # ---- Assign doc ID ONLY for label>0 docs ----\n            doc_key = url + \"::\" + title\n            if doc_key not in doc2id:\n                doc2id[doc_key] = next_docID\n                docs_output.append({\n                    \"docID\": next_docID,\n                    \"source\": url,\n                    \"text\": full_text\n                })\n                next_docID += 1\n\n            did = doc2id[doc_key]\n\n            # ---- Store query info ----\n            query_data[qid][\"query\"] = query\n            query_data[qid][\"docID\"].append(did)\n            query_data[qid][\"source\"].append(url)\n            query_data[qid][\"label\"].append(label)\n\nprint(\"\uD83D\uDCBE Writing output files...\")\n\n# --- WRITE DOCS ---\nwith open(DOCS_OUT, \"w\", encoding=\"utf-8\") as f:\n    for doc in tqdm(docs_output, desc=\"Writing docs\", unit=\"docs\"):\n        f.write(json.dumps(doc, ensure_ascii=False) + \"\\n\")\n\n# --- WRITE QUERIES (only queries with relevant docs) ---\nwith open(QUERIES_OUT, \"w\", encoding=\"utf-8\") as f:\n    for qid, info in tqdm(query_data.items(), desc=\"Writing queries\", unit=\"queries\"):\n        if len(info[\"docID\"]) == 0:\n            continue\n        out = {\n            \"queryID\": qid,\n            \"query\": info[\"query\"],\n            \"docID\": info[\"docID\"],\n            \"source\": info[\"source\"],\n            \"label\": info[\"label\"]\n        }\n        f.write(json.dumps(out, ensure_ascii=False) + \"\\n\")\n\nprint(f\"✅ Saved {len(docs_output):,} docs → {DOCS_OUT}\")\nprint(f\"✅ Saved {len(query_data):,} queries (before filtering) → {QUERIES_OUT}\")\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dareczech/build_dataset.py b/dareczech/build_dataset.py
+--- a/dareczech/build_dataset.py	(revision 76afb54dbd23b4b218757950fed5432c28cc26df)
++++ b/dareczech/build_dataset.py	(date 1764420707526)
+@@ -6,15 +6,15 @@
+ 
+ # --- INPUT FILES ---
+ files = [
+-    "data/train_big.tsv",
+-    "data/train_small.tsv",
++    #"data/train_big.tsv",
++    #"data/train_small.tsv",
+     "data/dev.tsv",
+     "data/test.tsv"
+ ]
+ 
+ # --- OUTPUT FILES ---
+-DOCS_OUT = "data/docs_all.jsonl"
+-QUERIES_OUT = "data/queries_all.jsonl"
++DOCS_OUT = "data/docs_devtest.jsonl"
++QUERIES_OUT = "data/queries_devtest.jsonl"
+ 
+ # Internal mappings
+ doc2id = {}
+@@ -53,20 +53,12 @@
+             doc = clean(row.get("doc"))
+             label = float(row.get("label"))
+ 
+-            # skip non-relevant pairs
+-            if label <= 0:
+-                continue
+ 
+-            # ---- Assign query ID ----
+-            if query not in query2id:
+-                query2id[query] = next_queryID
+-                next_queryID += 1
+-            qid = query2id[query]
+ 
+             # ---- Build full text field for doc ----
+             full_text = f"title: {title}\nurl: {url}\ntext: {doc}"
+ 
+-            # ---- Assign doc ID ONLY for label>0 docs ----
++            # ---- Assign doc ID ----
+             doc_key = url + "::" + title
+             if doc_key not in doc2id:
+                 doc2id[doc_key] = next_docID
+@@ -79,6 +71,17 @@
+ 
+             did = doc2id[doc_key]
+ 
++            # skip query making when label <= 0
++            if label <= 0:
++                continue
++
++            # ---- Assign query ID ----
++            # Only create query entries for positive labels
++            if query not in query2id:
++                query2id[query] = next_queryID
++                next_queryID += 1
++            qid = query2id[query]
++
+             # ---- Store query info ----
+             query_data[qid]["query"] = query
+             query_data[qid]["docID"].append(did)
+Index: dareczech/eda_mine.ipynb
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\n \"cells\": [\n  {\n   \"cell_type\": \"code\",\n   \"id\": \"initial_id\",\n   \"metadata\": {\n    \"collapsed\": true,\n    \"jupyter\": {\n     \"is_executing\": true\n    }\n   },\n   \"source\": [\n    \"import numpy as np\\n\",\n    \"import pandas as pd\\n\",\n    \"import os\\n\",\n    \"\\n\",\n    \"from pandas import read_json\"\n   ],\n   \"outputs\": [],\n   \"execution_count\": null\n  },\n  {\n   \"metadata\": {\n    \"jupyter\": {\n     \"is_executing\": true\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"print(os.getcwd())\",\n   \"id\": \"f6913a97cb07842d\",\n   \"outputs\": [],\n   \"execution_count\": null\n  },\n  {\n   \"metadata\": {\n    \"jupyter\": {\n     \"is_executing\": true\n    },\n    \"ExecuteTime\": {\n     \"start_time\": \"2025-11-02T15:02:45.317300Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_docs = pd.read_json(\\\"data/docs_all.jsonl\\\", lines=True)\",\n   \"id\": \"1b835a41d1ee116d\",\n   \"outputs\": [],\n   \"execution_count\": null\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"code\",\n   \"outputs\": [],\n   \"execution_count\": null,\n   \"source\": \"df_queries = pd.read_json(\\\"data/docs_all.jsonl\\\", lines=True)\\n\",\n   \"id\": \"626b4530d3027840\"\n  },\n  {\n   \"metadata\": {\n    \"ExecuteTime\": {\n     \"end_time\": \"2025-11-02T15:03:02.318244600Z\",\n     \"start_time\": \"2025-11-02T15:02:38.752258Z\"\n    }\n   },\n   \"cell_type\": \"code\",\n   \"source\": \"df_docs\",\n   \"id\": \"50f648bfe07837a\",\n   \"outputs\": [\n    {\n     \"ename\": \"NameError\",\n     \"evalue\": \"name 'df_docs' is not defined\",\n     \"output_type\": \"error\",\n     \"traceback\": [\n      \"\\u001B[31m---------------------------------------------------------------------------\\u001B[39m\",\n      \"\\u001B[31mNameError\\u001B[39m                                 Traceback (most recent call last)\",\n      \"\\u001B[36mCell\\u001B[39m\\u001B[36m \\u001B[39m\\u001B[32mIn[1]\\u001B[39m\\u001B[32m, line 1\\u001B[39m\\n\\u001B[32m----> \\u001B[39m\\u001B[32m1\\u001B[39m \\u001B[43mdf_docs\\u001B[49m\\n\",\n      \"\\u001B[31mNameError\\u001B[39m: name 'df_docs' is not defined\"\n     ]\n    }\n   ],\n   \"execution_count\": 1\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"code\",\n   \"outputs\": [],\n   \"execution_count\": null,\n   \"source\": \"df_queries\",\n   \"id\": \"dacb8dc330fb039\"\n  },\n  {\n   \"metadata\": {},\n   \"cell_type\": \"code\",\n   \"outputs\": [],\n   \"execution_count\": null,\n   \"source\": \"\",\n   \"id\": \"ec661dde1c22f173\"\n  }\n ],\n \"metadata\": {\n  \"kernelspec\": {\n   \"display_name\": \"Python 3\",\n   \"language\": \"python\",\n   \"name\": \"python3\"\n  },\n  \"language_info\": {\n   \"codemirror_mode\": {\n    \"name\": \"ipython\",\n    \"version\": 2\n   },\n   \"file_extension\": \".py\",\n   \"mimetype\": \"text/x-python\",\n   \"name\": \"python\",\n   \"nbconvert_exporter\": \"python\",\n   \"pygments_lexer\": \"ipython2\",\n   \"version\": \"2.7.6\"\n  }\n },\n \"nbformat\": 4,\n \"nbformat_minor\": 5\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/dareczech/eda_mine.ipynb b/dareczech/eda_mine.ipynb
+--- a/dareczech/eda_mine.ipynb	(revision 76afb54dbd23b4b218757950fed5432c28cc26df)
++++ b/dareczech/eda_mine.ipynb	(date 1764420707570)
+@@ -5,87 +5,738 @@
+    "id": "initial_id",
+    "metadata": {
+     "collapsed": true,
+-    "jupyter": {
+-     "is_executing": true
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:18:05.445649Z",
++     "start_time": "2025-11-29T09:18:04.827613Z"
+     }
+    },
+    "source": [
+     "import numpy as np\n",
+     "import pandas as pd\n",
+     "import os\n",
++    "import matplotlib.pyplot as plt\n",
+     "\n",
+     "from pandas import read_json"
+    ],
+    "outputs": [],
+-   "execution_count": null
++   "execution_count": 2
+   },
+   {
+    "metadata": {
+-    "jupyter": {
+-     "is_executing": true
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:18:05.450026Z",
++     "start_time": "2025-11-29T09:18:05.446971Z"
+     }
+    },
+    "cell_type": "code",
+    "source": "print(os.getcwd())",
+    "id": "f6913a97cb07842d",
+-   "outputs": [],
+-   "execution_count": null
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "/home/a/codes/master-thesis/dareczech\n"
++     ]
++    }
++   ],
++   "execution_count": 3
+   },
+   {
+    "metadata": {
+-    "jupyter": {
+-     "is_executing": true
+-    },
+     "ExecuteTime": {
+-     "start_time": "2025-11-02T15:02:45.317300Z"
++     "end_time": "2025-11-29T09:18:06.234082Z",
++     "start_time": "2025-11-29T09:18:06.230753Z"
+     }
+    },
+    "cell_type": "code",
+-   "source": "df_docs = pd.read_json(\"data/docs_all.jsonl\", lines=True)",
++   "source": [
++    "#df_docs = pd.read_json(\"data/docs_all.jsonl\", lines=True)\n",
++    "#df_queries = pd.read_json(\"data/docs_all.jsonl\", lines=True)\n"
++   ],
+    "id": "1b835a41d1ee116d",
+    "outputs": [],
+-   "execution_count": null
++   "execution_count": 4
+   },
+   {
+-   "metadata": {},
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:19:00.279132Z",
++     "start_time": "2025-11-29T09:18:45.589663Z"
++    }
++   },
+    "cell_type": "code",
++   "source": [
++    "df =  pd.read_json(\"data/queries_devtest.jsonl\", lines=True)\n",
++    "df_docs = pd.read_json(\"data/docs_devtest.jsonl\", lines=True)"
++   ],
++   "id": "dacb8dc330fb039",
+    "outputs": [],
+-   "execution_count": null,
+-   "source": "df_queries = pd.read_json(\"data/docs_all.jsonl\", lines=True)\n",
+-   "id": "626b4530d3027840"
++   "execution_count": 7
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-29T09:18:07.553868Z",
++     "start_time": "2025-11-29T09:18:07.531171Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "df",
++   "id": "f1df8f2ad8108860",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "      queryID                               query  \\\n",
++       "0           0                           224943020   \n",
++       "1           1           stolice u nekojených dětí   \n",
++       "2           2        stěhování veselí nad moravou   \n",
++       "3           3  klíčenka me to you hugs and kisses   \n",
++       "4           4                      bols ballerina   \n",
++       "...       ...                                 ...   \n",
++       "2736     2736   aktuálně nehoda třeboň 22.7. 2020   \n",
++       "2737     2737         aktuální leták albert super   \n",
++       "2738     2738               agávový sirup využití   \n",
++       "2739     2739            afrodita rajecké teplice   \n",
++       "2740     2740                       abraham josef   \n",
++       "\n",
++       "                                                  docID  \\\n",
++       "0                                              [14, 19]   \n",
++       "1     [28, 30, 31, 32, 34, 36, 37, 38, 40, 47, 50, 5...   \n",
++       "2     [53, 54, 56, 57, 58, 59, 60, 62, 63, 64, 65, 6...   \n",
++       "3                                                  [79]   \n",
++       "4     [81, 82, 84, 87, 89, 91, 92, 94, 95, 97, 98, 101]   \n",
++       "...                                                 ...   \n",
++       "2736                                           [104247]   \n",
++       "2737  [104252, 8058, 8056, 104253, 104254, 8032, 104...   \n",
++       "2738                   [104261, 104263, 104265, 104266]   \n",
++       "2739  [98143, 98161, 98140, 104275, 98164, 98165, 10...   \n",
++       "2740  [104287, 104290, 104291, 104292, 104294, 10429...   \n",
++       "\n",
++       "                                                 source  \\\n",
++       "0     [https://www.idatabaze.cz/firma/165493-pivovar...   \n",
++       "1     [https://www.emimino.cz/encyklopedie/stolice-k...   \n",
++       "2     [https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...   \n",
++       "3     [https://www.drogeria-vmd.com/me-to-you-plysov...   \n",
++       "4     [https://www.etsy.com/listing/503424277/vintag...   \n",
++       "...                                                 ...   \n",
++       "2736        [https://ceskobudejovicky.denik.cz/nehody/]   \n",
++       "2737  [https://www.novy-letak.cz/albert/, https://ww...   \n",
++       "2738  [https://www.allnature.cz/allnature-agavovy-si...   \n",
++       "2739  [https://kupele.rajecke-teplice.net/cs/aquapar...   \n",
++       "2740  [https://sdhmladonovice.webnode.cz/products/pr...   \n",
++       "\n",
++       "                                                  label  \n",
++       "0                                            [1.0, 0.5]  \n",
++       "1     [1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...  \n",
++       "2     [1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...  \n",
++       "3                                                 [0.5]  \n",
++       "4     [0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...  \n",
++       "...                                                 ...  \n",
++       "2736                                             [0.25]  \n",
++       "2737         [1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]  \n",
++       "2738                            [0.75, 0.75, 0.75, 1.0]  \n",
++       "2739  [1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...  \n",
++       "2740  [0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...  \n",
++       "\n",
++       "[2741 rows x 5 columns]"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>queryID</th>\n",
++       "      <th>query</th>\n",
++       "      <th>docID</th>\n",
++       "      <th>source</th>\n",
++       "      <th>label</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>0</td>\n",
++       "      <td>224943020</td>\n",
++       "      <td>[14, 19]</td>\n",
++       "      <td>[https://www.idatabaze.cz/firma/165493-pivovar...</td>\n",
++       "      <td>[1.0, 0.5]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>1</td>\n",
++       "      <td>stolice u nekojených dětí</td>\n",
++       "      <td>[28, 30, 31, 32, 34, 36, 37, 38, 40, 47, 50, 5...</td>\n",
++       "      <td>[https://www.emimino.cz/encyklopedie/stolice-k...</td>\n",
++       "      <td>[1.0, 1.0, 0.5, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, ...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>2</td>\n",
++       "      <td>stěhování veselí nad moravou</td>\n",
++       "      <td>[53, 54, 56, 57, 58, 59, 60, 62, 63, 64, 65, 6...</td>\n",
++       "      <td>[https://www.firmy.cz/Vse-pro-firmy/Sluzby-pro...</td>\n",
++       "      <td>[1.0, 1.0, 0.5, 1.0, 0.5, 0.5, 1.0, 1.0, 0.5, ...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>3</th>\n",
++       "      <td>3</td>\n",
++       "      <td>klíčenka me to you hugs and kisses</td>\n",
++       "      <td>[79]</td>\n",
++       "      <td>[https://www.drogeria-vmd.com/me-to-you-plysov...</td>\n",
++       "      <td>[0.5]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>4</th>\n",
++       "      <td>4</td>\n",
++       "      <td>bols ballerina</td>\n",
++       "      <td>[81, 82, 84, 87, 89, 91, 92, 94, 95, 97, 98, 101]</td>\n",
++       "      <td>[https://www.etsy.com/listing/503424277/vintag...</td>\n",
++       "      <td>[0.5, 0.5, 1.0, 1.0, 1.0, 0.5, 1.0, 1.0, 1.0, ...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>...</th>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2736</th>\n",
++       "      <td>2736</td>\n",
++       "      <td>aktuálně nehoda třeboň 22.7. 2020</td>\n",
++       "      <td>[104247]</td>\n",
++       "      <td>[https://ceskobudejovicky.denik.cz/nehody/]</td>\n",
++       "      <td>[0.25]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2737</th>\n",
++       "      <td>2737</td>\n",
++       "      <td>aktuální leták albert super</td>\n",
++       "      <td>[104252, 8058, 8056, 104253, 104254, 8032, 104...</td>\n",
++       "      <td>[https://www.novy-letak.cz/albert/, https://ww...</td>\n",
++       "      <td>[1.0, 1.0, 1.0, 1.0, 0.25, 1.0, 1.0, 0.75]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2738</th>\n",
++       "      <td>2738</td>\n",
++       "      <td>agávový sirup využití</td>\n",
++       "      <td>[104261, 104263, 104265, 104266]</td>\n",
++       "      <td>[https://www.allnature.cz/allnature-agavovy-si...</td>\n",
++       "      <td>[0.75, 0.75, 0.75, 1.0]</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2739</th>\n",
++       "      <td>2739</td>\n",
++       "      <td>afrodita rajecké teplice</td>\n",
++       "      <td>[98143, 98161, 98140, 104275, 98164, 98165, 10...</td>\n",
++       "      <td>[https://kupele.rajecke-teplice.net/cs/aquapar...</td>\n",
++       "      <td>[1.0, 0.25, 1.0, 1.0, 0.75, 1.0, 0.75, 0.75, 1...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2740</th>\n",
++       "      <td>2740</td>\n",
++       "      <td>abraham josef</td>\n",
++       "      <td>[104287, 104290, 104291, 104292, 104294, 10429...</td>\n",
++       "      <td>[https://sdhmladonovice.webnode.cz/products/pr...</td>\n",
++       "      <td>[0.25, 1.0, 0.25, 0.75, 0.25, 0.75, 0.25, 0.25...</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "<p>2741 rows × 5 columns</p>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 6,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 6
+   },
+   {
+    "metadata": {
+     "ExecuteTime": {
+-     "end_time": "2025-11-02T15:03:02.318244600Z",
+-     "start_time": "2025-11-02T15:02:38.752258Z"
++     "end_time": "2025-11-29T09:19:00.334618Z",
++     "start_time": "2025-11-29T09:19:00.303402Z"
+     }
+    },
+    "cell_type": "code",
+    "source": "df_docs",
+-   "id": "50f648bfe07837a",
++   "id": "9ef66bde5891a403",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "         docID                                             source  \\\n",
++       "0            0  https://adoc.tips/jan-rektoik-a-milan-motl-oce...   \n",
++       "1            1  https://adoc.tips/vznice-s-ostrahou-pro-vykon-...   \n",
++       "2            2               http://heimatklange.nl/playlist.html   \n",
++       "3            3       https://de.wikipedia.org/wiki/Judith_und_Mel   \n",
++       "4            4  http://www.buj.cz/Informacni-a-inzertni-server...   \n",
++       "...        ...                                                ...   \n",
++       "104329  104329                https://www.vlastnicesta.cz/metody/   \n",
++       "104330  104330  https://zpravy.aktualne.cz/zahranici/kopilot-p...   \n",
++       "104331  104331  https://www.kutil.cz/zelezarstvi/zamky-a-kovan...   \n",
++       "104332  104332    https://plotycz.cz/content/21-sklenene-zabradli   \n",
++       "104333  104333  http://www.step-ex.cz/nabidka/ocelove-schody/s...   \n",
++       "\n",
++       "                                                     text  \n",
++       "0       title: \\nurl: https://adoc.tips/jan-rektoik-a-...  \n",
++       "1       title: věznice s ostrahou pro výkon trestu rap...  \n",
++       "2       title: playlist\\nurl: http://heimatklange.nl/p...  \n",
++       "3       title: judith und mel wikipedia\\nurl: https://...  \n",
++       "4       title: všeobecné informace\\nurl: http://www.bu...  \n",
++       "...                                                   ...  \n",
++       "104329  title: výpis metod a norem vlastní cesta\\nurl:...  \n",
++       "104330  title: kopilot před lety přerušil výcvik důvod...  \n",
++       "104331  title: úchyt zrcadla 2 x lomený kutil cz\\nurl:...  \n",
++       "104332  title: skleněné zábradlí plotycz cz\\nurl: http...  \n",
++       "104333  title: step ex ocelové schody schodiště zábrad...  \n",
++       "\n",
++       "[104334 rows x 3 columns]"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>docID</th>\n",
++       "      <th>source</th>\n",
++       "      <th>text</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>0</td>\n",
++       "      <td>https://adoc.tips/jan-rektoik-a-milan-motl-oce...</td>\n",
++       "      <td>title: \\nurl: https://adoc.tips/jan-rektoik-a-...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>1</td>\n",
++       "      <td>https://adoc.tips/vznice-s-ostrahou-pro-vykon-...</td>\n",
++       "      <td>title: věznice s ostrahou pro výkon trestu rap...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>2</td>\n",
++       "      <td>http://heimatklange.nl/playlist.html</td>\n",
++       "      <td>title: playlist\\nurl: http://heimatklange.nl/p...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>3</th>\n",
++       "      <td>3</td>\n",
++       "      <td>https://de.wikipedia.org/wiki/Judith_und_Mel</td>\n",
++       "      <td>title: judith und mel wikipedia\\nurl: https://...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>4</th>\n",
++       "      <td>4</td>\n",
++       "      <td>http://www.buj.cz/Informacni-a-inzertni-server...</td>\n",
++       "      <td>title: všeobecné informace\\nurl: http://www.bu...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>...</th>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "      <td>...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>104329</th>\n",
++       "      <td>104329</td>\n",
++       "      <td>https://www.vlastnicesta.cz/metody/</td>\n",
++       "      <td>title: výpis metod a norem vlastní cesta\\nurl:...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>104330</th>\n",
++       "      <td>104330</td>\n",
++       "      <td>https://zpravy.aktualne.cz/zahranici/kopilot-p...</td>\n",
++       "      <td>title: kopilot před lety přerušil výcvik důvod...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>104331</th>\n",
++       "      <td>104331</td>\n",
++       "      <td>https://www.kutil.cz/zelezarstvi/zamky-a-kovan...</td>\n",
++       "      <td>title: úchyt zrcadla 2 x lomený kutil cz\\nurl:...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>104332</th>\n",
++       "      <td>104332</td>\n",
++       "      <td>https://plotycz.cz/content/21-sklenene-zabradli</td>\n",
++       "      <td>title: skleněné zábradlí plotycz cz\\nurl: http...</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>104333</th>\n",
++       "      <td>104333</td>\n",
++       "      <td>http://www.step-ex.cz/nabidka/ocelove-schody/s...</td>\n",
++       "      <td>title: step ex ocelové schody schodiště zábrad...</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "<p>104334 rows × 3 columns</p>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 8,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 8
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:11:04.241303Z",
++     "start_time": "2025-11-25T15:11:04.234728Z"
++    }
++   },
++   "cell_type": "code",
++   "source": "type(df['docID'][1][1])",
++   "id": "a62857fb7388580a",
+    "outputs": [
+     {
+-     "ename": "NameError",
+-     "evalue": "name 'df_docs' is not defined",
+-     "output_type": "error",
+-     "traceback": [
+-      "\u001B[31m---------------------------------------------------------------------------\u001B[39m",
+-      "\u001B[31mNameError\u001B[39m                                 Traceback (most recent call last)",
+-      "\u001B[36mCell\u001B[39m\u001B[36m \u001B[39m\u001B[32mIn[1]\u001B[39m\u001B[32m, line 1\u001B[39m\n\u001B[32m----> \u001B[39m\u001B[32m1\u001B[39m \u001B[43mdf_docs\u001B[49m\n",
+-      "\u001B[31mNameError\u001B[39m: name 'df_docs' is not defined"
+-     ]
+-    }
+-   ],
+-   "execution_count": 1
+-  },
+-  {
+-   "metadata": {},
++     "data": {
++      "text/plain": [
++       "int"
++      ]
++     },
++     "execution_count": 6,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 6
++  },
++  {
++   "metadata": {
++    "ExecuteTime": {
++     "end_time": "2025-11-25T15:11:04.833462Z",
++     "start_time": "2025-11-25T15:11:04.810869Z"
++    }
++   },
+    "cell_type": "code",
+-   "outputs": [],
+-   "execution_count": null,
+-   "source": "df_queries",
+-   "id": "dacb8dc330fb039"
++   "source": [
++    "df[\"num_docs\"] = df[\"docID\"].apply(len)\n",
++    "\n",
++    "# --- Create the summary table ---\n",
++    "table = (\n",
++    "    df[\"num_docs\"]\n",
++    "    .value_counts()\n",
++    "    .sort_index()\n",
++    "    .reset_index()\n",
++    ")\n",
++    "\n",
++    "table.columns = [\"num_docs\", \"count_queries\"]\n",
++    "\n",
++    "# --- Add percentage of dataset ---\n",
++    "total_queries = len(df)\n",
++    "table[\"percentage\"] = (table[\"count_queries\"] / total_queries) * 100\n",
++    "\n",
++    "# --- Format percentage nicely (optional) ---\n",
++    "table[\"percentage\"] = table[\"percentage\"].round(2)\n",
++    "\n",
++    "table"
++   ],
++   "id": "ec661dde1c22f173",
++   "outputs": [
++    {
++     "data": {
++      "text/plain": [
++       "    num_docs  count_queries  percentage\n",
++       "0          1          25322       56.09\n",
++       "1          2           8337       18.47\n",
++       "2          3           3611        8.00\n",
++       "3          4           2037        4.51\n",
++       "4          5           1332        2.95\n",
++       "5          6            980        2.17\n",
++       "6          7            795        1.76\n",
++       "7          8            606        1.34\n",
++       "8          9            488        1.08\n",
++       "9         10            366        0.81\n",
++       "10        11            301        0.67\n",
++       "11        12            228        0.51\n",
++       "12        13            201        0.45\n",
++       "13        14            128        0.28\n",
++       "14        15            119        0.26\n",
++       "15        16             69        0.15\n",
++       "16        17             52        0.12\n",
++       "17        18             38        0.08\n",
++       "18        19             43        0.10\n",
++       "19        20             25        0.06\n",
++       "20        21             23        0.05\n",
++       "21        22             16        0.04\n",
++       "22        23              2        0.00\n",
++       "23        24              6        0.01\n",
++       "24        25              5        0.01\n",
++       "25        26              2        0.00\n",
++       "26        27              5        0.01\n",
++       "27        28              2        0.00\n",
++       "28        29              1        0.00\n",
++       "29        30              1        0.00\n",
++       "30        31              1        0.00\n",
++       "31        33              1        0.00"
++      ],
++      "text/html": [
++       "<div>\n",
++       "<style scoped>\n",
++       "    .dataframe tbody tr th:only-of-type {\n",
++       "        vertical-align: middle;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe tbody tr th {\n",
++       "        vertical-align: top;\n",
++       "    }\n",
++       "\n",
++       "    .dataframe thead th {\n",
++       "        text-align: right;\n",
++       "    }\n",
++       "</style>\n",
++       "<table border=\"1\" class=\"dataframe\">\n",
++       "  <thead>\n",
++       "    <tr style=\"text-align: right;\">\n",
++       "      <th></th>\n",
++       "      <th>num_docs</th>\n",
++       "      <th>count_queries</th>\n",
++       "      <th>percentage</th>\n",
++       "    </tr>\n",
++       "  </thead>\n",
++       "  <tbody>\n",
++       "    <tr>\n",
++       "      <th>0</th>\n",
++       "      <td>1</td>\n",
++       "      <td>25322</td>\n",
++       "      <td>56.09</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>1</th>\n",
++       "      <td>2</td>\n",
++       "      <td>8337</td>\n",
++       "      <td>18.47</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>2</th>\n",
++       "      <td>3</td>\n",
++       "      <td>3611</td>\n",
++       "      <td>8.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>3</th>\n",
++       "      <td>4</td>\n",
++       "      <td>2037</td>\n",
++       "      <td>4.51</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>4</th>\n",
++       "      <td>5</td>\n",
++       "      <td>1332</td>\n",
++       "      <td>2.95</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>5</th>\n",
++       "      <td>6</td>\n",
++       "      <td>980</td>\n",
++       "      <td>2.17</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>6</th>\n",
++       "      <td>7</td>\n",
++       "      <td>795</td>\n",
++       "      <td>1.76</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>7</th>\n",
++       "      <td>8</td>\n",
++       "      <td>606</td>\n",
++       "      <td>1.34</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>8</th>\n",
++       "      <td>9</td>\n",
++       "      <td>488</td>\n",
++       "      <td>1.08</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>9</th>\n",
++       "      <td>10</td>\n",
++       "      <td>366</td>\n",
++       "      <td>0.81</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>10</th>\n",
++       "      <td>11</td>\n",
++       "      <td>301</td>\n",
++       "      <td>0.67</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>11</th>\n",
++       "      <td>12</td>\n",
++       "      <td>228</td>\n",
++       "      <td>0.51</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>12</th>\n",
++       "      <td>13</td>\n",
++       "      <td>201</td>\n",
++       "      <td>0.45</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>13</th>\n",
++       "      <td>14</td>\n",
++       "      <td>128</td>\n",
++       "      <td>0.28</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>14</th>\n",
++       "      <td>15</td>\n",
++       "      <td>119</td>\n",
++       "      <td>0.26</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>15</th>\n",
++       "      <td>16</td>\n",
++       "      <td>69</td>\n",
++       "      <td>0.15</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>16</th>\n",
++       "      <td>17</td>\n",
++       "      <td>52</td>\n",
++       "      <td>0.12</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>17</th>\n",
++       "      <td>18</td>\n",
++       "      <td>38</td>\n",
++       "      <td>0.08</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>18</th>\n",
++       "      <td>19</td>\n",
++       "      <td>43</td>\n",
++       "      <td>0.10</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>19</th>\n",
++       "      <td>20</td>\n",
++       "      <td>25</td>\n",
++       "      <td>0.06</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>20</th>\n",
++       "      <td>21</td>\n",
++       "      <td>23</td>\n",
++       "      <td>0.05</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>21</th>\n",
++       "      <td>22</td>\n",
++       "      <td>16</td>\n",
++       "      <td>0.04</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>22</th>\n",
++       "      <td>23</td>\n",
++       "      <td>2</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>23</th>\n",
++       "      <td>24</td>\n",
++       "      <td>6</td>\n",
++       "      <td>0.01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>24</th>\n",
++       "      <td>25</td>\n",
++       "      <td>5</td>\n",
++       "      <td>0.01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>25</th>\n",
++       "      <td>26</td>\n",
++       "      <td>2</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>26</th>\n",
++       "      <td>27</td>\n",
++       "      <td>5</td>\n",
++       "      <td>0.01</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>27</th>\n",
++       "      <td>28</td>\n",
++       "      <td>2</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>28</th>\n",
++       "      <td>29</td>\n",
++       "      <td>1</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>29</th>\n",
++       "      <td>30</td>\n",
++       "      <td>1</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>30</th>\n",
++       "      <td>31</td>\n",
++       "      <td>1</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "    <tr>\n",
++       "      <th>31</th>\n",
++       "      <td>33</td>\n",
++       "      <td>1</td>\n",
++       "      <td>0.00</td>\n",
++       "    </tr>\n",
++       "  </tbody>\n",
++       "</table>\n",
++       "</div>"
++      ]
++     },
++     "execution_count": 7,
++     "metadata": {},
++     "output_type": "execute_result"
++    }
++   ],
++   "execution_count": 7
+   },
+   {
+    "metadata": {},
+@@ -93,7 +744,7 @@
+    "outputs": [],
+    "execution_count": null,
+    "source": "",
+-   "id": "ec661dde1c22f173"
++   "id": "40aca1081e743304"
+   }
+  ],
+  "metadata": {

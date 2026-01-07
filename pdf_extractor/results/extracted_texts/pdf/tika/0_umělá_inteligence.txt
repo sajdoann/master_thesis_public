@@ -1,0 +1,1936 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Umělá inteligence – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Na tento článek je přesměrováno heslo AI. Další významy jsou uvedeny na
+
+stránkách Umělá inteligence (rozcestník) a AI (rozcestník).
+
+Informatika
+
+Obory
+
+informatiky
+
+Programování
+
+Matematická
+
+informatika
+
+(Teoretická
+
+informatika
+
+Teorie složitosti
+
+Umělá inteligence
+
+Teorie grafů
+
+Teorie informace)
+
+Informační
+
+technologie
+
+Bioinformatika
+
+Chemoinformatika
+
+Geoinformatika
+
+Lékařská
+
+informatika
+
+Neuroinformatika
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Wikipedie:P%C5%99esm%C4%9Brov%C3%A1n%C3%AD
+/wiki/Um%C4%9Bl%C3%A1_inteligence_(rozcestn%C3%ADk)
+/wiki/AI_(rozcestn%C3%ADk)
+/wiki/Informatika
+/wiki/Obory_informatiky
+/wiki/Obory_informatiky
+/wiki/Programov%C3%A1n%C3%AD
+/wiki/Matematick%C3%A1_informatika
+/wiki/Matematick%C3%A1_informatika
+/wiki/Teoretick%C3%A1_informatika
+/wiki/Teoretick%C3%A1_informatika
+/wiki/Teorie_slo%C5%BEitosti
+/wiki/Teorie_graf%C5%AF
+/wiki/Teorie_informace
+/wiki/Informa%C4%8Dn%C3%AD_technologie
+/wiki/Informa%C4%8Dn%C3%AD_technologie
+/wiki/Bioinformatika
+/wiki/Chemoinformatika
+/wiki/Geoinformatika
+/wiki/L%C3%A9ka%C5%99sk%C3%A1_informatika
+/wiki/L%C3%A9ka%C5%99sk%C3%A1_informatika
+/wiki/Neuroinformatika
+
+Sociální
+
+informatika
+
+Informatici
+
+Charles Babbage
+
+Alan Turing
+
+Donald Knuth
+
+další…
+
+Dějiny
+
+informatiky
+
+Umělá inteligence (UI, anglicky artificial intelligence – zkráceně AI) je 
+
+inteligence projevovaná stroji, zejména počítači s vhodným programovým
+
+vybavením, a zároveň je to obor informatiky zabývající se tvorbou takových
+
+počítačových systémů. Ty řeší komplexní úlohy jako je rozpoznávání,
+
+diagnostika či klasifikace, např. v oblastech zpracování obrazu (ve formě 
+
+pixelů pomocí konvolučních neuronových sítí) či zpracování psaného textu či
+
+mluveného jazyka (ve formě kódu jazykových modelů), nebo plánování či
+
+řízení na základě zpracování velkých objemů dat.[1]
+
+Úzká umělá inteligence (anglicky narrow artificial intelligence –
+
+zkráceně NAI) či „slabá AI“ odkazuje na systémy zaměřené na řešení
+
+jediné úzce vymezené úlohy. Mezi příklady NAI patří internetoví boti
+
+nebo virtuální asistenti jako např. Google Assistant nebo Siri.
+
+Obecná umělá inteligence (anglicky artificial general intelligence –
+
+zkráceně AGI) či „silná AI“ odkazuje na systémy řešící úlohy stejně dobře
+
+nebo dokonce lépe než člověk a řeší je bez nutnosti předchozího učení
+
+jednotlivých úzce vymezených úloh. AGI spojující „lidské“ flexibilní
+
+myšlení a uvažování se super rychlým zpracováním dat by se mohla stát
+
+realitou podmíněnou úspěšným vývojem kvantových počítačů.
+
+Superinteligence (anglicky artificial superinteligence – zkráceně ASI)
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Soci%C3%A1ln%C3%AD_informatika
+/wiki/Soci%C3%A1ln%C3%AD_informatika
+/wiki/Informatik
+/wiki/Charles_Babbage
+/wiki/Alan_Turing
+/wiki/Donald_Ervin_Knuth
+/wiki/Kategorie:Informatici
+/wiki/D%C4%9Bjiny_informatiky
+/wiki/D%C4%9Bjiny_informatiky
+/wiki/Angli%C4%8Dtina
+/wiki/Inteligence
+/wiki/Stroj
+/wiki/Po%C4%8D%C3%ADta%C4%8D
+/wiki/Programov%C3%A9_vybaven%C3%AD
+/wiki/Programov%C3%A9_vybaven%C3%AD
+/wiki/Informatika
+/wiki/Pixel
+/wiki/Konvoluce
+/wiki/Um%C4%9Bl%C3%A1_neuronov%C3%A1_s%C3%AD%C5%A5
+/wiki/Velk%C3%BD_jazykov%C3%BD_model
+/wiki/Velk%C3%A1_data
+/wiki/Angli%C4%8Dtina
+/wiki/Google_Assistant
+/wiki/Siri
+/wiki/Obecn%C3%A1_um%C4%9Bl%C3%A1_inteligence
+/wiki/Angli%C4%8Dtina
+/wiki/Kvantov%C3%BD_po%C4%8D%C3%ADta%C4%8D
+/wiki/Superinteligence
+/wiki/Angli%C4%8Dtina
+
+Legislativně definovat umělou inteligenci je obtížné a i jemné rozdíly v
+
+definici mohou mít zásadní dopady.[2] Termín umělá inteligence se také často
+
+nadužívá jako buzzword.[3]
+
+Oblasti umělé inteligence
+
+Strojové učení
+
+Podrobnější informace naleznete v článku Strojové učení.
+
+Strojové učení je podoblastí umělé inteligence, zabývající se algoritmy, které
+
+umožňují počítačovému systému „učit se“. Učením v daném kontextu
+
+rozumíme takovou změnu vnitřního stavu systému, která zefektivní
+
+schopnost přizpůsobení se změnám okolního prostředí. Strojové učení má
+
+široké uplatnění. Jeho techniky se využívají pro rozpoznávání a kompresi
+
+obrazů či akustických (např. rozpoznávání řeči) nebo elektrických (např. EKG, 
+
+EEG) signálů, klasifikaci či segmentaci dat, předvídání vývoje časových řad
+
+(např. burzovních indexů), k rozpoznávání psaného textu či k filtrování
+
+spamu. V lékařství slouží k diagnostice onemocnění a v řízení pro podporu
+
+rozhodování. 
+
+Neuronové sítě
+
+Podrobnější informace naleznete v článku Umělá neuronová síť.
+
+Umělé neuronové sítě v umělé inteligenci jsou volně inspirovány
+
+odpovídajícími biologickými strukturami. Oproti nim jsou však značně
+
+zjednodušeny a používají jiné mechanismy učení, než jaké používá např.
+
+lidský mozek. Cílem totiž není věrně simulovat biologické struktury, ale
+
+především řešit praktické problémy. Jedná se o přístup ke strojovému učení,
+
+který se stal velmi úspěšným. Neuronové sítě se používají mimo jiné k
+
+rozpoznávání a kompresi obrazů či akustických (např. rozpoznávání řeči) nebo
+
+elektrických (např. EKG, EEG) signálů, klasifikaci či segmentaci dat,
+
+předvídání vývoje časových řad (např. burzovních indexů), k rozpoznávání
+
+psaného textu či k filtrování spamu. Tvorbou biologicky věrných modelů
+
+neuronů a neuronových sítí se zabývají výpočetní neurovědy, prohlubující
+
+znalosti o fungování informačních systémů (nervových soustav) živých
+
+/wiki/Buzzword
+/wiki/Strojov%C3%A9_u%C4%8Den%C3%AD
+/wiki/Komprese_dat
+/wiki/Akustika
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Elektrokardiogram
+/wiki/Elektroencefalografie
+/wiki/Sign%C3%A1l
+/wiki/Klasifikace_(um%C4%9Bl%C3%A1_inteligence)
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/Burzovn%C3%AD_index
+/wiki/Optick%C3%A9_rozpozn%C3%A1v%C3%A1n%C3%AD_znak%C5%AF
+/wiki/Filtrov%C3%A1n%C3%AD_zpr%C3%A1v
+/wiki/Spam
+/wiki/Syst%C3%A9my_pro_podporu_rozhodov%C3%A1n%C3%AD
+/wiki/Syst%C3%A9my_pro_podporu_rozhodov%C3%A1n%C3%AD
+/wiki/Um%C4%9Bl%C3%A1_neuronov%C3%A1_s%C3%AD%C5%A5
+/wiki/Komprese_dat
+/wiki/Akustika
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Elektrokardiogram
+/wiki/Elektroencefalografie
+/wiki/Sign%C3%A1l
+/wiki/Klasifikace_(um%C4%9Bl%C3%A1_inteligence)
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/Burzovn%C3%AD_index
+/wiki/Filtrov%C3%A1n%C3%AD_zpr%C3%A1v
+/wiki/Spam
+/wiki/Nervov%C3%A1_soustava
+
+organismů. Například Grossbergova neuronová síť vznikla původně jako
+
+simulace fyziologického modelu rozpoznávání vzorů na sítnici lidského oka. 
+
+Robotika
+
+Podrobnější informace naleznete v článku Robotika.
+
+Robotika je věda o robotech, jejich designu, výrobě a aplikacích. Robot může
+
+buď pomáhat, nebo dělat lidskou práci, popř. zajišťovat i komfort společnosti.
+
+Robotika úzce souvisí s elektronikou, mechanikou a aplikovaným softwarem. 
+
+Počítačové vidění
+
+Podrobnější informace naleznete v článku Počítačové vidění.
+
+Jde o vidění zobecněné: Zdaleka ne jen viditelným světlem, dokonce ani
+
+vůbec ne světlem, nýbrž třeba akusticky, obecně tedy echolokací. 
+
+ve 2D: 
+
+Detekce hran v obrazu, jejich aproximační prodloužení, ohodnocení
+
+významnosti detekovaných hran, odstranění vlivu různého jasu
+
+napříč obrazem.
+
+Optické rozpoznávání znaků pro rozpoznávání tištěného textu,
+
+rozpoznávání ručně psaného textu. Schopnost rozpoznávání
+
+předmětů pootočených, skloněných, jinak barevných či dokonce
+
+vzorovaných, neúplných oříznutím nebo zašuměním.
+
+Rozpoznávání tvarů a z nich usuzování na objekty reálného světa
+
+(dokonce i s určením pravděpodobnosti), typicky z fotografií.
+
+Realtime detekce tváře ve snímcích videa, nejsnáze podle předem
+
+zadaných bodů k hledání a jejich vzájemných vztahů: vzdáleností.
+
+Obecně detekce předepsaného vzoru v obraze.
+
+ve 3D: 
+
+Odstranění paralaxy (zkreslení ubíháním rovnoběžek), například
+
+použitím maticové transformace, jejím autonomním nalezením.
+
+Rozpoznání identity s již viděným (známým) objektem, nyní však
+
+pozorovaným z jiného úhlu.
+
+Samostatné zorientování se v prostoru: určení směrů
+
+souřadnicového systému okolního prostoru.
+
+• 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+• 
+
+◦ 
+
+◦ 
+
+/wiki/Grossbergova_s%C3%AD%C5%A5
+/wiki/S%C3%ADtnice
+/wiki/Robotika
+/wiki/Robot
+/wiki/Elektronika
+/wiki/Mechanika
+/wiki/Software
+/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%A9_vid%C4%9Bn%C3%AD
+/wiki/Optick%C3%A9_rozpozn%C3%A1v%C3%A1n%C3%AD_znak%C5%AF
+
+Uvědomění si vlastní polohy v okolním prostoru při (nedokonalém)
+
+sběru dat o okolí, vytváření vnitřního modelu o něm: typicky mapy.
+
+Klíčové pro autonomně se pohybující roboty: Nekonečná smyčka
+
+střídání kroků v prostoru / na mapě.
+
+Bayesovské sítě
+
+Podrobnější informace naleznete v článku Bayesovská síť.
+
+Bayesovská síť je pravděpodobnostní model, který využívá grafovou
+
+reprezentaci pro zobrazení pravděpodobnostních vztahů mezi jednotlivými
+
+jevy. Využívá se pro určení pravděpodobnosti určitých jevů, přičemž vychází
+
+ze základu teorie pravděpodobnosti. Bayesovská síť je acyklický orientovaný
+
+graf, kde každý uzel odpovídá jedné náhodné veličině, přičemž každý graf
+
+typicky obsahuje několik veličin/uzlů. Všechny veličiny v grafu se vztahují k
+
+neznámému jevu, přičemž každá veličina je reprezentována jedním uzlem
+
+a větve (neboli vztahy) mezi uzly zobrazují pravděpodobnostní závislost mezi
+
+vybranými veličinami. Tyto závislosti se obvykle vypočítávají na základě 
+
+statistických metod. 
+
+Expertní systémy
+
+Podrobnější informace naleznete v článku Expertní systém.
+
+Expertní systém je počítačový program, který má za úkol poskytovat expertní
+
+rady, rozhodnutí nebo doporučit řešení v konkrétní situaci. Expertní systémy
+
+jsou navrženy tak, aby mohly zpracovávat nenumerické a neurčité informace
+
+a řešit tak úlohy, které nejsou řešitelné tradičními algoritmickými postupy.
+
+Expertní systém má dvě základní komponenty, které jsou na sobě relativně
+
+nezávislé. Řídící mechanismus pro odvozování závěrů a Bázi znalostí. V
+
+průběhu zpracovávání se k bázi znalostí přidávají dočasné informace
+
+o řešeném případu. 
+
+Dobývání znalostí
+
+Podrobnější informace naleznete v článku Data mining.
+
+Data mining (dolování z dat či vytěžování dat) je analytická metodologie
+
+získávání netriviálních skrytých a potenciálně užitečných informací z dat.
+
+Někdy se chápe jako analytická součást dobývání znalostí z databází
+
+◦ 
+
+/wiki/Bayesovsk%C3%A1_s%C3%AD%C5%A5
+/wiki/Pravd%C4%9Bpodobnost
+/wiki/Teorie_pravd%C4%9Bpodobnosti
+/wiki/Orientovan%C3%BD_graf
+/wiki/Orientovan%C3%BD_graf
+/wiki/Statistick%C3%A9_modelov%C3%A1n%C3%AD
+/wiki/Expertn%C3%AD_syst%C3%A9m
+/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%BD_program
+/wiki/Expert
+/wiki/Data_mining
+/wiki/Dob%C3%BDv%C3%A1n%C3%AD_znalost%C3%AD_z_datab%C3%A1z%C3%AD
+
+(Knowledge Discovery in Databases, KDD), jindy se tato dvě označení chápou
+
+jako souznačná. Často dochází také k překryvu s termínem data science,
+
+který bývá obvykle chápán šířeji než data mining. Data mining se používá v
+
+komerční sféře (například v marketingu při rozhodování, které klienty oslovit
+
+dopisem s nabídkou produktu), ve vědeckém výzkumu (například při analýze
+
+genetické informace) i v jiných oblastech (například při monitorování aktivit
+
+na internetu s cílem odhalit činnost potenciálních škůdců a teroristů). 
+
+Fuzzy logika
+
+Podrobnější informace naleznete v článku Fuzzy logika.
+
+Fuzzy logika je podobor matematické logiky odvozený od teorie fuzzy množin,
+
+v němž se logické výroky ohodnocují mírou pravdivosti. Liší se tak od klasické
+
+výrokové logiky, která používá pouze dvě logické hodnoty – nepravdu a
+
+pravdu, tj. nulu a jedničku. Fuzzy logika může operovat se všemi hodnotami z
+
+intervalu ⟨0,1⟩, kterých je nekonečně mnoho. Fuzzy logika může být pro řadu
+
+reálných rozhodovacích úloh vhodnější než klasická logika, protože usnadňuje
+
+návrh složitých řídicích systémů. 
+
+Evoluční algoritmy
+
+Podrobnější informace naleznete v článku Genetický algoritmus.
+
+Evoluční algoritmy se užívají k nalezení dostatečně kvalitního řešení
+
+optimalizačních úloh v dostatečně krátkém čase. Mezi evoluční algoritmy
+
+inspirované přírodou se zahrnuje celé spektrum optimalizačních heuristických
+
+technik, např. genetické algoritmy či simulované žíhání. Heuristiky můžeme
+
+popsat jako zkratkovitý postup prohledávání prostoru řešení bez záruky
+
+správného výsledku, nicméně jsou zbaveny celé řady neduhů konvenčních
+
+optimalizačních metod, jako např. požadavek spojitosti či diferencovatelnosti
+
+objektivní resp. vazební funkce, respektování omezujících podmínek, uvíznutí
+
+v mělkém lokálním minimu atd. Na druhou stranu však je při jejich aplikaci
+
+zapotřebí nastavení jistých volných parametrů, které je nutné „naladit“ v
+
+závislosti na konkrétním optimalizačním problému. 
+
+Multiagentní systémy
+
+Podrobnější informace naleznete v článku Multiagentní systém.
+
+/wiki/Data_science
+/wiki/Fuzzy_logika
+/wiki/Logika
+/wiki/Matematick%C3%A1_logika
+/wiki/Teorie_fuzzy_mno%C5%BEin
+/wiki/V%C3%BDrok_(logika)
+/wiki/V%C3%BDrokov%C3%A1_logika
+/wiki/Logick%C3%A1_hodnota
+/wiki/Interval_(matematika)
+/wiki/%C5%98%C3%ADdic%C3%AD_syst%C3%A9m
+/wiki/Genetick%C3%BD_algoritmus
+/wiki/Heuristika
+/wiki/Genetick%C3%A9_algoritmy
+/wiki/Simulovan%C3%A9_%C5%BE%C3%ADh%C3%A1n%C3%AD
+/wiki/Multiagentn%C3%AD_syst%C3%A9m
+
+Multiagentní systém je simulované prostředí se síťovým charakterem, v němž
+
+dochází k interakci (po větvi sítě) agentů (uzlů sítě) mezi sebou a / nebo s
+
+prostředím, ve kterém se nacházejí. Tito agenti řeší společně problémy, které
+
+přesahují znalosti každého z nich. Mezi multiagentní systémy se řadí např.
+
+strategie ptačího hejna (Particle Swarm Optimization (PSO)) či strategie
+
+mravenčí kolonie (Ant Colony Optimization (ACO)). 
+
+Prohledávání stavového prostoru
+
+Podrobnější informace naleznete v článku Prohledávání stavového prostoru.
+
+Zvláště při vytváření algoritmů na řešení klasických her (šachů, dámy) se jeví
+
+účelné zadefinovat si množinu stavů, do kterých se můžeme ve hře dostat,
+
+přípustné tahy neboli přechody mezi stavy a počáteční a koncové pozice.
+
+Hledáme pak cestu od počátečních stavů ke koncovým stavům, které
+
+znamenají náš úspěch. Jelikož mohou být stavové prostory rozsáhlé (např. ve
+
+hře go) a v některých případech i nekonečné, je třeba volit chytré metody
+
+ořezávání nevhodných cest a ohodnocování pozic. 
+
+Zpracování přirozeného jazyka
+
+Podrobnější informace naleznete v článcích Zpracování přirozeného jazyka, 
+
+počítačová lingvistika a matematická lingvistika.
+
+Počítačové zpracování přirozeného jazyka (Natural Language Processing,
+
+NLP) se zabývá analýzou, transformací či generování textů nebo mluveného
+
+slova. Aplikacemi NLP jsou např. strojový překlad, automatické zodpovídání
+
+dotazů (pro chatboty a podobně), dolování z textu, výtah z textu
+
+(automatická sumarizace), automatická korektura textu, extrakce informací z
+
+korpusů textů, generování přirozeného jazyka, rozpoznávání řeči a její
+
+syntéza. Kolem roku 2010 toto pole v zásadě ovládly technologie založené na
+
+hlubokém učení, jež zpravidla vykazují vyšší kvalitu než starší technologie
+
+založené např. na lingvistické analýze textu. 
+
+Velké jazykové modely (LLM – large language model) využívají například
+
+aplikace ChatGPT od OpenAI, Claude od Anthropic, Grok od xAI, nebo Gemini
+
+od Google. Tyto programy excelují v memorování, ale mají problémy
+
+vyfiltrovat během komunikace s lidmi informace z šumu.[4]
+
+/wiki/Agent_(teorie_syst%C3%A9m%C5%AF)
+/wiki/Prohled%C3%A1v%C3%A1n%C3%AD_stavov%C3%A9ho_prostoru
+/wiki/Go_(deskov%C3%A1_hra)
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%A1_lingvistika
+/wiki/Matematick%C3%A1_lingvistika
+/wiki/Zpracov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka
+/wiki/Strojov%C3%BD_p%C5%99eklad
+/w/index.php?title=Automatick%C3%A9_zodpov%C3%ADd%C3%A1n%C3%AD_dotaz%C5%AF&action=edit&redlink=1
+/w/index.php?title=Automatick%C3%A9_zodpov%C3%ADd%C3%A1n%C3%AD_dotaz%C5%AF&action=edit&redlink=1
+/wiki/Dolov%C3%A1n%C3%AD_z_textu
+/wiki/Resum%C3%A9
+/wiki/Korektura_textu
+/wiki/Extrakce_informac%C3%AD
+/w/index.php?title=Generov%C3%A1n%C3%AD_p%C5%99irozen%C3%A9ho_jazyka&action=edit&redlink=1
+/wiki/Rozpozn%C3%A1v%C3%A1n%C3%AD_%C5%99e%C4%8Di
+/wiki/Synt%C3%A9za_%C5%99e%C4%8Di
+/wiki/Synt%C3%A9za_%C5%99e%C4%8Di
+/wiki/Hlubok%C3%A9_u%C4%8Den%C3%AD
+/wiki/Velk%C3%BD_jazykov%C3%BD_model
+/wiki/ChatGPT
+/wiki/OpenAI
+/wiki/Claude_(chatbot)
+/wiki/Anthropic
+/wiki/Grok
+/wiki/XAI
+/wiki/Gemini_(jazykov%C3%BD_model)
+/wiki/Google
+
+Úspěšné algoritmy
+
+Hry
+
+Roku 1979 překonal počítač světového mistra ve hře vrhcáby.[5]
+
+Královská hra šachy byla už od počátků informatiky předmětem analýz.
+
+Řešení problému bylo od počátku spojováno s inteligencí, avšak výhra
+
+nemusí znamenat větší inteligenci. V roce 1997 porazil systém Deep
+
+Blue od firmy IBM úřadujícího mistra světa Garriho Kasparova. Deep Blue
+
+však byl spíše hybridní systém s akcelerátory výpočtů.[6] Šlo tak spíše o 
+
+řešení hrubou silou. Současná AI již neprochází tolik pozic a přitom je
+
+úspěšnější.[7]
+
+Chinook je program pro hraní anglické dámy, jehož tvůrci v červenci
+
+roku 2007 prohlásili, že nemůže prohrát. Již několik let předtím
+
+pravidelně porážel lidské oponenty. Tohoto výsledku bylo dosaženo
+
+kombinací hrubé síly při prohledávání pozic ve střední části hry a dobrou
+
+databází zahájení a koncovek.
+
+Počítačové programy hrající go si často tak dobře nevedly. Je tomu tak
+
+zřejmě proto, že je goban (deska na go) je poměrně rozsáhlá a s každým
+
+dalším položeným kamenem stoupá komplexita rozhodování, kterou
+
+však mají lidé šanci zvládnout díky své vrozené schopnosti rozpoznávání
+
+tvarů. Ovšem nejlepší programy používající jak řešení hrubou silou
+
+(přesněji stromové prohledávání do hloubky),[8] tak intuici, jsou schopné
+
+porážet i mistry.[9][10]
+
+Rubikova kostka může být také efektivně řešena pomocí AI.[11]
+
+Karetní hra bridž.[12]
+
+Další algoritmy
+
+AI dokáže vést letecké souboje lépe než lidští piloti.[13]
+
+AI je schopna určit riziko selhání srdce lépe než lékař.[14]
+
+AI umožňuje snadno napodobovat lidské hlasy.[15]
+
+AI s pomocí senzorů umožňuje odhalovat lhaní či jiné emoce.[16]
+
+AI dokáže lépe předpovídat chaos než rovnice.[17]
+
+AI je lepší i v krátkodobých předpovědích počasí.[18]
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Vrhc%C3%A1by
+/wiki/%C5%A0achy
+/wiki/Deep_Blue
+/wiki/Deep_Blue
+/wiki/IBM
+/wiki/Garri_Kasparov
+/wiki/%C5%98e%C5%A1en%C3%AD_hrubou_silou
+/w/index.php?title=Chinook_(um%C4%9Bl%C3%A1_inteligence)&action=edit&redlink=1
+/wiki/Go_(deskov%C3%A1_hra)
+/wiki/Goban
+/wiki/%C5%98e%C5%A1en%C3%AD_hrubou_silou
+/wiki/Prohled%C3%A1v%C3%A1n%C3%AD_do_hloubky
+/wiki/Rubikova_kostka
+/wiki/Brid%C5%BE
+/wiki/Pilot
+/wiki/L%C3%A9ka%C5%99
+/wiki/Hlas
+/wiki/Emoce
+
+Problematika
+
+Problémem je, že se AI chová jako černá skříňka.[19][20] Volá se proto po
+
+vysvětlitelné AI (XAI).[21][22]
+
+AI může odstranit lidské kognitivní zkreslení.[23] Může ovšem zavést
+
+vlastní zkreslení.[24] Lidské i umělé myšlení tedy lze i podvést.[25] Záleží
+
+na způsobu výběru dat k učení.[26] Umělá inteligence tak může být
+
+například zpolitizovaná.[27] Dle studie zveřejněné v časopise Nature
+
+mají systémy umělé inteligence tendenci přebírat lidské předsudky a
+
+zesilovat je, což může způsobit u uživatelů AI, že budou více předpojatí.
+[28][29] Pokud se AI učí na datech od AI, tak se výsledky zhoršují.[30]
+
+AI nepozná, co je pravda.[31] Ve skutečnosti není inteligentní, protože
+
+logicky neuvažuje.[32]
+
+Existují výpočetní problémy, které nelze vyřešit bez ohledu na výpočetní
+
+výkon a dobu běhu, které limitují umělou inteligenci.[33]
+
+Protože technologie mohou být pro člověka nebezpečné, formulovala
+
+koncem dubna 2019 Evropská komise etické zásady vývoje systémů s
+
+umělou inteligencí: 
+
+Možnost řízení a dohledu ze strany člověka
+
+Robustnost a bezpečnost
+
+Ochrana soukromí a dat (může vyřešit plně homomorfní šifrování)
+[34]
+
+Transparentnost
+
+Zákaz diskriminace a rovné zacházení
+
+Společenský a environmentální prospěch
+
+Odpovědnost.[35]
+
+EU zvažuje zakázat či omezit umělou inteligenci při identifikaci lidí na
+
+veřejnosti.[36] Organizace spojených národů přijala roku 2024 rezoluci, která
+
+varuje před zneužíváním AI.[37] V dubnu 2024 zveřejnila společnost Turnitin
+
+studii, v níž uvádí, že umělá inteligence vygenerovala již miliony diplomových
+
+prací.[38] Asi 20 % vědeckých článků bylo podle studie z roku 2025 rovněž
+
+alespoň částečně generováno umělou inteligencí, podobně na tom pak byly i
+
+samotné recenze těchto článků.[39]
+
+Problém zákazu diskriminace je v tom, že diskriminace je chování, preference
+
+určitých hodnot, kategorií či parametrů, které běžně lidé volí, aniž by si toho
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+◦ 
+
+/wiki/%C4%8Cern%C3%A1_sk%C5%99%C3%AD%C5%88ka_(kybernetika)
+/wiki/Kognitivn%C3%AD_zkreslen%C3%AD
+/wiki/Nature
+/wiki/Pravda
+/wiki/Evropsk%C3%A1_komise
+/wiki/Robustnost_(informatika)
+/wiki/Homomorfn%C3%AD_%C5%A1ifrov%C3%A1n%C3%AD
+/wiki/Organizace_spojen%C3%BDch_n%C3%A1rod%C5%AF
+/w/index.php?title=Turnitin&action=edit&redlink=1
+/wiki/Diplomov%C3%A1_pr%C3%A1ce
+/wiki/Diplomov%C3%A1_pr%C3%A1ce
+/wiki/V%C4%9Bdeck%C3%BD_%C4%8Dl%C3%A1nek
+
+byli vědomi. Často je toto diskriminační chování objeveno, až když se na
+
+základě dat z takového chování učí umělá inteligence. Tento problém se
+
+projevil např. v oddělení lidských zdrojů společnosti Amazon, jejichž systém
+
+vyhodnotil pohlaví jako jeden z výběrových parametrů a životopisy žen
+
+hodnotil tak, že jim dával záporné body. To bylo proto, že pro učení byla
+
+použita data, která často mapovala technické pozice, na které se častěji
+
+hlásili muži.[40]
+
+Existuje i právní problematika, protože umělá inteligence se učí i na dílech
+
+podléhající autorskému právu. V USA tak vyvstává otázka, do jaké míry je to 
+
+fair use.[41] Velké jazykové modely také pracují s daty poskytnutými uživateli.
+
+Některé z nich, například ChatGPT, se snaží touto problematiku deeskalovat
+
+pomocí individuálního uživatelského nastavení.[42]
+
+Spotřeba energie je u AI značná.[43] Přispívá tak k znečištění životního
+
+prostředí exhalacemi při výrobě elektrické energie, čímž se v USA podílí na
+
+zdravotních nákladech (rakovina, astma, další nemoci a zameškané pracovní
+
+a školní dny) odhadovaných v roce 2030 na 20 miliard dolarů ročně.[44]
+
+Přehnané spoléhání na umělou inteligenci může vést k erozi kritického
+
+myšlení.[45]
+
+Umělá inteligence v průmyslu
+
+V průmyslu může umělá inteligence pomáhat různými způsoby:[46]
+
+ze získaných „syrových“ dat přímo ze zařízení může získávat a
+
+vizualizovat podstatné informace pro obsluhu zařízení,
+
+detekovat, jak moc se zařízení může rozhodovat automaticky a jak moc
+
+potřebuje vstupy od obsluhy,
+
+predikovat budoucí vývoj, např. selhání pohonu, pokles kvality, na
+
+základě čehož je možné plánovat např. údržbu nebo upravit nastavení
+
+výroby,
+
+automatizovat opakující se úkoly, osvobodit tak zdroje lidí k zaměření se
+
+na složitější práci.[47]
+
+regulátor se může naučit vlastnosti regulovaného zařízení a následně
+
+může spustit varování, když se v chování zařízení objeví nějaká
+
+anomálie.
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Amazon
+/wiki/Fair_use
+/wiki/Energie
+/wiki/Kritick%C3%A9_my%C5%A1len%C3%AD
+/wiki/Kritick%C3%A9_my%C5%A1len%C3%AD
+/wiki/Regul%C3%A1tor_(automatizace)
+
+Umělá inteligence v kultuře
+
+Isaac Asimov věnoval značnou část své povídkové tvorby (sci-fi) tématům
+
+robotické inteligence. Jeho povídková sbírka Já, robot (1950), stejně jako
+
+povídka Dvěstěletý člověk (1976), byla zfilmována. Polský autor Stanisław
+
+Lem se zabýval filozofickými aspekty inteligence u nelidí ve svých knihách 
+
+Solaris (1961, zfilmována dvakrát) a Kyberiáda (1965). Některé aspekty
+
+strojové inteligence rozebral Stanisław Lem v knize Golem XIV (1968) a 
+
+Arthur Charles Clarke v knize 2001: Vesmírná odysea (1968) kde se zabýval
+
+situací, kdy se umělá inteligence obrátí proti člověku, neboť jej vyhodnotí jako
+
+překážku k úspěšnému dokončení mise, tj. své nejvyšší priority. Mezi vlivná
+
+kultovní díla patří například filmy Blade Runner (1982), Terminátor (1984), 
+
+Matrix (1999). Velká část publikací současného sci-fi kyberpunku se váže k
+
+prolínání vlastností lidských a strojových a k vyrovnávání se s myšlenkou
+
+inteligentního stroje, například v knize Neuromancer Williama Gibsona. 
+
+Probíhají diskuse o užití umělé inteligence v různých odvětvích kultury. V
+
+kinematografii se umělá inteligence propisuje například do využití při
+
+omlazování herců, jako například Harrisona Forda v posledním dobrodružství 
+
+Indiana Jonese. V českém postředí se jejím využití zabývají například filmaři 
+
+Georgij Bagdasarov nebo Ondřej Nuslauer z FAMU.[48]
+
+Umělá inteligence může být kreativnější než 99 % lidské populace.[49] Ale
+
+lidé jejím používáním kreativitu ztrácejí.[50]
+
+Umělá inteligence a náboženství
+
+Vícerá média si například všimla bohoslužby připravené umělou inteligencí.
+[51][52][53]
+
+V rámci farářského kursu Českobratrské církve evangelické v lednu 2024 se
+
+František Štěch věnoval umělé inteligenci jako výzvě pro život církví.[54]
+
+Teologické fórum křesťanství-islám, konané ve Stuttgartu, se roku 2024 neslo
+
+pod titulem „Vše spočítáno?“ – tématem byly výzvy AI obecně, 
+
+transhumanismus, technologie a tělesnost, automatizace, robotizace a umělá
+
+inteligence.[55]
+
+/wiki/Isaac_Asimov
+/wiki/Science_fiction
+/wiki/J%C3%A1,_robot_(kniha)
+/wiki/Dv%C4%9Bst%C4%9Blet%C3%BD_%C4%8Dlov%C4%9Bk
+/wiki/Stanis%C5%82aw_Lem
+/wiki/Stanis%C5%82aw_Lem
+/wiki/Solaris_(kniha)
+/w/index.php?title=Kyberi%C3%A1da&action=edit&redlink=1
+/w/index.php?title=Golem_XIV&action=edit&redlink=1
+/wiki/Arthur_Charles_Clarke
+/wiki/2001:_Vesm%C3%ADrn%C3%A1_odysea_(kniha)
+/wiki/Blade_Runner
+/wiki/Termin%C3%A1tor_(film)
+/wiki/Matrix_(film)
+/wiki/Kyberpunk
+/wiki/Neuromancer
+/wiki/William_Gibson
+/wiki/Indiana_Jones_a_n%C3%A1stroj_osudu
+/w/index.php?title=Georgij_Bagdasarov&action=edit&redlink=1
+/w/index.php?title=Ond%C5%99ej_Nuslauer&action=edit&redlink=1
+/wiki/Filmov%C3%A1_a_televizn%C3%AD_fakulta_Akademie_m%C3%BAzick%C3%BDch_um%C4%9Bn%C3%AD_v_Praze
+/wiki/%C4%8Ceskobratrsk%C3%A1_c%C3%ADrkev_evangelick%C3%A1
+/wiki/Transhumanismus
+
+V červnu roku 2024 se v bavorském Fürthu konala první bohoslužba
+
+připravená umělou inteligencí, a to v rámci mezinárodního festivalu 
+
+Kirchentag.[56]
+
+Arcibiskupství pražské hostilo v srpnu 2025 panelovou diskusi o AI, kterou
+
+připravila Jednota staroboleslavská. Účastnil se i apoštolský nuncius Jude
+
+Thaddeus Okolo.[57]
+
+Rizika AI
+
+Návrh evropského Aktu o umělé inteligenci rozlišuje tyto kategorie rizik:[58]
+
+Nepřijatelné riziko (hrozba pro člověka),
+
+Vysoké riziko (negativní dopad na bezpečnost nebo základní práva),
+
+Omezené riziko – požadavky na transparentnost, aby uživatelé mohli
+
+činit informovaná rozhodnutí. Do této kategorie bude patřit i generativní
+
+umělá inteligence, jako je ChatGPT.
+
+Více než dvě třetiny expertů předpokládají více dobré než špatné důsledky AI.
+[59] Analytici ovšem zvažují i možné katastrofální důsledky zavedení umělé
+
+inteligence včetně rizika brzkého zániku lidstva, jak varuje například studie 
+
+AI 2027 z roku 2025.[60]
+
+AI boom může potenciálně vést k vzniku ekonomické bubliny a následné
+
+hospodářské krizi.[61]
+
+Odkazy
+
+Reference
+
+↑ KAPLAN, Andreas. Artificial intelligence, business and civilization: our
+
+fate made in machines. Abingdon, Oxon: Routledge, 2022. 66 s. 
+
+ISBN 9781032155319. (anglicky)
+
+↑ One of the Biggest Problems in Regulating AI Is Agreeing on a
+
+Definition. carnegieendowment.org [online]. [cit. 2024-11-04]. Dostupné
+
+online.
+
+• 
+
+• 
+
+• 
+
+1. 
+
+2. 
+
+/wiki/F%C3%BCrth
+/wiki/Bohoslu%C5%BEba
+/w/index.php?title=Kirchentag&action=edit&redlink=1
+/wiki/Arcibiskupstv%C3%AD_pra%C5%BEsk%C3%A9
+/w/index.php?title=Jednota_staroboleslavsk%C3%A1&action=edit&redlink=1
+/wiki/Apo%C5%A1tolsk%C3%BD_nuncius_v_%C4%8Cesk%C3%A9_republice
+/wiki/Jude_Thaddeus_Okolo
+/wiki/Jude_Thaddeus_Okolo
+/wiki/Evropsk%C3%BD_akt_o_um%C4%9Bl%C3%A9_inteligenci
+/wiki/ChatGPT
+/wiki/Ekonomick%C3%A1_bublina
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/9781032155319
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/9781032155319
+https://carnegieendowment.org/posts/2022/10/one-of-the-biggest-problems-in-regulating-ai-is-agreeing-on-a-definition?lang=en
+https://carnegieendowment.org/posts/2022/10/one-of-the-biggest-problems-in-regulating-ai-is-agreeing-on-a-definition?lang=en
+
+↑ AI or BS? How to tell if a marketing tool really uses artificial
+
+intelligence. www.thedrum.com [online]. [cit. 2024-11-04]. Dostupné
+
+online.
+
+↑ A simple test reveals: Bot or human?. techxplore.com [online]. 
+
+Dostupné online.
+
+↑ WALSH, Toby. Know when to fold 'em: AI beats world's top poker
+
+players. techxplore.com [online]. 2017-01-31 [cit. 2022-12-04]. 
+
+Dostupné online. (anglicky)
+
+↑ GREENEMEIER, Larry. 20 Years after Deep Blue: How AI Has Advanced
+
+Since Conquering Chess. Scientific American [online]. 2017-06-02 [cit.
+
+2022-12-04]. Dostupné online. (anglicky)
+
+↑ HOUSER, Pavel. AlphaZero: Obrovský triumf umělé inteligence
+
+v šachách. sciencemag.cz [online]. 2017-12-07 [cit. 2022-12-04]. 
+
+Dostupné online.
+
+↑ KASÍK, Pavel; LÁZŇOVSKÝ, Matouš. Bylo to jako hrát proti zdi: umělá
+
+inteligence nečekaně porazila mistra. http://www.idnes.cz [online].
+
+2016-02-01 [cit. 2016-03-13]. Dostupné online.
+
+↑ ROUX, Mariëtte Le. Game over? Computer beats human champ in
+
+ancient Chinese game. phys.org [online]. 2016-01-27 [cit. 2022-12-04]. 
+
+Dostupné online. (anglicky)
+
+↑ Game over! Computer wins series against Go champion (Update). 
+
+phys.org [online]. 2016-03-12 [cit. 2022-12-04]. Dostupné online.
+
+(anglicky)
+
+↑ University of California. Researchers' deep learning algorithm solves
+
+Rubik's Cube faster than any human. techxplore.com [online].
+
+2019-07-15 [cit. 2022-12-04]. Dostupné online. (anglicky)
+
+↑ Umělá inteligence na turnaji porazila osm mistrů světa v bridži. 
+
+itbiz.cz [online]. 2022-03-29 [cit. 2022-12-04]. Dostupné online.
+
+↑ MIHULKA, Stanislav. Letecká bojová umělá inteligence si natřela na
+
+chleba taktické experty. osel.cz [online]. 2016-06-29 [cit. 2022-12-04]. 
+
+Dostupné online.
+
+↑ YIRKA, Bob. AI systems found to be better than doctors at gauging
+
+heart attack risk. medicalxpress.com [online]. 2017-04-17 [cit.
+
+2022-12-04]. Dostupné online. (anglicky)
+
+↑ VÍTEK, Jan. Lyrebird umí zkopírovat hlas kohokoliv z minutového
+
+záznamu. svethardware.cz [online]. 2017-04-25 [cit. 2022-12-04]. 
+
+Dostupné online.
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+9. 
+
+10. 
+
+11. 
+
+12. 
+
+13. 
+
+14. 
+
+15. 
+
+https://www.thedrum.com/opinion/2023/03/30/ai-or-bs-how-tell-if-marketing-tool-really-uses-artificial-intelligence
+https://www.thedrum.com/opinion/2023/03/30/ai-or-bs-how-tell-if-marketing-tool-really-uses-artificial-intelligence
+https://techxplore.com/news/2023-05-simple-reveals-bot-human.html
+https://techxplore.com/news/2017-01-em-ai-world-poker-players.html
+/wiki/Scientific_American
+https://www.scientificamerican.com/article/20-years-after-deep-blue-how-ai-has-advanced-since-conquering-chess/
+https://sciencemag.cz/alphazero-obrovsky-triumf-umele-inteligence-v-sachach/
+http://www.idnes.cz
+http://technet.idnes.cz/alphago-crr-/veda.aspx?c=A160128_150313_veda_mla
+https://phys.org/news/2016-01-chess-human-ancient-chinese-game.html
+https://phys.org/news/2016-03-game-series-champion.html
+https://techxplore.com/news/2019-07-deep-algorithm-rubik-cube-faster.html
+https://www.itbiz.cz/zpravicky/umela-inteligence-na-turnaji-porazila-osm-mistru-sveta-v-bridzi
+https://www.osel.cz/8903-letecka-bojova-umela-inteligence-si-natrela-na-chleba-takticke-experty.html
+https://medicalxpress.com/news/2017-04-ai-doctors-gauging-heart.html
+https://www.svethardware.cz/lyrebird-umi-zkopirovat-hlas-kohokoliv-z-minutoveho-zaznamu/44325
+
+↑ 'Poker face' stripped away by new-age tech. phys.org [online].
+
+2018-04-14 [cit. 2022-12-04]. Dostupné online. (anglicky)
+
+↑ WOLCHOVER, Natalie. Machine Learning’s ‘Amazing’ Ability to Predict
+
+Chaos. quantamagazine.org [online]. 2018-04-18 [cit. 2022-12-04]. 
+
+Dostupné online. (anglicky)
+
+↑ MIHULKA, Stanislav. Umělá inteligence DeepMind skvěle předpovídá
+
+počasí. osel.cz [online]. 2021-10-04 [cit. 2022-12-04]. Dostupné online.
+
+↑ CASTELVECCHI, Davide. Can we open the black box of AI?. S. 20–23. 
+
+Nature [online]. 2016-10. Roč. 538, čís. 7623, s. 20–23. Dostupné online.
+
+ISSN 0028-0836. doi:10.1038/538020a. (anglicky)
+
+↑ Legal resource center. www.thomsonreuters.com [online]. 2025-07-31
+
+[cit. 2025-08-05]. Dostupné online. (anglicky)
+
+↑ BOULTON, Clint. The hidden risk of blind trust in AI’s ‘black box’. 
+
+cio.com [online]. 2017-07-06 [cit. 2022-12-04]. Dostupné online.
+
+(anglicky)
+
+↑ TUREK, Matt. Explainable Artificial Intelligence (XAI) [online].
+
+darpa.mil [cit. 2022-12-04]. Dostupné online. (anglicky)
+
+↑ ROWLEY, Robert. AI as a way to overcome cognitive bias in
+
+physicians. cio.com [online]. 2017-06-27 [cit. 2022-12-04]. Dostupné
+
+online. (anglicky)
+
+↑ RIGGS, David. 5 unexpected sources of bias in artificial intelligence. 
+
+techcrunch.com [online]. 2016-12-10 [cit. 2022-12-04]. Dostupné online.
+
+(anglicky)
+
+↑ OWANO, Nancy. Fooling the human via changes to images. 
+
+techxplore.com [online]. 2018-03-03 [cit. 2022-12-04]. Dostupné online.
+
+(anglicky)
+
+↑ Massachusetts Institute of Technology. How to make AI less biased. 
+
+techxplore.com [online]. 2018-11-16 [cit. 2022-12-04]. Dostupné online.
+
+(anglicky)
+
+↑ Assessing political bias in language models. techxplore.com [online]. 
+
+Dostupné online.
+
+↑ GLICKMAN, Moshe; SHAROT, Tali. How human–AI feedback loops alter
+
+human perceptual, emotional and social judgements. Nature Human
+
+Behaviour. 2024-12-18, s. 1–15. Dostupné online [cit. 2024-12-18]. ISSN
+
+2397-3374. doi:10.1038/s41562-024-02077-2. (anglicky)
+
+↑ Bias in AI amplifies our own biases, finds study. techxplore.com
+
+[online]. [cit. 2024-12-18]. Dostupné online.
+
+16. 
+
+17. 
+
+18. 
+
+19. 
+
+20. 
+
+21. 
+
+22. 
+
+23. 
+
+24. 
+
+25. 
+
+26. 
+
+27. 
+
+28. 
+
+29. 
+
+https://phys.org/news/2018-04-poker-new-age-tech.html
+https://www.quantamagazine.org/machine-learnings-amazing-ability-to-predict-chaos-20180418/
+https://www.osel.cz/11959-umela-inteligence-deepmind-skvele-predpovida-pocasi.html
+/wiki/Nature
+https://www.nature.com/news/can-we-open-the-black-box-of-ai-1.20731
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/0028-0836
+/wiki/Digital_object_identifier
+https://doi.org/10.1038%2F538020a
+https://www.thomsonreuters.com/en/institute/legal-resource-center
+https://www.cio.com/article/230287/the-hidden-risk-of-blind-trust-in-ai-s-black-box.html
+https://www.darpa.mil/program/explainable-artificial-intelligence
+https://www.cio.com/article/230275/ai-as-a-way-to-overcome-cognitive-bias-in-physicians.html
+https://www.cio.com/article/230275/ai-as-a-way-to-overcome-cognitive-bias-in-physicians.html
+https://techcrunch.com/2016/12/10/5-unexpected-sources-of-bias-in-artificial-intelligence/
+https://techxplore.com/news/2018-03-human-images.html
+https://techxplore.com/news/2018-11-ai-biased.html
+https://techxplore.com/news/2023-05-political-bias-language.html
+https://www.nature.com/articles/s41562-024-02077-2
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/2397-3374
+/wiki/Digital_object_identifier
+https://doi.org/10.1038%2Fs41562-024-02077-2
+https://techxplore.com/news/2024-12-bias-ai-amplifies-biases.html
+
+↑ Breaking MAD: Generative AI could break the internet. techxplore.com
+
+[online]. [cit. 2024-07-31]. Dostupné online.
+
+↑ AI Shouldn’t Decide What’s True. nautil.us [online]. [cit. 2023-10-29]. 
+
+Dostupné online.
+
+↑ Apple researchers suggest artificial intelligence is still mostly an
+
+illusion. techxplore.com [online]. [cit. 2024-10-16]. Dostupné online.
+
+↑ University of Cambridge. Mathematical paradoxes demonstrate the
+
+limits of AI. techxplore.com [online]. 2022-03-17 [cit. 2022-12-04]. 
+
+Dostupné online. (anglicky)
+
+↑ Encryption breakthrough lays groundwork for privacy-preserving AI
+
+models. techxplore.com [online]. [cit. 2025-03-27]. Dostupné online.
+
+↑ ČERNÝ, Michal. Potřebujeme pravidla pro vývoj umělé inteligence?. 
+
+root.cz [online]. 31. 5. 2019. Dostupné online. ISSN 1212-8309.
+
+↑ EU data watchdogs want ban on AI facial recognition. techxplore.com
+
+[online]. 2021-06-21 [cit. 2022-12-04]. Dostupné online. (anglicky)
+
+↑ Valné shromáždění OSN jednomyslně přijalo první globální rezoluci o
+
+AI. www.itbiz.cz [online]. [cit. 2024-03-24]. Dostupné online.
+
+↑ KARLÍK, Tomáš. Umělé inteligence už napsaly miliony diplomových
+
+prací, univerzity hledají řešení. ČT24 [online]. Česká televize [cit.
+
+2024-04-11]. Dostupné online.
+
+↑ KARLÍK, Tomáš. Někteří vědci „hackují“ AI pro lepší recenze studií. 
+
+ČT24 [online]. Česká televize [cit. 2025-07-16]. Dostupné online.
+
+↑ ČERNÝ, Michal. Chceme nediskriminující umělou inteligenci, ale sami
+
+to neumíme. root.cz [online]. 26. 7. 2019. Dostupné online. ISSN
+
+1212-8309.
+
+↑ Umělá inteligence skládá, kreslí a opisuje. A žaloby se blíží | Týdeník
+
+Hrot. Hrot [online]. [cit. 2025-08-05]. Dostupné v archivu pořízeném
+
+dne 2023-12-08.
+
+↑ Memory and new controls for ChatGPT. ChatGPT - Release Notes
+
+[online]. 2024-02-13 [cit. 2024-03-04]. Dostupné online.
+
+↑ Powering AI could use as much electricity as a small country. 
+
+techxplore.com [online]. [cit. 2023-10-10]. Dostupné online.
+
+↑ AI's power demands driving toxic air pollution, study finds. phys.org
+
+[online]. [cit. 2024-12-11]. Dostupné online.
+
+↑ Increased AI use linked to eroding critical thinking skills. phys.org
+
+[online]. [cit. 2025-01-13]. Dostupné online.
+
+30. 
+
+31. 
+
+32. 
+
+33. 
+
+34. 
+
+35. 
+
+36. 
+
+37. 
+
+38. 
+
+39. 
+
+40. 
+
+41. 
+
+42. 
+
+43. 
+
+44. 
+
+45. 
+
+https://techxplore.com/news/2024-07-mad-generative-ai-internet.html
+https://nautil.us/ai-shouldnt-decide-whats-true-304534/
+https://techxplore.com/news/2024-10-apple-artificial-intelligence-illusion.html
+https://techxplore.com/news/2022-03-mathematical-paradoxes-limits-ai.html
+https://techxplore.com/news/2025-03-encryption-breakthrough-lays-groundwork-privacy.html
+https://www.root.cz/clanky/potrebujeme-pravidla-pro-vyvoj-umele-inteligence/
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/1212-8309
+https://techxplore.com/news/2021-06-eu-watchdogs-ai-facial-recognition.html
+https://www.itbiz.cz/zpravicky/valne-shromazdeni-osn-jednomyslne-prijalo-prvni-globalni-rezoluci-o-ai
+/wiki/%C4%8CT24
+/wiki/%C4%8Cesk%C3%A1_televize
+https://ct24.ceskatelevize.cz/clanek/veda/umele-inteligence-uz-napsaly-miliony-diplomovych-praci-univerzity-hledaji-reseni-348040
+/wiki/%C4%8CT24
+/wiki/%C4%8Cesk%C3%A1_televize
+https://ct24.ceskatelevize.cz/clanek/veda/nekteri-vedci-hackuji-ai-pro-lepsi-recenze-studii-362945
+https://www.root.cz/clanky/chceme-nediskriminujici-umelou-inteligenci-ale-sami-to-neumime/
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/1212-8309
+https://web.archive.org/web/20231208093856/https://www.tydenikhrot.cz/clanek/umela-inteligence-sklada-kresli-a-opisuje-a-zaloby-se-blizi
+https://help.openai.com/en/articles/6825453-chatgpt-release-notes
+https://techxplore.com/news/2023-10-powering-ai-electricity-small-country.html
+https://phys.org/news/2024-12-ai-power-demands-toxic-air.html
+https://phys.org/news/2025-01-ai-linked-eroding-critical-skills.html
+
+↑ PERKON, Dave. Artificial intelligence is smarter than you think. Control
+
+Design [online]. Jun 10, 2018. Dostupné online.
+
+↑ Využití umělé intelligence: Hra ve velkém pro firmy. algomyst.cz
+
+[online]. [cit. 2024-01-27]. Dostupné online.
+
+↑ Umělá inteligence promění kinematografii. Bude ale větší poptávka po
+
+originalitě, myslí si filmový tvůrce. iROZHLAS [online]. Český rozhlas,
+
+2023-04-09 [cit. 2023-06-29]. Dostupné online.
+
+↑ ChatGPT scores in the top 1% for original creative thinking. 
+
+studyfinds.org [online]. [cit. 2023-09-13]. Dostupné online.
+
+↑ Study explores the impact of LLMs on human creativity. 
+
+techxplore.com [online]. [cit. 2024-10-30]. Dostupné online.
+
+↑ SCHLICHTSOVÁ, Jitka. V Bavorsku se konala první bohoslužba
+
+připravená umělou inteligencí [online]. 2023-06-14 [cit. 2025-08-05]. 
+
+Dostupné online.
+
+↑ Bohoslužba vedená umělou inteligencí přilákala stovky věřících
+
+[online]. [cit. 2025-08-05]. Dostupné online.
+
+↑ EDWARDS, Benj. AI-powered church service in Germany draws a large
+
+crowd. Ars Technica [online]. 2023-06-12 [cit. 2025-08-05]. Dostupné
+
+online. (anglicky)
+
+↑ Anotace a medailonky [online]. 2024-01-26 [cit. 2025-08-05]. 
+
+Dostupné online.
+
+↑ KLAPETEK, Martin. Tématem Teologického fóra křesťanství-islám 2024
+
+ve Stuttgartu byla umělá inteligence [online]. 2024-03-06 [cit.
+
+2025-08-05]. Dostupné online.
+
+↑ SCHLICHTSOVÁ, Jitka. V Bavorsku se konala první bohoslužba
+
+připravená umělou inteligencí [online]. 2023-06-14 [cit. 2025-08-05]. 
+
+Dostupné online.
+
+↑ MRÁZEK, Benedikt. Víra v době robotů [online]. 2025-08-05 [cit.
+
+2025-08-05]. Dostupné online.
+
+↑ Akt EU o umělé inteligenci: První nařízení o AI na světe, červen 2023
+
+↑ The future of AI could be great—or catastrophic. techxplore.com
+
+[online]. [cit. 2024-01-31]. Dostupné online.
+
+↑ Vyhladí lidstvo umělá inteligence? „Málo pravděpodobné, ale ne úplné
+
+sci-fi,“ obává se Koubský. Plus [online]. 2025-04-11 [cit. 2025-10-02]. 
+
+Dostupné online.
+
+46. 
+
+47. 
+
+48. 
+
+49. 
+
+50. 
+
+51. 
+
+52. 
+
+53. 
+
+54. 
+
+55. 
+
+56. 
+
+57. 
+
+58. 
+
+59. 
+
+60. 
+
+https://www.controldesign.com/articles/2018/artificial-intelligence-is-smarter-than-you-think/
+https://algomyst.cz/article/artificial-intelligence
+/wiki/IROZHLAS
+/wiki/%C4%8Cesk%C3%BD_rozhlas
+https://www.irozhlas.cz/kultura/film/ai-ui-umela-inteligence-kinematografie-filmy-chatgpt_2304091422_kth
+https://studyfinds.org/chatgpt-original-creative-thinking/
+https://techxplore.com/news/2024-10-explores-impact-llms-human-creativity.html
+https://info.dingir.cz/2023/06/v-bavorsku-se-konala-prvni-bohosluzba-pripravena-umelou-inteligenci/
+https://www.voxpot.cz/rychle-zpravy/bohosluzba-vedena-umelou-inteligenci-prilakala-stovky-vericich/
+https://arstechnica.com/information-technology/2023/06/chatgpt-takes-the-pulpit-ai-leads-experimental-church-service-in-germany/
+https://arstechnica.com/information-technology/2023/06/chatgpt-takes-the-pulpit-ai-leads-experimental-church-service-in-germany/
+https://spek.evangnet.cz/sites/default/files/soubory-k-prilozeni/2024-farkurz-anotace-final.pdf
+https://info.dingir.cz/2024/03/tematem-teologickeho-fora-krestanstvi-islam-2024-ve-stuttgartu-byla-umela-inteligence/
+https://info.dingir.cz/2023/06/v-bavorsku-se-konala-prvni-bohosluzba-pripravena-umelou-inteligenci/
+https://info.dingir.cz/2025/08/vira-v-dobe-robotu/
+https://www.europarl.europa.eu/news/cs/headlines/society/20230601STO93804/akt-eu-o-umele-inteligenci-prvni-narizeni-o-ai-na-svete
+https://techxplore.com/news/2024-01-future-ai-great-catastrophic.html
+https://plus.rozhlas.cz/vyhladi-lidstvo-umela-inteligence-malo-pravdepodobne-ale-ne-uplne-sci-fi-obava-9450838
+
+↑ Today’s AI hype has echoes of a devastating technology boom and
+
+bust 100 years ago. theconversation.com [online]. [cit. 2025-10-08]. 
+
+Dostupné online.
+
+Literatura
+
+Zelinka Ivan: Umělá inteligence v problémech globální optimalizace BEN
+
+– technická literatura, 2002, ISBN 80-7300-069-5
+
+Plšek Bořivoj: Umělá inteligence v modelování a řízení BEN – technická
+
+literatura, 1996, ISBN 80-901984-4-9
+
+Zelinka Ivan: Umělá inteligence – hrozba nebo naděje? BEN – technická
+
+literatura, 2003, ISBN 80-7300-068-7
+
+Hammer Miloš: Metody umělé inteligence v diagnostice elektrických
+
+spojů, BEN – technická literatura, 2009, ISBN 978-80-7300-231-2
+
+Vladimír Mařík, Olga Štěpánková, Jiří Lažanský: Umělá inteligence 1–5, 
+
+Academia
+
+KŘIVAN, Miloš. Umělé neuronové sítě. [s.l.]: Nakladatelství Oeconomica,
+
+Vysoká škola ekonomická v Praze. 77 s. Dostupné online. 
+
+ISBN 978-80-245-2420-7.
+
+ČERNOCH, Viktor. Svérázná říše umělé inteligence. V textu citováni a
+
+představeni David Černý, Jiří Wiedermann, František Hakl, Tomáš Hříbek.
+
+A / Magazín. Praha: Středisko společných činností AV ČR, 2023-09-14,
+
+roč. 7, čís. 3, s. 18-31. Rubrika Téma. ISSN 2788-2918.
+
+Související články
+
+Kvantový počítač
+
+Umělá inteligence ve videohrách
+
+Filozofie umělé inteligence
+
+Hybridní inteligence
+
+Inteligentní prostředí
+
+Obecná umělá inteligence
+
+Moravcův paradox
+
+Blue Brain Project
+
+ISO/IEC JTC 1/SC 42
+
+Grokipedia
+
+61. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+https://theconversation.com/todays-ai-hype-has-echoes-of-a-devastating-technology-boom-and-bust-100-years-ago-265492
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-7300-069-5
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-7300-069-5
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-901984-4-9
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-901984-4-9
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-7300-068-7
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/80-7300-068-7
+/wiki/BEN_-_technick%C3%A1_literatura
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-7300-231-2
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-7300-231-2
+/wiki/Academia
+https://www.intelligentsoftware.eu/upload/pdf/Scriptum.pdf
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-245-2420-7
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-245-2420-7
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/2788-2918
+/wiki/Kvantov%C3%BD_po%C4%8D%C3%ADta%C4%8D
+/wiki/Um%C4%9Bl%C3%A1_inteligence_ve_videohr%C3%A1ch
+/wiki/Filozofie_um%C4%9Bl%C3%A9_inteligence
+/wiki/Hybridn%C3%AD_inteligence
+/wiki/Inteligentn%C3%AD_prost%C5%99ed%C3%AD
+/wiki/Obecn%C3%A1_um%C4%9Bl%C3%A1_inteligence
+/wiki/Moravc%C5%AFv_paradox
+/wiki/Blue_Brain_Project
+/wiki/ISO/IEC_JTC_1/SC_42
+/wiki/Grokipedia
+
+Externí odkazy
+
+Obrázky, zvuky či videa k tématu umělá inteligence na Wikimedia
+
+Commons
+
+Téma Umělá inteligence ve Wikicitátech
+
+Kniha Umělá inteligence: Zpracování informace lidským intelektem a
+
+počítačem ve Wikiknihách
+
+Umělá inteligence v České terminologické databázi knihovnictví a
+
+informační vědy (TDKIV)
+
+Oficiální web České asociace umělé inteligence
+
+Dwarkesh Podcast věnovaný AI (anglicky)
+
+Transformer, novinky ze světa AI (anglicky)
+
+Don't Worry About the Vase, substack věnovaný AI (anglicky)
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Umělá_inteligence&oldid=25392769“
+
+Kategorie: 
+
+Umělá inteligence
+
+Kybernetika
+
+Skryté kategorie: 
+
+Monitoring:Články s odkazem na TDKIV
+
+Monitoring:Články s identifikátorem NKC
+
+Monitoring:Články s identifikátorem PSH
+
+Monitoring:Články s identifikátorem TDKIV
+
+Monitoring:Články s identifikátorem BNE
+
+Monitoring:Články s identifikátorem BNF
+
+Monitoring:Články s identifikátorem GND
+
+Monitoring:Články s identifikátorem LCCN
+
+Monitoring:Články s identifikátorem LNB
+
+Monitoring:Články s identifikátorem NDL
+
+Monitoring:Články s identifikátorem NLI
+
+Monitoring:1000 nejdůležitějších článků/dlouhé
+
+Hledání
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+https://commons.wikimedia.org/wiki/Category:Artificial_intelligence
+https://cs.wikiquote.org/wiki/Um%C4%9Bl%C3%A1_inteligence
+https://cs.wikibooks.org/wiki/Um%C4%9Bl%C3%A1_inteligence:_Zpracov%C3%A1n%C3%AD_informace_lidsk%C3%BDm_intelektem_a_po%C4%8D%C3%ADta%C4%8Dem
+https://cs.wikibooks.org/wiki/Um%C4%9Bl%C3%A1_inteligence:_Zpracov%C3%A1n%C3%AD_informace_lidsk%C3%BDm_intelektem_a_po%C4%8D%C3%ADta%C4%8Dem
+http://aleph.nkp.cz/F/?func=direct&doc_number=000000137&local_base=KTD
+/wiki/%C4%8Cesk%C3%A1_terminologick%C3%A1_datab%C3%A1ze_knihovnictv%C3%AD_a_informa%C4%8Dn%C3%AD_v%C4%9Bdy
+/wiki/%C4%8Cesk%C3%A1_terminologick%C3%A1_datab%C3%A1ze_knihovnictv%C3%AD_a_informa%C4%8Dn%C3%AD_v%C4%9Bdy
+https://asociace.ai/
+https://www.dwarkesh.com/
+https://www.transformernews.ai/
+https://thezvi.substack.com/
+https://cs.wikipedia.org/w/index.php?title=Um%C4%9Bl%C3%A1_inteligence&oldid=25392769
+https://cs.wikipedia.org/w/index.php?title=Um%C4%9Bl%C3%A1_inteligence&oldid=25392769
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Um%C4%9Bl%C3%A1_inteligence
+/wiki/Kategorie:Kybernetika
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_odkazem_na_TDKIV
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NKC
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_PSH
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_TDKIV
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_BNE
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_BNF
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_GND
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_LCCN
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_LNB
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NDL
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_NLI
+/wiki/Kategorie:Monitoring:1000_nejd%C5%AFle%C5%BEit%C4%9Bj%C5%A1%C3%ADch_%C4%8Dl%C3%A1nk%C5%AF/dlouh%C3%A9
+
+Hledat
+
+Umělá inteligence
+
+173 jazyků Přidat téma
+
+Speciální:Hledání
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+	Oblasti umělé inteligence
+	Strojové učení
+	Neuronové sítě
+	Robotika
+	Počítačové vidění
+	Bayesovské sítě
+	Expertní systémy
+	Dobývání znalostí
+	Fuzzy logika
+	Evoluční algoritmy
+	Multiagentní systémy
+	Prohledávání stavového prostoru
+	Zpracování přirozeného jazyka
+
+	Úspěšné algoritmy
+	Hry
+	Další algoritmy
+
+	Problematika
+	Umělá inteligence v průmyslu
+	Umělá inteligence v kultuře
+	Umělá inteligence a náboženství
+	Rizika AI
+	Odkazy
+	Reference
+	Literatura
+	Související články
+	Externí odkazy
+
+

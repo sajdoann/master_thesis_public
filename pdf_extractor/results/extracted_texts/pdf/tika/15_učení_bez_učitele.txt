@@ -1,0 +1,265 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Učení bez učitele – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Učení bez učitele je třída metod strojové učení. Na rozdíl od učení s
+
+učitelem trénovací data nemají vstupní data provázaná s cílovými
+
+proměnnými (ohodnocením, závisle proměnnou…), tj. schází výrok učitele a
+
+učení bez učitele tedy vykazuje samoorganizaci, která zachycuje vzory jako 
+
+hustotu pravděpodobnosti.[1] Učení bez učitele si tedy lze představit jako
+
+kompresi vstupních dat, např. například snížení jejich dimense (v analýze
+
+hlavních komponent) nebo jejich redukci na diskrétní body (jako je tomu ve 
+
+shlukové analýze, kde vstupní data reprezentujeme označenými shluky), či
+
+jejich vyhlazení (odhad distribučních funkcí).[2] U neuronových sítí se učení
+
+bez učitele užívá typicky u kompetičních sítí. (Porovnejte s učením s
+
+učitelem). 
+
+Praktické aplikace
+
+segmentace: Obchodník tak může rozdělit svoje zákazníky podle jejich
+
+podobnosti je zařadit do tržních segmentů anebo archeolog může podle
+
+charakteristik nalezených střepů keramiky definovat různé kulturní
+
+okruhy, k nimž patřili lidé, kteří kdysi keramiku vyráběli
+
+hledání anomálií: Netypické datové body mohou signalizovat poruchy
+
+nebo jiné situace, na které je potřeba se zaměřit, například při detekci
+
+podvodů ve finančních a telekomunikačních firmách
+
+odhad latentních proměnných: Psycholog může z řady výsledků
+
+jednotlivých testů stanovit inteligenci zkoumané osoby, politolog může
+
+na základě dotazníkového šetření rekonstruovat základní dimenze
+
+politického systému v zemi
+
+zpravodajské sekce: Zprávy Google používají učení bez učitele ke
+
+kategorizaci článků o stejném příběhu z různých online zpravodajství.
+
+Například výsledky prezidentských voleb by mohly být zařazeny pod
+
+jejich štítek "US news".
+
+počítačové vidění: Algoritmy učení bez učitele se používají pro některé
+
+úlohy počítačového vidění, například rozpoznávání objektů.  
+
+lékařské zobrazovací metody: Poskytuje základní funkce lékařským
+
+zobrazovacím zařízením, jako je detekce, klasifikace a segmentace
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Strojov%C3%A9_u%C4%8Den%C3%AD
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem#tr%C3%A9novac%C3%AD_data
+/wiki/Hustota_pravd%C4%9Bpodobnosti
+/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent
+/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/Distribu%C4%8Dn%C3%AD_funkce
+/wiki/Um%C4%9Bl%C3%A1_neuronov%C3%A1_s%C3%AD%C5%A5
+/wiki/Samoorganizuj%C3%ADc%C3%AD_s%C3%AD%C5%A5
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/U%C4%8Den%C3%AD_s_u%C4%8Ditelem
+/wiki/Algoritmus
+/wiki/Segmentace_obrazu
+
+obrazu, které se používají v radiologii a patologii k rychlé a přesné
+
+diagnostice pacientů.
+
+doporučování: Pomocí údajů o minulém nákupním chování může
+
+neřízené učení pomoci odhalit datové trendy, které lze využít k vytvoření
+
+efektivnějších strategií následného prodeje. Toho se u internetových
+
+prodejců využívá k tomu, aby zákazníkům během procesu placení
+
+doporučovali relevantní doplňky.[3]
+
+Typické algoritmy
+
+shluková analýza (hierarchické shlukování, k-means a jiné)
+
+metody identifikující struktury kovariančních vazeb (analýza hlavních
+
+komponent, faktorová analýza, strukturní modelování a další)
+
+vyhlazování a odhadování hustot pravděpodobnosti (kernel density
+
+estimation)
+
+Reference
+
+↑ HINTON, Geoffrey; SEJNOWSKI, Terrence. Unsupervised Learning:
+
+Foundations of Neural Computation. [s.l.]: MIT Press, 1999. 
+
+ISBN 978-0262581684.
+
+↑ GENTLEMAN, R.; CAREY, V. J. Unsupervised Machine Learning.
+
+Bioconductor Case Studies. New York: Springer, 2008. 21 s. Dostupné
+
+online. ISBN 978-0-387-77239-4. (anglicky)
+
+↑ What is Unsupervised Learning?. www.ibm.com [online]. [cit.
+
+2022-10-26]. Dostupné online. (anglicky)
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Učení_bez_učitele&oldid=25374143“
+
+Kategorie: 
+
+Strojové učení
+
+Skryté kategorie: 
+
+Údržba:Články s dočasně použitou šablonou
+
+Monitoring:Články s identifikátorem GND
+
+• 
+
+• 
+
+• 
+
+• 
+
+1. 
+
+2. 
+
+3. 
+
+• 
+
+• 
+
+• 
+
+/wiki/Segmentace_obrazu
+/wiki/Shlukov%C3%A1_anal%C3%BDza
+/wiki/Hierarchick%C3%A9_shlukov%C3%A1n%C3%AD
+/wiki/K-means
+/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent
+/wiki/Anal%C3%BDza_hlavn%C3%ADch_komponent
+/wiki/Faktorov%C3%A1_anal%C3%BDza
+/wiki/Strukturn%C3%AD_modelov%C3%A1n%C3%AD
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-0262581684
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-0262581684
+https://archive.org/details/bioconductorcase0000unse
+https://archive.org/details/bioconductorcase0000unse
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-0-387-77239-4
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-0-387-77239-4
+https://www.ibm.com/cloud/learn/unsupervised-learning
+https://cs.wikipedia.org/w/index.php?title=U%C4%8Den%C3%AD_bez_u%C4%8Ditele&oldid=25374143
+https://cs.wikipedia.org/w/index.php?title=U%C4%8Den%C3%AD_bez_u%C4%8Ditele&oldid=25374143
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Strojov%C3%A9_u%C4%8Den%C3%AD
+/wiki/Kategorie:%C3%9Adr%C5%BEba:%C4%8Cl%C3%A1nky_s_do%C4%8Dasn%C4%9B_pou%C5%BEitou_%C5%A1ablonou
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_GND
+
+Hledání
+
+Hledat
+
+Učení bez učitele
+
+33 jazyků Přidat téma
+
+Speciální:Hledání
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+	Praktické aplikace
+	Typické algoritmy
+	Reference
+

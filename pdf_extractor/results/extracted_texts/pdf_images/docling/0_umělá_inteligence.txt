@@ -1,0 +1,286 @@
+Z Wikipedie, otevrené encyklopedie Na tento Clanek je presmerovano heslo Al. Dalsi vyznamy jsou uvedeny na strankach Uméla inteligence (rozcestnik) a Al (rozcestnik).
+
+## Informatika
+
+- Obory informatiky
+- Programovani
+- Matematicka informatika (Teoreticka informatika
+- Teorie slozitosti
+- Umela inteligence
+- Teorie grafd
+- Teorie informace)
+- Informacni technologie
+- Bioinformatika
+- Chemoinformatika
+- Geoinformatika
+- Lékarska informatika
+- Neuroinformatika
+- Sociálni informatika
+- Informatici
+- Charles Babbage
+- Alan Turing
+- DonaldKnuth
+- dalsi...
+- Déjiny informatiky
+
+Umela inteligence (ul, anglicky artificial intelligence - zkracene Al) je inteligence projevovana stroji, zejména pocitaci s vhodnym programovym vybavenim, a zaroven je to obor informatiky zabyvajici se tvorbou takovych pocitacovych systému. Ty resi komplexni ulohy jako je rozpoznáváni, diagnostika Ci klasifikace, napr.v oblastechzpracovani obrazu(ve formé pixeld pomoci konvolucnich neuronovych siti) Ci zpracovani psaného textu Ci mluveného jazyka (ve forme kodu jazykovych modelu), nebo planovani Ci Yizeni na zaklade zpracovani velkych objeml dat [1]
+
+- Uzka umela inteligence (anglicky narrow artificial intelligence zkracene NAl) Ci ,slabá Al" odkazuje na systémy zamerené na reseni
+- Obecna umela inteligence (anglicky artificial general intelligence zkracené AGl) Ci ,silná Al" odkazuje na systémy resici úlohy stejné dobre nebo dokonce lépe nez Clovek a resi je bez nutnosti predchoziho uceni jednotlivych uzce vymezenych úloh. AGl spojujici ,lidské" flexibilni realitou podminenou uspesnym vyvojem kvantovych pocitacd.
+
+definici mohou mit zasadni dopady.[2l Termin umela inteligence se take Casto naduziva jako buzzword.[3]
+
+## Oblasti umele inteligence Strojové uceni
+
+Podrobnejsi informacenaleznetevClankuStrojovéuceni. Strojové uceni je podoblasti umelé inteligence, zabyvajici se algoritmy, které umoznujfpocitacovému systému,ucit se".Ucenimv danémkontextu rozumime takovou zménu vnitrniho stavu systému, ktera zefektivni schopnost prizpusobeni se zménam okolniho prostredi. Strojové uceni ma Siroké uplatneni. Jeho techniky se vyuzivaji pro rozpoznavani a kompresi obrazu Ci akustickych (napr. rozpoznavani reci) nebo elektrickych (napr. EKG, EEG) signald, klasifikaci Ci segmentaci dat, predvidani vyvoje Casovych rad (napr. burzovnich indexd), k rozpoznavani psaného textu Ci k filtrovani spamu. V lékarstvi slouzi k diagnostice onemocneni a v Yizeni pro podporu rozhodovani.
+
+## Neuronovésite
+
+Podrobnejsi informace naleznete v Clanku Umela neuronova sit. Umelé neuronové site v umelé inteligenci jsou volne inspirovany odpovidajicimi biologickymi strukturami. Oproti nim jsou vsak znacné lidsky mozek. Cilem toti neni verne simulovat biologické struktury, ale predevsim resit praktické problémy. Jedná se o pristup ke strojovému uceni, ktery se stal velmi uspesnym. Neuronové sité se pouzivajf mimo jiné k rozpoznavani a kompresi obrazu Ci akustickych (napr. rozpoznavani reci) nebo elektrickych (napr. EKG, EEG) signálu, klasifikaci Ci segmentaci dat, predvidani vyvoje Casovych rad (napr. burzovnich indexu), k rozpoznavani psaného textu Ci k filtrovani spamu. Tvorbou biologicky vernych modeld organismu. Napriklad Grossbergova neuronová sit vznikla puvodne jako simulace fyziologického modelu rozpoznavani vzoru na sitnici lidského oka.
+
+## Robotika
+
+Podrobnejsi informace naleznete v Clanku Robotika. Robotika je veda o robotech, jejich designu, vyrobe a aplikacich. Robot muze bud'pomahat, nebo delat lidskou praci, popr. zajistovati komfort spolecnosti. Robotika uzce souvisi s elektronikou, mechanikou a aplikovanym softwarem.
+
+## Pocitacovevideni
+
+Podrobnejsi informace naleznete v Clanku Pocitacové videni. Jde o videni zobecnené: Zdaleka ne jen viditelnym svetlem, dokonce ani vubec ne svetlem, nybrz treba akusticky, obecne tedy echolokaci.
+
+- ·ve2D:
+- ° Detekce hran v obrazu, jejich aproximacni prodlouzeni, ohodnoceni vyznamnosti detekovanych hran, odstranenivlivu ruznéhojasu napric obrazem.
+- rozpoznavani rucne psaného textu.Schopnost rozpoznavani predmetu pootocenych, sklonenych, jinak barevnych Ci dokonce vzorovanych, neuplnych oriznutim nebo zasuménim.
+- Rozpoznavani tvaru a z nich usuzovani na objekty realného sveta (dokonce i s urcenim pravdepodobnosti), typicky z fotografi.
+- o Realtime detekce tvare ve snimcich videa, nejsnaze podle predem zadanych bodu k hledani a jejich vzajemnych vztahu: vzdalenosti. Obecne detekce predepsaného vzoru v obraze.
+- ·ve3D:
+- 。 Odstranéni paralaxy (zkresleni ubihanim rovnobezek), napriklad pouzitimmaticovétransformace,jejim autonomnimnalezenim. Rozpoznani identity s ji videnym (znamym) objektem, nyni vsak pozorovanym z jiného uhlu.
+- o Samostatné zorientovani se v prostoru: urceni smeru souradnicového systému okolniho prostoru.
+- o Uvédomeni si vlastni polohy v okolnim prostoru pri (nedokonalém) Klicovépro autonomne se pohybujici roboty:Nekonecna smycka stridani kroku v prostoru / na mape.
+
+## Bayesovske site
+
+PodrobnejsiinformacenaleznetevClankuBayesovskasit Bayesovska sit je pravdepodobnostni model, ktery vyuziva grafovou reprezentaciprozobrazenipravdepodobnostnichvztahumezi jednotlivymi jevy. Vyuziva se pro urceni pravdepodobnosti urcitych jevu, pricem vychazi ze zakladu teorie pravdepodobnosti. Bayesovska sit je acyklicky orientovany graf, kde kady uzel odpovida jedné nahodné veliciné, pricem kady graf typicky obsahuje nekolik velicin/uzlu. Vsechny veliciny v grafu se vztahuji k neznamému jevu, pricem kazda velicina je reprezentovana jednim uzlem statistickych metod.
+
+## Expertni systémy
+
+Podrobnejsi informace naleznete v Clanku Expertni systém. Expertni systém je pocitacovy program, ktery má za ukol poskytovat expertni rady, rozhodnuti nebo doporucit reseni v konkrétni situaci. Expertni systémy jsou navrzeny tak, aby mohly zpracovavat nenumerické a neurcité informace a resit tak úlohy, které nejsou resitelné tradicnimi algoritmickymi postupy. Expertni systém ma dve zakladni komponenty, které jsou na sobe relativné nezavislé. Ridici mechanismus pro odvozovani zavéru a Bazi znalosti. V s  s  sa
+
+## Dobyvani znalosti
+
+Podrobnejsi informace naleznete v Clanku Data mining. ziskavani netrivialnich skrytych a potencialne uzitecnych informaci z dat.
+
+jako souznacná. Casto dochazi také k prekryvu s terminem data science, ktery byva obvykle chapan sireji ne data mining. Data mining se pouzivá v komercni sfére (napriklad v marketingu pri rozhodovani, které klienty oslovit dopisem s nabidkou produktu), ve vedeckém vyzkumu (napriklad pri analyze genetické informace) i v jinych oblastech (napriklad pri monitorovani aktivit na internetu s cilem odhalit Cinnost potencialnich skudcu a teroristu).
+
+## Fuzzylogika
+
+PodrobnejsiinformacenaleznetevClankuFuzzy logika. Fuzzy logika je podobor matematické logiky odvozeny od teorie fuzzy mnozin pravdu, tj. nulu a jednicku. Fuzzy logika muze operovat se vsemi hodnotami z intervalu (0,1), kterych je nekonecne mnoho. Fuzzy logika muze byt pro radu realnychrozhodovacichulohvhodnejsi nezklasickalogika,protozeusnadnuje navrh slozitych ridicich systémd.
+
+## Evolucni algoritmy
+
+Podrobnejsi informace naleznete v Clanku Geneticky algoritmus Evolucni algoritmy se uzivaji k nalezeni dostatecne kvalitniho reseni optimalizacnich úloh v dostatecne kratkém Case. Mezi evolucni algoritmy inspirované prirodou se zahrnuje celé spektrum optimalizacnich heuristickych technik, napr. genetické algoritmy Ci simulované Zihani. Heuristiky muzeme spravneho vysledku, nicméne jsou zbaveny celé rady neduhu konvencnich optimalizacnich metod,jako napr.pozadavek spojitosti Ci diferencovatelnosti objektivni resp. vazebni funkce, respektovani omezujicich podminek, uviznuti v mélkém lokalnim minimu atd. Na druhou stranu vsak je pri jejich aplikaci zapotrebi nastaveni jistych volnych parametru, které je nutné ,naladit" v zavislosti na konkrétnim optimalizacnim problému.
+
+## Multiagentnisystemy
+
+Podrobnejsi informace naleznetev Clanku Multiagentni system.
+
+Multiagentni systém je simulované prostredi se sitovym charakterem, v nemz prostredim, ve kterém se nachazejf. Tito agenti resi spolecne problémy, které mravenCi kolonie (Ant Colony Optimization (ACO)).
+
+## Prohledavanistavovehoprostoru
+
+pripustné tahy neboli prechody mezi stavy a pocatecni a koncové pozice. Hledame pak cestu od pocatecnich stavu ke koncovym stavum, které znamenaji nas uspech. Jelikoz mohou byt stavové prostory rozsahlé(napr. ve hre go) a v nekterych pripadech i nekonecné, je treba volit chytré metody orezavani nevhodnychcest a ohodnocovani pozic.
+
+## Zpracovani prirozeneho jazyka
+
+Podrobnejsi informace naleznete v Clancich Zpracovani prirozeného jazyka, pocitacova lingvistika a matematicka lingvistika Pocitacové zpracovani prirozeného jazyka (Natural Language Processing, NLP) se zabyvá analyzou, transformaci Ci generovani textu nebo mluveného slova. Aplikacemi NLP jsou napr. strojovy preklad, automatické zodpovidani dotazd (pro chatboty a podobné), dolovani z textu, yytah z textu (automaticka sumarizace), automatická korektura textu, extrakce informaci z korpusu textu, generovani prirozeného jazyka, rozpoznavani reci a jeji syntéza. Kolem roku 2010 toto pole v zasade ovládly technologie zalozené na hlubokém uceni, je zpravidla vykazuji vyssi kvalitu ne starsi technologie zalozenénapr.nalingvistické analyzetextu. S    o od Google. Tyto programy excelujf v memorovani, ale majf problémy
+
+## Uspesne algoritmy
+
+## Hry
+
+- Kralovská hra Sachy byla uz od pocatku informatiky predmetem analyz. Reseni problému bylo od pocátku spojovano s inteligenci, avsak vyhra nemusi znamenat vetsi inteligenci. V roce 1997 porazil systém Deep Blue od firmy IBM uradujiciho mistra sveta Garriho Kasparova. Deep Blue reseni hrubou silou. Soucasná Al jiz neprochazi tolik pozic a pritom je uspesnejsi. [Z]
+- Chinook je program pro hrani anglické damy, jeho tvurci v cervenci roku 2007 prohlásili, e nemuze prohrat. Ji nekolik let predtim pravidelne porazel lidské oponenty. Tohoto vysledku bylo dosazeno kombinaci hrubé sily pri prohledavani pozic ve stredni casti hry a dobrou databazi zahajeni akoncovek.
+- a au o  s s  y o o zrejmé proto, e je goban (deska na go) je pomérne rozsahla a s kazdym dalsim polozenym kamenem stoupa komplexita rozhodovani, kterou vsak maji lidé sanci zvladnout diky své vrozené schopnosti rozpoznavani tvaru. Ovsem nejlepsi programy pouzivajici jak reseni hrubou silou (presneji stromové prohledavani do hloubky),[8l tak intuici, jsou schopné poráet i mistry.L9110]
+- Karetni hra bridz,[12]
+
+## Dalsi algoritmy
+
+- Al doka2e lépe predpovidat chaos ne之 rovnice.[17]l
+- Al je lepsi i v kratkodobych predpovedich pocasi. 18]
+
+## Problematika
+
+- vysvetlitelné Al (XAl). [21l[22]
+- Al mize odstranit lidské kognitivni zkreslenf.[23l maze ovsem zavést vlastni zkresleni. [24l Lidské i umelé mysleni tedy Ize i podvést.[251 zale2i na zpusobu vyberu dat k uceni. [26l Uméla inteligence tak mize byt maji systémy umelé inteligence tendenci prebirat lidské predsudky a zesilovat je, co muze zpusobit u uzivatelu Al, e budou vice predpojati.
+- Al nepozn, co je pravda.[31l ve skutecnosti neni inteligentni, protoe logicky neuvazuje.[321
+- Existuji vypocetni problémy, které nelze vyresit bez ohledu na vypocetni vykon a dobu behu, ktere limituji umélou inteligenci.[33]
+- Protoze technologie mohou byt pro Cloveka nebezpecné, formulovala koncem dubna 2019 Evropska komise etické zasady vyvoje systému s umelou inteligenci:
+- oMoznostYizeni a dohledu ze stranyCloveka
+- o Robustnost a bezpecnost
+- o Ochrana soukromi a dat (muze vyresit plne homomorfni Sifrovani) [34]
+- o Transparentnost
+- o Zakaz diskriminace a rovné zachazeni
+- o Spolecensky a environmentalni prospéch
+- 。 Odpovédnost.[35]
+
+EUzvazujezakazatCiomezitumelouinteligencipriidentifikaci lidina studi, v niz uvadi, e umela inteligence vygenerovala ji miliony diplomovych alespon cástecne generovano umelou inteligenci, podobne na tom pak byly i samotné recenze téchto Clanka.[39]
+
+Problém zakazu diskriminace jev tom,e diskriminace je chovani,preference urcitych hodnot, kategorif Ci parametru, které bené lidé voli, aniz by si toho byli védomi. Casto je toto diskriminacni chovani objeveno, a kdy se na zaklade dat z takového chovani uci umelá inteligence. Tento problém se vyhodnotil pohlavi jako jeden z vybérovych parametru a Yivotopisy en pouzita data, ktera casto mapovala technické pozice, na které se Casteji hlasili muzi. [40] Existuje i pravni problematika, protoze umela inteligence se uci i na dilech podléhajici autorskému pravu. V UsA tak vyvstava otazka, do jaké miry je to fair use.[41l velke jazykove modely take pracuji s daty poskytnutymi uzivateli. Nekteréznich,naprikladChatGPT,sesnazi toutoproblematiku deeskalovat pomoci individualniho uzivatelskeho nastaveni. 42] Spotreba energie je u Al znacna.[43l prispiva tak k znecisteni vivotniho zdravotnich nakladech (rakovina, astma, dalsi nemoci a zameskané pracovni
+
+prostredi exhalacemi pri vyrobe elektrické energie, Cim se v UsA podili na a Skolni dny) odhadovanych v roce 2030 na 20 miliard dolard rocne.[44] Prehnanéspoléhaninaumelou inteligenci muzevéstkerozikritického mysleni. [45]
+
+## Umela inteligence v prumyslu
+
+- ze ziskanych ,syrovych" dat primo ze zarizeni muze ziskavat a vizualizovatpodstatnéinformacepro obsluhuzarizeni,
+- detekovat, jak moc se zarizeni muze rozhodovat automaticky a jak moc potrebuje vstupy od obsluhy,
+- predikovat budouci vyvoj, napr. selhani pohonu, pokles kvality, na zaklade Ceho je mozné planovat napr. udrzbu nebo upravit nastaveni vyroby,
+- na slozitejsi praci. [47]
+- regulator se muze naucit vlastnosti regulovaného zarizeni a nasledné muze spustit varovani, kdyz se v chovani zarizeni objevi nejaka anomalie.
+
+## Umela inteligence v kulture
+
+robotické inteligence.Jeho povidkova sbirka Ja, robot (1950), stejne jako Solaris (1961, zfilmována dvakrat) a Kyberiada (1965). Nekteré aspekty strojové inteligence rozebral Stanistaw Lemv knize Golem X/V(1968) a Arthur Charles Clarke v knize 2001: Vesmirna odysea (1968) kde se zabyval situaci, kdy se umela inteligence obrati proti Cloveku, nebot jej vyhodnoti jako prekaku k úspésnému dokonceni mise, tj. své nejvyssi priority. Mezi vlivná Matrix(1999). Velká Cast publikaci soucasného sci-fi kyberpunku se vaze k inteligentniho stroje, napriklad v knize Neuromancer Williama Gibsona. Probihaji diskuse o uziti umelé inteligencev ruznych odvetvichkultury. V kinematografi se uméla inteligence propisuje napriklad do vyuziti pri omlazovani hercu, jako napriklad Harrisona Forda v poslednim dobrodruzstvi Georgij Bagdasarov nebo Ondrej Nuslauer z FAMu.[48] IAle
+
+## Umela inteligence a nabozenstvi
+
+Vicera média si napriklad vsimla bohosluzby pripravené umélou inteligenci. [51][52][53] V ramci fararského kursu Ceskobratrské cirkve evangelické v lednu 2024 se Teologické forum krestanstvi-islam, konané ve Stuttgartu, se roku 2024 neslo pod titulem ,Vse spocitano?" - tématem byly vyzvy Al obecné, transhumanismus, technologie a telesnost, automatizace, robotizace a umela inteligence.[55]
+
+V Cervnu roku 2024 se v bavorském Furthu konala prvni bohosluzba pripravena umelou inteligenci, a to v ramci mezinarodniho festivalu Kirchentag. [56] Arcibiskupstvi prazské hostilo v srpnu 2025 panelovou diskusi o Al, kterou pripravila Jednota staroboleslavska. Ucastnil se i apostolsky nuncius Jude Thaddeus Okolo. [57]
+
+## Rizika Al
+
+- Neprijatelné riziko (hrozba pro Cloveka),
+- Vysoké riziko (negativni dopad na bezpecnost nebo zakladni prava),
+- Cinit informovaná rozhodnuti. Do této kategorie bude patrit i generativni umélainteligence,jako jeChatGPT
+
+Vice nez dvé tretiny expertu predpokladaji vice dobré ne Spatné dusledky Al. inteligence vcetne rizika brzkého zaniku lidstva, jak varuje napriklad studie A/ 2027 z roku 2025. [60] Al boom muze potencialne vést k vzniku ekonomicke bubliny a nasledné hospodarské krizi. [61]
+
+## Odkazy
+
+## Reference
+
+- 1.↑ KAPLAN, Andreas. Artificial intelligence, business and civilization: our fate made in machines. Abingdon, Oxon: Routledge, 2022. 66 s. ISBN 9781032155319. (anglicky)
+2. ↑ One of the Biggest Problems in Regulating Al Is Agreeing on a Definition. carnegieendowment.org [online]. [cit. 2024-11-04]. Dostupné online.
+3. ↑ Al or BS? How to tell if a marketing tool really uses artificial intelligence. www.thedrum.com [online]. [cit. 2024-11-04]. Dostupné online.
+4. ↑ A simple test reveals: Bot or human?. techxplore.com [online]. Dostupné online.
+5. ↑ WALSH, Toby. Know when to fold 'em: Al beats world's top poker players. techxplore.c0m [online]. 2017-01-31 [cit. 2022-12-04]. Dostupné online. (anglicky)
+6. ↑ GREENEMEIER, Larry. 20 Years after Deep Blue: How Al Has Advanced Since Conquering Chess. Scientific American [online]. 2017-06-02 [cit. 2022-12-04]. Dostupné online. (anglicky)
+7. ↑ HOUSER, Pavel. AlphaZero: Obrovsky triumf umelé inteligence
+8. ↑ KASiK, Pavel; LAzNOVSKY, Matous. Bylo to jako hrat proti zdi: umélé inteligence necekane porazila mistra. http://www.idnes.cz [online]. 2016-02-01 [cit. 2016-03-13]. Dostupné online.
+9. ↑ ROuX, Mariette Le. Game over? Computer beats human champ in ancient Chinese game. phys.org [online]. 2016-01-27 [cit. 2022-12-04]. Dostupné online. (anglicky)
+10. ↑ Game over! Computer wins series against Go champion (Update). (anglicky)
+- Rubik's Cube faster than any human. techxplore.com [online]. 2019-07-15 [cit. 2022-12-04]. Dostupné online. (anglicky)
+12. ↑ Umela inteligence na turnaji porazila osm mistru sveta v bridzi.
+13. ↑ MlHULKA, Stanislav. Letecká bojová uméla inteligence si natrela na Dostupné online.
+- 2022-12-04]. Dostupné online. (anglicky)
+- zaznamu. svethardware.cz [online]. 2017-04-25 [cit. 2022-12-04].
+- 2018-04-14 [cit. 2022-12-04]. Dostupné online. (anglicky)
+17. ↑ WOLCHOVER, Natalie. Machine Learning's'Amazing' Ability to Predict Cha0s. quantamagazine.0rg [online]. 2018-04-18 [cit. 2022-12-04]. Dostupné online. (anglicky)
+18. ↑ MIHULKA, Stanislav. Umelá inteligence DeepMind skvéle predpovidé pocasi. 0sel.cz[online]. 2021-10-04[cit. 2022-12-04]. Dostupné online
+19. ↑ CASTELVECCHl, Davide. Can we open the black box of Al?. S. 20-23. Nature [online]. 2016-10. Ro. 538, Cis. 7623, s.20-23.Dostupné online ISSN 0028-0836. doi:10.1038/538020a. (anglicky)
+20. ↑ Legal resource center. www.thomsonreuters.com [online]. 2025-07-31 [cit. 2025-08-05]. Dostupné online. (anglicky)
+21. ↑ BOULTON, Clint. The hidden risk of blind trust in Al's 'black box'. cio.c0m[online].2017-07-06[cit. 2022-12-04]. Dostupné online (anglicky)
+22. ↑ TUREK, Matt. Explainable Artificial Intelligence (XAl)[online]. darpa.mil [cit. 2022-12-04]. Dostupné online. (anglicky)
+23. ↑ ROwLEY, Robert. Al as a way to overcome cognitive bias in physicians. cio.com [online]. 2017-06-27 [cit. 2022-12-04]. Dostupné online. (anglicky)
+- techcrunch.com [online]. 2016-12-10 [cit. 2022-12-04]. Dostupné online. (anglicky)
+25. ↑ OwANO, Nancy. Fooling the human via changes to images. techxplore.com [online]. 2018-03-03 [cit. 2022-12-04]. Dostupné online (anglicky)
+26. ↑ Massachusetts Institute of Technology. How to make Al less biased. techxplore.com [online]. 2018-11-16 [cit. 2022-12-04]. Dostupné online. (anglicky)
+27. ↑ Assessing political bias in language models. techxplore.com [online]. Dostupné online.
+28. ↑ GLICKMAN, Moshe; SHAROT, Tali. How human-Al feedback loops alter humanperceptual,emotionaland social judgements.NatureHuman Behaviour. 2024-12-18, s. 1-15. Dostupné online [cit. 2024-12-18]. ISSN 2397-3374. doi:10.1038/s41562-024-02077-2. (anglicky)
+30. ↑ Breaking MAD: Generative Al could break the internet. techxplore.com [online]. [cit. 2024-07-31]. Dostupné online
+31. ↑ Al Shouldn't Decide What's True. nautil.us [online]. [cit. 2023-10-29]. Dostupné online.
+- 32.↑ Apple researchers suggest artificial intelligenceis still mostly an illusion. techxplore.com [online]. [cit. 2024-10-16]. Dostupné online.
+33. ↑ University of Cambridge. Mathematical paradoxes demonstrate the limits of Al.techxplore.c0m[online]. 2022-03-17[cit.2022-12-04]. Dostupné online. (anglicky)
+34. ↑ Encryption breakthrough lays groundwork for privacy-preserving Al models.techxplore.com [online]. [cit. 2025-03-27].Dostupné online
+35. ↑ CERNY, Michal. Potrebujeme pravidla pro vyvoj umélé inteligence?. root.cz [online]. 31. 5. 2019. Dostupné online. ISSN 1212-8309
+36. ↑ EU data watchdogs want ban on Al facial recognition. techxplore.com [online]. 2021-06-21 [cit. 2022-12-04]. Dostupné 0nline. (anglicky)
+37. ↑ Valné shromádeni OsN jednomyslne prijalo prvni globalni rezoluci o Al. www.itbiz.cz [online]. [cit. 2024-03-24]. Dostupné online.
+38. ↑ KARLiK, Tomá%. Umélé inteligence u napsaly miliony diplomovych praci, univerzity hledaji reseni. CT24 [online]. Ceska televize [cit. 2024-04-11]. Dostupné online
+39. ↑ KARLik, Tomás. Nekteri védci ,hackuji" Al pro lepsi recenze studif. CT24 [online]. Ceská televize [cit. 2025-07-16]. Dostupné online.
+40. ↑ CERNY, Michal. Chceme nediskriminujici umelou inteligenci, ale sami to neumime. root.cz [online]. 26. 7. 2019. Dostupné online. ISSN 1212-8309.
+41. ↑ Uméla inteligence sklada, kresli a opisuje. A aloby se blizi | Tydenik dne 2023-12-08.
+- 42.↑ Memory and new controls for ChatGPT. ChatGPT-Release Notes [online]. 2024-02-13 [cit. 2024-03-04]. Dostupné online
+43. ↑ Powering Al could use as much electricity as a small country. techxplore.com[online].[cit. 2023-10-10].Dostupné online.
+44. ↑ Al's power demands driving toxic air pollution, study finds. phys.org [online]. [cit. 2024-12-11]. Dostupné online.
+45. ↑ Increased Al use linked to eroding critical thinking skills. phys.org [online]. [cit. 2025-01-13]. Dostupné online
+46. ↑ PERKON, Dave. Artificial intelligence is smarter than you think. Control Design [online]. Jun 10,2018. Dostupné online.
+47. ↑ Vyuziti umelé intelligence: Hra ve velkém pro firmy. algomyst.cz [online]. [cit. 2024-01-27]. Dostupné online.
+48. ↑ Uméla inteligence proméni kinematografi. Bude ale vetsi poptavka po originalite, mysli si filmovy tvurce. iROZHLAS [online]. Cesky rozhlas, 2023-04-09[cit. 2023-06-29].Dostupné online.
+49. ↑ ChatGPT scores in the top 1% for original creative thinking. studyfinds.org [online]. [cit. 2023-09-13]. Dostupné online.
+50. ↑ Study explores the impact of LLMs on human creativity. techxplore.com [online]. [cit. 2024-10-30]. Dostupné online.
+51. ↑ SCHLICHTSOvA, Jitka. V Bavorsku se konala prvni bohosluba pripravenaumelou inteligenci[online].2023-06-14[cit.2025-08-05]. Dostupné online.
+52. ↑ Bohosluzba vedena umelou inteligenci prilakala stovky vericich [online]. [cit. 2025-08-05]. Dostupné online.
+53. ↑ EDwARDS, Benj. Al-powered church service in Germany draws a large online. (anglicky)
+55. ↑ KLAPETEK, Martin. Tématem Teologického fora krestanstvi-islam 2024 veStuttgartubylaumelainteligence[online].2024-03-06[cit. 2025-08-05]. Dostupné online.
+56. ↑ SCHLICHTSOvA, Jitka. V Bavorsku se konala prvni bohosluba pripravena umelou inteligenci [online]. 2023-06-14 [cit. 2025-08-05]. Dostupné online.
+57. ↑ MRAZEK, Benedikt. Vira v dobe robotu [online]. 2025-08-05 [cit. 2025-08-05]. Dostupné online.
+58. ↑ Akt EU o umélé inteligenci: Prvni narizeni o Al na svete, Cerven 2023
+- 59.↑ Thefuture of Alcould be great—or catastrophic.techxplore.com [online]. [cit. 2024-01-31]. Dostupné online.
+60. ↑ Vyhladi lidstvo umelé inteligence? ,Malo pravdepodobné, ale ne úplné sci-fi," obává se Koubsky. Plus [online]. 2025-04-11 [cit. 2025-10-02]. Dostupné online.
+61. ↑ Today's Al hype has echoes of a devastating technology boom and bust 100 years ago. theconversation.com [online]. [cit. 2025-10-08]. Dostupné online.
+
+## Literatura
+
+- ·Zelinka Ivan:Umela inteligence v problémech globálni optimalizace BEN - technická literatura, 2002, ISBN 80-7300-069-5
+- Zelinka Ivan: Umela inteligence - hrozba nebo nadeje? BEN - technicka literatura,2003, ISBN 80-7300-068-7
+- ·Hammer Milos: Metody umelé inteligence v diagnostice elektrickych spoju, BEN - technicka literatura, 2009, ISBN 978-80-7300-231-2
+- Vladimir Marik, Olga Stepankova, Jiri Lazansky: Umelá inteligence 1-5, Academia
+- KRIVAN, Milos. Umélé neuronové site. [s.l.]: Nakladatelstvi Oeconomica, Vysoká Skola ekonomická v Praze. 77 s. Dostupné online. ISBN978-80-245-2420-7.
+- CERNOCH, Viktor. Svérazna rise umelé inteligence. V textu citovani a predstaveni David Cerny, Jiri Wiedermann, Frantisek Hakl, Tomás Hribek. A / Magazin. Praha: Stredisko spoleCnych Cinnosti AV CR, 2023-09-14, roC. 7, Cis.3, s. 18-31.Rubrika Téma.ISSN 2788-2918.
+
+## Souvisejici Clanky
+
+- Kvantovy pocitac
+- Umela inteligence ve videohrach
+- Filozofie umelé inteligence
+- Hybridni inteligence
+- Inteligentni prostredi
+- Obecna umelá inteligence
+- Moravciv paradox
+- Blue Brain Project
+- ISO/IEC JTC 1/SC 42
+- Grokipedia
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu umela inteligence na Wikimedia Commons
+- Téma Umela inteligence ve Wikicitatech
+- Kniha Umela inteligence: Zpracovani informace lidskym intelektem a pocitacem ve Wikiknihach
+- Umela inteligence v Ceské terminologické databazi knihovnictvi a informaCni védy (TDKIV)
+- Oficialni web Ceské asociace umelé inteligence
+- Dwarkesh Podcast venovany Al (anglicky)
+- Transformer, novinky ze sveta Al (anglicky)
+- Don't Worry About the Vase, substack venovany Al (anglicky)
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Umela\_inteligence&amp;oldid=25392769" Kategorie:
+
+- Umela inteligence
+- ·Kybernetika
+
+Skryté kategorie:
+
+- Monitoring:Clanky s odkazem na TDKIV
+- Monitoring:Clanky s identifikatorem NKC
+
+Monitoring:Clanky s identifikatorem PSH
+
+Monitoring:Clanky s identifikatorem TDKIV
+
+Monitoring:Clanky s identifikatorem BNE
+
+Monitoring:Clanky s identifikatorem BNF
+
+- Monitoring:Clanky s identifikatorem GND
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem LNB
+- Monitoring:Clanky s identifikatorem NDL
+- Monitoring:Clanky s identifikatorem NLI
+- Monitoring:1ooo nejduleZitejSich Clanku/dlouhé
+
+Hledani
+
+| Specialni:Hledani   |
+|---------------------|
+| Hledat              |
+
+Umela inteligence
+
+173 jazyku Pridat téma

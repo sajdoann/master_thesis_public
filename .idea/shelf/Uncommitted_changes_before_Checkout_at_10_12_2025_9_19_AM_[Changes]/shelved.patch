@@ -1,0 +1,193 @@
+Index: embedders_experiments/retrieval_embedders_experimetns.py
+===================================================================
+diff --git a/embedders_experiments/retrieval_embedders_experimetns.py b/embedders_experiments/retrieval_embedders_experiments.py
+rename from embedders_experiments/retrieval_embedders_experimetns.py
+rename to embedders_experiments/retrieval_embedders_experiments.py
+--- a/embedders_experiments/retrieval_embedders_experimetns.py	(revision 1fda051bbaa74be043f4a0dcd9a3984d27d71e9c)
++++ b/embedders_experiments/retrieval_embedders_experiments.py	(date 1760252756585)
+@@ -7,6 +7,9 @@
+ import csv
+ from dotenv import load_dotenv
+ 
++from embedders import *
++from helpers import *
++
+ load_dotenv()
+ 
+ print("HF token loaded:", os.getenv("HUGGINGFACE_HUB_TOKEN") is not None)
+@@ -45,33 +48,6 @@
+ def is_sbert_compatible(model_name: str) -> bool:
+     return model_name in SBERT_MODELS
+ 
+-# ------------------------------
+-# Local embedder for large HF models
+-# ------------------------------
+-def build_local_qwen_embedder(model_name: str):
+-    from transformers import AutoModel, AutoTokenizer
+-    import torch
+-
+-    class LocalHFEmbedder:
+-        def __init__(self, model_name):
+-            print(f"🔧 Loading local model: {model_name}")
+-            self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+-            self.model = AutoModel.from_pretrained(model_name, trust_remote_code=True)
+-            self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+-            self.model.to(self.device)
+-            self.model.eval()
+-
+-        def __call__(self, inputs):
+-            if isinstance(inputs, str):
+-                inputs = [inputs]
+-            with torch.no_grad():
+-                encoded = self.tokenizer(inputs, padding=True, truncation=True, return_tensors="pt").to(self.device)
+-                outputs = self.model(**encoded)
+-                embeddings = outputs.last_hidden_state.mean(dim=1)
+-                embeddings = embeddings / embeddings.norm(p=2, dim=1, keepdim=True)
+-                return embeddings.detach().cpu().numpy().tolist()
+-
+-    return LocalHFEmbedder(model_name)
+ 
+ # ------------------------------
+ # Parse args
+@@ -138,17 +114,6 @@
+     embedding_function=embedder
+ )
+ 
+-# ------------------------------
+-# Chunking
+-# ------------------------------
+-def chunk_text(text, size=1000, overlap=100):
+-    chunks = []
+-    start = 0
+-    while start < len(text):
+-        end = start + size
+-        chunks.append(text[start:end])
+-        start += size - overlap
+-    return chunks
+ 
+ # ------------------------------
+ # Add docs
+@@ -164,88 +129,9 @@
+ t0 = time.perf_counter()
+ collection.add(documents=all_chunks, ids=ids)
+ t1 = time.perf_counter()
+-print(f"✅ Added {len(all_chunks)} chunks in {t1 - t0:.2f} sec")
+-
+-# ------------------------------
+-# Evaluation
+-# ------------------------------
+-def compute_metrics(queries, collection, ks=[3, 5]):
+-    metrics = {f"mrr@{k}": [] for k in ks}
+-    metrics.update({f"recall@{k}": [] for k in ks})
+-    total_q_time = 0.0
+-
+-    for q in queries:
+-        qtext = q[0]
+-        correct_doc = q[1]
+-
+-        # Run query once for highest k
+-        max_k = max(ks)
+-        t_start = time.perf_counter()
+-        results = collection.query(query_texts=[qtext], n_results=max_k)
+-        t_end = time.perf_counter()
+-        elapsed = t_end - t_start
+-        total_q_time += elapsed
+-
+-        # Pretty print retrievals
+-        print(f"\n🔎 Query: {qtext} (took {elapsed:.3f} sec)")
+-        ids = results["ids"][0]
+-        scores = results["distances"][0]
+-        docs_out = results["documents"][0]
+-
+-        for rank, (rid, score, text) in enumerate(zip(ids, scores, docs_out), start=1):
+-            preview = text.strip().replace("\n", " ")
+-            if len(preview) > 120:
+-                preview = preview[:120] + "..."
+-            print(f"  {rank}. ID={rid} | Score={score:.4f} | Text={preview}")
+-
+-        # Compute metrics for each k
+-        for k in ks:
+-            top_ids = ids[:k]
+-            rr = 0.0
+-            for rank, rid in enumerate(top_ids, start=1):
+-                if rid.startswith(str(correct_doc)):
+-                    rr = 1.0 / rank
+-                    break
+-            metrics[f"mrr@{k}"].append(rr)
+-
+-            relevant = 1
+-            retrieved_relevant = sum(1 for rid in top_ids if rid.startswith(str(correct_doc)))
+-            recall = retrieved_relevant / relevant
+-            metrics[f"recall@{k}"].append(recall)
+-
+-    averaged = {m: float(np.mean(v)) for m, v in metrics.items()}
+-    averaged["avg_latency_sec"] = float(total_q_time / len(queries))
+-    return averaged
++load_time = t1 - t0
++print(f"✅ Added {len(all_chunks)} chunks in {load_time:.2f} sec")
+ 
+ metrics = compute_metrics(queries, collection, ks=[3, 5])
+ 
+-print("\n✅ Evaluation Results:")
+-for k, v in metrics.items():
+-    if k != "avg_latency_sec":
+-        print(f"  {k} = {v:.3f}")
+-print(f"⚡ Avg query latency = {metrics['avg_latency_sec']:.3f} sec")
+-
+-# ------------------------------
+-# Save results
+-# ------------------------------
+-results = {
+-    "embedder": args.embedder,
+-    "model_name": model_name,
+-    "source": args.source,
+-    "database": args.database,
+-    "chunk_size": args.chunk_size,
+-    "overlap": args.overlap,
+-    "num_docs": len(docs),
+-    "num_chunks": len(all_chunks),
+-}
+-results.update(metrics)
+-
+-os.makedirs(os.path.dirname(args.out), exist_ok=True) if "/" in args.out else None
+-file_exists = os.path.isfile(args.out)
+-with open(args.out, "a", newline="", encoding="utf-8") as f:
+-    writer = csv.DictWriter(f, fieldnames=results.keys())
+-    if not file_exists:
+-        writer.writeheader()
+-    writer.writerow(results)
+-
+-print(f"\n💾 Results appended to {args.out}")
++save_experiment_results(args, model_name, docs, all_chunks, load_time, metrics)
+Index: embedders_experiments/run_retrieval.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#!/bin/bash\r\n# ================================================================\r\n# Run embedders_experimetns_try.py for all defined embedders\r\n# ================================================================\r\n\r\n# Activate your virtual environment (adjust path if needed)\r\nsource /home/a/.virtualenvs/thesis_venv/bin/activate\r\n\r\n# Base paths\r\nPYTHON_SCRIPT=\"embedders_experimetns_try.py\"\r\nOUTPUT_DIR=\"results\"\r\nDATASET=\"sample\"\r\nQUERIES=\"queries\"\r\n\r\n# Make sure output directory exists\r\nmkdir -p \"$OUTPUT_DIR\"\r\n\r\n# List of all embedders to test\r\nEMBEDDERS=(\r\n  \"minilm\"\r\n  \"e5\"\r\n  \"fernet\"\r\n  \"mpnet\"\r\n  \"paraphrase\"\r\n  #\"qwen3\"\r\n)\r\n\r\n# Loop through each embedder\r\nfor EMBEDDER in \"${EMBEDDERS[@]}\"; do\r\n  echo \"====================================================================\"\r\n  echo \" Running experiment for embedder: $EMBEDDER\"\r\n  echo \"====================================================================\"\r\n\r\n  # Output filename for this embedder\r\n  OUTFILE=\"$OUTPUT_DIR/results.csv\" # optionally split by embedder \"$OUTPUT_DIR/results_${EMBEDDER}.csv\"\r\n\r\n  # Run experiment (local source for qwen3, auto for others)\r\n  if [ \"$EMBEDDER\" == \"qwen3\" ]; then\r\n    SOURCE=\"local\"\r\n  else\r\n    SOURCE=\"auto\"\r\n  fi\r\n\r\n  /home/a/.virtualenvs/thesis_venv/bin/python \"$PYTHON_SCRIPT\" \\\r\n      --embedder \"$EMBEDDER\" \\\r\n      --source \"$SOURCE\" \\\r\n      --dataset \"$DATASET\" \\\r\n      --queries \"$QUERIES\" \\\r\n      --chunk_size 1000 \\\r\n      --overlap 100 \\\r\n      --out \"$OUTFILE\"\r\n\r\n  # Check exit code\r\n  if [ $? -eq 0 ]; then\r\n    echo \"✅ Finished: $EMBEDDER\"\r\n  else\r\n    echo \"❌ Failed: $EMBEDDER\"\r\n  fi\r\n  echo\r\ndone\r\n\r\necho \"\uD83C\uDFC1 All experiments completed. Results are in $OUTPUT_DIR\"\r\n
+===================================================================
+diff --git a/embedders_experiments/run_retrieval.sh b/embedders_experiments/run_retrieval.sh
+--- a/embedders_experiments/run_retrieval.sh	(revision 1fda051bbaa74be043f4a0dcd9a3984d27d71e9c)
++++ b/embedders_experiments/run_retrieval.sh	(date 1760252824033)
+@@ -7,7 +7,7 @@
+ source /home/a/.virtualenvs/thesis_venv/bin/activate
+ 
+ # Base paths
+-PYTHON_SCRIPT="embedders_experimetns_try.py"
++PYTHON_SCRIPT="retrieval_embedders_experiments.py"
+ OUTPUT_DIR="results"
+ DATASET="sample"
+ QUERIES="queries"
+diff --git a/embedders_experiments/costra_1.0./round_2/annotations.tsv b/embedders_experiments/resources/costra_1.0./round_2/annotations.tsv
+rename from embedders_experiments/costra_1.0./round_2/annotations.tsv
+rename to embedders_experiments/resources/costra_1.0./round_2/annotations.tsv
+diff --git a/embedders_experiments/costra_1.0./round_1/annotations.tsv b/embedders_experiments/resources/costra_1.0./round_1/annotations.tsv
+rename from embedders_experiments/costra_1.0./round_1/annotations.tsv
+rename to embedders_experiments/resources/costra_1.0./round_1/annotations.tsv
+diff --git a/embedders_experiments/costra_1.0./round_2/source_sentences.tsv b/embedders_experiments/resources/costra_1.0./round_2/source_sentences.tsv
+rename from embedders_experiments/costra_1.0./round_2/source_sentences.tsv
+rename to embedders_experiments/resources/costra_1.0./round_2/source_sentences.tsv
+diff --git a/embedders_experiments/datasets/courts_50_updated/documents.jsonl b/embedders_experiments/datasets/courts_50_updated/docs.jsonl
+rename from embedders_experiments/datasets/courts_50_updated/documents.jsonl
+rename to embedders_experiments/datasets/courts_50_updated/docs.jsonl
+diff --git a/embedders_experiments/costra_1.0./round_1/source_sentences.tsv b/embedders_experiments/resources/costra_1.0./round_1/source_sentences.tsv
+rename from embedders_experiments/costra_1.0./round_1/source_sentences.tsv
+rename to embedders_experiments/resources/costra_1.0./round_1/source_sentences.tsv

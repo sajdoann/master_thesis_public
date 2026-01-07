@@ -1,0 +1,63 @@
+Z Wikipedie, otevrené encyklopedie
+
+Dolovani z textu (anglicky text mining) je védecka disciplina na pomezi dolovani z dat, strojového uceni a pocitacové lingvistiky. Vyviji se predevsim e      o g
+
+## Typickéulohy
+
+## Urcovani druhu textu
+
+Cilem urcovani druhu textu, anglicky text categorization, je priradit k danému a
+
+Shlukovani textai/dokumentu, anglicky document clustering, 2l je uloha principialne podobna urcovani druhu textu. Misto zarazovani do predem danych kategorif jsou vsak jednotlivé texty davany do skupin na zaklade jejich vzajemnych podobnosti. Kazdy dokument je tak obvykle zarazen prave do jedné skupiny. Vytvorené skupiny mohou, ale nemusi odpovidat i os o napriklad spadnout do jedné kategorie na zaklade faktu, e obsahujf vetsi
+
+## Shrnuti textu
+
+Shrnuti textu, anglicky text summary. K vytvoreni kratkého shrnuti textu se dá pristupovat dvema zpusoby, bud' z textu vybrat nejdulezitejsi pasáe (napr.vety) a ty vhodne seradit(summary extraction) anebo je mozné text hloubeji analyzovat a na zaklade jeho semantické reprezentace parafrazovat jeho obsah (summary abstraction). Druhy z obou pristupu by mel poskytovat lepsi vysledky, ve skutecnosti vsak sémanticka analyza ani nasledné
+
+generovani souvislého textu dosud neni na takové úrovni, aby prekonala vysledkyprvnezminenehopristupu.
+
+## Analyza sentimentu
+
+Podrobnejsi informace naleznete v Clanku Analyza sentimentu. Analyza sentimentu, anglicky sentiment analysis. Na zaklade vyskytu citove zabarvenych slovIzeusuzovat na autoruv pozitivni Ci negativnipostoj k predmetu zpravy. To muze byt uzitecna informace obzvlaste ve spojeni s tematicky zamerenymi diskusnimi fory.
+
+## Extrakce konceptu; rozpoznani pojmenovanych entit
+
+V anglictine concept extraction Ci konkrétneji named-entity recognition (NRE). Jde o urceni entit, které jsou v textu zmineny. Nastroj pro NRE by je Napriklad v Clanku o V. Klausovi by tedy vyrazy ,Vaclav Klaus" a ,prezident" mely byt prirazeny stejné entite. Problém uzce souvisi s desambiguaci slovnich vyznami a tudiz patri k tém zakladnim problémum zpracovani prirozeného jazyka.
+
+## Urceni vztahu mezi entitami
+
+Dokazeme-li v textu urcit pojmenované entity, muzeme na zaklade analyzy vét (napr. pomoci ramcu - FrameNet) urcit jejich vztahy (napr. z vyrazu "Sarkozy se oenil s Bruinovou" je mozné ziskat vztah, e Bruinová je manzelkou Sarkozyho).
+
+## Odkazy
+
+## Reference
+
+- [online]. [cit. 2010-06-10]. Dostupné v archivu porizeném dne2010-07-02.
+2. ↑ Wayback Machine. web.archive.org [online]. [cit. 2023-07-08]. Dostupné v archivu porizeném z originalu dne 2023-07-08.
+3. ↑ ROZPOZNAVANi POJMENOVANYCH ENTIT | Novy encyklopedicky
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu dolovani z textu na Wikimedia Commons
+
+Citovano z ,https: //cs.wikipedia.org/w/index.php? title=Dolovani z textu&amp;oldid=25375429"
+
+## Kategorie:
+
+- Pocitacova lingvistika
+- Informatika
+- Zpracovani prirozeného jazyka
+- ·Monitoring:Clanky s identifikatorem NkC
+- Monitoring:Clanky s identifikatorem LNB
+- ·Monitoring:Clanky s identifikatorem NDL
+- Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+## Dolovani z textu
+
+33 jazyku Pridat téma

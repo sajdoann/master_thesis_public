@@ -1,0 +1,1415 @@
+Tento článek není dostatečně
+ozdrojován
+, a může tedy obsahovat informace, které je třeba
+ověřit
+.
+Jste-li s popisovaným předmětem seznámeni, pomozte doložit uvedená tvrzení doplněním
+referencí
+na
+věrohodné zdroje
+.
+Ilustrace lineární regrese
+Lineární regrese
+je matematická metoda používaná pro proložení souboru bodů v grafu
+přímkou
+. O bodech reprezentujících měřená data se předpokládá, že jejich x-ové souřadnice jsou přesné, zatímco ypsilonové souřadnice mohou být zatíženy náhodnou chybou, přičemž předpokládáme, že závislost y na x lze graficky vyjádřit přímkou. Pokud měřené body proložíme přímkou, tak při odečítání z grafu bude mezi ypsilonovou hodnotou měřeného bodu a ypsilonovou hodnotou ležící na přímce odchylka. Podstatou lineární regrese je nalezení takové přímky, aby součet druhých mocnin těchto odchylek byl co nejmenší. Lineární regresi lze zobecnit i pro prokládání jinou funkcí než přímkou. Termín
+lineární regrese
+proto může označovat dvě částečně odlišné věci:
+Lineární regrese
+představuje
+aproximaci
+daných hodnot přímkou
+metodou nejmenších čtverců
+. Pokud tuto přímku vyjádříme rovnicí
+y
+=
+b
+1
++
+b
+2
+x
+{\displaystyle y=b_{1}+b_{2}x}
+, jedná se o nalezení optimálních hodnot koeficientů
+b
+1
+{\displaystyle b_{1}}
+a
+b
+2
+{\displaystyle b_{2}}
+.
+V obecnějším případě může
+lineární regrese
+znamenat aproximaci daných hodnot
+[
+x
+i
+,
+y
+i
+]
+{\displaystyle [x_{i},y_{i}]}
+takovou
+funkcí
+y
+=
+f
+(
+x
+,
+b
+1
+,
+…
+,
+b
+k
+)
+{\displaystyle y=f(x,b_{1},\ldots ,b_{k})}
+, kterou lze vyjádřit jako
+lineární kombinaci
+funkcí f
+1
+až f
+k
+:
+y
+=
+b
+1
+f
+1
+(
+x
+)
++
+…
++
+b
+k
+f
+k
+(
+x
+)
+{\displaystyle y=b_{1}f_{1}(x)+\ldots +b_{k}f_{k}(x)}
+. Koeficienty
+b
+1
+,
+…
+,
+b
+k
+{\displaystyle b_{1},\ldots ,b_{k}}
+se opět určují metodou nejmenších čtverců.
+Homoskedasticita
+(homogenita ve varianci) dat je běžným jevem. Avšak její předpoklad může vést k přecenění
+[
+chybí zdroj
+]
+korelačního koeficientu. V jistých případech je tedy nutné uvážit
+heteroskedasticitu
+a použít váženou regresi.
+Aproximace přímkou
+Uvažujme funkční závislost:
+f
+(
+x
+)
+=
+a
+x
++
+b
+{\displaystyle f(x)=ax+b}
+Součet čtverců pak bude vypadat takto:
+S
+(
+a
+,
+b
+)
+=
+∑
+i
+=
+1
+n
+[
+f
+(
+x
+i
+)
+−
+y
+i
+]
+2
+=
+∑
+i
+=
+1
+n
+(
+a
+x
+i
++
+b
+−
+y
+i
+)
+2
+{\displaystyle S(a,b)=\sum _{i=1}^{n}{[f(x_{i})-y_{i}]^{2}}=\sum _{i=1}^{n}{(ax_{i}+b-y_{i})^{2}}}
+kde
+[
+x
+i
+,
+y
+i
+]
+{\displaystyle [x_{i},y_{i}]}
+jsou souřadnice aproximovaných bodů.
+Abychom našli minimum součtu (našli koeficienty
+a
+{\displaystyle a}
+,
+b
+{\displaystyle b}
+tak, aby nalezená závislost vhodně aproximovala daná data), položíme obě
+parciální derivace
+součtu čtverců rovny nule:
+0
+=
+∂
+S
+∂
+a
+=
+2
+∑
+i
+=
+1
+n
+(
+a
+x
+i
++
+b
+−
+y
+i
+)
+x
+i
+{\displaystyle 0={\partial S \over \partial a}=2\sum _{i=1}^{n}(ax_{i}+b-y_{i})x_{i}}
+0
+=
+∂
+S
+∂
+b
+=
+2
+∑
+i
+=
+1
+n
+(
+a
+x
+i
++
+b
+−
+y
+i
+)
+{\displaystyle 0={\partial S \over \partial b}=2\sum _{i=1}^{n}(ax_{i}+b-y_{i})}
+Úpravami obdržíme soustavu:
+a
+∑
+i
+=
+1
+n
+x
+i
+2
++
+b
+∑
+i
+=
+1
+n
+x
+i
+=
+∑
+i
+=
+1
+n
+x
+i
+y
+i
+{\displaystyle a\sum _{i=1}^{n}{x_{i}^{2}}+b\sum _{i=1}^{n}{x_{i}}=\sum _{i=1}^{n}x_{i}y_{i}}
+a
+∑
+i
+=
+1
+n
+x
+i
++
+b
+n
+=
+∑
+i
+=
+1
+n
+y
+i
+{\displaystyle a\sum _{i=1}^{n}{x_{i}}+bn=\sum _{i=1}^{n}y_{i}}
+Lze ukázat, že
+matice
+této soustavy je
+regulární
+pro všechna
+n
+≥
+2
+{\displaystyle n\geq 2}
+, a má tedy právě jedno řešení. Obecně lze také ukázat, že v tomto bodě má součet čtverců minimum.
+Jejím řešením pro konkrétní hodnoty
+x
+i
+{\displaystyle x_{i}}
+a
+y
+i
+{\displaystyle y_{i}}
+dostaneme konečně hledané hodnoty parametrů
+a
+{\displaystyle a}
+a
+b
+{\displaystyle b}
+.
+a
+=
+n
+∑
+x
+i
+y
+i
+−
+∑
+x
+i
+∑
+y
+i
+n
+∑
+x
+i
+2
+−
+(
+∑
+x
+i
+)
+2
+{\displaystyle a={\frac {n\sum {x_{i}y_{i}}-\sum {x_{i}}\sum {y_{i}}}{n\sum {x_{i}^{2}}-\left(\sum {x_{i}}\right)^{2}}}}
+b
+=
+∑
+x
+i
+2
+∑
+y
+i
+−
+∑
+x
+i
+∑
+x
+i
+y
+i
+n
+∑
+x
+i
+2
+−
+(
+∑
+x
+i
+)
+2
+{\displaystyle b={\frac {\sum {x_{i}^{2}}\sum {y_{i}}-\sum {x_{i}}\sum {x_{i}y_{i}}}{n\sum {x_{i}^{2}}-\left(\sum {x_{i}}\right)^{2}}}}
+Podobný postup lze aplikovat na jakýkoliv druh závislosti i více proměnných.
+Pokud je každá hodnota zatížena jinou chybou
+σ
+i
+{\displaystyle \sigma _{i}}
+(např. měříme několika různými přístroji), je výhodné zahrnout i toto do aproximace. Označíme-li
+⟨
+x
+⟩
+=
+∑
+i
+=
+1
+n
+x
+i
+σ
+i
+2
+{\displaystyle \langle x\rangle =\sum _{i=1}^{n}{\frac {x_{i}}{\sigma _{i}^{2}}}}
+, potom dostáváme
+a
+=
+⟨
+1
+⟩
+⟨
+x
+y
+⟩
+−
+⟨
+x
+⟩
+⟨
+y
+⟩
+⟨
+1
+⟩
+⟨
+x
+2
+⟩
+−
+⟨
+x
+⟩
+2
+{\displaystyle a={\frac {\langle 1\rangle \langle xy\rangle -\langle x\rangle \langle y\rangle }{\langle 1\rangle \langle x^{2}\rangle -\langle x\rangle ^{2}}}}
+b
+=
+⟨
+y
+⟩
+⟨
+x
+2
+⟩
+−
+⟨
+x
+y
+⟩
+⟨
+x
+⟩
+⟨
+1
+⟩
+⟨
+x
+2
+⟩
+−
+⟨
+x
+⟩
+2
+{\displaystyle b={\frac {\langle y\rangle \langle x^{2}\rangle -\langle xy\rangle \langle x\rangle }{\langle 1\rangle \langle x^{2}\rangle -\langle x\rangle ^{2}}}}
+Přímka procházející počátkem
+Pokud je požadováno, aby přímka procházela počátkem, hledá se aproximace
+y
+=
+a
+x
+{\displaystyle y=ax}
+. Pro konstantu
+a
+{\displaystyle a}
+lze odvodit následující vztah:
+a
+=
+∑
+x
+i
+y
+i
+∑
+x
+i
+2
+{\displaystyle a={\frac {\sum {x_{i}y_{i}}}{\sum {x_{i}^{2}}}}}
+Máme-li závislost
+y
+=
+a
+x
+{\displaystyle y=ax}
+a hodnoty jsou zatíženy chybami
+σ
+i
+{\displaystyle \sigma _{i}}
+, pak pro odhad parametru
+a
+{\displaystyle a}
+platí
+a
+=
+⟨
+x
+y
+⟩
+⟨
+x
+2
+⟩
+{\displaystyle a={\frac {\langle xy\rangle }{\langle x^{2}\rangle }}}
+(je užito označení
+⟨
+x
+⟩
+=
+∑
+i
+=
+1
+n
+x
+σ
+i
+2
+{\displaystyle \langle x\rangle =\sum _{i=1}^{n}{\frac {x}{\sigma _{i}^{2}}}}
+a
+σ
+i
+{\displaystyle \sigma _{i}}
+značí chybu (
+směrodatnou odchylku
+)
+i
+{\displaystyle i}
+-tého měření).
+Dále pro
+rozptyl
+parametru
+a
+{\displaystyle a}
+platí
+V
+[
+a
+]
+=
+1
+⟨
+x
+2
+⟩
+{\displaystyle V[a]={\frac {1}{\langle x^{2}\rangle }}}
+.
+Výpočet na počítači
+Matlab
+umožňuje použít funkci
+P = POLYFIT(X, Y, 1)
+, kde poslední parametr
+1
+udává, že hledáme koeficienty polynomu prvního řádu.
+[1]
+[2]
+[
+nedostupný zdroj
+]
+V
+Excelu
+a Calcu (
+LibreOffice
+a
+OpenOffice.org
+) lze koeficient
+a
+zjistit funkcí
+SLOPE(Y; X)
+[3]
+[4]
+a konstantu
+b
+funkcí
+INTERCEPT(Y; X)
+[5]
+[6]
+. Případně lze oba koeficienty zjistit maticově zadanou funkcí
+{=LINEST(Y;X)}
+.
+[7]
+[8]
+V českém Excelu se tato funkce nazývá
+LINREGRESE
+.
+[9]
+Obecná lineární regrese
+Ilustrace hledání optimální lineární kombinace. Zelená plocha col
+X
+představuje prostor, ve kterém se nachází všechny možné lineární kombinace
+f(X,β)=β
+1
+X
+1
++β
+2
+X
+2
+. Vektor
+y
+, představuje vektor hodnot, ke kterým se aproximace
+βX
+snaží přiblížit s nejmenší možnou chybou
+ε=y−βX
+, respektive druhou mocninou této chyby. Další popis viz kapitola
+Odvození: Kolmé vektory
+v článku
+Metoda nejmenších čtverců
+.
+V obecnějším případě je možné danými hodnotami
+[
+x
+i
+;
+y
+i
+]
+{\displaystyle [x_{i};y_{i}]}
+,
+i
+=
+1
+,
+…
+,
+n
+{\displaystyle i=1,\ldots ,n}
+proložit funkci
+y
+=
+f
+(
+x
+,
+b
+1
+,
+…
+,
+b
+k
+)
+{\displaystyle y=f(x,b_{1},\ldots ,b_{k})}
+sestavenou jako
+lineární kombinaci
+k
+{\displaystyle k}
+funkcí
+y
+=
+b
+1
+f
+1
+(
+x
+)
++
+…
++
+b
+k
+f
+k
+(
+x
+)
+{\displaystyle y=b_{1}f_{1}(x)+\ldots +b_{k}f_{k}(x)}
+, kde
+f
+1
+(
+x
+)
+,
+…
+,
+f
+k
+(
+x
+)
+{\displaystyle f_{1}(x),\ldots ,f_{k}(x)}
+jsou libovolné (zpravidla
+lineárně nezávislé
+) funkce. Regrese se nazývá lineární, neboť funkční předpis
+y
+=
+f
+(
+x
+,
+b
+1
+,
+…
+,
+b
+k
+)
+{\displaystyle y=f(x,b_{1},\ldots ,b_{k})}
+je lineární v proměnných
+b
+1
+,
+…
+,
+b
+k
+{\displaystyle b_{1},\ldots ,b_{k}}
+, tedy v koeficientech, které podrobujeme regresi. Jinými slovy, úlohu lze formulovat algebraicky jako (lineární)
+metoda nejmenších čtverců
+.
+Lineární regresí je tedy i výše popsané proložení bodů přímkou (
+f
+1
+(
+x
+)
+=
+x
+{\displaystyle f_{1}(x)=x}
+,
+f
+2
+(
+x
+)
+=
+1
+{\displaystyle f_{2}(x)=1}
+,
+f
+(
+x
+)
+=
+b
+1
+x
++
+b
+2
+{\displaystyle f(x)=b_{1}x+b_{2}}
+), ale také
+parabolou
+(
+f
+1
+(
+x
+)
+=
+x
+2
+{\displaystyle f_{1}(x)=x^{2}}
+,
+f
+2
+(
+x
+)
+=
+x
+{\displaystyle f_{2}(x)=x}
+,
+f
+3
+(
+x
+)
+=
+1
+{\displaystyle f_{3}(x)=1}
+,
+f
+(
+x
+)
+=
+b
+1
+x
+2
++
+b
+2
+x
++
+b
+3
+{\displaystyle f(x)=b_{1}x^{2}+b_{2}x+b_{3}}
+) nebo obecným
+polynomem
+. Poznamenejme, že s proložením množiny bodů parabolou, resp. obecným polynomem se můžeme v literatuře setkat pod pojmem kvadratická, resp. polynomická (či polynomiální) regrese.
+[
+1
+]
+Koeficienty
+b
+1
+,
+…
+,
+b
+k
+{\displaystyle b_{1},\ldots ,b_{k}}
+jsou vypočteny metodou nejmenších čtverců, tedy tak, aby součet druhých mocnin odchylek modelu od daných dat, tj.
+S
+=
+∑
+i
+=
+1
+n
+(
+y
+i
+−
+f
+(
+x
+i
+,
+b
+1
+,
+…
+,
+b
+k
+)
+)
+2
+=
+∑
+i
+=
+1
+n
+(
+b
+1
+f
+1
+(
+x
+i
+)
++
+…
++
+b
+k
+f
+k
+(
+x
+i
+)
+−
+y
+i
+)
+2
+,
+{\displaystyle S=\sum _{i=1}^{n}(y_{i}-f(x_{i},b_{1},\ldots ,b_{k}))^{2}=\sum _{i=1}^{n}(b_{1}f_{1}(x_{i})+\ldots +b_{k}f_{k}(x_{i})-y_{i})^{2},}
+byl minimální.
+1. způsob výpočtu: parciální derivace
+Pro koeficienty, které minimalizují výše uvedené kritérium
+S
+{\displaystyle S}
+, musí platit, že všechny první parciální derivace kritéria podle těchto koeficientů musí být rovny nule.
+∂
+S
+∂
+b
+1
+=
+…
+=
+∂
+S
+∂
+b
+k
+=
+0
+{\displaystyle {\frac {\partial S}{\partial b_{1}}}=\ldots ={\frac {\partial S}{\partial b_{k}}}=0}
+Dalšími úpravami se lze dostat k
+soustavě lineárních rovnic
+:
+a
+11
+b
+1
++
+…
++
+a
+1
+k
+b
+k
+=
+a
+1
+⋮
+⋱
+⋮
+=
+⋮
+a
+k
+1
+b
+1
++
+…
++
+a
+k
+k
+b
+k
+=
+a
+k
+{\displaystyle {\begin{matrix}a_{11}b_{1}&+&\ldots &+&a_{1k}b_{k}&=&a_{1}\\\vdots &&\ddots &&\vdots &=&\vdots \\a_{k1}b_{1}&+&\ldots &+&a_{kk}b_{k}&=&a_{k}\\\end{matrix}}}
+Kde jednotlivé prvky
+a
+j
+k
+{\displaystyle a_{jk}}
+a
+a
+j
+{\displaystyle a_{j}}
+znamenají:
+a
+j
+k
+=
+∑
+i
+=
+1
+n
+f
+j
+(
+x
+i
+)
+f
+k
+(
+x
+i
+)
+{\displaystyle a_{jk}=\sum _{i=1}^{n}{f_{j}(x_{i})f_{k}(x_{i})}}
+a
+j
+=
+∑
+i
+=
+1
+n
+f
+j
+(
+x
+i
+)
+y
+i
+{\displaystyle a_{j}=\sum _{i=1}^{n}{f_{j}(x_{i})y_{i}}}
+Výše uvedenou
+soustavu rovnic
+lze řešit některou z metod uvedených v článku
+Soustava lineárních rovnic
+.
+2. způsob výpočtu: přeurčená soustava rovnic
+Jiným způsobem, jak vypočítat hledané koeficienty, je sestavení
+přeurčené soustavy rovnic
+a její vyřešení, opět metodou nejmenších čtverců, ale poněkud odlišným postupem. Přeurčená soustava rovnic může vypadat následovně:
+A
+x
+=
+b
+{\displaystyle \mathbf {A} \mathbf {x} =\mathbf {b} }
+A
+=
+[
+f
+1
+(
+x
+1
+)
+…
+f
+k
+(
+x
+1
+)
+⋮
+⋮
+f
+1
+(
+x
+n
+)
+⋯
+f
+k
+(
+x
+n
+)
+]
+,
+x
+=
+[
+b
+1
+⋮
+b
+k
+]
+,
+b
+=
+[
+y
+1
+⋮
+y
+n
+]
+,
+k
+≤
+n
+.
+{\displaystyle \mathbf {A} =\left[{\begin{matrix}f_{1}(x_{1})&\ldots &f_{k}(x_{1})\\\vdots &&\vdots \\f_{1}(x_{n})&\cdots &f_{k}(x_{n})\end{matrix}}\right],\quad \mathbf {x} =\left[{\begin{matrix}b_{1}\\\vdots \\b_{k}\end{matrix}}\right],\quad \mathbf {b} =\left[{\begin{matrix}y_{1}\\\vdots \\y_{n}\end{matrix}}\right],\quad k\leq n.}
+Hledané koeficienty, umístěné ve vektoru
+x
+{\displaystyle \mathbf {x} }
+, lze, za předpokladu lineární nezávislosti sloupců matice
+A
+{\displaystyle \mathbf {A} }
+, vyjádřit vztahem:
+x
+=
+(
+A
+T
+A
+)
+−
+1
+A
+T
+b
+{\displaystyle \mathbf {x} =\left(\mathbf {A} ^{T}\mathbf {A} \right)^{-1}\mathbf {A} ^{T}\mathbf {b} }
+Výpočet na počítači
+Matlab
+umožňuje soustavu rovnic
+Ax
+=
+b
+řešit velmi snadno pomocí operátoru
+\
+(
+zpětné lomítko
+), tedy
+x = A \ b
+. Ekvivalentní je funkce
+MLDIVIDE
+, tedy
+x = mldivide(A, b)
+.
+[10]
+V
+Excelu
+a Calcu (
+LibreOffice
+a
+OpenOffice.org
+) lze výše sestavenou přeurčenou soustavu rovnic řešit použitím maticové funkce
+{=LINEST(known_y's; known_x's; const)}
+[11]
+[12]
+(v českém Excelu
+LINREGRESE(pole_y; pole_x; b)
+[13]
+), kde první parametr
+known_y's
+(česky
+pole_y
+) je svislá oblast buněk obsahující složky vektoru
+b
+a druhý parametr
+known_x's
+(česky
+pole_x
+) je oblast obsahující prvky matice
+A
+. Výsledný vektor
+x
+se nachází ve vodorovné oblasti, přičemž jeho složky jsou umístěny v buňkách v opačném pořadí, tedy
+b
+k
+je v buňce nejvíce vlevo a
+b
+1
+je nejvíce vpravo. Třetí parametr
+const
+(česky
+b
+) musí být v tomto příkladu roven nule, správné použití tedy je:
+{=LINEST(b; A; 0)}
+.
+Ovšem nejjednodušším způsobem odhadu parametrů metodou nejmenších čtverců je použití ekonometrického softwaru jako např. STATA, Gretl, Eviews nebo R, kde existují obecné příkazy pro jejich výpočet. Zároveň i tyto programy umožňují jednoduše testovat předpoklady daného modelu.
+Převod mocninné a exponenciální regrese na lineární
+Na lineární problém lze transformovat i aproximaci
+mocninnou funkcí
+f
+(
+x
+)
+=
+a
+⋅
+x
+b
+{\displaystyle f(x)=a\cdot x^{b}}
+nebo aproximaci
+funkcí exponenciální
+f
+(
+x
+)
+=
+a
+⋅
+b
+x
+{\displaystyle f(x)=a\cdot b^{x}}
+.
+Mocninná funkce
+Problém, jak aproximovat původní data
+[
+x
+i
+,
+y
+i
+]
+{\displaystyle [x_{i},y_{i}]}
+křivkou
+y
+=
+a
+⋅
+x
+b
+{\displaystyle y=a\cdot x^{b}}
+lze převést na podobný problém
+zlogaritmováním
+rovnice křivky.
+ln
+⁡
+(
+y
+)
+=
+ln
+⁡
+(
+a
+)
++
+b
+⋅
+ln
+⁡
+(
+x
+)
+{\displaystyle \ln(y)=\ln(a)+b\cdot \ln(x)}
+,
+přičemž místo
+ln
+⁡
+(
+a
+)
+{\displaystyle \ln(a)}
+lze psát
+c
+{\displaystyle c}
+.
+ln
+⁡
+(
+y
+)
+=
+c
++
+b
+⋅
+ln
+⁡
+(
+x
+)
+{\displaystyle \ln(y)=c+b\cdot \ln(x)}
+Vznikl tak problém, jak aproximovat logaritmovaná původní data
+[
+ln
+⁡
+(
+x
+i
+)
+,
+ln
+⁡
+(
+y
+i
+)
+]
+{\displaystyle [\ln(x_{i}),\ln(y_{i})]}
+přímkou
+y
+=
+c
++
+b
+⋅
+x
+{\displaystyle y=c+b\cdot x}
+, který již problémem není. Koeficient
+a
+{\displaystyle a}
+v mocninné funkci lze z koeficientu
+c
+{\displaystyle c}
+vypočítat jako
+a
+=
+e
+c
+{\displaystyle a=e^{c}}
+.
+Exponenciální funkce
+Problém, jak aproximovat původní data
+[
+x
+i
+,
+y
+i
+]
+{\displaystyle [x_{i},y_{i}]}
+křivkou
+y
+=
+a
+⋅
+b
+x
+{\displaystyle y=a\cdot b^{x}}
+lze převést na podobný problém zlogaritmováním rovnice křivky.
+ln
+⁡
+(
+y
+)
+=
+ln
+⁡
+(
+a
+)
++
+x
+⋅
+ln
+⁡
+(
+b
+)
+{\displaystyle \ln(y)=\ln(a)+x\cdot \ln(b)}
+,
+přičemž místo konstant
+ln
+⁡
+(
+a
+)
+{\displaystyle \ln(a)}
+a
+ln
+⁡
+(
+b
+)
+{\displaystyle \ln(b)}
+lze psát
+c
+{\displaystyle c}
+a
+d
+{\displaystyle d}
+.
+ln
+⁡
+(
+y
+)
+=
+c
++
+x
+⋅
+d
+{\displaystyle \ln(y)=c+x\cdot d}
+Na rozdíl od aproximace mocninnou funkcí, stačí z původních dat logaritmovat pouze hodnoty
+y
+i
+{\displaystyle y_{i}}
+a řešit problém, jak aproximovat data
+[
+x
+i
+,
+ln
+⁡
+(
+y
+i
+)
+]
+{\displaystyle [x_{i},\ln(y_{i})]}
+přímkou
+y
+=
+c
++
+d
+⋅
+x
+{\displaystyle y=c+d\cdot x}
+. Koeficienty
+a
+{\displaystyle a}
+a
+b
+{\displaystyle b}
+v exponenciální funkci lze z koeficientů
+c
+{\displaystyle c}
+a
+d
+{\displaystyle d}
+vypočítat jako
+a
+=
+e
+c
+{\displaystyle a=e^{c}}
+,
+b
+=
+e
+d
+{\displaystyle b=e^{d}}
+.
+Reference
+↑
+Jiří Likeš, Josef Machek,
+Matematická statistika
+, SNTL Praha 1988, s. 165-169
+Související články
+Aproximace
+Lineární funkce
+Kvadratická regrese
+Koeficient determinace
+Metoda nejmenších čtverců
+Polynomická regrese
+Regresní analýza
+Externí odkazy
+Obrázky, zvuky či videa k tématu
+lineární regrese
+na Wikimedia Commons
+Lineární regrese tak nebo jinak:
+https://web.archive.org/web/20061002153201/http://www.kolej.mff.cuni.cz/%7Elmotm275/skripta/sbirka/html/node49.html
+Lineární regrese v
+Microsoft Excel
+:
+http://praktika.kvalitne.cz/index.php?clanek=text_navod&text=22
+Archivováno
+29. 6. 2020 na
+Wayback Machine
+.
+Aproximace obecnou funkcí, přímkou, polynomem, statistika:
+http://amper.ped.muni.cz/…
+Citováno z „
+https://cs.wikipedia.org/w/index.php?title=Lineární_regrese&oldid=24250762
+“

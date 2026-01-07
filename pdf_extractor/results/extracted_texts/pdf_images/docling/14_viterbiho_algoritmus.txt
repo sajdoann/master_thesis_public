@@ -1,0 +1,220 @@
+Z Wikipedie, otevrené encyklopedie
+
+Viterbiho algoritmus je algoritmus dynamického programovani pro hledani/ Viterbiho cesta - jeho vysledkem je posloupnost pozorovanych udalosti, predevsim v kontextu Markovovych informacnich zdrojd a skrytych Markovovych modelu. Pojmy ,Viterbiho cesta" a ,Viterbiho algoritmus" se pouzivajf i pro dalsi nejpravdepodobnejsiho bezkontextového odvozeni (parse) retezce, ktery se nekdy nazyva,Viterbiho odvozeni". Algoritmus navrhl Andrew Viterbi v roce 1967 pro dek6dovani konvolucnich kodd na digitalnich komunikacnich linkach se Sumem[ll. Od té doby se pouzivá pri dekodovani konvolucnich k6dd pouzivanych v mobilnich sitich CDMA a GSM i v beznych telefonnich modemech, pro komunikaci se satelity a kosmickymisondami dovzdalenéhovesmiru,ivbezdratovychsitichpodle standardu 802.11. Casto se pouzivá i pri rozpoznavani a syntéze reci, v pocitacové lingvistice, pro vyhledavani klicovych slov a v bioinformatice. Napriklad pri rozpoznavani reci se zvukovy signal povazuje za pozorovanou posloupnost udalosti, a textovy retézec za ,skrytou pricinu" zvukového signalu.Viterbiho algoritmushledanejpravdepodobnejsiretezectextuk danému zvukovému signalu.
+
+## Algoritmus
+
+Predpokladejme, 2e je dan skryty Markovuv model (HMM) se stavovym pravdépodobnosti), pravdépodobnostmi ai,j pro prechod ze stavu i do stavu y1,..·,yT, pak nejpravdépodobnejsi posloupnost stavu c1,..., cT, ktera
+
+<!-- formula-not-decoded -->
+
+kde Vt,k je pravdépodobnost nejpravdepodobnejsi posloupnosti stavu odpovédné za prvnich t pozorovani, jejiz koncovy stav je k. Pro ziskani Viterbiho cestyIzepouzivatzpetnéukazatele,kterézachycuji, jakystavc by pouzit ve druhé rovnici. Necht Ptr(k,t) je funkce, ktera vraci hodnotu pouzitou pro vypocet Vt,k pokud t &gt; 1, nebo k pokud t = 1. Pak:
+
+<!-- formula-not-decoded -->
+
+(pouzivame standardni definici arg max).
+
+Slozitost tohoto algoritmu je O(T × |Sl?).
+
+## Pseudokod
+
+Pokud je dan prostor pozorovani O = {o1,O2,.·. , Ov}, stavovy prostor S = {s1,S2,...,Sk}, posloupnost pozorovani Y = {y1,Y2,..·,yT}, matice prechodu A velikosti K × K tak, e Aiy obsahuje prechodovou pravdépodobnost prechodu ze stavu s do stavu Sj, vystupni matice B velikosti K × N takova, e Bij obsahuje pravdépodobnosti pozorovani oj ze stavu S, pole pocatecnich pravdépodobnosti π velikosti K takové, e π obsahuje pravdépodobnost, e 1 == S. Necht posloupnost X = {c1, 2,... , r} je cestou, ktera generuje pozorovani
+
+Y = {y1,y2,...,yT}.
+
+V tomto problému dynamického programovani vytvarime dve dvourozmerné tabulky T1, T2 velikosti K × T. Kady prvek Ti, Ti [i, j], obsahuje pravdépodobnost zatim nejpravdepodobnejsi cesty X = {c1,2,... ,§} s j = S, ktera generuje Y = {y1,y2,... ,yj}. Kady prvek T2, T2[,j], obsahuje &amp;j-1 zatim nejpravdépodobnejsi cesty X = {1,2,... ,&amp;j-1,§}
+
+pro ka之dé j, 2 ≤ j ≤ T
+
+Naplnime poloky dvou tabulek Ti [i, j], T2 [i, j] rostouci posloupnosti
+
+K·j+i.
+
+<!-- formula-not-decoded -->
+
+VSTUP: Prostor pozorovani O = {o1,O2,...,On}, stavovy prostor S= {s1,S2,...,Sk},
+
+posloupnost pozorovani Y = {y1,y2,...,yr} takova, e yt == pozorovani v case t je Oi, matice prechodu A velikosti K·K tak, e Ai obsahuje prechod pravdépodobnost prechodu ze stavu Si do stavu Sj,
+
+emission matrix B velikosti K·N tak, e Buj obsahuje pravdep pozorovani Oj ze stavu Si, pole pocatecnich pravdepodobnosti π velikosti K takové, e Ti 1 == Si
+
+VYSTUP: Nejpravdepodobnéjsi skrytá posloupnost stavd X = {c1,C2,...,CT A01 function VITERBI(O,S，π,Y，A，B):X
+
+- A02 for each state Si do
+
+A03
+
+T[i,1]πBy1
+
+A04
+
+T2[i,1]-0
+
+A05 end for
+
+A06
+
+for i2,3...,T do
+
+A07
+
+A08
+
+for each state sj do
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+A10 end for
+
+A11 end for
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+A17 end for
+
+A18 return X
+
+A19endfunction
+
+## Priklad
+
+Predstavte si lékare, ktery má pecovat o enu cisare trpici neustale se vracejici nemoci. Projevy nemoci Ize lécit; tato lécba je neprijemna, ale nemocné ulevi. Problém je, e lékar cisarovnu nemuze sam vysetrit, dostava pouze kazdy treti den listecek s informaci, jak se cisarovna citi (vyborné, slabe, na umreni). Na zaklade téchto informaci má lékar posoudit, zda je cisarovna zdrava nebo nemocna a má byt podrobena lécbe.
+
+Lékar se domnivá, e zdravotni stav cisarovny se chova jako diskrétni Markovuv retezec.Situaci, kdylékar nemuze primo zkoumatzdravotni stav cisarovny, Ize popsat jako skryty Markovuv model (HMM).
+
+Lékar vi, jaka je pravdepodobnost nemoci cisarovny a jak pravdepodobne se citi, kdy je zdrava nebo nemocna. Jinak receno parametry HMM jsou znamé.
+
+```
+observations = （'vyborné'，'slabé'，'na umreni') start_probability = {'Zdrava': 0.6, 'Nemocna': 0.4} transition_probability = { 'Zdravá' :{'zdrava': 0.7，'Nemocná': 0.3}, 'Nemocná' : {'Zdrava': 0.4， 'Nemocná': 0.6}, { 'Zdrava' : {'vyborné': 0.5，'slabé': 0.4, 'na umreni': 0.1}, 'Nemocná': {'vyborné': 0.l，'slabé': 0.3，'na umreni':0.6}, {
+```
+
+jakém stavu je HMM, kdy dostal prvni zpravu o tom, jak se cisarovna citi (jediné, co vi, je, e je casteji zdravá). Zde pouzité rozlozeni ooaaoa transition\_probability reprezentuje zmenu zdravotniho stavu ve skrytém
+
+Markovové retézci. V tomto priklade je jenom 30% pravdépodobnost, 2e za tri dny bude cisarovna nemocna, kdy je dnes zdravá. emission\_probability reprezentuje pravdepodobnosti jednotlivych informaci. Pokud je cisarovna zdravá, je 50% pravdepodobnost, e se citi vyborné; pokud je nemocná, je 60% pravdepodobnost, e se citi na umreni.
+
+Na obrazcich jsou pouzity nazvy z puvodniho anglického prikladu (skryté zdravotni stavy jsou Healthy = Zdrava, Fever = Nemocná; oznamené pocity jsou Dizzy = na umreni, Cold = slabé, Normal = vyborné)
+
+Graficka reprezentace zadaného HMM
+
+Grafickareprezentace zadanehoHMM
+
+Lékar dostal s postupne tri zpravy o tom, jak se cisarovna citi, prvni zprava byla vyborne, druha slabe, treti na umreni a chce zjistit, jaka je nejpravdepodobnejsi posloupnost zdravotnich stavu cisarovny, která by
+
+```
+# Vizualizace Viterbiho algoritmu. def print_dptable(V): print(" ")， for i in range(len(V)): print("%7d" % i), print() for y in v[o].keys(): print("%.5s: " % y), for t in range(len(v)): print("%.7s" %("%f" % V[t] [y])), print() def viterbi(obs, states, start_p，trans_p, emit_p): V=[{}] path = {} # Initialize base cases (t == θ) for y in states: V[o][y] = start_p[y] * emit_p[y][obs[o]] path[y] = [y]
+```
+
+```
+# Run Viterbi for t > 0 for t in range(l,len(obs)): V.append({}) newpath = {} for y in states: (prob, state） = max([(V[t-l][y0] * trans_p[y0][y] * emit_p[y][ V[t][y] = prob newpath[y] = path[state] + [y] # Don't need to remember theold paths path = newpath print_dptable(V) (prob,state） = max([(v[len(obs） - l][y]，y） for y in states]) return (prob，path[state]) Argumenty funkce viterbi jsou: obs je posloupnost pozorovani, napr. ['vyborne'， 'slabe'， 'na umreni']; states je mnozina skrytych stavu; start_p je start pravdepodobnost; trans_p jsou prechodové pravdepodobnosti; a emit_p jsou vystupni pravdépodobnosti. Pro jednoduchost k6du predpokladame, e posloupnost pozorovani obs je neprázdná a e trans_p[i] [j] a emit_p[i][j] jsou definované pro vsechny stavy i,j. V nasem priklade se dopredny Viterbiho algoritmus pouzivá takto: def example(): return viterbi(observations, states, start_probability, transition_probability, emission_probability) print(example()) To ukazuje, e pozorovani ['vyborné'，'slabe'， 'na umreni'] byla s nejvétsi pravdepodobnosti generovana posloupnosti stavu ['Zdravá', 'Zdravá', 'Nemocna']. Jinymi slovy, na zaklade pozorovanych dat byla
+```
+
+zdrava(poprvé se citila vyborne, podruhé slabe), a pri odeslani treti byla nemocna. cesta jevzasadenejkratsi cestatimto trellisem.Trellispro priklad s
+
+Funkci Viterbiho algoritmu Ize vizualizovat pomoci trellis diagramu. Viterbiho cisarovnou je niye; odpovidajici Viterbiho cesta je tucne: Animace trellis diagramu Viterbiho algoritmu. Po treti informaci o stavu je nejpravdépodobnejsi cesta ['Zdravé', 'Zdravé', 'Nemocná'] Animace trellis diagramu Viterbiho algoritmu. Po treti informaci o stavu je nejpravdepodobnejsi cesta ['Zdravá'， 'zdravá', 'Nemocna'] Pri implementaci Viterbiho algoritmu je nutné zminit, e mnoho jazyku pouzivá aritmetiku s pohyblivou radovou Carkou - pokud jsou hodnoty pravdepodobnosti malé, muze dojit k podteceni vysledku. Obvykla technika, jakse tomuvyhnout,jepouzivat behemceléhovypoctulogaritmus pravdepodobnosti, tatá technika pouzita v Logarithmic Number System. Po skonceni algoritmu Ize ziskat spravnou hodnotu pomoci exponenciálni funkce.
+
+## Rozsireni
+
+Zobecneni Viterbiho algoritmu nazyvané max-sum algoritmus (nebo maxvsech nebo urcitych podmnozinach skrytych promennychve velkém mnozstvi grafickych modelu, napr. bayesovské site, Markov nahodna pole a podminena nahodna pole. Skryté proménné musi byt obecne propojeny nejakym zpusobem na HMM, s omezenym poctem spojeni mezi promennymi Pomoci algoritmu nazyvaného iterativni Viterbiho dekodovani Ize najit podposloupnost pozorovani, ktera vyhovuje nejlépe (v pruméru) dané HMM. Tento algoritmus navrhl Qi Wang, etc.[3] pro zpracovani turbokodu. Iterativni Viterbi dekodovani pracuje iterativnevyvolanim modifikovanehoViterbiho algoritmu, znovu odhadnutim skore pro vyplnku pri konvergenci.
+
+mnoho kodu pouzivanych v praxi, pri rozumném sumu, je dekodér pouzivajici liny Viterbiho algoritmus mnohem rychlejsi ne2 tradicni Viterbiho dekodér[5]. Liny Viterbiho algoritmus neexpanduje uzly, dokud to neni opravdu nutné, a obvyklevyzadujemnohemmenevypoctu,abydosel kestejnemuvysledku jako normálni Viterbiho algoritmus - neni ho vsak snadné hardwarove paralelizovat. ExistujerozsireniViterbihoalgoritmu,abypracovalsdeterministickym konecnym automatempro zlepsenirychlostipri stochastickékonverzipismen na fonémy[61.
+
+## Souvisejici clanky
+
+- Baum-Welchuv algoritmus
+- Forward-backward algoritmus
+- Forward algoritmus
+- Samoopravny k6d
+- Viterbiho algoritmussmekkymvystupem
+- ·Viterbiho dekodér
+- ·Markovuv model i Skryty Markovuv model
+- Part-of-speech tagging
+
+## Literatura
+
+- ·Viterbi Aj. Error bounds for convolutional codes a an asymptotically optimum decoding algorithm. IEEE Transactions on Information Theory. 1967, s. 260-269. D0stupné 0nline. doi:10.1109/TlT.1967.1054010. (note:theViterbidecoding algoritmusje described insectionIV.) Subscription required.
+- ·FeldmanJ,Abou-Faycal I,FrigoM.AFastMaximum-Likelihood Decoder for Convolutional Codes.Vehicular Technology Conference.2002,s. 371375.d0i:10.1109/VETECF.2002.1040367.
+- ·Forney GD. The Viterbi algorithm. Proceedings of the IEEE. 1973, s. 268278. Dostupné online. doi:10.1109/PR0C.1973.9030. Subscription required.
+- ·PRESS,WH;TEUKOLSKY,SA;VETTERLING,WT;FLANNERY,BP.Numerica Recipes: The Art of Scientific Computing. 3rd. vyd. [s.l.]: Cambridge University Press, 2007. ISBN 978-0-521-88068-8. Kapitola Section 16.2. Viterbi Decoding.
+- ·Rabiner LR.A tutorial on hiddenMarkov models and selected applications in speech recognition. Proceedings of the IEEE. 1989, s. 257-286. doi:10.1109/5.18626. (Describes the forward algoritmus and Viterbi algorithm for HMMs).
+- Shinghal, R. a Godfried T. Toussaint, "Experiments in text recognition withthemodified Viterbi algoritmus,"IEEE Transactions onPattern Analysis a Machine Intelligence, Vol. PAMl-l, April 1979, pp. 184-193.
+- Shinghal, R. a Godfried T. Toussaint, "The sensitivity of the modified Viterbialgoritmustothesourcestatistics,"IEEETransactionsonPattern Analysis a Machine Intelligence, vol. PAMl-2, March 1980, pp. 181-185.
+
+## Reference
+
+## V tomto Clanku byl pouzit preklad textu z Clanku Viterbi algorithm na anglicke Wikipedii.
+
+1. ↑ 29 Apr 2005, G. David Forney Jr: The Viterbi Algorithm: A Personal History
+2. ↑ Xing E, slide 11
+3. ↑ Qi Wang, Lei Wei; Rodney A. Kennedy. Iterative Viterbi Decoding, TrellisShaping,aMultilevelStructureforHigh-RateParity-Concatenated TCM.IEEETRANSACTIONSONCOMMUNICATIONS.2002,S.48-55.
+4. ↑ (December 2002) "A fast maximum-likelihood decoder for convolutional codes"(PDF) in Vehicular Technology Conference.: 371375.d0i:10.1109/VETECF.2002.1040367.
+5. 5.↑(December 2002)"A fast maximum-likelihood decoder for convolutional codes" (PDF) in Vehicular Technology Conference.. doi: 10.1109/VETECF.2002.1040367.
+6. ↑ Luk, R.W.P., R.l. Damper. Computational complexity of a fast Viterbi decodingalgoritmusforstochasticletter-phonemetransduction.lEEE Trans. Speech a Audio Processing. 1998, s. 217-225.doi: 10.1109/89.668816.
+
+## Implementace
+
+- C a Jazyk symbolickych adres
+
+·C
+
+C++
+
+- C++ a Boost autor: Antonio Gulli
+
+C#
+
+F#
+
+Java
+
+Perl
+
+Prolog
+
+VHDL
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu Viterbiho algoritmus na Wikimedia Commons
+- Implementace v jazyce Java, F#, Clojure, C# na Wikibooks
+- dekodovanim, autor: Chip Fleming
+- Historie Viterbiho algoritmu, autor: David Forney
+- Jemny uvod do dynamického programovani a Viterbiho algoritmu
+- Ucebni text o sade nastroju pro modelovani skrytého Markovova modelu (implementovana v jazyce C), ktery obsahuje popis Viterbiho algoritmu
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Viterbiho algoritmus&amp;oldid=25431057" Kategorie:
+
+- Detekce a oprava chyb
+- Dynamické programovani
+- Markovovy modely
+
+Skryté kategorie:
+
+Udrzba:Clanky s docasne pouzitou Sablonou
+
+Monitoring:Clanky prelozené z enwiki
+
+Udrzba:Clanky obsahujici odkazy na nedostupné zdroje
+
+- Monitoring:Autoritni kontrola s 0 identifikatory
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Viterbiho algoritmus
+
+18 jazyku Pridat téma

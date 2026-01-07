@@ -1,0 +1,126 @@
+Z Wikipedie, otevrené encyklopedie Tento Clanek potrebuje upravy.
+
+ikona Konkrétni problémy: celkova wikifikace, format dle Wikipedie:ES Ziskavani informaci (anglicky information retrieval; IR) je Cinnost, behem které Clovek ziskava ze sbirky informacnich zdrojd relevantni informace. Vyhledavani mohou byt zalozena na fulltextovych nebo na dalsich obsahovych parametrech. Ziskavani informaci je vedecka disciplina zaobirajici se hledanim informaci v dokumentu, vyhledavanim samotnych dokumentu a také vyhledavanim metadat, ktera popisuji data, a databazi textu, obrazku nebo zvuku. Automatické systémy ziskavani informaci pomahaji snizovat ,informacni zahlceni". Mnoho univerzit a verejnych knihoven vyuziva takové systémy k zajisteni pristupu k ruznym kniham, Casopisum a jinym dokumentum. Nejviditelnejsisluzbouziskavaniinformaci jsouwebovevyhledavace.
+
+## Prehled
+
+Procesziskavaniinformaci zacinamomentem,kdyuzivatel zadadotaz do mohou byt textové retézce ve webovych vyhledavacich. V procesu ziskavani souboru. Namisto toho muze dotazu odpovidat vicero objektu vice Ci méné Objekt je entita, ktera je reprezentovaná informaci v souboru obsahu nebo databaze. Uzivatelské dotazy jsou porovnavany s informacemi v databazi. Na rozdil od klasickych SQL dotazu z databázi mohou i nemusi vysledky ziskavani informaci presne odpovidat dotazu, proto jsem vetSinou ohodnoceny. Toto hodnoceni vysledku vytvari klicovy rozdil mezi hledanim myslenkové mapy nebo videa. Casto nejsou dokumenty uchovavany nebo ukladany primo do systému ziskavani informaci, ale jsou zde reprezentovany zastupci Ci metadaty. Vetsina systému ziskavani informaci vypocita ke kadému objektu skore podle toho, jak se shoduje s hledanym dotazem, a seradi je podle téchto muye byt zopakovan, pokud si to uzivatel preje.
+
+## Historie
+
+Vyuzivat pocitace ke hledani relevantnich informaci bylo myslenkou, kterou zpopularizoval Clanek As We May Think od Vannevar Bush v roce 1945. Zdé Holmstromvroce1948ainformovalrovnezpocitaciUnivac.Automatizovany systémziskavaniinformaci bylpredstavenv5o. letech:jeden se dokonce objevilvromantickékomediiDeskSetzroku1957.V60.letechbylazalozena prvni velka vyzkumna skupina zamerujici se na ziskavani informaci, iniciatorem jejiho vzniku byl Gerard Salton na Cornellove univerzite. Do 70. let se objevilo nekolik ruznych technik ziskavani informaci, které mely velmi slusné vysledky na mensich korpusech textu, jakymi byla napriklad Cranfield collection(citajici nekolik tisic dokumentu).Velke systemy (jako napriklad Lockheed Dialog system) se zacaly pouzivat na zacátku 70. let.[21 s     s Conference (TREC), které bylo soucasti TiPSTER text program. Cilem tohoto setkani bylo nahlédnout komunitu vzniklou okolo problematiky ziskavani informaci. To vyvolalo vyzkum metod, které se zamérovaly na obrovské korpusy. Prichod webovych vyhledavacu jesté vice posilil potrebu po rozsahlychvyhledavacichsystémech.
+
+## Typy modelu
+
+Pro efektivni ziskavani relevantnich dokumentu pomoci strategif ziskavani informaci jsou dokumenty vetsinou transformovany do vhodné reprezentace. Kada ,ziskavaci" strategie obsahuje konkrétni model pro reprezentaci dokumentu.
+
+Prvni dimenze: matematicky zaklad
+
+- Mnozinové modely reprezentuji dokumenty jako mnoziny slov Ci frázi. Podobnosti jsou obvykle odvozeny z mnozinovych operaci techto struktur. Bené modely jsou:
+- oStandardni booleovsky model
+- o Rozsireny booleovsky model
+- o Fuzzy retrieval
+- Algebraické modely reprezentuji dokumenty a dotazy jako vektory, matice nebo n-tice. Skalarni hodnoty potom odpovidajf podobnosti vektorudotazuavektorudokumentu.
+- 。Vektorovy model
+- o Zobecneny vektorovy model
+- o(Rozsireny) tematicky vektorovy model
+- o Rozsireny booleovsky model
+- o Latentni sématincká analyza
+- Pravdepodobnostni modely pristupuji k procesu vyberu dokumentu jako k pravdepodobnostnimu odvozovani.Podobnost je vypocitana z pravdepodobnosti, e dokument odpovida danému dotazu. V techto modelech se Casto vyuzivaji tvrzeni z teorie pravdepodobnosti.
+- 。 Binarne nezavisly model
+- oPravdepodobnostnimodelyrelevantnostinakterychjezalozena napr. funkce BM25.
+- Odvozovani nejistoty
+- Lingvisticka analyza
+- oModel divergence-from-randomness
+- oLatentni Dirichletova alokace
+- Modely typu feature-based retrieval
+
+Druhá dimenze: vlastnosti modelu
+
+Modely bez terminové provazanosti pristupuji k ruznym terminum/slovum terminovychvektoru,v pravdepodobnostnich modelechpredpoklad s a
+
+- ·19.stoleti
+- ° 1801: Joseph Marie Jacquard vynalézá rucni tkalcovsky stav s Zakarovym ustrojim, co je prvni pristroj, ktery vyuziva derné stitky. Dikynimsedajikontrolovataovladatjednotlivéniteajednoduse takvytvaretslozitévzory.
+- o 80. léta 19. stoleti: John Shaw Billings a Herman Hollerith vynalezli pocitacovy stroj pracujici s dernymi stitky, ktery umoznoval rychle zpracovavat mnoho dat.
+- o 1890: Shawovy a Hollerithovy derné Stitky a dernostitkovy stroj jsou vyuzity pro scitani lidu ve Spojenych statech
+- ·20.-30.léta 20.stoleti
+
+Emanuel Goldberg predklada patenty na "Statistical Machine" (tj. statisticky stroj), co je vyhledavac dokumentu, ktery vyuzivá fotoelektrické bunky a rozpoznavaci paterny k vyhledavani na rolich mikrofilmovych dokumentu.
+
+- ·40.-50.léta
+- oe ea USmilitaryconfrontedproblems of indexing and retrieval of
+- o 1945: Clanek As We May Think Vannevara Bushe vycházi v Atlantic Monthly.
+- o 1947: Hans Peter Luhn (vyzkumny inenyr v IBM od roku 1941) zacina pracovat na mechanizovaném systému dernych stitku, ktery pomaha vyhledavat chemické slouceniny.
+- o 50. léta: Rostouci obavy o technologické zaostavani UsA se SSSR mechanizované vyhledavaci systémy literatury (Allen Kent a skupina okolo nej) Ci indexovani citaci (Eugene Garfield).
+- o1950: Termin "information retrieval"(tj. ziskavani informaci) byl poprvé pouzit Calvin Mooers.
+- o experiment v oblasti pocitacového vyhledaváni dokumentu.
+- o 1955: Allen Kent nastoupil na Case Western Reserve University a stal se poté zastupcem reditele Center for Documentation and CommunicationsResearch.
+- o1958:InternationalConferenceonScientificInformation WashingtonDCincludedconsiderationofIRsystemsasasolution toproblemsidentified.
+- o 1959: Hans Peter Luhn publikovat text Auto-encoding of documents for information retrieval.
+- 60.léta
+- opocatek60.let:GerardSaltonzacal naHarvardupracovatv oblasti ziskavani informaci, pozdeji pokracoval na Cornell
+- o 1960: Melvin Earl Maron and John Lary Kuhns zverejnili text "On relevance, probabilistic indexing, and information retrieval" v Casopise Journal of the ACM; Cyril W. Cleverdon zverejnil své prvni poznatky z Cranfield studies, které rozvijeji model pro hodnoceni systému na ziskavani informaci; Kent zverejnil text Information Analysis and Retrieval.
+- 0 1963: Weinbergova zprava "Science, Government and Information" Hayes zverejnili text tykajici se ziskavani informaci.
+- o 1964: Karen Sparck Jones dokoncila svou doktorskou praci na Cambridges nazvemSynonymy andSemanticClassificationa Association Methods for Mechanized Documentation." Ze sympozia
+- vzeslonekolik dulezitychtextu,vcetneprvnizminkyoSMART systemu G. Saltona.
+- polovina 60. let: National Library of Medicine vyvinula MEDLARS Medical Literature Analysis and Retrieval System, prvni velkou strojove Citelnou databazi a batch-retrieval systém; projekt Intrex na MIT.
+- o 1965: J. C. R. Licklider publikuje Libraries of the Future.
+- o 1966: Don Swanson se zapojil do studia pozadavku na budouci katalogy na University of Chicago
+- o konec 60. let: F. Wilfrid Lancaster dokoncil hodnotici studie systému Medlars a publikoval prvni verzi svého textu tykajiciho se ziskavani informaci.
+- o1968:GerardSaltonzverejnilAutomaticInformationOrganization and Retrieval; John W. Sammon, Jr. nastinil ve své zpráve "Some Mathematics of Information Storage and Retrieval..."
+
+vektorovy model
+
+- ° 1969: Sammonuv text "A nonlinear mapping for data structure analysis" (IEEE Transactions on Computers) byl prvnim navrhem vizualniho rozhrani pro systém ziskavani informaci.
+- 70.léta
+- ° poCatek 70. let: Prvni online Systémy—NLM's AIM-TWX, MEDLINE; Lockheed's Dialog; SDC's ORBIT; Theodor Nelson predstavuje koncept hypertextu, je publikovana jeho kniha Computer Lib/Dream Machines.
+- o 1971: Nicholas Jardine a Cornelis J. van Rijsbergen zverejnujf text "The use of hierarchic clustering in information retrieval", ve kterém vyslovuji myslenku "cluster hypothesis."
+- o 1978: Prvni rocnik ACM SIGIR konference.
+- o1979: C. J. van Rijsbergen publikoval text Information Retrieval. Silnyduraznamodelypravdepodobnosti.
+- o1979: Tamas Doszkocs implementoval uzivatelské rozhrani jazyka CITE pro systém MEDLINE v National Library of Medicine. CITE podporoval zadani volného formuláre, hodnoceni vystupu a relevantni zpetnou vazbu.
+- 80. léta
+- o 1980: Prvni rocnik mezinarodni ACM SlGiR konference, poradanou spolecne s British Computer Society IR group v Cambridge.
+- o 1982: Nicholas J. Belkin, Robert N. Oddy, and Helen M. Brooks navrhli ASK (Anomalous State of Knowledge). To byla zasadni myslenka,ackolivsejejich automaticky analyticky nastroj ukazal jako nedostacujici.
+- o 1983: Salton (a Michael J. McGill) vydali Introduction to Modern Information Retrieval, se silnym durazem na vektorové modely.
+- o 1985: David Blair a Bill Maron vydavaji: An Evaluation of Retrieval Effectiveness for a Full-Text Document-Retrieval System
+- polovina 80.let:Snahyvyvinoutkomercni systémy ziskavani informaci primo pro koncové uzivatele.
+- o 1985-1993: Zásadni testy tykajici se vizuálnich rozhrani a experimentalnich systému tého. Prace Donalda B. Crouche, Roberta R. Korfhageho, Matthewa Chalmerse, Anselma Spoerriho a dalsich.
+- o 1989: Prvni navrhy Tima Bernerse-Lee k World Wide Web v CERN.
+- 90. léta
+- o1992:Prvni TRECkonference.
+- o 1997: Vydani knihy Information Storage and Retrieval Roberta F. Korfhageho s durazem na vizualizaci a systémy multirefencnich bodu.
+- o konec 90. let: Webové vyhledavace obsahuji mnoho funkci, které se drive vyuzivaly jen v experimentalnich verzich systému ziskavani modelu ziskavani informaci.
+
+## Reference
+
+V tomto Clanku byl pouzit preklad textu z Clanku Information retrieval na anglickeWikipedii
+
+- 1.↑ JANSEN,B.J.; RlEH, S.The Seventeen Theoretical Constructs of Information Searching and Information Retrieval. Journal of the American Society forInformation Sciences and Technology. 2010, roc. 61,Cis. 8, s. 1517-1534. Dostupné v archivu porizeném dne 2016-03-04. (anglictina)
+
+2.↑ SANDERSON,Mark; CROFT,Bruce W.The History ofInformation Retrieval Research [online]. 2012. Dostupné online. (anglictina)
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu ziskavani informaci na Wikimedia Commons
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Ziskavaniinformaci&amp;oldid=25444197" Kategorie:
+
+Vyhledavani informaci
+
+Pocitacová lingvistika
+
+Zpracovani prirozeného jazyka
+
+- Teorie informace
+
+Skryté kategorie:
+
+Udrzba:Clánky k uprave · Monitoring:Clanky prelozené z enwiki Monitoring:Clanky s identifikatorem NKC Monitoring:Clanky s identifikatorem PSH Monitoring:Clanky s identifikatorem TDkIV Monitoring:Clanky s identifikatorem BNE Monitoring:Clanky s identifikatorem BNF Monitoring:Clanky s identifikatorem GND Monitoring:Clanky s identifikatorem LCCN Monitoring:Clanky s identifikatorem NDL Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Ziskavani informaci

@@ -1,0 +1,45 @@
+Z Wikipedie, otevrené encyklopedie
+
+Uceni bez ucitele je trida metod strojové uceni. Na rozdil od uceni s ucitelem trénovaci data nemaji vstupni data provazana s cilovymi proménnymi (ohodnocenim, zavisle promennou...), tj. scházi vyrok ucitele a uceni bez ucitele tedy vykazuje samoorganizaci, ktera zachycuje vzory jako hustotu pravdepodobnosti.L1l uceni bez ucitele si tedy Ize predstavit jako kompresi vstupnich dat, napr. napriklad snizeni jejich dimense (v analyze hlavnich komponent) nebo jejich redukci na diskrétni body (jako je tomu ve shlukové analyze, kde vstupni data reprezentujeme oznacenymi shluky), Ci jejich vyhlazeni (odhad distribucnich funkci).[2l U neuronovych siti se uceni bez ucitele uzivá typicky u kompeticnich siti. (Porovnejte s ucenim S ucitelem).
+
+## Prakticke aplikace
+
+- segmentace: Obchodnik tak muze rozdelit svoje zakazniky podle jejich podobnosti je zaradit do trznich segmentu anebo archeolog muze podle charakteristik nalezenych strepu keramiky definovat ruzné kulturni okruhy, k nim patrili lidé, kteri kdysi keramiku vyrabeli
+- hledani anomálii: Netypické datové body mohou signalizovat poruchy nebo jiné situace, na které je potreba se zamerit, napriklad pri detekci podvodu ve financnich a telekomunikacnich firmach
+- odhad latentnich promennych: Psycholog muze z rady vysledku politického systému v zemi
+- zpravodajské sekce: Zpravy Google pouzivaji uceni bez ucitele ke kategorizaci Clanku o stejném pribehu z ruznych online zpravodajstvi. Napriklad vysledky prezidentskych voleb by mohly byt zarazeny pod jejich stitek "US news".
+- pocitacové videni: Algoritmy uceni bez ucitele se pouzivaji pro nekteré ulohy pocitacového videni, napriklad rozpoznavani objektu.
+- lékarské zobrazovaci metody: Poskytuje zakladni funkce lékarskym zobrazovacim zarizenim, jako je detekce, klasifikace a segmentace
+- obrazu, které se pouzivaji v radiologii a patologii k rychlé a presné diagnostice pacientu.
+- doporucovani: Pomoci údaju o minulém nakupnim chovani muze nerizené uceni pomoci odhalit datové trendy, které Ize vyuzit k vytvoreni efektivnejsich strategif nasledného prodeje. Toho se u internetovych prodejcu vyuzivá k tomu, aby zakaznikam behem procesu placeni doporucovali relevantni doplnky L3]
+
+## Typické algoritmy
+
+- shlukova analyza (hierarchické shlukovani, k-means a jiné)
+- metody identifikujici struktury kovariancnich vazeb (analyza hlavnich komponent, faktorova analyza, strukturni modelovani a dalsi)
+- vyhlazovani a odhadovani hustot pravdepodobnosti (kernel density estimation)
+
+## Reference
+
+1. ↑ HINTON, Geoffrey; SEJNOWSKI, Terrence. Unsupervised Learning: Foundations of Neural Computation. [s.l.]: MIT Press, 1999. ISBN978-0262581684.
+2. ↑ GENTLEMAN, R.; CAREY, V. J. Unsupervised Machine Learning. Bioconductor Case Studies. New York: Springer, 2008.21 s. Dostupné online. ISBN 978-0-387-77239-4. (anglicky)
+3. ↑ What is Unsupervised Learning?. www.ibm.com [online]. [cit. 2022-10-26]. Dostupné online. (anglicky)
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Uceni bez\_ucitele&amp;oldid=25374143' Kategorie:
+
+- Strojové uceni
+
+Skryté kategorie:
+
+- Udrzba:Clanky s docasne pouzitou Sablonou
+- ·Monitoring:Clanky s identifikatorem GND
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Uceni bez ucitele
+
+33 jazyku Pridat téma

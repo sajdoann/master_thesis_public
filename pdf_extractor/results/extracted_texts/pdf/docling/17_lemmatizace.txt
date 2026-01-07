@@ -1,0 +1,88 @@
+Z Wikipedie, otevřené encyklopedie
+
+Lemmatizace je určení lemmatu (základního slovního tvaru) k ohýbanému slovnímu tvaru. Lemmatizátor je nástroj (např. počítačový program), který vytvoří (vyhledá v databázi) k určitému tvaru slova základní tvar, tzv. lemma. [1]
+
+Doplňkovou funkcí lemmatizátoru jsou informace o mluvnických kategoriích (např. jmenných a slovesných) k danému tvaru. [pozn. 1]  Např. pro tvar 'barvě' lemmatizátor vrátí tvar 'barva', případně doplňkovou informaci podstatné jméno, ženský rod, jednotné číslo, 3./6. pád .
+
+Lemmatizace se např. využívá se pro vyhledávání ve fulltextových databázích. Pro fulltextové vyhledávání se ovšem využívají i podobně strukturovaná data sloužící k automatické kontrole pravopisu (např. slovníky pro hunspell). [3]
+
+## Využití lemmatizace
+
+- Fulltextové vyhledávání: např. pro zadanou frázi 'sběrný dvůr' se vyhledají i dokumenty obsahující tato slova v jiných pádech a číslech ( sběrné dvory , umístění sběrných dvorů ). [4] 1.
+- Korpusová lingvistika: informace z morfologického analyzátoru se využívá při značkování korpusů. [5]  Lemmatizaci využívá software QUITA (Quantitative Index T ext Analyzer), který dokáže posuzovat a analyzovat rozsáhlé texty, např. bohatost slovní zásoby a další lingvistické ukazatele. [6] 2.
+- Dalším nástrojem využívající lemmatizaci je latentní sémantická analýza (LSA). 'Latentní sémantická analýza je technika, která zobrazuje dokumenty a dotazy do prostoru latentních sémantických dimenzí, přičemž slova, která jsou sémanticky podobná (měřeno mírou souvýskytů v dokumentech) jsou zobrazována do stejných dimenzí a slova sémanticky odlišná do různých dimenzí.' [7]  LSA pro každé slovo vytváří další dimenzi, dokumenty se tak mohou nacházet až v několika statisících dimenzí. Lemmatizace je zde vhodná z toho důvodu, aby počet slov zredukovala na minimum a to pomocí převedení všech slov 3.
+
+na základní tvar. Tím se nevytváří různé dimenze pro stejná slova v jiném slovním tvaru. 'Díky tomu mohou mít velkou sémantickou podobnost i dokumenty (případně dotaz a dokument), které spolu nesdílejí žádná slova.' [7]
+
+## Úskalí lemmatizátoru
+
+Některá slova jsou mnohoznačná (v češtině např. ženu, stát, tancích) a pokud lemmatizátor neposoudí nebo nemůže posoudit kontext, není schopen zvolit zamýšlený význam. Např. 'Jeden z nejhodnotnějších zdrojů o maďarských tancích' zpracuje takto: 'Jeden/jíst z hodnotný zdroj o maďarský tank/tanec'. Obtížným specifikem jsou taktéž víceslovná spojení , tj. vytváření lemmat i frazémy, např. nechat na holičkách, popř. se jedná o idiomy např. z někoho si tam, kde to není možné, např. zdvořilá prosba Dovolíte? se nenachází v žádném z registrovaných významů slova dovolit, dále se může jednat o vystřelit. [1]
+
+## Dostupné lemmatizátory pro češtinu
+
+Neúplný výčet podle bakalářské práce Lemmatizace češtiny : [6]
+
+## České lemmatizátory
+
+```
+Ajka [8] Majka [9] Morče [10] MorphoDiTa [11] Czech HMM tagger [12] Czech "Free" Morphology [13] Morfo [14] · · · · · · ·
+```
+
+## Zahraniční lemmatizátory
+
+```
+Cistern [15]  (Lemming [16]  + Marmot [17] ) LemmaGen [18] · ·
+```
+
+## Ostatní nástroje
+
+- QUITA [19]  (Quantitative Indicator T ext Analyzer) ·
+- RDRPOSTagger [20]  (Ripple Down Rules Part-Of-Speech Tagger) - Tagger založený na Ripple Down Rules ·
+
+## Poznámky
+
+- ↑ Tento proces (přiřazení morfologických kategorií) se - v technickém smyslu - nazývá morfologická analýza. [2] 1.
+
+## Reference
+
+- ↑ a b CVRČEK, Václav; RICHTEROVÁ, Olga. Slovníček pojmů [online]. Český národní korpus [cit. 2016-06-21]. Kapitola Lemma. Dostupné online. 1.
+- ↑ RUSÍNOVÁ, Zdenka; PETKEVIČ, Vladimír. Nový encyklopedický slovník češtiny . Příprava vydání Petr Karlík, Marek Nekula, Jana Pleskalová. Praha: NLN, 2017. ISBN 978-80-7422-480-5. Heslo Morfologická analýza. 2.
+- ↑ VLČEK, Lukáš. Elasticsearch: Vyhledáváme hezky česky (a taky slovensky). www.zdrojak.cz [online]. Zdroják.cz, 2013-09-04 [cit. 2018-06-19]. Dostupné online. 3.
+- ↑ STROSSA, Petr. Český lemmatizátor Proč a hlavně jak? [online]. [cit. 2016-06-21]. Dostupné online. 4.
+- ↑ SEDLÁČEK, Radek. Morfologický analyzátor češtiny . Brno, 1999. 78 s. diplomová práce. Masarykova univerzita, Fakulta informatiky. Vedoucí práce Pavel Rychlý. s. 2. Dostupné online. 5.
+- ↑ a b BYDŽOVSKÝ, Dominik. Lemmatizace češtiny . 2017. Bakalářská práce. Fakulta informatiky a managementu Univerzity Hradec Králové. Vedoucí práce Mgr. Jiří Haviger, Ph.D. 6.
+- ↑ a b MATERNA, Jiří. Sémantická analýza textů [online]. 2011, ({3,4}) [cit. 2016-06-21]. Dostupné online a též zde. 7.
+- ↑ Ajka 8.
+- ↑ Majka 9.
+- ↑ Morče 10.
+- ↑ MorphoDiTa 11.
+- ↑ Czech HMM tagger 12.
+- ↑ Czech "Free" Morphology 13.
+- ↑ Morfo 14.
+- ↑ Cistern 15.
+- ↑ Lemming 16.
+- ↑ Marmot 17.
+- ↑ LemmaGen. lemmatise.ijs.si [online]. [cit. 2017-05-11]. Dostupné v archivu pořízeném z originálu dne 2017-06-06. 18.
+- ↑ QUITA 19.
+- ↑ RDRPOSTagger 20.
+
+Citováno z 'https://cs.wikipedia.org/w/index.php? title=Lemmatizace&amp;oldid=24775281' Kategorie:
+
+- Lexikografie ·
+- Jazykový software ·
+- Počítačová lingvistika ·
+
+Skryté kategorie:
+
+- Monitoring:Články s identifikátorem TDKIV ·
+- Monitoring:Články s identifikátorem LNB ·
+
+Hledání
+
+Speciální:Hledání
+
+Hledat
+
+20 jazyků Přidat téma
+
+Lemmatizace

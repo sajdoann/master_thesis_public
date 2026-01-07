@@ -1,0 +1,161 @@
+Z Wikipedie, otevřené encyklopedie Tento článek není dostatečně ozdrojován, a může tedy obsahovat informace, které je třeba ověřit. Jste-li s popisovaným předmětem seznámeni, pomozte doložit uvedená tvrzení doplněním referencí na věrohodné zdroje. ikona
+
+Ilustrace lineární regrese
+
+Lineární regrese je matematická metoda používaná pro proložení souboru bodů v grafu přímkou. O bodech reprezentujících měřená data se předpokládá, že jejich x-ové souřadnice jsou přesné, zatímco ypsilonové souřadnice mohou být zatíženy náhodnou chybou, přičemž předpokládáme, že závislost y na x lze graficky vyjádřit přímkou. Pokud měřené body proložíme přímkou, tak při odečítání z grafu bude mezi ypsilonovou hodnotou měřeného bodu a ypsilonovou hodnotou ležící na přímce odchylka. Podstatou lineární regrese je nalezení takové přímky, aby součet druhých mocnin těchto odchylek byl co nejmenší. Lineární regresi lze zobecnit i pro prokládání jinou funkcí než přímkou. T ermín lineární regrese proto může označovat dvě částečně odlišné věci:
+
+- Lineární regrese představuje aproximaci daných hodnot přímkou metodou nejmenších čtverců. Pokud tuto přímku vyjádříme rovnicí , jedná se o nalezení optimálních hodnot koeficientů a . ·
+- •
+- V obecnějším případě může lineární regrese znamenat aproximaci daných hodnot takovou funkcí , kterou lze vyjádřit jako lineární kombinaci funkcí f 1  až f k : . Koeficienty se opět určují metodou nejmenších čtverců.
+
+Homoskedasticita (homogenita ve varianci) dat je běžným jevem. Avšak její předpoklad může vést k přecenění [chybí zdroj]  korelačního koeficientu. V jistých případech je tedy nutné uvážit heteroskedasticitu a použít váženou regresi.
+
+## Aproximace přímkou
+
+Uvažujme funkční závislost:
+
+Součet čtverců pak bude vypadat takto:
+
+kde jsou souřadnice aproximovaných bodů.
+
+Abychom našli minimum součtu (našli koeficienty , tak, aby nalezená závislost vhodně aproximovala daná data), položíme obě parciální derivace součtu čtverců rovny nule:
+
+Úpravami obdržíme soustavu:
+
+<!-- image -->
+
+Lze ukázat, že matice této soustavy je regulární pro všechna , a má tedy právě jedno řešení. Obecně lze také ukázat, že v tomto bodě má součet čtverců minimum.
+
+Jejím řešením pro konkrétní hodnoty a dostaneme konečně hledané hodnoty parametrů a .
+
+{\displaystyle a={\frac {n\sum {x\_{i}y\_{i}}-\sum {x\_{i}}\sum
+
+{y\_{i}}}{n\sum {x\_{i}^{2}}-\left(\sum {x\_{i}}\right)^{2}}}}
+
+Podobný postup lze aplikovat na jakýkoliv druh závislosti i více proměnných.
+
+Pokud je každá hodnota zatížena jinou chybou (např. měříme několika různými přístroji), je výhodné zahrnout i toto do aproximace. Označíme-li
+
+<!-- formula-not-decoded -->
+
+## Přímka procházející počátkem
+
+Pokud je požadováno, aby přímka procházela počátkem, hledá se aproximace . Pro konstantu lze odvodit následující vztah:
+
+Máme-li závislost a hodnoty jsou zatíženy chybami , pak pro odhad
+
+<!-- formula-not-decoded -->
+
+chybu (směrodatnou odchylku)  -tého měření).
+
+<!-- formula-not-decoded -->
+
+## Výpočet na počítači
+
+Matlab umožňuje použít funkci P = POLYFIT(X, Y, 1) , kde poslední parametr 1 udává, že hledáme koeficienty polynomu prvního řádu. [1] [2] [nedostupný zdroj]
+
+V Excelu a Calcu (LibreOffice a OpenOffice.org) lze koeficient a zjistit funkcí SLOPE(Y; X) [3] [4] a konstantu b funkcí INTERCEPT(Y; X) [5] [6]. Případně lze oba koeficienty zjistit maticově zadanou funkcí {=LINEST(Y;X)} . [7] [8] V českém Excelu se tato funkce nazývá LINREGRESE . [9]
+
+## Obecná lineární regrese
+
+Ilustrace hledání optimální lineární kombinace. Zelená plocha col X představuje prostor, ve kterém se nachází všechny možné lineární kombinace f(X,β)=β 1 X 1 +β 2 X 2 . Vektor y , představuje vektor hodnot, ke kterým se aproximace βX snaží přiblížit s nejmenší možnou chybou ε=y-βX , respektive druhou mocninou této chyby. Další popis viz kapitola Odvození: Kolmé vektory v článku Metoda nejmenších čtverců.
+
+V obecnějším případě je možné danými hodnotami , proložit funkci sestavenou jako lineární kombinaci funkcí , kde jsou libovolné (zpravidla lineárně nezávislé) funkce. Regrese se nazývá lineární, neboť funkční předpis je lineární v proměnných , tedy v koeficientech, které podrobujeme regresi. Jinými slovy, úlohu lze formulovat algebraicky jako (lineární) metoda nejmenších čtverců.
+
+Lineární regresí je tedy i výše popsané proložení bodů přímkou (
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+Poznamenejme, že s proložením množiny bodů parabolou, resp. obecným polynomem se můžeme v literatuře setkat pod pojmem kvadratická, resp. polynomická (či polynomiální) regrese. [1]
+
+Koeficienty jsou vypočteny metodou nejmenších čtverců, tedy tak, aby součet druhých mocnin odchylek modelu od daných dat, tj.
+
+byl minimální.
+
+, ,
+
+## 1. způsob výpočtu: parciální derivace
+
+Pro koeficienty, které minimalizují výše uvedené kritérium , musí platit, že všechny první parciální derivace kritéria podle těchto koeficientů musí být rovny nule.
+
+Dalšími úpravami se lze dostat k soustavě lineárních rovnic:
+
+Kde jednotlivé prvky a znamenají:
+
+Výše uvedenou soustavu rovnic lze řešit některou z metod uvedených v článku Soustava lineárních rovnic.
+
+## 2. způsob výpočtu: přeurčená soustava rovnic
+
+Jiným způsobem, jak vypočítat hledané koeficienty, je sestavení přeurčené soustavy rovnic a její vyřešení, opět metodou nejmenších čtverců, ale poněkud odlišným postupem. Přeurčená soustava rovnic může vypadat následovně:
+
+Hledané koeficienty, umístěné ve vektoru , lze, za předpokladu lineární nezávislosti sloupců matice , vyjádřit vztahem:
+
+## Výpočet na počítači
+
+Matlab umožňuje soustavu rovnic Ax = b řešit velmi snadno pomocí operátoru \ (zpětné lomítko), tedy x = A \ b . Ekvivalentní je funkce MLDIVIDE , tedy x = mldivide(A, b) . [10] V Excelu a Calcu (LibreOffice a OpenOffice.org) lze výše sestavenou přeurčenou soustavu rovnic řešit použitím maticové funkce {=LINEST(known\_y's; known\_x's; const)} [11] [12] (v českém Excelu LINREGRESE(pole\_y; pole\_x; b) [13]), kde první parametr known\_y's (česky pole\_y ) je svislá oblast buněk obsahující složky vektoru b a druhý parametr known\_x's (česky pole\_x ) je oblast obsahující prvky matice A . Výsledný vektor x se nachází ve vodorovné oblasti, přičemž jeho složky jsou umístěny v buňkách v opačném pořadí, tedy b k je v buňce nejvíce vlevo a b 1 je nejvíce vpravo. Třetí parametr const (česky b ) musí být v tomto příkladu roven nule, správné použití tedy je: {=LINEST(b; A; 0)} . Ovšem nejjednodušším způsobem odhadu parametrů metodou nejmenších čtverců je použití ekonometrického softwaru jako např. STATA, Gretl, Eviews nebo R, kde existují obecné příkazy pro jejich výpočet. Zároveň i tyto programy umožňují jednoduše testovat předpoklady daného modelu.
+
+## Převod mocninné a exponenciální regrese na lineární
+
+Na lineární problém lze transformovat i aproximaci mocninnou funkcí nebo aproximaci funkcí exponenciální .
+
+## Mocninná funkce
+
+Problém, jak aproximovat původní data křivkou lze převést na podobný problém zlogaritmováním rovnice křivky. , přičemž místo lze psát .
+
+Vznikl tak problém, jak aproximovat logaritmovaná původní data přímkou , který již problémem není. Koeficient v mocninné funkci lze z koeficientu vypočítat jako .
+
+## Exponenciální funkce
+
+Problém, jak aproximovat původní data křivkou lze převést na podobný problém zlogaritmováním rovnice křivky.
+
+<!-- formula-not-decoded -->
+
+přičemž místo konstant a lze psát a .
+
+Na rozdíl od aproximace mocninnou funkcí, stačí z původních dat logaritmovat pouze hodnoty a řešit problém, jak aproximovat data přímkou . Koeficienty a v exponenciální funkci lze z koeficientů a vypočítat jako , .
+
+## Reference
+
+- ↑ Jiří Likeš, Josef Machek, Matematická statistika , SNTL Praha 1988, s. 165-169 1.
+
+## Související články
+
+- Aproximace ·
+- Lineární funkce ·
+- Kvadratická regrese ·
+- Koeficient determinace ·
+- Metoda nejmenších čtverců ·
+- Polynomická regrese ·
+- Regresní analýza ·
+
+## Externí odkazy
+
+- Obrázky, zvuky či videa k tématu lineární regrese na Wikimedia Commons ·
+- Lineární regrese tak nebo jinak: https://web.archive.org/web/ 20061002153201/http://www.kolej.mff.cuni.cz/%7Elmotm275/skripta/ sbirka/html/node49.html ·
+- Lineární regrese v Microsoft Excel: http://praktika.kvalitne.cz/index.php? clanek=text\_navod&amp;text=22 Archivováno 29. 6. 2020 na Wayback Machine. ·
+- Aproximace obecnou funkcí, přímkou, polynomem, statistika: http:// amper.ped.muni.cz/… ·
+
+Citováno z 'https://cs.wikipedia.org/w/index.php? title=Lineární\_regrese&amp;oldid=24250762' Kategorie:
+
+- Ekonometrie ·
+- Matematická statistika ·
+- Metody odhadu ·
+
+Skryté kategorie:
+
+- Údržba:Články k ověření ·
+- Údržba:Fakta k ověření ·
+- Údržba:Články obsahující odkazy na nedostupné zdroje ·
+- Monitoring:Články s identifikátorem GND ·
+
+Hledání
+
+Speciální:Hledání
+
+Hledat
+
+Lineární regrese
+
+42 jazyků Přidat téma

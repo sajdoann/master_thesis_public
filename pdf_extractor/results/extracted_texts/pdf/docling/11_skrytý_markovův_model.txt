@@ -1,0 +1,52 @@
+Z Wikipedie, otevřené encyklopedie
+
+Skrytý Markovův model (anglicky hidden Markov model - zkráceně HMM ) je statistický Markovův model, který modeluje systém za předpokladu, že jde o Markovův proces se skrytými (nepozorovanými) stavy. HMM může být znázorněn pomocí nejjednodušší dynamické bayesovské sítě. Matematické základy modelu vyvinul Leonard E. Baum (1931-2017) spolu se svým týmem spolupracovníků. [1][2][3]  Problematika velmi úzce souvisí s dřívější prací Ruslana L. Stratonoviche (1930-1997), který pracoval na lineárním problému filtrování [4]  a jako první popsal dopředně zpětný algoritmus. V jednodušších Markovových modelech (jako je Markovův řetězec) je stav systému viditelný pozorovateli, tudíž pravděpodobnost změny stavu je jediný parametr modelu. Naopak ve skrytých Markovových modelech stav není pozorovateli viditelný, ale výstup, který je na stavu závislý, viditelný je. Každý stav má pravděpodobnostní vliv na výstup systému. Tedy posloupnost výstupů skrytého Markovova modelu vypovídá o posloupnosti vnitřních stavů, která tuto posloupnost vygenerovala. Přívlastek skrytý se tedy vztahuje na posloupnost vnitřních stavů, kterými model prošel, nikoliv na parametry modelu (model se nazývá skrytý , ačkoliv jsou jeho parametry dány přesně a jsou známé). Skryté Markovovy modely jsou známé zejména na poli rozpoznávání časových vzorů. Mezi ně spadá například rozpoznávání řeči, rukou psaného písma, gest [5]  nebo označování slovních druhů (part of speech tagging). Využití nalézá také v bioinformatice. Skryté Markovovy modely lze považovat za zobecnění smíšených modelů, ve kterých nejsou skryté proměnné (nebo latentní proměnné) nezávislé jedna na druhé, ale naopak jsou navzájem spojené Markovovým procesem. V poslední době byly skryté Markovovy modely zobecněny na párové Markovovy modely a tripletové Markovovy modely, které umožňují využití modelu i na komplexnější datové struktury [6][7]  a modelování nestacionárních dat. [8][9]
+
+## Popis pomocí problému uren
+
+Pravděpodobnostní parametry skrytého Markovova modelu (příklad): X - stavy modelu y - možná pozorování modelu a - pravděpodobnost přechodu mezi stavy b - pravděpodobnosti výstupů V jeho diskrétní formě lze skrytý Markovův proces znázornit zobecněním tzv. problému uren, ve kterém je každý objekt před dalším krokem navrácen do své původní urny. [10] Uvažujeme následující příklad: v místnosti, do které pozorovatel nevidí, je duch. Místnost obsahuje urny X1, X2, X3… Každá z uren obsahuje známý počet různých míčků. Míčky jsou označené y1, y2, y3… Duch náhodně vybere jednu z uren a vytáhne z ní náhodný míček. Míček následně položí na přepravní pás, který jej vyveze ven. Pozorovatel tedy vidí posloupnost vytažených míčků, ale není mu známa posloupnost uren, ze kterých bylo taženo. Duch k výběru urny využívá následující postup: výběr urny pro vytažení n -tého míčku závisí pouze na náhodném čísle a na výběru urny pro vytažení ( n -1)-ho míčku. Výběr míčku tedy přímo nezávisí na sekvenci předešlých uren ze kterých bylo taženo, ale pouze na urně, ze které byl vytažen n-1 míček. A proto se jedná o Markovův proces. Tento proces popisuje horní část obrázku. Samotný Markovův proces nemůže být pozorován (lze pozorovat pouze sekvenci výstupů), a proto se tomuto procesu říká skrytý Markovův proces. Znázorňuje to spodní část obrázku, ze kterého je patrné, že v každém stavu může být tažen míček y1, y2, y3 nebo y4. Tedy ačkoliv pozorovatel zná rozmístění uren a právě viděl posloupnost tří vytažených míčků, nemůže si být jistý, ze které urny duch vytáhl třetí míček. Lze pouze určit pravděpodobnosti, s jakými byl třetí míček z jednotlivých uren vytažen.
+
+## Reference
+
+- ↑ BAUM, L. E.; PETRIE, T. Statistical Inference for Probabilistic Functions of Finite State Markov Chains. The Annals of Mathematical Statistics . 1966, s. 1554-1563. Dostupné online [cit. 28 November 2011]. doi: 10.1214/aoms/1177699147. 1.
+- ↑ BAUM, L. E.; SELL, G. R. Growth transformations for functions on manifolds. Pacific Journal of Mathematics . 1968, s. 211-227. Dostupné online [cit. 28 November 2011]. doi:10.2140/pjm.1968.27.211. 2.
+- ↑ BAUM, L.E. An Inequality and Associated Maximization Technique in Statistical Estimation of Probabilistic Functions of a Markov Process. Inequalities . 1972, s. 1-8. 3.
+- ↑ STRATONOVICH, R. L. Conditional Markov Processes. S. 156-178. Theory of Probability &amp; Its Applications [online]. 1960-01 [cit. 2020-12-10]. Roč. 5, čís. 2, s. 156-178. doi:10.1137/1105015. (anglicky) 4.
+- ↑ STARNER, Thad; PENTLAND, Alex. Real-time American Sign Language recognition from video using hidden Markov models. S. 265-270. Proceedings of International Symposium on Computer Vision - ISCV [online]. 1995-11 [cit. 2020-12-10]. S. 265-270. Dostupné online. doi: 10.1109/ISCV.1995.477012. (anglicky) 5.
+- ↑ PIECZYNSKI, Wojciech. Multisensor triplet Markov chains and theory of evidence. S. 1-16. International Journal of Approximate Reasoning [online]. 2007-05 [cit. 2020-12-10]. Roč. 45, čís. 1, s. 1-16. Dostupné online. doi:10.1016/j.ijar.2006.05.001. (anglicky) 6.
+- ↑ BOUDAREN, Mohamed El Yazid; MONFRINI, Emmanuel; PIECZYNSKI, Wojciech; AÏSSANI, Amar. Dempster-Shafer fusion of multisensor signals in nonstationary Markovian context. S. 134. EURASIP Journal on Advances in Signal Processing [online]. 2012-12 [cit. 2020-12-10]. Roč. 2012, čís. 1, s. 134. Dostupné online. doi:10.1186/1687-6180-2012-134. (anglicky) 7.
+- ↑ LANCHANTIN, P.; PIECZYNSKI, W. Unsupervised restoration of hidden nonstationary Markov chains using evidential priors. S. 3091-3098. IEEE Transactions on Signal Processing [online]. 2005-08 [cit. 2020-12-10]. Roč. 53, čís. 8, s. 3091-3098. Dostupné online. doi:10.1109/TSP. 2005.851131. (anglicky) 8.
+- ↑ BOUDAREN, M. E. Y .; MONFRINI, E.; PIECZYNSKI, W. Unsupervised Segmentation of Random Discrete Data Hidden With Switching Noise Distributions. S. 619-622. IEEE Signal Processing Letters [online]. 2012-10 [cit. 2020-12-10]. Roč. 19, čís. 10, s. 619-622. Dostupné online. doi:10.1109/LSP.2012.2209639. (anglicky) 9.
+- ↑ RABINER, Lawrence R. A tutorial on hidden Markov models and selected applications in speech recognition. S. 257-286. Proceedings of 10.
+
+the IEEE [online]. 1989-02 [cit. 2020-12-10]. Roč. 77, čís. 2, s. 257-286. Dostupné online. doi:10.1109/5.18626. (anglicky)
+
+## Externí odkazy
+
+- Obrázky, zvuky či videa k tématu Skrytý Markovův model na Wikimedia Commons ·
+
+Pahýl Tento článek je příliš stručný nebo postrádá důležité informace. Pomozte Wikipedii tím, že jej vhodně rozšíříte. Nevkládejte však bez oprávnění cizí texty. Pahýl
+
+Citováno z 'https://cs.wikipedia.org/w/index.php? title=Skrytý\_Markovův\_model&amp;oldid=25421475' Kategorie:
+
+- Bioinformatika ·
+
+Skryté kategorie:
+
+- Údržba:Články s dočasně použitou šablonou ·
+- Pahýly ·
+- Monitoring:Články s identifikátorem GND ·
+- Monitoring:Články s identifikátorem LCCN ·
+- Monitoring:Články s identifikátorem NLI ·
+
+Hledání
+
+Speciální:Hledání
+
+Hledat
+
+Skrytý Markovův model
+
+27 jazyků
+
+Přidat téma

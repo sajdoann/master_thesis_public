@@ -1,0 +1,431 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Lemmatizace – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Lemmatizace je určení lemmatu (základního slovního tvaru) k ohýbanému
+
+slovnímu tvaru. Lemmatizátor je nástroj (např. počítačový program), který
+
+vytvoří (vyhledá v databázi) k určitému tvaru slova základní tvar, tzv. lemma.
+[1]
+
+Doplňkovou funkcí lemmatizátoru jsou informace o mluvnických kategoriích
+
+(např. jmenných a slovesných) k danému tvaru.[pozn. 1] Např. pro tvar
+
+„barvě“ lemmatizátor vrátí tvar „barva“, případně doplňkovou informaci 
+
+podstatné jméno, ženský rod, jednotné číslo, 3./6. pád. 
+
+Lemmatizace se např. využívá se pro vyhledávání ve fulltextových
+
+databázích. Pro fulltextové vyhledávání se ovšem využívají i podobně
+
+strukturovaná data sloužící k automatické kontrole pravopisu (např. slovníky
+
+pro hunspell).[3]
+
+Využití lemmatizace
+
+Fulltextové vyhledávání: např. pro zadanou frázi „sběrný dvůr“ se
+
+vyhledají i dokumenty obsahující tato slova v jiných pádech a číslech
+
+(sběrné dvory, umístění sběrných dvorů).[4]
+
+Korpusová lingvistika: informace z morfologického analyzátoru se
+
+využívá při značkování korpusů.[5] Lemmatizaci využívá software QUITA
+
+(Quantitative Index Text Analyzer), který dokáže posuzovat a analyzovat
+
+rozsáhlé texty, např. bohatost slovní zásoby a další lingvistické
+
+ukazatele.[6]
+
+Dalším nástrojem využívající lemmatizaci je latentní sémantická analýza
+
+(LSA). „Latentní sémantická analýza je technika, která zobrazuje
+
+dokumenty a dotazy do prostoru latentních sémantických dimenzí,
+
+přičemž slova, která jsou sémanticky podobná (měřeno mírou
+
+souvýskytů v dokumentech) jsou zobrazována do stejných dimenzí a
+
+slova sémanticky odlišná do různých dimenzí.“[7] LSA pro každé slovo
+
+vytváří další dimenzi, dokumenty se tak mohou nacházet až v několika
+
+statisících dimenzí. Lemmatizace je zde vhodná z toho důvodu, aby
+
+počet slov zredukovala na minimum a to pomocí převedení všech slov
+
+1. 
+
+2. 
+
+3. 
+
+/wiki/Po%C4%8D%C3%ADta%C4%8Dov%C3%BD_program
+/wiki/Slovn%C3%AD_tvar
+/wiki/Slovo
+/wiki/Lemma_(lingvistika)
+/w/index.php?title=Mluvnick%C3%A1_kategorie&action=edit&redlink=1
+/wiki/Podstatn%C3%A9_jm%C3%A9no#Mluvnick%C3%A9_kategorie_podstatn%C3%BDch_jmen
+/wiki/Sloveso#Mluvnick%C3%A9_kategorie_sloves
+/wiki/Kontrola_pravopisu
+/wiki/Hunspell
+/wiki/Fulltextov%C3%A9_vyhled%C3%A1v%C3%A1n%C3%AD
+/wiki/Korpusov%C3%A1_lingvistika
+/wiki/Anotace
+/wiki/Jazykov%C3%BD_korpus
+/wiki/Vno%C5%99en%C3%AD_slov
+
+na základní tvar. Tím se nevytváří různé dimenze pro stejná slova v
+
+jiném slovním tvaru. „Díky tomu mohou mít velkou sémantickou
+
+podobnost i dokumenty (případně dotaz a dokument), které spolu
+
+nesdílejí žádná slova.“[7]
+
+Úskalí lemmatizátoru
+
+Některá slova jsou mnohoznačná (v češtině např. ženu, stát, tancích) a pokud
+
+lemmatizátor neposoudí nebo nemůže posoudit kontext, není schopen zvolit
+
+zamýšlený význam. Např. „Jeden z nejhodnotnějších zdrojů o maďarských
+
+tancích“ zpracuje takto: „Jeden/jíst z hodnotný zdroj o maďarský tank/tanec“. 
+
+Obtížným specifikem jsou taktéž víceslovná spojení, tj. vytváření lemmat i
+
+tam, kde to není možné, např. zdvořilá prosba Dovolíte? se nenachází v
+
+žádném z registrovaných významů slova dovolit, dále se může jednat o
+
+frazémy, např. nechat na holičkách, popř. se jedná o idiomy např. z někoho si
+
+vystřelit.[1]
+
+Dostupné lemmatizátory pro češtinu
+
+Neúplný výčet podle bakalářské práce Lemmatizace češtiny:[6]
+
+České lemmatizátory
+
+Ajka[8]
+
+Majka[9]
+
+Morče[10]
+
+MorphoDiTa[11]
+
+Czech HMM tagger[12]
+
+Czech "Free" Morphology[13]
+
+Morfo[14]
+
+Zahraniční lemmatizátory
+
+Cistern[15] (Lemming[16] + Marmot[17])
+
+LemmaGen[18]
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+/wiki/Homonymum
+/wiki/%C4%8Ce%C5%A1tina
+
+Ostatní nástroje
+
+QUITA[19] (Quantitative Indicator Text Analyzer)
+
+RDRPOSTagger[20] (Ripple Down Rules Part-Of-Speech Tagger) – Tagger
+
+založený na Ripple Down Rules
+
+Poznámky
+
+↑ Tento proces (přiřazení morfologických kategorií) se – v technickém
+
+smyslu – nazývá morfologická analýza.[2]
+
+Reference
+
+↑ a b CVRČEK, Václav; RICHTEROVÁ, Olga. Slovníček pojmů [online].
+
+Český národní korpus [cit. 2016-06-21]. Kapitola Lemma. Dostupné
+
+online.
+
+↑ RUSÍNOVÁ, Zdenka; PETKEVIČ, Vladimír. Nový encyklopedický slovník
+
+češtiny. Příprava vydání Petr Karlík, Marek Nekula, Jana Pleskalová.
+
+Praha: NLN, 2017. ISBN 978-80-7422-480-5. Heslo Morfologická analýza.
+
+↑ VLČEK, Lukáš. Elasticsearch: Vyhledáváme hezky česky (a taky
+
+slovensky). www.zdrojak.cz [online]. Zdroják.cz, 2013-09-04 [cit.
+
+2018-06-19]. Dostupné online.
+
+↑ STROSSA, Petr. Český lemmatizátor Proč a hlavně jak? [online]. [cit.
+
+2016-06-21]. Dostupné online.
+
+↑ SEDLÁČEK, Radek. Morfologický analyzátor češtiny. Brno, 1999. 78 s.
+
+diplomová práce. Masarykova univerzita, Fakulta informatiky. Vedoucí
+
+práce Pavel Rychlý. s. 2. Dostupné online.
+
+↑ a b BYDŽOVSKÝ, Dominik. Lemmatizace češtiny. 2017. Bakalářská
+
+práce. Fakulta informatiky a managementu Univerzity Hradec Králové.
+
+Vedoucí práce Mgr. Jiří Haviger, Ph.D.
+
+↑ a b MATERNA, Jiří. Sémantická analýza textů [online]. 2011, ({3,4})
+
+[cit. 2016-06-21]. Dostupné online a též zde.
+
+↑ Ajka
+
+↑ Majka
+
+↑ Morče
+
+↑ MorphoDiTa
+
+↑ Czech HMM tagger
+
+• 
+
+• 
+
+1. 
+
+1. 
+
+2. 
+
+3. 
+
+4. 
+
+5. 
+
+6. 
+
+7. 
+
+8. 
+
+9. 
+
+10. 
+
+11. 
+
+12. 
+
+/w/index.php?title=Morfologick%C3%A1_anal%C3%BDza&action=edit&redlink=1
+http://wiki.korpus.cz/doku.php/pojmy:lemma
+http://wiki.korpus.cz/doku.php/pojmy:lemma
+/wiki/Zdenka_Rus%C3%ADnov%C3%A1
+/wiki/Vladim%C3%ADr_Petkevi%C4%8D
+/wiki/Nov%C3%BD_encyklopedick%C3%BD_slovn%C3%ADk_%C4%8De%C5%A1tiny
+/wiki/Nov%C3%BD_encyklopedick%C3%BD_slovn%C3%ADk_%C4%8De%C5%A1tiny
+/wiki/Nakladatelstv%C3%AD_Lidov%C3%A9_noviny
+/wiki/International_Standard_Book_Number
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-7422-480-5
+/wiki/Speci%C3%A1ln%C3%AD:Zdroje_knih/978-80-7422-480-5
+https://www.czechency.org/slovnik/MORFOLOGICK%C3%81%20ANAL%C3%9DZA
+https://www.zdrojak.cz/clanky/elasticsearch-vyhledavame-hezky-cesky-ii-a-taky-slovensky/
+http://computerworld.cz/archiv/cesky-lemmatizator-proc-a-hlavne-jak-18850
+https://is.muni.cz/th/3864/fi_m/
+https://vyhledavani.sblog.cz/2011/09/22/semanticka-analyza-textu-3/
+https://vyhledavani.sblog.cz/2011/10/17/semanticka-analyza-textu-4/
+https://nlp.fi.muni.cz/projekty/ajka/ajkacz.htm
+https://nlp.fi.muni.cz/ma/
+http://ufal.mff.cuni.cz/morce/index.php
+http://ufal.mff.cuni.cz/morphodita
+http://ufal.mff.cuni.cz/pdt1/Morphology_and_Tagging/Tagging/MM_tagger/index.html
+
+↑ Czech "Free" Morphology
+
+↑ Morfo
+
+↑ Cistern
+
+↑ Lemming
+
+↑ Marmot
+
+↑ LemmaGen. lemmatise.ijs.si [online]. [cit. 2017-05-11]. Dostupné
+
+v archivu pořízeném z originálu dne 2017-06-06.
+
+↑ QUITA
+
+↑ RDRPOSTagger
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Lemmatizace&oldid=24775281“
+
+Kategorie: 
+
+Lexikografie
+
+Jazykový software
+
+Počítačová lingvistika
+
+Skryté kategorie: 
+
+Monitoring:Články s identifikátorem TDKIV
+
+Monitoring:Články s identifikátorem LNB
+
+Hledání
+
+Hledat
+
+Lemmatizace
+
+20 jazyků Přidat téma
+
+13. 
+
+14. 
+
+15. 
+
+16. 
+
+17. 
+
+18. 
+
+19. 
+
+20. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Speciální:Hledání
+
+http://ufal.mff.cuni.cz/pdt1/Morphology_and_Tagging/Morphology/index.html
+http://ufal.mff.cuni.cz/morfo/#about
+http://cistern.cis.lmu.de/
+http://cistern.cis.lmu.de/lemming/
+http://cistern.cis.lmu.de/marmot/
+https://web.archive.org/web/20170606134753/http://lemmatise.ijs.si/
+https://web.archive.org/web/20170606134753/http://lemmatise.ijs.si/
+http://lemmatise.ijs.si/
+http://www.ram-verlag.eu/quita-quantitative-index-text-analyzer/
+http://rdrpostagger.sourceforge.net/
+https://cs.wikipedia.org/w/index.php?title=Lemmatizace&oldid=24775281
+https://cs.wikipedia.org/w/index.php?title=Lemmatizace&oldid=24775281
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Lexikografie
+/wiki/Kategorie:Jazykov%C3%BD_software
+/wiki/Kategorie:Po%C4%8D%C3%ADta%C4%8Dov%C3%A1_lingvistika
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_TDKIV
+/wiki/Kategorie:Monitoring:%C4%8Cl%C3%A1nky_s_identifik%C3%A1torem_LNB
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+	Využití lemmatizace
+	Úskalí lemmatizátoru
+	Dostupné lemmatizátory pro češtinu
+	České lemmatizátory
+	Zahraniční lemmatizátory
+	Ostatní nástroje
+
+	Poznámky
+	Reference
+

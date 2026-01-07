@@ -1,0 +1,251 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Obecná umělá inteligence – Wikipedie
+
+
+Z Wikipedie, otevřené encyklopedie
+
+Obecná umělá inteligence (anglicky artificial general intelligence –
+
+zkráceně AGI) je typ umělé inteligence (AI), která má za cíl replikovat
+
+kognitivní schopnosti člověka. Na rozdíl od úzce zaměřené AI, která je
+
+navržena pro konkrétní úkoly, má obecná AI schopnost chápat, učit se a
+
+aplikovat znalosti v širokém spektru úkolů na úrovni srovnatelné s lidskou
+
+inteligencí. Obecná AI se dokáže přizpůsobit novým situacím, řešit neznámé
+
+problémy a vykonávat různé intelektuální úkoly.[1] Po obecné umělé
+
+inteligenci může následovat tzv. umělá superinteligence (ASI). 
+
+AGI by měla umět zvládat různorodé úkoly napříč spektrem: umět hrát hry,
+
+psát příběhy, řešit matematické úlohy, rozpoznávat obličeje, chápat emoce a
+
+učit se novým věcem. AGI se liší od umělé inteligence (AI), která umí velmi
+
+dobře pouze jednu konkrétní věc, jako je hraní šachů nebo překládání jazyků.
+
+Jedná se tak o tzv. silnější AI, která poznává svět kolem sebe a učí se sama. O
+
+vybudování AGI se snaží například OpenAI[2] či DeepMind od Google.[3]
+
+Generální ředitel společnosti NVIDIA Jensen Huang v březnu 2024 uvedl, že
+
+obecná umělá inteligence může začít existovat již do pěti let.[4]
+
+Odkazy
+
+Reference
+
+↑ SHEVLIN, Henry; VOLD, Karina; CROSBY, Matthew. The limits of
+
+machine intelligence. EMBO Reports. 2019-10-04, roč. 20, čís. 10, s.
+
+e49177. PMID: 31531926 PMCID: PMC6776890. Dostupné online [cit.
+
+2023-03-23]. ISSN 1469-221X. doi:10.15252/embr.201949177. PMID
+
+31531926.
+
+↑ Planning for AGI and beyond. openai.com [online]. [cit. 2023-03-23]. 
+
+Dostupné online. (anglicky)
+
+↑ Artificial General Intelligence. visualisingai.deepmind.com [online].
+
+[cit. 2023-08-19]. Dostupné v archivu pořízeném z originálu
+
+dne 2023-08-19. (anglicky)
+
+1. 
+
+2. 
+
+3. 
+
+/wiki/Angli%C4%8Dtina
+/wiki/Um%C4%9Bl%C3%A1_inteligence
+/wiki/Superinteligence
+/wiki/Um%C4%9Bl%C3%A1_inteligence
+/wiki/OpenAI
+/w/index.php?title=DeepMind&action=edit&redlink=1
+/wiki/NVIDIA
+/wiki/Jensen_Huang
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6776890/
+/wiki/International_Standard_Serial_Number
+https://worldcat.org/issn/1469-221X
+/wiki/Digital_object_identifier
+https://doi.org/10.15252%2Fembr.201949177
+/wiki/PubMed
+https://www.ncbi.nlm.nih.gov/pubmed/31531926
+https://www.ncbi.nlm.nih.gov/pubmed/31531926
+https://openai.com/blog/planning-for-agi-and-beyond
+https://web.archive.org/web/20230819160305/https://visualisingai.deepmind.com/theme/artificial-general-intelligence
+https://visualisingai.deepmind.com/theme/artificial-general-intelligence
+
+↑ ČTK. Obecná umělá inteligence tu bude do pěti let, věří šéf
+
+společnosti Nvidia. ČT24 [online]. Česká televize [cit. 2024-03-04]. 
+
+Dostupné online.
+
+Související články
+
+Umělá inteligence
+
+Filozofie umělé inteligence
+
+Inteligentní prostředí
+
+Mimozemská inteligence
+
+Hybridní inteligence
+
+Externí odkazy
+
+https://web.archive.org/web/20060501205638/http://
+
+www.lira.dist.unige.it/papers.htm
+
+Pahýl
+
+Tento článek je příliš stručný nebo postrádá důležité
+
+informace.
+
+Pomozte Wikipedii tím, že jej vhodně rozšíříte. Nevkládejte
+
+však bez oprávnění cizí texty.
+
+Citováno z „https://cs.wikipedia.org/w/index.php?
+
+title=Obecná_umělá_inteligence&oldid=25216978“
+
+Kategorie: 
+
+Umělá inteligence
+
+Skryté kategorie: 
+
+Pahýly
+
+Monitoring:Autoritní kontrola s 0 identifikátory
+
+Hledání
+
+Hledat
+
+Obecná umělá inteligence
+
+4. 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+• 
+
+Pahýl
+
+• 
+
+• 
+
+• 
+
+Speciální:Hledání
+
+/wiki/%C4%8Cesk%C3%A1_tiskov%C3%A1_kancel%C3%A1%C5%99
+/wiki/%C4%8CT24
+/wiki/%C4%8Cesk%C3%A1_televize
+https://ct24.ceskatelevize.cz/clanek/veda/obecna-umela-inteligence-tu-bude-do-peti-let-veri-sef-spolecnosti-nvidia-346726
+/wiki/Um%C4%9Bl%C3%A1_inteligence
+/wiki/Filozofie_um%C4%9Bl%C3%A9_inteligence
+/wiki/Inteligentn%C3%AD_prost%C5%99ed%C3%AD
+/wiki/Mimozemsk%C3%BD_%C5%BEivot
+/wiki/Hybridn%C3%AD_inteligence
+https://web.archive.org/web/20060501205638/http://www.lira.dist.unige.it/papers.htm
+https://web.archive.org/web/20060501205638/http://www.lira.dist.unige.it/papers.htm
+/wiki/Soubor:Wiki_letter_w.svg
+/wiki/Soubor:Wiki_letter_w.svg
+/wiki/Wikipedie:Pah%C3%BDl
+/wiki/Wikipedie:Pah%C3%BDl
+https://cs.wikipedia.org/w/index.php?title=Obecn%C3%A1_um%C4%9Bl%C3%A1_inteligence&action=edit
+/wiki/Wikipedie:Autorsk%C3%A9_pr%C3%A1vo#Publikov%C3%A1n%C3%AD_ciz%C3%ADch_autorsk%C3%BDch_d%C4%9Bl
+https://cs.wikipedia.org/w/index.php?title=Obecn%C3%A1_um%C4%9Bl%C3%A1_inteligence&oldid=25216978
+https://cs.wikipedia.org/w/index.php?title=Obecn%C3%A1_um%C4%9Bl%C3%A1_inteligence&oldid=25216978
+/wiki/N%C3%A1pov%C4%9Bda:Kategorie
+/wiki/Kategorie:Um%C4%9Bl%C3%A1_inteligence
+/wiki/Kategorie:Pah%C3%BDly
+/wiki/Kategorie:Monitoring:Autoritn%C3%AD_kontrola_s_0_identifik%C3%A1tory
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+47 jazyků Přidat téma
+
+#
+#
+#
+	Odkazy
+	Reference
+	Související články
+	Externí odkazy
+
+

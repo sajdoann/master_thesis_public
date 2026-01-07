@@ -1,0 +1,116 @@
+Z Wikipedie, otevrené encyklopedie Strojovy preklad (angl. machine translation) je proces automatického prekladu z jednoho prirozeného jazyka do jiného pomoci pocitace. Strojovy preklad byl poprvé pouzit v 50. letech v UsA. Ukol v oblasti zpracovani prirozeného jazyka a umelé inteligence stale vsak nebyl plne vyresen. Posledni technologii jsou neuronové strojové preklady (neuron machine translation, NMT), které se blizi k tzv. lidské parité neboli shode s tim, jak by Vysledky jsou jiz dostatecne kvalitni pro pouziti v mnoha oblastech, kde pomahaji lidskym prekladatelum.
+
+## Historie strojového prekladu
+
+Pokusy o strojovy preklad cizojazycnych textu zacaly kratce po 2. svetové valce. Ocekavalo se, e pro pocitace, jejich prvni prototypy byly v té dobe tento predpoklad byl zcela mylny. Prvni systém pro strojovy preklad byl verejnosti predstaven Z. ledna 1954 v ustredi firmy IBM. Udalost pritahla znacnou pozornost médif i Siroké verejnosti. System samotny byl ale z dnesniho pohledu velmi jednoduchy, systém vzbudil dojem, e praktické nasazeni strojového prekladu u neni daleko, coz pomohlo ziskat dostatecné financni prostredky na dalsi vyzkum v tomtooboru. Hlavni motivaci pro vyvoj dalsich podobnych systému byla eskalujici studena valka. USA se zacaly obavat naskoku tehdejsiho Sovetského svazu ve vyvoji raketové i jiné vojenské techniky a snazily se peclive monitorovat pokrok od  i a os     ag do anglictiny. Kvalita prekladu vsak byla velmi nizka a takto vzniklé texty se pouzivaly pouze pro ziskani zakladni orientace v obsahu dokumentu a m
+
+V prubehu dalsich desetileti bylo do vyvoje v oblasti strojového prekladu investovano znacné usili jak v komercni, tak i v akademické sfére. Dosahované pokroky byly ale po celou dobu velmi skromné a ani dnesni srovnatelnasClovekem.
+
+## Metody strojového prekladu
+
+## Pravidlovy strojovy preklad
+
+Nejstarsim pristupem ke strojovému prekladu je pravidlovy pristup, obvykle rucne Ci poloautomaticky) a sady prekladovych pravidel. Tato pravidla analyzujizdrojovouvetuazapomocislovnikujitransformujidocilového jazyka. Vyvoj pravidlového systému je Casové narocny (obvykle se hovori o desitkach let potrebnych pro vytvoreni realne pouzitelného systému) a adxa yooeod e uozer udns ed arnpez malo a existujf jen pro nekolik malo jazykovych paru, zejména anglictinu s francouzstinou (cástecné diky Kanade a jejim jazykovym zakonum, vyzadujicim aby mnohé dokumenty byly k dispozici v anglické i francouzské verzi). Pravidlové systémy se presto osvédcily pro preklady textu z velmi omezené jazykové domény, v kterémzto pripade je mozné slovnikem a sadou pravidel témér plne postihnout texty, které je nutné prekladat. V téchto situacich pravidlovy preklad Casto dosahuje lepsi kvality ne2 obecne S
+
+## Statisticky strojovy preklad
+
+nastup statistickych metod do pocitacové lingvistiky, co2 v mnoha jejich prekladu. Najednou jiz nebylo potreba jazykovych expertu desitek let vyvoje. Ukazalo se, e dostatecné mnostvi paralelnich jazykovych dat a statistické modelovani dokazi v kratkém Case a s nevelkymi naklady prekonat mnohé
+
+Základem statistického prekladového systému (SMT, Statistical Machine Translation) je dvojjazycny (paralelni) korpus - sada dokumentu ve zdrojovém jazyce a jejich lidskych prekladu do cilového jazyka (nebo obracené), typicky automaticky sesbiranych z internetu a dalsich volne dostupnych zdroju. Z techto dat si prekladovy system extrahuje prekladovou tabulku, tj. slovnik Sooso sooro nazyvana frazova tabulka) obsahuje nejen preklady jednotlivych slov, ale zejména kratkychfrazi-je tomu tak mimo jinéproto, 2e slova zdrojového a cilového jazyka si obvykle neodpovidaji 1:1, a preklad celych viceslovnych frazi proto obvykle vede k lepsim vysledkum. Druhou zasadni casti statistického prekladace je jazykovy model pro cilovy jazyk, ktery ma za ukol z moznych prekladu jednotlivych frazi vybrat takovou kombinaci, ktera vede ke koherentni a smysluplné cilové vete. Jazykovy model se vytvari na zaklade jednojazycného (monolingualniho) korpusu cilového jazyka. Pokud takovy neni k dispozici, Ize pouzit i cilovou stranu ds  p uzeouar at aedud aair  ale 'nsnd oialeed Komercne nejuspesnejsim systémem se stal Google Translate, ktery behem nekolikaletnabidlpreklad mezidesitkamisvetovychjazyku,vkvaliteobvykle postacujici pro zakladni porozuméni textu, v mnoha pripadech dokonce ji之 umoznujicispravneporozumenivetsineobsahuprelozenehotextu.Systém je pro bezné uzivatele dostupny zdarma online, pro profesionalni pouziti je moznépouzivatplacenéAPl. V akademické sfére se prosazuje open-source prekladovy systém Moses, ktery je dostupny zdarma na internetu.
+
+## Hybridni strojovy preklad
+
+Hybridniprekladsesnazikombinovatvyhodypravidlovychastatistickych systému. Zasadni vyhodou statistického pristupu je vyrazne vetsi pokryti ne u pravidlového. Naopak pravidlové systémy obvykle dobre postihuji gramatické jevy, které se obvykle ridi danymi pravidly, zatimco statistické systémy se gramaticka pravidla snazi (mnohdy neuspesne) odhadovat z dat, bez lingvistickych znalosti.
+
+## Neuronovy strojovy preklad
+
+Neuronovy strojovy preklad, zaloeny na hlubokém uceni, dosáhl v poslednich letech rychlého pokroku.
+
+Prekladace zalozené na praci s umelou neuronovou siti jsou bezne dostupné od roku 2017. Google nasadil v tomto roce neuronovou sit ve svém od roku 2022 obvykle poskytuje nejlepsi vysledky strojového prekladu, Google Prekladacem té2 dosahuje lepsich vysledka.[61
+
+## Strojovy preklad v Cesku
+
+Strojovy preklad ma v Ceské republice dlouhou a bohatou tradici, vznikla zde cela rada uspesnych akademickych i komercnich systému.
+
+## Akademicke systemy
+
+Centrem akademického vyzkumu je uz po nekolik desetileti Ustav formalni a aplikované lingvistiky pri Matematicko-fyzikalni fakulte Univerzity Karlovy. V prubehu sedmdesatych a osmdesatych let zde byla pod vedenim prof. Petra Sgalla vytvorena rozsahla teorie pro formalni popis prirozeného jazyka pomoci zavislostni syntaxe nazvana funkcne-generativni popis. Na techto minuléhostoletivznikl podvedenimZdenkaKirschneraexperimentalni anglicko-cesky strojovy prekladaC APAC a o nekolik let pozdeji podobny systém pro preklad mezi Cestinou a rustinou nazvany RUSLAN.
+
+## Komercni systemy
+
+Komercni systémy pro strojovy preklad prisly na cesky trh kratce po nastupu uzivateli ziskaly znacnou popularitu.
+
+## PCTranslator
+
+preklad cizojazycnych textu na Ceském trhu. Behem 30 let distribuce (od r. 1988)mel vice ne2 40 tisiclegalnichuzivatelu.Pomahaluzivatelipriprekladu tim, e rozdelil vetu na jednotlivá slova a skupiny slov a pro kadé vyhledal ve slovniku nekolik nejvhodnejsich prekladu. Vysledek zobrazil v prehledné tabulce, podle niy pak uzivatel sam sestavoval finalni text. Novejsi verze byly doplneny i o sklonovani a casovani, anglicka verze navic o vetny parser. Prekladacumoznoval preklad zeSesti jazyku(anglictina,nemcina,rustina, francouzstina, italstina a Spanelstina) do Cestiny a slovenstiny. Autorem programu byl Ing. Rostislav Janca. Program se na Ceském trhu velmi rychle nastroje.Vyrobcem a distributorem programu je od roku1997 firma Langsoft S.r.o.
+
+## Transen
+
+Transen byl prvni prekladac na ceském trhu, ktery dokazal v prelozeném textusamsklonovatnebocasovatceskaslova.Ktomutouceluobsahoval podrobne rozpracovanou databazi ceskych ohybacich vzoru a sadu zakladnich pravidel ceské syntaxe. Anglicka syntaxe v nem byla popsana pomoci vetnych sablon sestavenych podle knihy "A Guide to Patterns and soucasti prekladace vyvinul bratislavsky programator Jozef Barunik, puvodne pro preklad z anglictiny do slovenstiny. Systém byl na Ceském trhu nabizen v prvni polovine devadesatych let, ale nedosahl vetsiho rozsireni.
+
+## Skik
+
+PrekladaC Skik byl na Cesky trh uveden v polovine devadesatych let. Dokazal Casovat Ceska slova v prelozeném textu. Autorem prekladace byl Vladimir Smetacek.Program se naCeském trhu prodaval priblizne deset let, poté jeho autorsvékomercniaktivityukoncilavyvinutéknow-hownabidlCeské akademickekomunite.
+
+## Eurotran
+
+Prekladac Eurotran prisel na Cesky trh na konci devadesatych let a byl prvnim prekladacem, ktery byl zamereny na preklad internetovych stranek. Autorem byl Milan Sustek. Program pouzival prekladovy model zalozeny na paralelni bezkontextové gramatice, pozdeji pridal statisticky bigramovy model pro vyhlazovaniCeskehotextu.Diky nasazeni inovativnichtechnikbylhned od pocatku nastrojem, ktery poskytoval v cestine nejvyssi kvalitu prekladu.IZ1
+
+## Souvisejici &amp;lanky
+
+- ·Babelfish
+- DLT-projektDistributedLanguageTranslation
+- Interlingvalni strojovy preklad
+- Transferovy strojovy preklad
+- Posteditace
+- Statisticky strojovy preklad
+- Wikipedie:Strojovy preklad Wikipedie - Projekty automatizovaného prekladu Wikipedie
+
+## Reference
+
+1. ↑ Wayback Machine. web.archive.org [online]. [cit. 2023-08-17]. Dostupné v archivu porizeném z originalu dne 2023-08-17.
+2. ↑ Google skokové vylepsil preklad. Umelá inteligence se zakousla do CeStiny. iDNES.cz[online]. 2017-04-19 [cit. 2023-08-17]. Dostupné online.
+3. Dostupné 0nline [cit. 2023-08-17]. doi:10.1038/d41586-022-02767-9. (anglicky)
+4. ↑ KORAB, Petr. DeepL: An Exceptionally Magnificent Language Translator. Medium[online]. 2022-02-18[cit. 2023-08-17]. Dostupné online. (anglicky)
+5. ↑ DeepL outperforms Google Translate - DW - 12/05/2018. dw.com [online]. [cit. 2023-08-17]. Dostupné online. (anglicky)
+6. 6.↑ COLIN.DeepLTranslator Review:IsIt Better Than GoogleTranslate? [online]. 2022-05-18 [cit. 2023-08-17]. Dostupné online. (anglicky)
+7. 1 MF DNES: Stroj Zivého prekladatele hned tak nenahradi, test prekladacu PC Translator, Skik a Eurotran.
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu strojovy preklad na Wikimedia Commons
+- Strojovy preklad v Ceské terminologické databázi knihovnictvi a informacni védy (TDKIV)
+- Online prekladaC pomoci GNU/FDL slovniku (slovnik je svobodny software). Nejedna se primo o preklad, ale o zobrazeni vyznamu v jiném jazyce v bublinkové napovéde.
+- Interaktivni ukazka strojového prekladu na Ustavu formálni a aplikované lingvistiky MFF UK.
+- Strojovy preklad Cesky - Anglictina
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Strojovy\_preklad&amp;oldid=25305562′ Kategorie:
+
+- Strojovy preklad
+- Umela inteligence
+- Pocitacova lingvistika
+
+Skryté kategorie:
+
+- Monitoring:Clanky s odkazem na TDkIV
+- Monitoring:Clanky s identifikatorem NKC
+- Monitoring:Clanky s identifikatorem PSH
+- Monitoring:Clanky s identifikatorem TDKIV
+- Monitoring:Clanky s identifikatorem BNE
+- Monitoring:Clanky s identifikatorem GND
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem LNB
+
+Monitoring:Clanky s identifikatorem NDL
+
+Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Strojovy preklad
+
+85 jazyku Pridat téma

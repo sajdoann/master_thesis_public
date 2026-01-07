@@ -1,0 +1,89 @@
+Z Wikipedie, otevrené encyklopedie Jazykovy korpus je (vetsinou rozsahly) soubor textl urcitého jazyka. Jedná se o ,vnitrne strukturovany, unifikovany a obvykle i o indexovany a uceleny vetsinou v textové podobe, organizovany se zretelem k vyuziti pro urcity cil."[1l Korpus slou2i jednak pro lingvisticky vyzkum jazykové praxe, jednak jako datová zakladna pro tvorbu slovniku, korektoru, prekladacu apod. Tvorbou korpusa se zabyva obor korpusova lingvistika [21
+
+V soucasnosti maji korpusy digitalni podobu, co vyrazne usnadnuje sber dat zdroje textu.[3]
+
+## Popis
+
+Korpusy slouzi zejména jako lexikologicky a lexikograficky nastroj a stavaji se automatickychkorektoru nebovicejazycnychprekladovychslovniku a automatickych prekladacu. Kromé lingvistu korpusy stale Casteji vyuzivajf i redaktori, prekladatelé a dalsi tvurci textu, ucitelé a studenti cizich jazyku. Texty jsou v ruzné mire opatreny metajazykovymi znackami vypovidajicimi o lingvistickych a frekvencnich aspektech. Pro formatovani textu a vkladani znacek se pouzivá zejména standardizovaného jazyka XML, pripadne starsiho SGML.
+
+## Rozdeleni korpusu
+
+s    o  rs  s gs obvykle jednou rocne.
+
+pripadne dalsich hledisek (mluvenost, psanost, regionalnost, uzivanost apod.). Synchronni korpusy jsou budované jako reprezentativni a vyváené otisky jazyka v urcitém relativne kratkém casovém obdobi, behem neho Ize ndo o upa as nousa wass uuaau ez ze ozod fazich a obsahuji tudiy texty z rozsahlejsich obdobi. Podle dalsiho kritéria rozlisujeme také korpusy jednojazycné a vicejazycné. Vicejazycny korpus se také nazyva paralelni korpus a obsahuje stejné texty v ruznych jazycich zobrazenevedle sebe.
+
+## Korpusy cestiny
+
+Budovanim korpusu Ceského jazyka se v Ceské republice zabyva od roku 1994[4l Ustav Ceského narodniho korpusu (UCNK) pri Filozofické fakulté UK[5], ktery zalozil lingvista Frantisek Cermak. Od ledna 2014 je moné vyhledavat v korpusech UCNK pomoci korpusového manazeru KonText. [6l z ceskych korpusu mezi ne patri jak synchronni korpusy psané Cestiny, tak synchronni mluvené korpusy a diachronni korpusy: Korpusy rady SYN - vsechny synchronni psané korpusy této rady jsou s gso oa  s us  ss spojeny reprezentativni korpusy, ale po slouceni prevazuji texty publicistické (SYN2006PUB, SYN2009PUB a SYN2013PUB). Publicistická Cást zahrnuje texty (o e   s pochazeji z ruznych casti Ceské republiky, a tak jsou v dopisech dobre charakteristiky pisatelu. Korpus byl vytvoren v Ustavu ceského jazyka na Filozofické fakulté Masarykovy univerzity v Brne pod vedenim Zdenky Hladké. Prazsky mluveny korpus (PMk) je prvni korpus mluvené Cestiny. Zachycuje autentickou mluvenou Cestinu z oblasti Prahy a okoli. Anonymnich mluvené Cestiny z oblasti Moravy. Zaznamenava autentickou tematicky nespecializovanou mluvu mésta Brna. BMK je elektronickym prepisem 250 anonymnich magnetofonovych nahravek (tj. 596 009 pozic) z let 1994-1999 zachycujicich 294 mluvCich. rada ORAL zachycuje spontanni konverzaci vyhradne v neformalnich komunikacnich situacich. Korpus ORAL2013 ji2 pokryva celé uzemi Ceské republiky a prepis je propojen se zvukovou stopou. oo n psychologické, sociologické a dalsi badani. CzeSL-plain (Czech as a Second Language) - neanotovany Zakovsky korpus, ktery obsahuje tri subkorpusy - ciz (pisemné prace nerodilych mluvcich ruzné urovne), kval (odborné prace nerodilych mluvcich) a rom (pisemné prace romskych Zaku z oblasti ohrozenych socialnim vyloucenim). DIAKoRP je diachronni korpus obsahujici texty od 13. stoleti, nejmladsi pak pochazeji z roku 1989. Kvuli velkému Casovému rozpeti musel byt korpus oe transkripci zaniknout. Také dalsi univerzitni pracoviste buduji vlastni korpusy: Korpus Ceského verse Ustavu pro Ceskou literaturu Av CR. Je se oy
+
+na Wayback Machine., které umoznuji s texty pracovat Ci si procvicovat rozpoznavanimeter. Obsahuje pres 5,4 miliard tokenu, co2 z nej dela nejvetsi Cesky textovy korpus. Spolu s korpusem CzechParl (Korpus stenografickych zaznamu ceského parlamentu) a Desam (morfologicky oznackovany korpus Ceskych textu) je dostupny pres korpusovy manaer Sketch Engine, ktery vyviji spolecnost Lexical Computing Ltd. ve spolupraci s Centrem zpracováni prirozeného jazyka pri Fakulte informatiky Masarykovy univerzity. Olomoucky mluveny korpus Od roku 2002 vznika na Univerzite Palackého y Olomouci pod vedenim dr. P. Porizky. Jeho zakladem jsou foneticky prepsané nahravky.
+
+## Korpusy anglictiny
+
+## BrownCorpus
+
+Brown University Standard Corpus of Present-Day American English neboli zkrácene Brown Corpus je dilem dvou autoru - Henryho Kucery (puvodem Cech, studoval na Univerzite Karlove) a W. N. Francise, kteri tou dobou pusobili na Brownové univerzite. Jedna se o korpus, ktery vznikal v letech 1963-1964,pricemz obsahuje texty z roku 1961 ve snaze zachytit jazyk v urcitém obdobi (trend, ktery se u tvorby korpusu voli i dnes). Cilem zkoumani je psana americka anglictina rodilych mluvcich. V korpusu se neuchovavajf celé texty,ale pouze vzorky, a to z toho duvodu, aby byl korpus vyvázeny. Celkové je v nem vyuzito 15 kategori, mezi které patrf casopisy, noviny, odborná literatura i beletrie. Z kazdého textu je vybranvzorek 2 000 o kategori a znackovala se napriklad interpunkce i specialni znaky. Korpus Brown velice ovlivnil dalsi generace lingvistu a je svym rozvrzenim n strukturu a snazil se zachytit britskou anglictinu z roku 1991. O znackovani byl doplnen v roce 2007. Na korpusu Brown je zalozeno nekolik publikaci. Nejznamejsi z del zalozenych od autoru korpusu (Kucera, Francis). Jedna se o statistickou studii, ve které se kombinuje lingvistika, psychologie a statistika.
+
+## Lancaster-Oslo/Bergen Corpus (LoB)
+
+Tento korpus, ktery vznikal v letech 1970-1978,je britskym protejskem ke korpusu Brown. Má stejnou strukturu (1 milion slov, 5o0 vzorku po 2 000 slovech, 15 anru) a sna2i se takté2 zachytit jazyk v roce 1961, tentokrat se vsak jedna o britskou anglictinu. Jednim ze spoluautoru je i Geoffrey Neil Leech. I k tomuto korpusu vznikla v Nemecku obdoba oznacena jako The FreiburgLOB Corpus of British English (FLoB). Zverejnen byl v roce 1999 a zachycuje britskou anglictinu v roce 1991.
+
+## British National Corpus
+
+British National Corpus (zkracene BNc)je korpus, kteryvznikal ve spolupraci tri nakladatelu (Oxford University Press, Longman a W. &amp; R. Chambers), dvou univerzit (Oxfordské univerzity a univerzity v Lancasteru) a britské narodni knihovny v letech 1991-1994, pricem2 zverejnén byl v roce 1994. Jedna se o korpus se 1o0 miliony slov a rozvetvenou strukturou. Tento beletrii. V korpusu nalezneme vzorky jednotlivych textu, od jednoho autora maximalne 45 tisic slov. Zachycuje britskou anglictinu (z let, ve kterych vznikal, tedy 1991-1994) a kromé psanych textu v ném nalezneme i mluvenou anglictinu v pomeru 9 : 1 (psana : mluvena). Mluvena anglictina zafixovany a nic se do nej nepridava; jediné, co se méni, je znackovani. V ramci BNC jsou dva mensi subkorpusy,které jsou urceny pro zkoumani jazyka. Prvnim z nich je BNc Sampler, ktery obsahuje jeden milion mluvené anglictiny a jeden milion psanych textu. Druhym je BNc Baby, do nej jsou zahrnuty Ctyri milionové vzorky ze Ctyr ruznych anru.
+
+Na korpusu je zalozeno nekolik publikaci, napriklad Clanek 1oo Million Words of English, ktery napsal G. N. Leech, Clanek Corpus Design Criteria (1992), jeho autory jsou S. Atkins, J. Clear a N. Ostler a ktery popisuje strukturu BNC, a také kniha Corpus: An Introduction (2o01), kterou napsali T. McEnery a A. Wilson.
+
+## Odkazy
+
+## Reference
+
+1. ↑ CERMAK, Frantisek. 1995. Jazykovy korpus : Prostredek a zdroj poznani. Slovo a slovenost. 1995, roc. 56, ?. 2, s. 119 - 140. ISSN 0037-7031
+2. 1 https://www.ikaros.cz/jazykove-korpusy
+3. ↑ Co je korpus? I Ustav Ceskeho narodniho korpusu. ucnk.ff.cuni.cz [online]. [cit. 2022-01-13]. Dostupné online.
+4. ↑ start - Prirucka CNK. wiki.korpus.cz [online]. [cit. 2022-01-13]. Dostupné online.
+5. ↑ Portal I Cesky narodni korpus. www.korpus.cz [online]. [cit. 2022-01-13]. Dostupné online.
+6. ↑ KonText - query form. www.korpus.cz[online]. [cit. 2022-01-13]. Dostupné online.
+
+## Souvisejici Clanky
+
+- Korpusova lingvistika
+- Paralelni korpus
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu jazykovy korpus na Wikimedia Commons
+- Jazykovy korpus v Ceské terminologické databazi knihovnictvi a informacni védy (TDKIV)
+- Ustav Ceského narodniho korpusu
+- Ustav formalni a aplikované lingvistiky
+- Centrum zpracovani prirozeného jazyka
+- Korpusovy manazer Sketch Engine
+
+OPUS, mnohojazycny paralelni korpus Archivovano 14. 12. 2013 na Wayback Machine. Britsky narodni korpus Cosmas ll, Deutsches Referenzkorpus, DeReKo pro nemcinu Hrvatski nacionalni korpus Konkordancni nastroj Korp pro vyhledavani ve Svédskych korpusech Narodowy Korpus Jezyka Polskiego Russian National Corpus (HaLnoHanbHbiN KopnyC pyccKoro A3blka)
+
+- Clanek lo0 Million Words of English od G. N. Leeche
+
+Portaly: Jazyk
+
+Citovano z ,https://cs.wikipedia.org/w/index.php?
+
+title=Jazykovy\_korpus&amp;oldid=25430360'
+
+Kategorie:
+
+- Lexikografie
+- Korpusy
+
+Skryté kategorie:
+
+Monitoring:Clanky s odkazem na TDkIV Monitoring:Clanky s identifikatorem NKC Monitoring:Clanky s identifikatorem TDKIV Monitoring:Clanky s identifikatorem BNF Monitoring:Clanky sidentifikatorem GND Monitoring:Clanky s identifikatorem LCCN Monitoring:Clanky s identifikatorem LNB Monitoring:Clanky s identifikatorem NLI Portal Jazyk/Zapojené Clanky
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Jazykovy korpus
+
+50 jazyku Pridat téma

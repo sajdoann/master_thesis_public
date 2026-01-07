@@ -1,0 +1,70 @@
+Z Wikipedie, otevřené encyklopedie
+Rys, neboli příznak, je rozhodující vlastnost, pomocí které lze klasifikovat
+konstrukty systému. V lingvistice se tento pojem ujal nejprve ve fonologii. 
+Fonologický rys je vlastností zvukového segmentu, hlásky. Nikolaj
+Sergejevič Trubeckoj v díle Grundzüge der Phonologie používá rysy pro popis 
+opozic mezi fonémy. Např. opozici mezi fonémy „/b/“ a „/m/“ tvoří rys
+nazálnosti, který je přítomen u „/m/“ a nepřítomen u „/b/“. Fonologický rys je
+distinktivní vlastností daného fonému. Jeho hlavním úkolem je odlišit daný
+foném ode všech ostatních fonémů v systému daného jazyka. Další funkcí
+fonologického rysu je poskytnout návod, jak daný foném vyslovit. Proto by
+měl foném mít vztah k fonetické realizaci. Každý foném lze považovat za
+složený z konečného počtu rysů. Jinými slovy, fonémy jsou „balíčky
+distinktivních rysů“. 
+Noam Chomsky a Morris Halle v knize Sound Pattern of English (1968)
+převzali důsledný binarismus ( tj. každý rys může mít pro daný segment
+maximálně dvě hodnoty: + a – ), který navrhl Roman Jakobson a přizpůsobili
+inventář distinktivních rysů tak, aby mohl fungovat v přepisovacích
+pravidlech, kterými se zápis z abstraktní morfosyntaktické roviny převádí do
+konkrétní fonetické podoby. Např. předložková fráze /k kostelu/ má fonetickou
+podobu [kekostelu] podle pravidla, které vkládá [e] mezi stejné souhlásky ve
+fonetickém slově s jedním přízvukem. 
+Podle autorů SPE mají hodnoty distinktivních rysů definovat přirozené třídy
+hlásek. Přirozená třída je množina všech hlásek v daném jazyce, které sdílejí
+určitou hodnotu daného rysu. Např. rys zapsaný jako [+ znělost] definuje
+početnou třídu všech neznělých hlásek. Sem patří /p/, /t/, /k/, /s/, /f/ atd. V
+dalším vývoji fonologie byly navrženy jiné inventáře rysů. Některé rysy, např.
+[slabičnost], [přízvuk] , byly nahrazeny strukturou. Geometrická teorie rysů
+vedla k tomu, že přirozené třídy jsou reprezentovány nejen rysy samotnými
+ale i svou vzájemnou hierarchií. 
+T eorie rysů byla transplantována z fonologie i do jiných lingvistických oblastí.
+Analogicky je možno chápat flektivní tvary slov jako balíčky
+morfosyntaktických rysů. T ak můžeme např. srovnávat dva tvary
+morfologické flexe lišící se jediným rysem: „šel jsem“ versus „šel bych“.
+Morfosyntaktické rysy zahrnují lexikální rysy ±N a ±V, které možnými
+kombinacemi svých hodnot tvoří čtyři základní slovní druhy (substantivum =
+[+N,-V]; sloveso = [-N,+V]; přídavné jméno = [+N,+V]; předložka = [-N,-V]).
+Gramatické rysy v úzkém slova smyslu jsou rysy figurující u podstatných
+jmen [osoba], [číslo] a [rod], nebo rysy spojené s přídavnými jmény
+[komparativ] [superlativ]. Početné jsou rysy spojené se slovesy jako jsou čas,
+způsob, slovesný rod: [ ± minulost], [ ± kondicionál], [± pasívum]. Jako
+součást své teorie vázání N. Chomsky (1981) navrhl dva rysy, kterými se
+modeluje vázání výrazů [± anaphoric] a [ ± pronominal]. 
+Rozeznáváme inherentní a selektivní gramatické rysy. Inherentní rysy se
+vyskytují jako součást lexikálních výrazů (slov) a jako takové je vybíráme
+spolu se slovy přímo ze slovníku. Např. české slovo „nůžky“ má inherentní
+gramatický rys [+ plurál], který nelze změnit. Selektivní rysy přistupují k
+lexikálnímu výrazu až ve větě podle řídícího výrazu (gramatická shoda) nebo
+podle funkční kategorie dominující daný lexikální výraz. Řídící členy
+gramatických kategorií (např. ČAS) lze opět chápat jako balíčky gramatických
+rysů. 
+Používání sémantických rysů, tzv. semů, v oblasti jazykového obsahu
+(významu) navrhl Louis Hjelmslev v knize Prolegomena to a Theory of
+Language. Analýza na sémantické rysy je známa v lingvistice jako 
+komponenční analýza. Hjelmslev ve svém hlavním díle (kapitola 14, Varianty
+a invarianty) analyzuje význam „hřebec“ jako složený z rysů [+ kůň] a [+
+samec] a vyjadřuje přesvědčení, že podobným způsobem lze analyzovat
+všechny jazykové významy. T ato naděje zůstala zatím nesplněná. 
+Odkladiště
+Pojem „rys“ (recesivní nebo dominantní) používají genetikové pro popis
+genotypu. 
+Citováno z „https://cs.wikipedia.org/w/index.php?
+title=Rys_(lingvistika)&oldid=25473557“
+Kategorie: 
+Generativní lingvistika
+•
+Hledání
+Hledat
+Rys (lingvistika)
+5 jazyků Přidat téma
+Speciální:Hledání

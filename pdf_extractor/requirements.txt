@@ -1,0 +1,21 @@
+# Dependencies for pdf_extractor module
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+weasyprint>=60.0
+tqdm>=4.66.0
+Pillow>=10.0.0
+playwright>=1.40.0
+pdf2image>=1.16.0
+
+# PDF text extraction libraries
+pymupdf>=1.23.0  # PyMuPDF (mupdf) - Fast, lightweight
+pypdfium2>=4.0.0  # High quality extraction
+tika>=2.6.0  # Apache Tika (requires Java)
+pdfplumber>=0.10.0  # Good for tables
+PyPDF2>=3.0.0  # Pure Python (or pypdf)
+pdfminer.six>=20221105  # Complex layouts
+docling>=1.0.0  # AI-based (IBM Research) - optional, large dependency
+
+# Memory tracking (optional but recommended)
+psutil>=5.9.0
+

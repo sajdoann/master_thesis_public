@@ -1,0 +1,147 @@
+Z Wikipedie, otevrené encyklopedie ikona Tento Clanek potrebuje upravy. Muete Wikipedii pomoci tim, e ho yylepsite. Jak by mely Clanky vypadat, popisuji stranky Vzhled a styl, Encyklopedicky styl a Odkazy.
+
+## Konkrétni problémy: Clanek je plny nepodstatnymi kapitolami, ale chybi ty
+
+podstatne, viz heslo na anglickéWiki ikona Tento Clanek potrebuje aktualizaci, nebot obsahuje zastaralé informace. Muzete Wikipedii pomoci tim, e ho yylepsite, aby odrázel aktualni stav a nedavné udalosti. Historické informace nemazte, radeji je prevedte do minulého casu a pripadne presunte do Casti Clanku venované dejinam. Pocitacové zpracovani prirozeneho jazyka (anglicky Natural language processing, NLP) je soubor technik na pomezi (pocitacové) lingvistiky, informatiky (umelé inteligence), popr. té akustiky a dalsich. Venuje se analyze Ci generovani textu nebo mluveného slova, které vyzadujf urcitou (ne absolutni) miru porozumeni prirozenému jazyku strojem. Aplikace NLP jsou napr. strojovy preklad, odpovidani na otázky (en:Question answering), dolovani z textu (i vytah z textu; en:Automatic summarization) a automaticka korektura textu ci chatboti.[1l Mezi úkoly, které prispivajf k reseni techto problému, patri mj. extrakce informaci, strojovy preklad, generovani prirozeného jazyka (en:Natural language generation) a rozpoznavani a syntéza reci (text-to-speech).
+
+Zpracovani prirozeného jazyka ma tri historické faze:
+
+1. symbolické NLP (50. a2 90. léta 20. stol.)
+2. statistické NLP (90. léta 20. stol.a 00.léta 21.stol.)
+3. neuronové NLP (pocatky 2003, rozvoj po roce 2010 diky TomáSi Mikolovi a programu Word2vec)
+
+## Tradicni (strukturalisticky) pristup
+
+Souvisejici informace naleznete také v Clanku Lingvisticka analyza.
+
+Pocitacové zpracovani prirozeného jazyka je interdisciplinarni obor. Tento obor mimo jiné zkouma prirozeny jazyk jako matematicky systém.Prirozeny jazyk jako hlavni nastroj lidské komunikace je za pomoci aktivni úcasti uzivatele transformovan prostrednictvim specialnich technologif ve formalni jazyk (interlingua; logicka reprezentace vyznamu), ktery je vhodny pro jednotlivychrovinprirozeneho jazyka,kteryjezarovennezavisly na konkrétnim jazyku.[zdroj?] zakladem interakce Clovéka s pocitacem je dotazovaci jazyk, u kterého je odstranena viceznacnost jednotlivych prvku na vsech urovnich. S ohledem na presnost a jednoznacnost reprezentace samotnehovyznamujenutnaexistencesamostatnéreprezentaceprokazdy vyznamovy prvek prirozeného jazyka. Struktury formalniho jazyka jsou na konkretnichjazycichnezavislé. Pri zpracovani jazyka bylo nutné vymezit pravidla tzv. jazykové roviny. Kadé jazykova rovina je pak urcena svym hlavnim jazykovym prvkem nebo tridou prvku, které jsou pro konkrétni rovinu typické. Kazda rovina ma vstupni a vystupni reprezentaci.
+
+- Foneticka rovina: Vystupem fonetické roviny je zpracovani posloupnosti fonu ve fonetické abecede.
+- onnso an s aooo s  eoo e
+- e
+- Sémanticka rovina (tektogramaticka nebo tektograficka, hloubkova): Vystupem sémantické roviny je vetná struktura s urcenim vetnych vztahu.
+- Pragmaticka rovina: Vystupem pragmatické roviny je logicka forma textu, ktera muze byt vyhodnocena jako pravda nebo nepravda.
+
+## Automaticke indexovani textu
+
+Podrobnejsi informace naleznete v Clanku Automaticka indexace.
+
+Je to proces prirazeni selekcnich obrazu dokumentum nebo dotazum. Selekcnim obrazem se rozumi vyraz nebo mnozina vyrazu urcitého selekcniho jazyka, napr. vsechna podstatna jména, predem dana podstatna jména, vyrazy ve tvaru ,podstatné jméno - pridavné jméno" apod. Klicovymproblémem automatickehoindexovanibyvaurceni,kteraslova textunejlépecharakterizujf jehocelkovyobsah.
+
+## Lingvisticke problémy automatickeho indexovani:
+
+- obsahu celého textu.
+- Ivaroslovi (morfologie) prirozeného jazyka.
+- Synonymie a ji podobné sémantické vztahy mezi slovy a slovnimi spojenimi.
+- Homonymie (nejednoznacnost) vyrazu prirozeného jazyka.
+
+## Mozaika
+
+Tato metoda automatického indexovani je vhodna predevsim pro ty jazyky, které majf rozvinutou flexi (ohybani slov - sklonovani, Casovani, stupnovani atd.)a majigramatickou shodu.Techto pozitivnichvysledku bylo dosazeno mimo jiné u cestiny, slovenstiny a rustiny. Tato metoda nedokaze zcela dobre resit problémy synonymie, homonymie a skrytych vztahu textu. Cilem metody je priradit vstupnimu textu selekcni obraz. Tato metoda ma dve hlavni faze, a to morfologicko-lexikalni analyzu a syntaktickouanalyzu.Vtechtodvoufazichjsouztextuextrahovany terminologické jednotky.
+
+- ·Morfologicko-lexikalni analyza
+- 。 Identifikace specifickych slov (predloky, spojky) dulezité pro syntaktickou analyzu.
+- o Urceni vhodnych indexacnich terminu za pomoci slovniku koncovych segmentu. Od slova, které nebylo uspesne zpracovano je odtrzen 4znakovy koncovy segment, ktery je hledan ve slovniku koncovych segmentu.
+- o Vybranému slovu jako potencialni terminologické jednotce je prirazena jeho elementarni vaha (zakladni hodnota).
+- Syntakticka analyza
+- ° Jednotlivé indexacni terminy jsou slozeny do souslovi.
+- o Na zaklade predlozek Ci spojek jsou vyhledavana spojeni jmennych frázi.
+- o Uprava vah terminu - seCteni vah jednotlivych vyskytu vyrazu do vaz vyrazu jako takovych.
+- Tato metoda dosahla nejlepsich vysledku zejména v disciplinách s ustalenou terminologif.
+
+Té je mozné automaticky indexovat tezaurus.
+
+## Automatické referovani
+
+- Referat (abstrakt) je uvaden jako jeden z moznych vystupu intelektualniho procesu nazyvaného informacni analyza dokumentu.
+- Referat je zkraceny vyklad obsahu dokumentu (nebo jeho Cásti) s hlavnimi vécnymi udaji a zavery, ktery zduraznuje nové poznatky a umoznuje rozhodnout se o ucelnosti studia puvodniho dokumentu. Vyklad obsahu musi byt strucny a presny.
+- Automaticke referovani extrahuje vhodny pocet vet, ktere nejlepe vystihuji, co text prinasi noveho.
+
+## Automaticka korektura textu
+
+## Chyby Ize rozdelit takto:
+
+- Mechanické chyby - jsou snadno odhalitelné formálni chyby zpusobené nedbalosti:
+- o dvakrat za sebou napsany stejny slovni tvar nebo stejné interpunkcni znaménko,
+- o nevhodná kombinace interpunkcnich znamének,
+- o nespravné zavorky,
+- o malé pismenko na zacatku vety
+- Gramatické chyby:
+- 。 Morfologické - chybné utvoreny slovni tvar, opravuje pravopisny korektor.
+- o Syntaktické - chyby v pouziti slov - vynechani slova, pridani nadbytecného slova, nespravna kombinace tvaru slov, zaména slovniho tvaru jinym slovnim tvarem a chyby v interpunkci.
+- Stylistické chyby: oprava spociva v automatické detekci Casto sdéleni), zbytecne rozvlacné (je mozné je nahradit jednim slovem) a redundantni (dvakrat rikaji toté2).
+
+## Algoritmus opravy pravopisnych chyb
+
+Kadé slovo z textu je treba zkouset lematizovat tak dlouho, dokud se:
+
+- neziská slovo ze slovniku, u kterého je ve slovniku indikovan jako pripustny i ten tvar, ve kterém bylo nalezeno v textu,
+- nevycerpajivsechna lematizacnipravidla na totoslovo pouzitelna(v textu je toto slovo pak oznaceno jako pravdépodobne chybné.
+
+## Odkazy
+
+## Reference
+
+1. ↑ Demokratizace pisemné komunikace za ucelem rozvoje vlastnich sch0pn0sti NLG. 21.06.2022
+
+## Literatura
+
+- MATERNA, Pavel, PALA, Karel a ZLATUSKA, Jiri. Logicka analyza prirozeného jazyka. 1. vyd. Praha: Academia, 1989. 143 s. Cesta k vedeni; Cis. 44. ISBN 80-200-0027-5.
+- ·ZEMAN, Daniel. Lingvisticka terminologie[online]. 2012 [cit. 2013-04-10]. Dostupné z: http://ufal.mff.cuni.cz/~zeman/vyuka/ podklady/[nedostupny zdroj].
+- UHRiN, Tibor. Prirozeny jazyk a umély jazyk. Inflow: information journal [online]. 2008, ro℃. 1, ?. 11 [cit. 2013-04-28]. Dostupny z: http:// www.inflow.cz/prirozeny-jazyk-umely-jazyk Archivovano 12. 6. 2010 na Wayback Machine..ISSN1802-9736.
+- PODRAZILOvA, Jana. Historie pragmatiky a jeji formovani se zamerenim na teorii recovych aktu a teorii intenci. Brno, 201o. Dostupné z: http://
+- Masarykova univerzita, Filozoficka fakulta, Ustav jazykovedy a baltistiky. Vedouci prace PhDr. Ondrej Sefcik, Ph.D.
+- HAJICOVA, Eva, PANEVOVA, Jarmila, SGALL, Petr. Uvod do teoretické a pocitacové lingvistiky: I. svazek - Teoretická lingvistika. Praha: Karolinum, 2003.156 s.ISBN 80-246-0470-1.
+- jazyka. 1. vyd. Opava: Slezská univerzita v Opave, Filozofickoprirodovédecká fakulta, Ustav informatiky, 1999. 277 s. ISBN80-7248-041-3.
+- HABROVSKA, Pavlina. Kratce o zpracovani prirozeného jazyka. Inflow: information journal [online]. 2010, ro℃. 3,. 9 [cit. 2013-04-24]. Dostupny: http://www.inflow.cz/kratce-o-zpracovani-prirozeneho-jazyka Archivovano 4. 3. 2016 na Wayback Machine.. ISSN 1802-9736.
+- ·ZHOU, Lina, ZHANG, Dongsong. NLPIR: A Theoretical Framework for Applying Natural Language Processing to Information Retrieval. Journal of the American society forInformationScience and Technology.2o03, vol. 54, n0.2, s.115-123.
+- nlp.fi.muni.cz/cs/terminologie.
+- e inforum2003/prispevky/Sklenak\_Vilem.pdf.
+
+## Souvisejici Clanky
+
+- Pocitacova lingvistika
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu zpracovani prirozeného jazyka na Wikimedia Commons
+
+Portaly: Jazyk Citovano z ,https://cs.wikipedia.org/w/index.php? title=Zpracovani prirozeného\_jazyka&amp;oldid=23979624'
+
+Kategorie:
+
+- Zpracovani prirozeného jazyka
+- Pocitacova lingvistika
+- Digitalni humanitni védy
+
+Skryté kategorie:
+
+Udrzba:Clanky k upravé
+
+Udrzba:Clanky k aktualizaci
+
+Udrzba:Clanky obsahujici nedolozena tvrzeni
+
+Udrzba:Clanky obsahujici odkazy na nedostupné zdroje
+
+Monitoring:Clanky s identifikatorem NKC
+
+Monitoring:Clanky s identifikatorem PSH
+
+Monitoring:Clanky s identifikatorem LCCN
+
+Monitoring:Clanky s identifikatorem NDL
+
+Monitoring:Clanky s identifikatorem NLI
+
+Portál Jazyk/Zapojené Clanky
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Zpracovani prirozeneho jazyka
+
+71 jazyku Pridat téma

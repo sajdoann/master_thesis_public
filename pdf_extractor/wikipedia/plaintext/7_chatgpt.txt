@@ -1,0 +1,468 @@
+ChatGPT
+Vývojář
+Open AI
+První vydání
+30. listopadu
+2022
+Aktuální verze
+ChatGPT August 7, 2025 (7. srpna)
+Platforma
+webový prohlížeč
+API
+Vyvíjeno v
+Python
+Typ softwaru
+generative artificial intelligence chatbot
+,
+generative pre-trained transformer
+,
+velký jazykový model
+, online služba a
+internetová stránka
+Licence
+proprietární licence
+Web
+chatgpt
+.com
+Některá data mohou pocházet z
+datové položky
+.
+ChatGPT
+(
+Generative Pre-trained Transformer
+)
+[
+1
+]
+je
+chatbot
+spuštěný firmou
+OpenAI
+v listopadu 2022. ChatGPT má svoji webovou stránku, která formou textové konverzace (chatu) zpřístupňuje systém veřejnosti
+[
+2
+]
+či pomocí
+API
+.
+[
+3
+]
+ChatGPT je
+expertní systém
+, který implementuje prvky
+umělé inteligence
+pomocí technologie
+velkých jazykových modelů
+(LLM) a
+umělé neuronové sítě
+. ChatGPT může být použit v různých aplikacích, včetně chatbotů, asistentů pro zákazníky, tvorby obsahu a mnoha dalších. Jeho schopnost generovat plynulý a kontextově relevantní text mu umožňuje efektivně komunikovat s lidmi prostřednictvím psaného slova či audia.
+Charakteristika
+Příklad komunikace s ChatGPT
+Prototyp ChatGPT 3.5 byl veřejně uveden
+30. listopadu
+2022 a rychle si získal pozornost pro své podrobné a dobře formulované odpovědi v mnoha oblastech znalostí.
+[
+4
+]
+Podle slovního zadání může například psát počítačové programy,
+[
+5
+]
+[
+6
+]
+[
+7
+]
+poezii nebo obchodní korespondenci.
+[
+8
+]
+Dokázal by dokonce složit přijímací zkoušky na právnickou fakultu, byť by byl mezi horšími.
+[
+9
+]
+Z toho důvodu byl již studentům některých škol zakázán, aby ho nemohli využívat k podvádění při psaní školních prací.
+[
+10
+]
+[
+11
+]
+Za významnou nevýhodu však je považována jeho nerovnoměrná faktická přesnost.
+[
+12
+]
+Po vydání ChatGPT byla firma OpenAI oceněna na 29 miliard amerických dolarů.
+[
+13
+]
+Hodnocení
+Informace, které ChatGPT poskytuje, však nemusejí být vždy pravdivé, odpovídat skutečnému stavu věcí a mohou být zavádějící i zcela smyšlené.
+[
+14
+]
+[
+chybí lepší zdroj
+]
+Proto je potřeba je ověřovat i z jiných informačních zdrojů. ChatGPT rovněž nemohl do května 2023 poskytnout aktuální informace, protože data, z nichž čerpá, jsou omezena rokem 2021 (stav k lednu 2023).
+[
+15
+]
+[
+16
+]
+Platící uživatelé mohou od května 2023 využít mód, který ChatGPT umožňuje procházet
+web
+a zpracovávat současné informace.
+[
+17
+]
+ChatGPT má zatím rovněž potíže se zpracováním
+matematických
+úloh. Důvodem je, že je trénován na rozpoznávání a generování textu na základě předchozích vzorků. V současné době není schopen plně řešit matematická zadání, jako by to udělal člověk, protože matematika vyžaduje logické myšlení a abstrakci.
+Umělá inteligence
+(UI) například v podobě ChatGPT má tendenci spoléhat se na naučené modely a předem dané algoritmy a není zatím schopna pochopit matematiku na hlubší úrovni jako člověk.
+[
+18
+]
+[
+19
+]
+[
+20
+]
+Ke zlepšení matematických schopností mělo dojít po 30. lednu 2023, kdy byl proveden upgrade ChatGPT.
+[
+21
+]
+[
+22
+]
+V placené verzi ChatGPT lze k řešení matematických úloh využít plugin od
+Wolfram Alpha
+.
+[
+23
+]
+[
+24
+]
+S užíváním ChatGPT jsou rovněž spojeny obavy o soukromí uživatelů a o bezpečí údajů, které do chatbota vkládají.
+[
+25
+]
+Ve školství
+ChatGPT může hrát důležitou roli ve vzdělávání. Může žáky učit kritickému uvažování, protože ne všechny informace, které jim ChatGPT poskytne, jsou pravdivé.
+[
+26
+]
+Může rovněž posloužit pro výuku jazyků díky možnosti konverzovat na různá témata.
+[
+27
+]
+[
+28
+]
+[
+29
+]
+Na druhou stranu, jak formuloval
+Noam Chomsky
+, jde o „technologicky vyspělé
+plagiátorství
+“, které lidem umožní vyhýbat se učení.
+[
+30
+]
+Některé vysoké školy ve výuce zakazují používání ChatGPT a obecně dalších nástrojů, které využívají umělou inteligenci. Od 1. ledna 2023 například na
+indické
+univerzitě
+v
+Bengalúru
+. Cílem tohoto zákazu je předejít
+plagiátorství
+. Na této škole se zákaz vztahuje také na
+GitHub Co-pilot
+a
+Black Box
+.
+[
+31
+]
+[
+32
+]
+Jednou z dalších škol, která omezila používání ChatGPT je
+Institut d’études politiques de Paris
+, kde lze používat nástroje UI pod dohledem pedagoga. Za použití nástrojů UI pro tvorbu písemných nebo ústních prací hrozí studentům vyloučení ze školy.
+[
+32
+]
+[
+33
+]
+Australské univerzity považují použití ChatGPT pro vypracování prací za podvod.
+[
+33
+]
+Zároveň se snaží o zrevidování systému hodnocení, který by měl reagovat na existenci stále pokročilejších generátorů textu. Také by se zkoušky měly skládat pod dohledem a častěji psanou formou pomocí tužky a papíru. Australská národní univerzita se problému s ChatGPT rozhodla čelit větším množstvím laboratorních aktivit a prací v terénu a větším množstvím ústních zkoušek.
+[
+34
+]
+Kritici poukazují na to, že bude stále těžší prokázat a odhalit texty generované pomocí UI, a to již s případným nástupem další generace
+GPT-4
+. Zároveň se očekává, že v budoucnu se systémy UI stanou součástí nástrojů, které budeme běžně používat, a legitimním cílem škol by mělo být naučit se s nimi pracovat.
+[
+34
+]
+ChatGPT+
+ChatGPT+ je placená verze chatbota ChatGPT. Existuje osobní, nebo firemní tarif. Poskytuje rozšířené limity na zadávání množství dotazů, delších textů, větší limity pro generaci obrázků, vkládání více souborů, a delší využití hlasového modelu. Většina funkcí ChatGPT+ jsou v omezení dostupné i v bezplatné verzi.
+[
+35
+]
+Odkazy
+Reference
+V tomto článku byl použit
+překlad
+textu z článku
+ChatGPT
+na anglické Wikipedii.
+↑
+ROOSE, Kevin. The Brilliance and Weirdness of ChatGPT.
+The New York Times
+. 2022-12-05.
+Dostupné online
+[cit. 2023-01-21].
+ISSN
+0362-4331
+. (anglicky)
+↑
+ChatGPT: sledujeme vše k tématu.
+Lupa.cz
+[online]. [cit. 2023-04-29].
+Dostupné online
+.
+↑
+Introducing ChatGPT and Whisper APIs.
+openai.com
+[online]. [cit. 2023-03-09].
+Dostupné online
+. (anglicky)
+↑
+PÁLENÍČEK, Adam. ChatGPT ukazuje víc, než si myslíte. Proč fenomenální úspěch AI děsí lidstvo.
+Finmag.cz
+[online]. [cit. 2023-01-24].
+Dostupné online
+.
+↑
+MAYO, Matthew.
+ChatGPT as a Python Programming Assistant
+[online]. KDnuggets, 2023-01-20 [cit. 2023-01-26].
+Dostupné online
+. (anglicky)
+[
+nedostupný zdroj
+]
+↑
+SELVARAJ, Natassha.
+Automate the Boring Stuff with GPT-4 and Python
+[online]. [cit. 2023-03-30].
+Dostupné online
+. (anglicky)
+[
+nedostupný zdroj
+]
+↑
+FERRER, Josep.
+5 ChatGPT Features to Boost your Daily Work
+[online]. [cit. 2023-05-26].
+Dostupné online
+. (anglicky)
+[
+nedostupný zdroj
+]
+↑
+METZ, Axel. 6 exciting ways to use ChatGPT – from coding to poetry.
+TechRadar
+[online]. 2022-12-29 [cit. 2023-01-26].
+Dostupné online
+. (anglicky)
+↑
+Robot od OpenAI složil zkoušky na právnické fakultě, může ohrozit tradiční výuku.
+iDNES.cz
+[online]. 2023-01-25 [cit. 2023-01-25].
+Dostupné online
+.
+↑
+Francouzská univerzita zakázala studentům používat ChatGPT - Novinky.
+www.novinky.cz
+[online]. [cit. 2023-01-30].
+Dostupné online
+.
+↑
+KAR. Newyorské školy zasahují proti umělé inteligenci, zakázaly program ChatGPT.
+ČT24
+[online]. Česká televize [cit. 2023-01-30].
+Dostupné online
+.
+↑
+VINCENT, James. AI-generated answers temporarily banned on coding Q&A site Stack Overflow.
+The Verge
+[online]. 2022-12-05 [cit. 2023-01-21].
+Dostupné online
+. (anglicky)
+↑
+VARANASI, Lakshmi. ChatGPT creator OpenAI is in talks to sell shares in a tender offer that would double the startup's valuation to $29 billion.
+Business Insider
+[online]. [cit. 2023-01-22].
+Dostupné online
+. (anglicky)
+↑
+ALTMAN, Sam.
+https://twitter.com/sama/status/1601731295792414720
+[online]. 2022-12-11 [cit. 2023-02-09].
+Dostupné online
+.
+↑
+SOUTHERN, Matt G.
+OpenAI's ChatGPT Update Brings Improved Accuracy
+[online]. 2023-01-11 [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+RUBY, Daniel.
+ChatGPT Statistics for 2023: Comprehensive Facts and Data
+[online]. 2022-12-29 [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+ChatGPT — Release Notes | OpenAI Help Center
+[online]. openai, 2023-05-12 [cit. 2023-05-18].
+Dostupné online
+. (anglicky)
+↑
+HIPPEL, Paul T. von.
+ChatGPT Is Not Ready to Teach Geometry (Yet)
+[online]. 2023-01-04 [cit. 2023-02-09].
+Dostupné online
+. (anglicky)
+↑
+ZUMBRUN, Josh.
+ChatGPT Needs Some Help With Math Assignments
+[online]. [cit. 2023-02-09].
+Dostupné online
+. (anglicky)
+↑
+BRYDEN, Ken.
+Math is the worst enemy of ChatGPT - Crast.net
+[online]. 2023-02-03 [cit. 2023-02-09].
+Dostupné online
+.
+↑
+SOUTHERN, Matt G.
+ChatGPT Update: Improved Math Capabilities
+[online]. 2023-01-31 [cit. 2023-02-09].
+Dostupné online
+. (anglicky)
+↑
+ChatGPT — Release Notes
+[online]. OpenAI, 2023-01-30 [cit. 2023-02-09].
+Dostupné online
+. (anglicky)
+↑
+Wolfram Plugin for ChatGPT
+[online]. [cit. 2023-05-18].
+Dostupné online
+. (anglicky)
+↑
+ChatGPT plugins
+[online]. OpenAI [cit. 2023-05-18].
+Dostupné online
+. (anglicky)
+↑
+GAL, Uri. ChatGPT is a data privacy nightmare, and we ought to be concerned.
+Ars Technica, The Conversation
+[online]. Ars Technica, 2023-02-08 [cit. 2023-02-11].
+Dostupné online
+. (anglicky)
+↑
+Umělá inteligence ve školách. Zakazovat, nebo začít efektivně využívat?
+[online]. [cit. 2023-02-04].
+Dostupné online
+.
+↑
+Učitel IT.cz
+[online]. [cit. 2023-02-04].
+Dostupné online
+.
+↑
+SHEMESH, Hadar.
+The Ultimate Guide for Using ChatGPT for English Learning
+[online]. 2023-01-24 [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+MICHAELSEN, Ann S.
+Using ChatGPT for Language Learning
+[online]. 2022-12-29 [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+Noam Chomsky on ChatGPT: It's "Basically High-Tech Plagiarism" and "a Way of Avoiding Learning" | Open Culture
+[online]. [cit. 2023-02-10].
+Dostupné online
+. (anglicky)
+↑
+BARDWAJ, Nidhi.
+Bengaluru colleges ban ChatGPT, here’s why?
+[online].  Nové Dillí: India Today [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+a
+b
+KILIÁN, Karel.
+Vysoké školy zakazují studentům ChatGPT. Obávají se zneužití umělé inteligence pro psaní úkolů
+[online]. Živě, 2023-02-04 [cit. 2023-02-04].
+Dostupné online
+.
+↑
+a
+b
+Sciences Po Paris: En utilisant ChatGPT, ils risquent jusqu’à l’exclusion
+[online]. 2023-01-28 [cit. 2023-02-04].
+Dostupné online
+. (francouzsky)
+↑
+a
+b
+CASSIDY, Caitlin.
+Australian universities to return to ‘pen and paper’ exams after students caught using AI to write essays
+[online]. 2023-01-10 [cit. 2023-02-04].
+Dostupné online
+. (anglicky)
+↑
+OpenAI Introduces ChatGPT Plus, Starting at $20 Per Month
+[online]. 2023-02-03 [cit. 2023-02-09].
+Dostupné online
+. (anglicky)
+Související články
+Gemini (chatbot)
+Claude
+Grok
+Virtuální asistent
+Externí odkazy
+Obrázky, zvuky či videa k tématu
+ChatGPT
+na Wikimedia Commons
+Chatbot ChatGPT
+– komunikuje i česky
+Sbírka pomůcek k efektivní práci s ChatGPT (anglicky)
+Portály
+:
+Internet
+Citováno z „
+https://cs.wikipedia.org/w/index.php?title=ChatGPT&oldid=25351391
+“

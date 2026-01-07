@@ -1,0 +1,241 @@
+Z Wikipedie, otevrené encyklopedie Priklad neuronové sité: vstup, skrytá vrstva, vystup Umela neuronova sit, anglicky Artificial Neural Network Ci jen Neural Network (ANN, NN), je jeden z vypoCetnich modelu pouZivanych v oblasti umelé inteligence, podoblasti anglicky tzv. Soft Computing (spolu s evolucnimi algoritmy a fuzzy logikou). Vzorem je chovani neuronu v mozku, od toho je odvozen i nazev, v soucasnosti se vsak princip neuronovych siti od puvodniho zamySleného napodobeni neuron&amp; lis.,[1] Umela neuronová sit je struktura urcena pro distribuované paralelni zpracovani dat. Sklada se z umelych (formálnich) neuronu, jejich volnym predobrazem je biologicky neuron. Neurony jsou vzajemne propojeny pomoci aktivacnich prenosovych funkci. Neuron ma libovolny pocet vstupu, ale pouze jeden vystup.
+
+## Vyuziti
+
+Neuronove site se pouzivaji mimo jiné pro rozpoznavani obraza[2l (napr. ve EKG, EEG) signala[3l, dale ke klasifikaci, kompresi Ci segmentaci dat[4], k predikci vyvoje casovych rad (napr. burzovnich indexd), k analyze psaného prohlubovani znalosti o fungovani informacnich systému (nervovych soustav) zivych organisma. Napriklad Grossbergova sirl6l vznikla pivodne jako simulace fyziologického modelu rozpoznavani vzoru na sitnici lidského oka.
+
+## Historie
+
+Prvni umelé neurony byly vytvoreny Warrenem McCullochem a Walterem Pittsem v roce 1943.[Zl Tyto neurony fungovaly tak, 2e byl jejich vystup 0 nebo 1 v zavislosti na tom, jestli vazena suma vstupnich signalu prekrocila spocte jakoukoli aritmetickou Ci logickou funkci. Tehdy vsak nebyla vypracovanaZadna tréninkova metoda. doprovazela jiz i ucici pravidla. Perceptrony vyuzival k rozpoznavani vzoru. Mimo to dokazal, e pokud existuji vahy, které zadany problém resi, pak k nim ucici pravidlo konverguje. Pocátecni nadseni vsak uvadlo, kdy se zjistilo, e takovyto perceptron umi resit pouze linearne separovatelné úlohy. Frank Rosenblatt se sice snazil modelupravitarozsirit,alenedarilosemutoatakazdoosmdesatychlet prestal byt o perceptrony a neuronové site zajem. V 80. letech doslo k vyvoji vicevrstvych perceptronovych siti s asociacnimi pravidly, schopnych aproximovat libovolnou yektorovou funkci, diky Cemu2 nastala nova vlna zajmu o neuronové site,[9l ktery pozdeji Castecné upadl kvali neschopnosti ucit site o vetsim poctu vrstev. A okolo roku 2010 opet doslo k renesanci neuronovych siti diky objevu hloubkového uceni. Nejuzivanejsi zpusob uceni neuronovych siti je algoritmus zpetného Sireni chyby v kontextu teorie Yizeni odvozeny z principu dynamickeho ve své knize 0 support vector machines Clanek z roku 1963.[161 v roce 1969 dynamickych systemu. V roce 1970 Seppo Linnainmaa publikoval obecnou metodu automatického Jedná se o moderni variantu metody zpetného sireni chyby, která je efektivni i v ridkych sitich. [191[20] V roce 1973 Stuart Dreyfus pomoci zpetného Sireni chyby upravoval parametry Yidicich systémd umérne jejich chybovym gradientam.[21] IPaul Werbos zminil moznost uplatneni tohoto principu na umélé neuronové sité roku 1974[22] Ctyri roky pozdeji David E. Rumelhart, Geoffrey E. Hinton a Ronald J. Williams
+
+experimentalne prokazali, e tato metoda muze vést k uzitecnym internim reprezentacim vstupnich dat v hlubsich vrstvach neuronovych siti, co je pomoci backpropagace mezinarodni soute2 v modelovani dat.[25] prirozeného jazyka v ramci tzv. jazykovych modeld jako napr. Word2Vec Ci
+
+V soucasnosti se neuronové sité prevázne uzivajf v úlohách zpracovani Transformer a v ulohach pocitacového videni v ramci tzv. konvolucnich neuronovych siti.
+
+## Model umeleho neuronu
+
+Je popsana cela rada modelu neuronu. Od tech velmi jednoduchych pouzivajicich skokové prenosové funkce (perceptron) a之 po velmi slozité popisujici kady detail chovani neuronu zivého organismu, jako napr. Hindmarshav-Rosedv model neuronu[26].
+
+ModelumeléhoneuronusfunkciS
+
+Jednim z nejpouzivanejsich je model popsany McCullochem a Pittsem[Zl.
+
+<!-- image -->
+
+kde:
+
+- ·c;jsouvstupyneuronu
+- w; jsou synaptické vahy
+-  je prah citlivosti neuronu
+- f je aktivacni funkce neuronu
+- y je vystup neuronu
+
+Velikost vah w; vyjadruje ulozeni zkusenosti do synapsi neuronu. Cim je vyssi hodnota, tim je dany vstup dulezitejsi. V biologickém neuronu prah 9 N oznacuje prahovou hodnotu aktivace neuronu. Tzn. je-li (w;ci) mensi ne
+
+i=1
+
+N prah, je neuron pasivni (inhibovany) a je-li &gt;(w;ci) vétsi ne之 prah, je i=1 neuron aktivni (excitovany).
+
+## Aktivacnifunkceneuronu
+
+Aktivacni (prenosova) funkce neuronu v umélych neuronovych sitich definuje vystup neuronu pri zadani sady vstupu neuronu. Nelinearni aktivacni funkce umoznuji neuronovym sitim resit nelinearni problémy. Klasická nelinearni aktivacni funkce je sigmoida (logisticka funkce) o parametrech strmosti (urcujici sirku pasma citlivosti neuronu na svuj aktivacni potenciál) a prahové hodnoty (urcujici posunuti pocatku funkce) spolu s jejimi limitnimi tvary jako je linearita pro strmost blizici se nule resp. ostra nelinearita
+
+<!-- formula-not-decoded -->
+
+Aktivacni funkce. V levém sloupci sigmoida spolu se svymi limitnimi pripady, v pravém sloupci mozné transformace dat privádenych na vstupni resp. vystupni neurony.
+
+Volbou aktivacni funkce neuronu vstupni resp. vystupni vrstvy neuronové sité muzeme urcit zpusob transformace dat na sit privádenych:
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+- Mexicky klobouk: h(c) = -o"g"(c) - uvedené transformaci resp. jeji nezapornéCasti odpovidajf ruzna pasma citlivosti.
+
+Parametry uvedenych transformaci maji nasledujici vyznam:
+
+- 9 - stredni hodnota dat privadenych na dany neuron z trénovaci mnoziny
+
+0 - smerodatna odchylka dat privadenych na dany neuron z trénovaci mnoziny
+
+Krome uvedenych aktivacnich funkci se uzivaji jeste jejich ruzné modifikace:
+
+- Identita - linearita modifikovaná posunutim stredu symetrie do pocatku
+- Hyperbolicka tangenta - rozsireni oboru hodnot sigmoidy na interval od -1 do +1
+- ReLU - slozeni ostré linearity (vlevo od pocatku) s identitou (vpravo od pocatku)
+- Radiálni baze - Gaussova krivka resp. Mexicky klobouk
+
+## Architektury site
+
+Priklady architektury neuronovych siti: rekurentni autoasociativni pamet RAM, samorganizujici sit SOM, vicevrstvy perceptron MLP.
+
+Podle zpusobu propojeni neuronu existuje vice ruznych architektur neuronovych siti, neurony se radi do jednotlivych vrstev umistenych nad sebou:[27]
+
+## Dopredna neuronova sit:
+
+- Linearni heteroasociativni pamet - dvouvrstva sit
+- ·Perceptron - pouze jeden neuron
+- Vicevrstvy perceptron - libovolny pocet skrytych vrstev (minimálne trivrstva sit)
+- ·Samoorganizujici sit - dvouvrstvá sit
+
+Rekurentni neuronova sit:
+
+- Linearni autoasociativni pamet - jednovrstva sit
+- Nelinearni autoasociativni pamet (Hopfieldova) - jednovrstvá sit
+- Nelinearni heteroasociativni pamet (Bidirektni) - dvouvrstva sit
+- Grossbergova Ci ART dvouvrstva sit spojitého Casu
+
+## Uceni site
+
+Cilem uceni neuronové site je nastavit sit tak, aby davala co nejpresnejsi vysledky. V biologickych sitich jsou zkusenosti ulozeny v synapsich. V umelych neuronovych sitich jsou zkusenosti ulozeny v jejich matematickém (unsupervised learning). Faze uceni neuronové site byva nazyvana aktivni.Adaptacevahvazajicichneuronyzavisi na jejichstavech aktivace.V stavy vystupnich neuronu sit nastavi v zavislosti na stavech vstupnich neuronu sama, a to pomoci aktivni dynamiky site, tj. kady krok adaptivni
+
+## Ucenisucitelem
+
+Pri uceni s ucitelem trénovaci data sestavaji ze vstupnich objektu (vektoru jejich parametru, tj. nezavisle proménnych) a jejich pozadovanych vystupnich ohodnoceni, tj. zavisle proménnych (obecné také ve tvaru vektoru), tj. vyroku ucitele o objektu. Podobne jako v biologickych sitich je zde vyuzita zpetné vazba. Neuronové siti je predlozen vzor. Na zaklade aktualniho nastaveni site je zjisten aktualni vysledek. Ten porovname s vyzadovanym vysledkem a urcime chybu. Poté spocitame nutnou korekci (dle typu neuronové site) a ng oe s a o ue uanood uous su gsop p z Naucena funkce site pak dokáze odhadovat vystupni ohodnoceni kadého zobecnit (generalizovat) souvislost mezi vstupy a vystupy danou priklady obsazenymi v trénovacich datech.U neuronovych siti se uceni s ucitelem u之iva vicevrstvého perceptronu. [28] Pozn.: Pokud se vstupni objekty shoduji s pozadovanymi vystupnimi ohodnocenimi, mluvime o tzv. samouceni (self-supervised learning), tj. sit (napr. autoenkodér) se pak uci tzv. autoasociativni fuknkci. Rozdil mezi ucenim s ucitelem(ucitel oznaci, zda je objekt Ctverec Ci trojuhelnik) a bez ucitele (sit podobné objekty nashlukuje, ani by
+
+vedela jak se znaci)
+
+## Uceni bez ucitele
+
+Narozdil oducenisucitelempri uceni bezucitelenejsouvtrenovacich datech vstupni objekty provazané s jejich ohodnocenim, tj. scházi vyrok ucitele a uceni bez ucitele tedy vykazuje samoorganizaci site, ktera I Behem uceni ucitele uziva u kompeticnich siti, které si vyrok ucitele nahrazuji tzv. lateralni zachycuje vstupni vzory jako hustotu pravdépodobnosti 29l[30] stavech vstupnich neuronu, nevyhodnocujeme tedy spravnost vysledku, sit si inhibicf. [27] Pozn.:Kombinaci uceni sucitelem a uceni bez ucitele oznacujeme jakosemisupervised learning. Mira zmen vah po jednotlivych vrstvach, daná tlumenim zpetného Sireni chyby, tj. prvni tri vrstvy se neuci prakticky vabec,
+
+smysluplne se uci pouze posledni tri.
+
+## Hluboké uceni
+
+Hluboké uceni je uceni neuronovych siti s velkou hloubkou.[32l Hloubkou sité se mysli pocet vrstev neuronu, které jsou propojeny tak, e vystup jedné vrstvy je vstupem vrstvy nasledujici. U hlubokého uceni se hloubka site nachazi Casto v radech desitek a vice vrstev. Pro odhad parametru sité (trénovani) se obvykle pouziva algoritmus zpetného Sireni chyby. Trénovani probiha ve dvou fazich, tj. nejprve preduceni site doprednym smerem napr. pomoci autoenkodérd (samouceni) a poté douceni site zpetnym smerem (uceni s ucitelem), eliminuje se tak tlumeni zpetného sireni chyby. Metodologiehlubokehouceniseprosadilakolemroku2010jakozakladni moznost pro reseni slozitych problému strojového uceni jako je klasifikace obrazu, mluvené Ci psané reci nebo preklady z jednoho prirozeného jazyka do jiného. Model synaptické vazby ohodnocené vahou w mezi vstupnim a vystupnim neuronem s urovni aktivace x a y.
+
+## Hebbovskéuceni
+
+Hebbay[33] princip uceni je zpusob urcovani vah vzajemnych orientovanych vazebmeziumelymineuronyjakoukladaniurovneaktivacevstupniho neuronu vázené úrovni aktivace vystupniho neuronu do vahy vazby mezi vstupnim a vystupnim neuronem. Vaha vazby mezi obema neurony se pak zvysuje, pokud se oba neurony aktivujf synchronne, a snizuje, pokud se aktivuji asynchronne. Neurony, které jsou bud' oba pozitivne aktivni soucasne nebo oba negativne aktivni soucasne, maji silné pozitivni vahy vzajemné vazby, zatimco ty, které jsou soucasne opacne aktivni, majf silné negativni vahyvzajemnévazby.Hebbovskéuceni se uziva u asociativnichpameti,jako vystupniho neuronu, jedna se o tzv. instar resp. outstar uceni.
+
+## Preuceni
+
+Preuceni je stav, kdy je systém prilis prizpusoben mnozine trénovacich dat, ale nema schopnost generalizace a selhava na validacni mnozine dat, tj. vykazuje sice minimalni chybu na tréninkové mnozine, ale na validacni mnozine vykazuje zcela chybné vysledky. To se muze stat napr. pri malém rozsahu trénovaci mnoiny nebo pokud je sit prilis mohutná (napr. prilis mnoho neuronu skrytych vrstev resp. pocet skrytych vrstev v siti). Resenim je poctu parametru hodnoceného objektu, které v dusledku snizuje slozitost ucené funkce site. Krajnim resenim je predcasné ukonceni uceni (prubené
+
+sledovani chyby na validacni mnoziné a konec uceni ve chvili, kdy se chyba natetomnozinedostanedosvéhominima).
+
+## Trenovaci data
+
+Dataurcenaproucenineuronovésiteseskladajizevstupnichvektorudatav pripade uceni s ucitelem z odpovidajicich vstupnich vektoru dat. Pro spravné vstupniho vektoru vypocita vystupni vektor a podle rozdilu od spravného vystupniho vektoru upravi své vnitrni parametry. Tento proces se opakuje, dokud neni systém dostatecne naucen. Pri uceni se pouzivaji trénovaci data, s a    s s   s kontroluje preucovani a na testovacich datech se urcuje uspésnost chováni naucené site na novych, neznamych datech. Trénovaci data se tedy dle zpusobu uziti deli do tri skupin:
+
+- Trénovaci mnozina je sada dat, ve které ucici algoritmus nachazi g e   s e s ga  n
+- upravu parametru uceni ve snaze vyhnout se jeho preuceni. Systém je spravne nauceny tehdy, jestlize se shodnou uspesnosti vyhodnocuje trénovaci mnozinu i validacni mnozinu. Pokud má vyhodnoceni trénovaci mnoziny vyrazne vyssi úspesnost, je systém preuceny.
+- Testovaci mnozina je sada dat, ktera se pouzivaji pro overeni kvality naucenehosystemu.
+
+V pripade uceni bez ucitele se trénovaci data skladaji pouze ze vstupnich vektorudatobsazenychvtrenovacimnozine.
+
+## Algoritmus zpetneho Sireni chyby
+
+Gradientni sestup - vpravo nahore naznaceno uváznuti v lokalnim minimu isa n  o s oau a n
+
+siti pri uceni s ucitelem, tedy pokud je na mnozine prikladu pouzitych k uceni vdy znam poadovany vysledek. Zpetné Sireni chyby je zalozeno na metode gradientniho sestupu.
+
+Kvalita nauceni umelé neuronové site je popsana chybovou funkci, nejcasteji kvadratickou chybou[27].
+
+<!-- formula-not-decoded -->
+
+E - chyba
+
+N - pocet vzoru predlozenych siti n - pocet neuronu vystupni vrstvy
+
+Zij - pozadovany vystup daného neuronu a daného vzorku
+
+Yij - vypocitany vystup daného neuronu a daného vzorku
+
+△w - vektor prirustku vah gradientniho kroku
+
+Q-velikostgradientnihokroku
+
+Zpetné sireni chyby
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+- potencial i-tého neuronu Yi - skutecny stav i-tého neuronu Zi - pozadovany stav i-teho neuronu gi - adaptacni funkce i-tého neuronu pi - strmost aktivacni funkce itého neuronu - prah i-tého neuronu Wij - vaha vazby i-tého neuronu s j-tym neuronem Q -velikost gradientniho sestupného kroku μ - mira setrvacnosti gradientniho sestupu
+
+## △ - predcházejici prirustek prislusné promenné
+
+Cilemuceni jeminimalizovatchybovou funkcizavislou navstupnichvahach neuronu, pricem gradientni sestup obecne najde pouze lokalni minimum, mire respektovani sméru jeho minulého sestupného kroku, tj. k aktualnimu gradientu se pripocte minuly gradient a aktualni sestupny krok se provede ve smeru jejich souctu. Tato deformace gradientniho sestupu pak umoni vyklouznuti z melkého lokalniho minima. Uceni neuronové sité spocivá ve zmene vah vstupu neuronu. Algoritmus zpetného Sireni chyby v kadém kroku postupuje v nasledujicich trech fazich:
+
+- chyba, jak byla popsana vyse.
+- Na zaklade spoctené chyby se pocitaji hodnoty adaptacnich funkci ve sméru od posledni vrstvy k prvni vrstvé (pro vypocet hodnoty adaptacnich funkci podrazené vrstvy ji2 musi byt vypocteny hodnoty adaptacnich funkci nadrazenévrstvy),tj. spocita se gradient chybové funkce, na zaklade kterého se provede sestupny gradientni krok, tj. upravi se vstupni vahy neuronu tak, Ze klesne hodnota chyby. Vypocet tedy postupuje zpetné od vystupni vrstvy a po vstupni vrstvu (odtud zpetné sireni chyby), vahy se méni podle jejich vlivu na chybu.
+
+## Odkazy
+
+## Reference
+
+1. ↑ HOREJS, J.; KUFUDAKl, O. PoCitaCe a mozek (neuropoCitaCe). [s.l.]: SOFSEM, 1988.38 S.
+2. 2.↑ VENKATESAN,Ragav; Ll,Baoxin.Convolutional Neural Networks in Visual Computing: A Concise Guide. [s.l.]: CRC Press, 2017-10-23. Dostupné online. ISBN 978-1-351-65032-8. (anglicky)
+3. ↑ ZHA, Xiong; PENG, Hua; QIN, Xin; Ll, Guang.A Deep Learning FrameworkforSignalDetectionandModulationClassification.[s.l.]: MDPl, 2019-9-19. Dostupné online. (anglicky)
+4. ↑ KOHONEN, Teuvo. The self-organizing map. [s.l.]: Proceedings of the IEEE 78 (9), 1990. 17 s. (anglicky)
+5. ↑ A Beginner's Guide to Word2Vec and Neural Word Embeddings. Pathmind [online]. [cit. 2022-10-29]. Dostupné online. (anglicky)
+6. ↑ GROSSBERG, Stephen. Recurrent neural networks. [s.l.]: Scholarpedia, 2013. Dostupné online. (anglicky)
+7. ↑ a b MCCULLOCH, W. S. T.; PITTS, W. A logical calculus of the ideas immanent in nervous activity. Bulletin of Mathematical Biophysics 5. [s.l.]: [s.n.], 1943. 19 s. (anglicky)
+8. ↑ ROSENBLATT, F. The Perceptron - a perceiving and recognizing automaton, Report 85-460-1, Cornell Aeronautical Laboratory.[s.l.]: [s.n.], 1957. (anglicky)
+9. ↑ HAGAN, Martin T. Neural network design. druhé. vyd. [s.l.]: [s.n.], 2014. 800 s. Dostupné online. (anglicky)
+10. ↑ Stuart Dreyfus: Artificial Neural Networks, Back Propagation and the Kelley-Bryson GradientProcedure.In:J.Guidance,Control and Dynamics.1990.
+11. ↑ Jurgen Schmidhuber: Deep learning in neural networks: An overview. In: Neural Networks. 61,2015, S. 85-117. ArXiv
+12. ↑ Jurgen Schmidhuber: Deep Learning. In: Scholarpedia. 10(11), 2015, S. 328-332. Section on Backpropagation
+13. ↑ Henry J. Kelley: Gradient theory of optimal flight paths. In: Ars Journal. 30(10),1960,S.947-954.(0nline)
+14. ↑ Arthur E. Bryson: A gradient method for optimizing multi-stage allocationprocesses.In:ProceedingsoftheHarvardUniv.Symposiumon digitalcomputersandtheirapplications.April1961.
+15. 15.↑ Stuart Dreyfus: The numerical solution ofvariational problems. In: Journal of Mathematical Analysis and Applications.5(1),1962,S. 30-45. (online)
+16. ↑ A. E. Bryson, W. F. Denham, S. E. Dreyfus: Optimal programming problemswithinequalityconstraints.l:Necessaryconditionsfor extremal solutions.In:AlAAJ.1,11,1963,S.2544-2550.
+17. ↑ Seppo Linnainmaa: The representation of the cumulative rounding errorofanalgorithmasaTaylorexpansionofthelocalroundingerrors. Master's Thesis (in Finnish), Univ. Helsinki,1970, S.6-7.
+18. ↑ Seppo Linnainmaa: Taylor expansion of the accumulated rounding error.ln: BlT Numerical Mathematics. 16(2), 1976, S. 146-160.
+19. 19.↑Andreas Griewank:Who Invented theReverse Mode of Differentiation?OptimizationStories.In:DocumentaMatematica.Extra VolumeISMP,2012,S.389-400.
+20. ↑ Andreas Griewank, Andrea Walther: Principles and Techniques of AlgorithmicDifferentiation.2.Auflage.SlAM,2008.
+21. ↑ Stuart Dreyfus: The computational solution of optimal control problemswithtimelag.In:IEEE TransactionsonAutomaticControl. 18(4),1973,S.383-385.
+22. ↑ Paul Werbos: Beyond regression: New tools for prediction and analysis in the behavioral sciences.PhD thesis.Harvard University1974.
+23. 23.↑Paul Werbos:Applications of advancesin nonlinear sensitivity
+24. ↑ David E. Rumelhart, Geoffrey E. Hinton, Ronald J. Williams: Learning representations by back-propagating errors. In: Nature. Band 323, 1986, S.533-536.
+25. ↑ Eric A. Wan: Time series prediction by using a connectionist network withinternaldelaylines.In:SantaFeInstituteStudiesintheSciencesof Complexity-Proceedings.Vol.15,Addison-Wesley Publishing Co.,1993, S.195-195.
+26. ↑ HINDMARSH, J. L.; ROSE, R. M. A model of neuronal bursting using three coupled first order differential equations.Biological Sciences 221 (1222). London: The Royal Society, 1984. 16 s. (anglicky)
+27. i a e
+28. ↑ GENTLEMAN, R.; CAREY, V. J. Supervised Machine Learning. Bioconductor Case Studies. New York: Springer, 2008. 16 s. Dostupné online. ISBN 978-0-387-77239-4. (anglicky)
+29. ↑ HINTON, Geoffrey; SEJNOWSKI, Terrence. Unsupervised Learning: Foundations of Neural Computation. [s.l.]: MiT Press, 1999. ISBN978-0262581684.
+30. 30.↑ GENTLEMAN, R.; CAREY, V. J. Unsupervised Machine Learning. Bioconductor Case Studies. New York: Springer,2008.21 s. Dostupné online. ISBN 978-0-387-77239-4. (anglicky)
+31. ↑ GARLiK, B.; KRIVAN, M. Identification of type daily diagrams of electric consumption based on cluster analysis of multi-dimensional data by neural network. [s.l.]: Neural Network World 3/13, 2013. Dostupné online.S.271-283.(EN)
+32. ↑ GOODFELLOW, lan; BENGIO, Yoshua; COURVILLE, Aaron. Deep Learning. [s.l.]: MIT Press, 2016. 767 s. Dostupné online. (anglicky)
+33. ↑ HEBB, D.O. The Organization of Behavior. New York: Wiley &amp; Sons, 1949. Dostupné online. (anglicky)
+
+## Souvisejici &amp;lanky
+
+- ·Modularni neuronova sit
+- Elmanova Jordanova neuronova sit
+- Polynomialni neuronova sit
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu umela neuronova sit na Wikimedia Commons
+- Uméla neuronova sit v Ceské terminologické databäzi knihovnictvi a informacni védy (TDKIV)
+- Predpovidani pomoci neuronové sité - vcetne Java appletu pro experimenty s predpovidanim funkce
+
+Portaly: Informacni véda a knihovnictvi
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Uméla\_neuronova\_sit&amp;oldid=25469332' Kategorie:
+
+- Umelé neuronové sité
+
+Skryté kategorie:
+
+- Udrzba:Clanky s docasne pouzitou Sablonou
+- Monitoring:Clanky s odkazem na TDKIV
+- ·Monitoring:Clanky s identifikatorem NKC
+
+Monitoring:Clanky s identifikatorem TDKIV · Monitoring:Clanky s identifikatorem GND Monitoring:Clanky s identifikatorem LCCN Monitoring:Clanky s identifikatorem LNB Monitoring:Clanky s identifikatorem NDL Monitoring:Clanky s identifikatorem NLI Portál Informacni véda a knihovnictvi/Zapojené Clanky
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Umela neuronova sit
+
+69 jazyku Pridat téma

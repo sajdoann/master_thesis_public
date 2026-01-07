@@ -1,0 +1,335 @@
+Z Wikipedie, otevřené encyklopedie
+Algoritmus je přesný návod či postup, kterým lze vyřešit daný typ úlohy.
+Pojem algoritmus se nejčastěji objevuje při programování, kdy se jím myslí
+teoretický princip řešení problému (oproti přesnému zápisu v konkrétním 
+programovacím jazyce). Obecně se ale algoritmus může objevit v jakémkoli
+jiném vědeckém odvětví. Jako jistý druh algoritmu se může chápat i např.
+kuchařský recept. Zpravidla však na algoritmy klademe určitá omezení. 
+Vlastnosti algoritmů
+V užším smyslu se slovem algoritmus označují takové postupy, které splňují
+některé silnější požadavky: 
+Elementárnost
+Algoritmus se skládá z konečného počtu jednoduchých (elementárních)
+kroků.
+Konečnost (finitnost)
+Každý algoritmus musí skončit v konečném počtu kroků. T ento počet
+kroků může být libovolně velký (podle rozsahu a hodnot vstupních
+údajů), ale pro každý jednotlivý vstup musí být konečný. Postupy, které
+tuto podmínku nesplňují, se mohou nazývat výpočetní metody.
+Speciálním příkladem nekonečné výpočetní metody je reaktivní proces,
+který průběžně reaguje s okolním prostředím. Někteří autoři však mezi
+algoritmy zahrnují i takovéto postupy.
+Obecnost (hromadnost, masovost, univerzálnost)
+Algoritmus neřeší jeden konkrétní problém (např. „jak spočítat 3×7“), ale
+obecnou třídu obdobných problémů (např. „jak spočítat součin dvou
+celých čísel“), má širokou množinu možných vstupů.
+Determinovanost
+Algoritmus je determinovaný, pokud za stejných podmínek (pro stejné
+vstupy) poskytuje stejný výstup. T ato vlastnost je požadována u velké
+části úloh; existují však úlohy, kdy je naopak vyžadována náhodnost
+(například simulace vrhu kostkou, míchání karet, generování hesel a 
+šifrovacích klíčů); na standardních počítačích je dosažení náhodnosti 
+obtížné. Pravděpodobnostní algoritmy v sobě mají zahrnutu náhodu a
+nemusí být determinované.
+Determinismus
+Každý krok algoritmu musí být jednoznačně a přesně definován; v každé
+situaci musí být naprosto zřejmé, co a jak se má provést, jak má
+provádění algoritmu pokračovat. Protože přirozené jazyky neposkytují
+naprostou přesnost a jednoznačnost vyjadřování, byly pro zápis
+algoritmů navrženy programovací jazyky, ve kterých má každý příkaz
+jasně definovaný význam. Vyjádření výpočetní metody v programovacím
+jazyce se nazývá program. Některé algoritmy jsou sice determinované,
+ale nejsou deterministické (například řadící algoritmus rychlé řazení s
+náhodnou volbou pivota).
+Výstup
+Algoritmus má alespoň jeden výstup, veličinu, která je v požadovaném
+vztahu k zadaným vstupům, a tím tvoří odpověď na problém, který
+algoritmus řeší (algoritmus vede od zpracování hodnot k výstupu)
+V praxi jsou proto předmětem zájmu hlavně takové algoritmy, které jsou v
+nějakém smyslu kvalitní. T akové algoritmy splňují různá kritéria, měřená např.
+počtem kroků potřebných pro běh algoritmu, jednoduchost, efektivitu či
+eleganci. Problematikou efektivity algoritmů, tzn. metodami, jak z několika
+známých algoritmů řešících konkrétní problém vybrat ten vhodný, se zabývají
+odvětví informatiky nazývané algoritmická analýza a teorie složitosti. 
+Metody návrhu
+Algoritmus se navrhuje několika možnými způsoby: 
+Shora dolů – postup řešení rozkládáme na jednodušší operace, až
+dospějeme k elementárním krokům.
+Zdola nahoru – z elementárních kroků vytváříme prostředky, které
+nakonec umožní zvládnout požadovaný problém.
+Kombinace obou – obvyklý postup shora dolů doplníme "částečným
+krokem" zdola nahoru tím, že se například použijí knihovny funkcí, vyšší
+programovací jazyk nebo systém pro vytváření programů (CASE).
+Paradigmata návrhu algoritmů
+Při návrhu algoritmů se uplatňuje množství přístupů, které abstrahují od
+konkrétní úlohy. K nejužívanější metodám návrhu algoritmů patří: 
+• 
+• 
+•
+Rozděl a panuj
+Související informace naleznete také v článku Rozděl a panuj (algoritmus).
+Klasický případ aplikace postupu odshora dolů. Algoritmy typu rozděl a panuj
+dělí problém na menší podproblémy, na něž se rekurzivně aplikují (až po
+triviální podproblémy, které lze vyřešit přímo), po čemž se dílčí řešení
+vhodným způsobem sloučí. 
+Zpracovává se množinaV složená z n údajů. T ato množina se rozdělí na k
+disjunktních podmnožin, které se zpracují každá zvlášť. Získané dílčí výsledky
+se pak spojí a odvodí se z nich řešení pro celou množinu V. 
+Klasickým případem je binární vyhledávání nebo řadící algoritmus rychlé
+řazení. 
+Hladový algoritmus
+Související informace naleznete také v článku Hladový algoritmus.
+Velice přímočarý přístup k řešení určité třídy optimalizačních úloh. 
+Zpracovává se množina V složená z n údajů. Úkolem je najít podmnožinu W
+množiny V, která vyhovuje určitým podmínkám a přitom optimalizuje
+předepsanou účelovou funkci. Jakákoliv množina W, vyhovující daným
+podmínkám, se nazývá přípustné řešení. Přípustné řešení, pro které nabývá
+účelová funkce optimální hodnoty, se nazývá optimální řešení. 
+Hladový algoritmus se skládá z kroků, které budou procházet jednotlivé prvky
+z V, a v každém kroku rozhodne, zda se daný prvek hodí do optimálního
+řešení. Prvky V bude vybírat v pořadí určeném jistou výběrovou procedurou.
+Výběrová procedura bude založená na nějaké optimalizační míře – funkci,
+která může být odvozena od účelové funkce. V každém kroku ale musíme
+dostat přípustné řešení. Jakmile je učiněno takové rozhodnutí, už není dále
+revidováno. Příkladem je třeba hledání nejkratší cesty grafu. 
+Dynamické programování
+Související informace naleznete také v článku Dynamické programování.
+Dynamické programování se používá v případech kdy lze optimální řešení
+složit z řešení jednodušších problémů. Protože se požadavky na řešení
+jednodušších podproblémů mohou mnohokrát opakovat, je nutné zvolit
+správné pořadí jejich řešení a výsledky si zapamatovat pro opakované
+použití. 
+Opírá se o princip optimality: Optimální posloupnost rozhodnutí má tu
+vlastnost, že ať je počáteční stav a rozhodnutí jakékoliv, musí být všechna
+následující rozhodnutí optimální vzhledem k výsledkům rozhodnutí prvního. 
+T ypickým příkladem využití dynamického programování jsou grafové úlohy a
+jejich příslušné grafové algoritmy. 
+Použití hrubé síly
+U některých úloh nezbývá než postupně probírat všechna možná řešení – tak
+zvaná metoda hrubé síly – vygenerují se všechny možné posloupnosti a pak
+se vybere ta nejlepší. V některých případech lze použít metody, které
+vynechávají popřípadě odkládají procházení možností, které zřejmě nejsou
+optimální. 
+Hledání s návratem (backtracking)
+Související informace naleznete také v článku Backtracking.
+Hledání s návratem založené na prohledávání stavového prostoru problému.
+T éž se nazývá metoda pokusů a oprav, metoda zpětného sledování, metoda 
+prohledávání do hloubky. 
+Metodu je možné použít v případě, že řešením je vektor (x1,...,xn), jehož
+jednotlivé složky vybíráme z množiny Si, xi∈Si. Zpravidla je třeba najít n-tici,
+která optimalizuje nějakou účelovou funkci P(x1,...,xn). Mohou se ale také
+hledat všechny n-tice, které tuto podmínku splňují. Metoda vytváří n-tice
+jednu složku po druhé. Přitom používá účelovou funkci (nebo nějakou
+vhodnou pomocnou funkci) a pro každou nově vytvořenou složku testuje, zda
+by taková n-tice vůbec mohla být optimální nebo splňovat dané podmínky.
+Jestliže pro nějaké xi žádaný vektor (x1,...,xi) nemůže být optimální, není
+třeba už žádný takový vektor testovat a vezmeme další možnou hodnotu i-té
+složky. Pokud jsou vyčerpány všechny hodnoty i-té složky, vrátí se metoda
+zpět o jeden krok a zkouší další možnou hodnotu xi-1. 
+Příkladem je třeba problém osmi dam nebo chůze koně celou šachovnicí. 
+Algoritmická složitost
+Je třeba poznamenat, že abstraktní kritérium konečnosti je pro praktické
+použití ještě příliš slabé. V praxi je třeba zajistit, aby algoritmus skončil „v
+rozumném“ čase. Za rozumný čas lze v praxi považovat takový čas, který
+nám umožní smysluplně využít výsledek. 
+Např. existuje jednoduchý algoritmus, který dokáže určit, zda v dané šachové
+pozici může hráč na tahu vynutit vítězství a zároveň dokáže určit nejlepší
+možný tah. T ento algoritmus se však nedá použít, protože by na svou činnost
+potřeboval ohromné množství času, jakkoli je toto množství konečné. Mimoto
+by takový algoritmus spotřeboval ohromné množství paměti, což je další
+praktický zřetel, který se uplatňuje při volbě algoritmu. I když průměrná
+počítačová paměť stále narůstá, pro některé algoritmy jí nebude nikdy dost. 
+Pro vyčíslení výpočetní složitosti algoritmů v závislosti na velikosti vstupních
+dat se používá asymptotický zápis závislosti výpočetního času na rozsahu
+úlohy (typicky na počtu vstupních údajů). Například O(log N) znamená, že
+počet kroků algoritmu závisí logaritmicky na velikosti vstupních dat. Pokud u
+takového algoritmu zdvojnásobíme rozsah vstupních údajů, doba výpočtu se
+zvýší o jednu jednotku času, pokud bude vstupních dat čtyřikrát více, doba
+výpočtu se prodlouží o dvě jednotky času, a tak dále. T o je třeba případ
+nalezení jednoho prvku o určité hodnotě v seznamu prvků seřazeném podle
+hodnoty (např. nalezení jména v telefonním seznamu). 
+Druhy algoritmů
+Algoritmy můžeme klasifikovat různými způsoby. Mezi důležité druhy
+algoritmů patří: 
+Rekurzivní algoritmy, které využívají (volají) samy sebe.
+Pravděpodobnostní algoritmus (někdy též probabilistické) provádí
+některá rozhodnutí náhodně či pseudonáhodně.
+• 
+•
+V případě, že máme k dispozici více počítačů, můžeme úlohu mezi ně
+rozdělit, což nám umožní ji vyřešit rychleji; tomuto cíli se věnují paralelní
+algoritmy.
+Genetický algoritmus pracuje na základě napodobování biologických 
+evolučních procesů, postupným „pěstováním“ nejlepších řešení pomocí 
+mutací a křížení. V genetickém programování se tento postup aplikuje
+přímo na algoritmy (resp. programy), které jsou zde chápány jako možná
+řešení daného problému.
+Heuristický algoritmus si za cíl neklade nalézt přesné řešení, ale pouze
+nějaké vhodné přiblížení; používá se v situacích, kdy dostupné zdroje
+(např. čas) nepostačují na využití exaktních algoritmů (nebo pokud
+nejsou žádné vhodné exaktní algoritmy vůbec známy).
+Přitom jeden algoritmus může patřit zároveň do více skupin; například může
+být zároveň rekurzivní a genetický. 
+Některé známé algoritmy
+Eratosthenovo síto
+Euklidův algoritmus
+Algoritmus de Casteljau
+Dijkstrův algoritmus
+Bellmanův–Fordův algoritmus
+Etymologie
+Slovo algoritmus pochází ze jména významného perskéhomatematika
+žijícího v první polovině 9. století (cca 780–840), kterým byl Abū ʻAbd Allāh
+Muhammad ibn Mūsā al-Chwārizmī)أبو عبد الله محمد بن موسى الخوارزمي
+doslova „Otec Abdulláha, Mohamed, syn Mojžíšův, pocházející z města
+Chwārizm (Chórézm, dnes Chiva)“; tento kraj se nachází v Uzbekistánu jižně
+od Aralského jezera). T ento učenec ve svém díle prakticky vytvořil systém 
+arabských číslic a základy algebry (konkrétně metody řešení lineárních a 
+kvadratickýchrovnic), jejíž název pochází přímo z titulu tohoto díla (Kitūb al-
+jabr waāl-muqūbala). Jeho jméno bylo do latiny převedeno jako algorismus, a
+původně znamenalo „provádění aritmetiky pomocí arabských číslic“; abacisté
+počítali pomocí abaku, algoristé pomocí algorismů. 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+•
+Postupem času se kvůli neznalosti původu slova jeho podoba měnila,
+záměnou arabského kořene s kořenem řeckého slova αριθμός (arithmos) se z
+algorismu stal algorithmus. (Později bylo v některých jazycích včetně češtiny 
+th změněno na t, v katalánštině se vrátilo s.) T oto slovo se používalo jako
+označení různých matematických postupů, např. v 18. století označoval 
+latinský termín algorithmus infitesimalis „metodu výpočtů s využitím
+nekonečně malých veličin, vynalezenou německým matematikem 
+Leibnizem“. Slovo algoritmus v dnešním významu se používá až zhruba od 
+20. století. 
+Historie: Vývoj pojmu „algoritmus“
+Starověké Řecko
+Algoritmy byly použity ve starověkém Řecku. Například Eratosthenovo síto
+nebo Eukleidův algoritmus. 
+Původ
+Slovo algoritmus pochází z 9. století a je odvozeno z příjmení perského
+matematika Al-Chorezmí. Slovo původně odkazovalo na pravidla provádění
+aritmetických operací s arabskými číslicemi, ale vyvinulo se prostřednictvím
+překladu matematikova jména na „algoritmus“ v 18. století a zahrnuje
+všechny určité postupy pro řešení problémů nebo plnění úkolů. 
+Diskrétní a rozeznatelné symboly
+Tally-značky: K počítání stád, pytlů s obilím a peněz ve starověku se
+používaly akumulační kameny, značky vyškrábané na holích nebo záznam
+jednotlivých symbolů v jílu. Značky jsou obvykle v jedničkové soustavě, která
+se používá při kódování informací pro T uringovy stroje v teorii automatů. 
+Mechanická zařízení s diskrétními stavy
+Hodiny: Podle Boltera je vynález mechanických hodin jedním z klíčových
+vynálezů. Zejména pak jejich setrvačná část – Lihýř. Přesný automat vedl
+okamžitě k mechanickému automatu (začátek 13. století) a nakonec k
+výpočetním strojům – diferenční a analytický stroj (Charles Babbage a Ada
+Lovelace) v polovině 19. století. Lovelace je připočítáno první vytvoření
+algoritmu, který je zpracovatelný počítačem. Babbageův analytický stroj je
+považován za první T uringův kompletní počítač. Charles Babbage je někdy
+nazýván jako historicky první programátor. 
+Logické stroje 1870 – Jevonsovo logické počítadlo a logický stroj: T echnický
+problém byl zjednodušení logických rovnice, které bylo představeno v podobě
+podobné tomu, co je nyní známo jako Karnaughova mapa. Jevons (1880)
+popisuje první jednoduché počítadlo ze dřeva vybavené kolíky tak, aby
+jakákoli jeho třída kombinací šla vyzvednout mechanicky. T ento stroj je
+představen členům královské společnosti v roce 1870. 
+Tkalcovský stav, děrné štítky, telegrafie a telefonie – elektromechanické relé:
+Bell a Newell (1971) označují, že tkalcovský stav (1801), předchůdce děrných
+štítků (1887) a telefonní spínací technologie vedly k vývoji prvních počítačů.
+V polovině 19. století telegraf, předchůdce telefonu, byl v provozu po celém
+světě. V roce 1910 se objevil dálnopis, který využíval mezinárodní telegrafní
+abecedu. 
+Telefonní sítě elektromechanických relé – George Stibitz (1937) pracoval v
+Bellových laboratořích a dokončil kalkulátor, který je schopen pracovat s
+komplexními čísly. 
+Matematika v průběhu 19. století až do poloviny 20. století
+Symboly a pravidla: V rychlém sledu za sebou matematika George Boole, 
+Gottlob Frege a Giuseppe Peano redukovala aritmetiku do sekvence symbolů,
+se kterými se manipulovalo pomocí daných pravidel. Peanovo The principles
+of arithmetic, presented by a new method (1888) byl první pokus o
+axiomatizování matematiky v symbolický jazyk. 
+Heijenoort dává Fregemu (1879) tuto slávu: Fregovo dílo je možná
+nejdůležitější práce, která kdy bylo v logice napsána. T ato práce byla dále
+zjednodušena a umocněna Alfredem North Whiteheadem a Bertrandem
+Russellem v jejich Principia Mathematica (1910–1913). 
+Paradoxy: Ve stejné době se objevila řada znepokojivých elementů v
+literatuře, zejména Burali-Fortiho paradox (1897), Russellův paradox (1902–
+1903) a Richardův paradox. Výsledné úvahy vedly k Gödelovým větám o
+neúplnosti.
+Efektivní vyčíslitelnost: Ve snaze vyřešit Entscheidungsproblem přesně
+definovaným Hilbertem v roce 1928 museli matematici nejprve definovat, co
+se rozumí pod pojmem „efektivní metoda“ nebo „efektivní výpočet“. V
+rychlém sledu se objevili Alonzo Church, Stephen Cole Kleene a J. B. Rosser,
+kteří jsou známí především díky lambda kalkulu. Church pak společně s 
+T uringem ukázal, že lambda kalkul (a další výpočetní modely) má výpočetní
+sílu T uringova stroje, což otevřelo cestu k Churchově–T uringově tezi. 
+Právní ustanovení
+Algoritmy nejsou obvykle patentovány. Samotná manipulace s abstraktními
+pojmy, čísly, či dokonce signály není v USA (dle USPTO 2006) považována za
+proces. Jinými slovy lze říci, že algoritmy nelze patentovat (podobně jako v
+kauze Gottschalk v. Benson). Nicméně některá praktická využití algoritmů lze
+patentovat. Například v kauze Diamond v. Diehr byl patentován jednoduchý
+algoritmus zpětné vazby na pomoc při vytvrzování syntetické gumy.
+Patentování softwaru je i přes to velmi kontroverzní. Některé patentované
+algoritmy se potýkají s negativní kritikou, a to především algoritmy sloužící ke
+kompresi dat.
+Reference
+heslo Algorithmus. Ottův slovník naučný I, p. 857
+Donald Ervin Knuth: The Art of Computer Programming, Vol 1–3, Addison
+Wesley 1998. ISBN0-201-48541-9. Klasické dílo oboru, definitivní
+příručka.
+Gaston H. Gonnet, Ricardo Baeza-Yates: Zdrojové texty programů v 
+Handbook of Algorithms and Data Structures.
+Dictionary of Algorithms and Data Structures. „Slovník algoritmů,
+technik, datových struktur, typických problémů a příslušných definic.“
+United States Patent and Trademark Office (2006), 2106.02
+**>Mathematical Algorithms: 2100 Patentability, Manual of Patent
+Examining Procedure (MPEP). Latest revision August 2006
+Externí odkazy
+Obrázky, zvuky či videa k tématu algoritmus na Wikimedia Commons
+1. 
+2. 
+3. 
+4. 
+5. 
+•
+T éma Algoritmus ve Wikicitátech
+Slovníkové heslo algoritmus ve Wikislovníku
+První algoritmus napsala žena. Programovala dávno před prvním
+počítačem
+Citováno z „https://cs.wikipedia.org/w/index.php?
+title=Algoritmus&oldid=24926977“
+Kategorie: 
+Algoritmy
+Programování
+Skryté kategorie: 
+Monitoring:Články s identifikátorem NKC
+Monitoring:Články s identifikátorem BNE
+Monitoring:Články s identifikátorem BNF
+Monitoring:Články s identifikátorem GND
+Monitoring:Články s identifikátorem LCCN
+Monitoring:Články s identifikátorem LNB
+Monitoring:Články s identifikátorem NDL
+Monitoring:Články s identifikátorem NLI
+Monitoring:1000 nejdůležitějších článků/střední
+Hledání
+Hledat
+Algoritmus
+136 jazyků Přidat téma
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+Speciální:Hledání

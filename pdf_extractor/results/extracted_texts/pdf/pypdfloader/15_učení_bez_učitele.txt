@@ -1,0 +1,82 @@
+Z Wikipedie, otevřené encyklopedie
+Učení bez učitele je třída metod strojové učení. Na rozdíl od učení s
+učitelemtrénovací data nemají vstupní data provázaná s cílovými
+proměnnými (ohodnocením, závisle proměnnou…), tj. schází výrok učitele a
+učení bez učitele tedy vykazuje samoorganizaci, která zachycuje vzory jako 
+hustotu pravděpodobnosti.[1] Učení bez učitele si tedy lze představit jako
+kompresi vstupních dat, např. například snížení jejich dimense (v analýze
+hlavních komponent) nebo jejich redukci na diskrétní body (jako je tomu ve 
+shlukové analýze, kde vstupní data reprezentujeme označenými shluky), či
+jejich vyhlazení (odhad distribučních funkcí).[2] U neuronových sítí se učení
+bez učitele užívá typicky u kompetičních sítí. (Porovnejte s učením s
+učitelem). 
+Praktické aplikace
+segmentace: Obchodník tak může rozdělit svoje zákazníky podle jejich
+podobnosti je zařadit do tržních segmentů anebo archeolog může podle
+charakteristik nalezených střepů keramiky definovat různé kulturní
+okruhy, k nimž patřili lidé, kteří kdysi keramiku vyráběli
+hledání anomálií: Netypické datové body mohou signalizovat poruchy
+nebo jiné situace, na které je potřeba se zaměřit, například při detekci
+podvodů ve finančních a telekomunikačních firmách
+odhad latentních proměnných: Psycholog může z řady výsledků
+jednotlivých testů stanovit inteligenci zkoumané osoby, politolog může
+na základě dotazníkového šetření rekonstruovat základní dimenze
+politického systému v zemi
+zpravodajské sekce: Zprávy Google používají učení bez učitele ke
+kategorizaci článků o stejném příběhu z různých online zpravodajství.
+Například výsledky prezidentských voleb by mohly být zařazeny pod
+jejich štítek "US news".
+počítačové vidění: Algoritmy učení bez učitele se používají pro některé
+úlohy počítačového vidění, například rozpoznávání objektů.  
+lékařské zobrazovací metody: Poskytuje základní funkce lékařským
+zobrazovacím zařízením, jako je detekce, klasifikace a segmentace
+• 
+• 
+• 
+• 
+• 
+•
+obrazu, které se používají v radiologii a patologii k rychlé a přesné
+diagnostice pacientů.
+doporučování: Pomocí údajů o minulém nákupním chování může
+neřízené učení pomoci odhalit datové trendy, které lze využít k vytvoření
+efektivnějších strategií následného prodeje. T oho se u internetových
+prodejců využívá k tomu, aby zákazníkům během procesu placení
+doporučovali relevantní doplňky.[3]
+Typické algoritmy
+shluková analýza (hierarchické shlukování, k-means a jiné)
+metody identifikující struktury kovariančních vazeb (analýza hlavních
+komponent, faktorová analýza, strukturní modelování a další)
+vyhlazování a odhadování hustot pravděpodobnosti (kernel density
+estimation)
+Reference
+↑HINTON, Geoffrey; SEJNOWSKI, T errence. Unsupervised Learning:
+Foundations of Neural Computation. [s.l.]: MIT Press, 1999. 
+ISBN978-0262581684.
+↑GENTLEMAN, R.; CAREY, V. J. Unsupervised Machine Learning.
+Bioconductor Case Studies. New York: Springer, 2008. 21 s. Dostupné
+online. ISBN978-0-387-77239-4. (anglicky)
+↑What is Unsupervised Learning?. www.ibm.com [online]. [cit.
+2022-10-26]. Dostupné online. (anglicky)
+Citováno z „https://cs.wikipedia.org/w/index.php?
+title=Učení_bez_učitele&oldid=25374143“
+Kategorie: 
+Strojové učení
+Skryté kategorie: 
+Údržba:Články s dočasně použitou šablonou
+Monitoring:Články s identifikátorem GND
+• 
+• 
+• 
+• 
+1. 
+2. 
+3. 
+• 
+• 
+•
+Hledání
+Hledat
+Učení bez učitele
+33 jazyků Přidat téma
+Speciální:Hledání

@@ -1,0 +1,147 @@
+Z Wikipedie, otevrené encyklopedie ikona Tento Clanek potrebuje upravy. Muzete Wikipedii pomoci tim, e ho yylepsite. Jak by mely Clanky vypadat, popisuji stranky Vzhled a styl, Encyklopedicky styl a Odkazy.
+
+## Konkrétni problémy: sjednotit formatovani vzorcu
+
+Shlukova analyza (té clusterova analyza, anglicky cluster analysis) je vicerozmerna statisticka metoda, ktera se pouziva ke klasifikaci objektu. Slouzi k trideni jednotek do skupin (shluka) tak, aby si jednotky nalezici do analyzu je mozné provádet jak na mnozine objektu, z nich kady musi byt popsan prostrednictvim stejného souboru znaku, které ma smysl v dané mnozine sledovat, tak na mnozine znaku, které jsou charakterizovany prostrednictvim urcitého souboru objektu, nositelu techto znaku.
+
+## Klasifikace shlukovacich metod
+
+Zakladni Cleneni shlukovacich metod podle cile je na hierarchické a nehierarchické metody.
+
+1. Hierarchické shlukovani vytvari systém podmnozin, kde prunikem dvou podmnozin - shluku je bud' prazdna mnozina, nebo jeden z nich. Pokud nastane alespon jednou druhy pripad, je systémhierarchicky. Tedy je to jakési vetveni, zjemnovani klasifikace. K hierarchickému shlukovani lze pristupovat ze dvou stran - rozlisujeme pristup divizni (vychazime z celku, jednoho shluku, a ten delime) a aglomerativni (vycházime z Hierarchické shlukovani nabizi vice alternativnich reseni, vysledek shlukovani je pak mozné vyjadrit dendrogramem. Tato metoda vsak neni vhodná pro velké datové soubory.
+2. Nehierarchické shlukovani vytvari takovy systém, kde jsou shluky disjunktni mnoziny. Pouziva se nejcasteji algoritmus k-means.
+
+## Mereni podobnosti objektu
+
+Shlukova analyza vychazi z podobnosti, resp. vzdalenosti objektu. Jeji kvantitativni vyjadreni je jednim ze zakladnich problému clusterové analyzy. Existuje mnoho zpusobu konstrukce tohoto ukazatele. Vyber vhodné metriky vzdalenostije zasadni, protoze primo ovlivnuje vysledky analyzy a strukturu nalezenychshluku.Mezi nejcasteji pouzivanémetody merenivzdalenosti patri Eukleidovska vzdalenost, Manhattanska vzdalenost, Minkowského vzdalenost, Kosinova vzdalenost a dalsi. Kadá z téchto metrik ma své
+
+vzdalenost,zatimcoukategorialnichdatmuzebytefektivnejsiJaccardova vzdalenost.ProtextovanebovysokodimenzionalnidatajeCastonejlepsi volbou kosinova vzdalenost. [11[3]
+
+## Vlastnosti vzdalenosti
+
+Standardnimi pozadavky pro vhodny predpis miry vzdalenosti (metriky) d dvou objektu O a O; jsou:
+
+- nezapornost: d(O, Oj) ≥ 0;
+- symetrie: d(O, Oj) = d(Oj, Oi);
+- shodné objekty by mély mit ukazatel vzdalenosti roven O: d(O, O) = 0 (zaroven mira podobnosti bude rovna maximalni hodnote, obvykle 1).
+- trojuhelnikova nerovnost: d(O, Oj) ≤ d(O,Oh) + d(Oh, Oj).
+
+## Typy vzdalenosti
+
+- metriky - zakladni je eukleidovska vzdalenost a od ni jsou odvozeny dalsi ukazatele (napr. Ctverec euklidovské vzdalenosti), dalsi metriky jsou Manhattanska, Cebysevova ad.)
+- koeficienty asociace - urceny pro hodnoceni podobnosti pro objekty vyjadrené dichotomickymi znaky, ukazatele zalozeny na poctu shod a poctu znaku.Konkrétnich ukazatelu je cela rada, nekteré operuji jen s pozitivnimi shodami (napr. koeficient Jaccarduv, Russel &amp; Rao, Diceuv ad.), nekteré i s negativnimi (napr. Sokaluv, Hamannuv). Mohou se
+- vztahovat k celkovému poctu znaku, k poctu rozdilnych pripadu nebo k ruznym kombinacim predchozich.
+- korelacni koeficient - hodi se predevsim pro shlukovani proménnych.
+
+Existuje rada dalsich zpusobu mereni vzdalenosti Ci podobnosti (miry asymetrie, Lambda, kosinus vektoru, chi-kvadrat). Nekdy je zpusob hodnoceni podobnosti/vzdalenosti primo dan shlukovaci metodou. I pokud tomu tak neni, je treba pri vyberu ukazatele brat v úvahu metodu shlukováni a charakter souboru.
+
+## Konkretni priklady
+
+## Eukleidovskavzdalenost
+
+pouzivana v shlukové analyze, a to predevsim diky své jednoduchosti a intuitivni interpretaci jako ,primé Cary" mezi dvema body v n-rozmerném prostoru. Eukleidovska vzdalenost, pojmenovana po staroreckém d(x, y) = V(≥(xi - yi)²) Tato metrika je vhodná pro metricka data, ale citliva na extrémy (outliery), co mze ovlivnit vysledky analyzy.,[21[5]
+
+Euklidovska a Manhattanskavzdalenost
+
+## Manhattanskavzdalenost
+
+Manhattanska vzdalenost, znamá také jako Ll norma, meri vzdalenost jako soucet absolutnich rozdilu mezi souradnicemi. Pouzivá se v pripadech, kdy se d(x, y) = ∑|xi - yil Tato vzdalenost je vhodna pro data s kategoriemi nebo mrizkovou strukturou, napriklad ve méstskych prostorovych analyzach.[21
+
+## Minkowskehovzdalenost
+
+Minkowského vzdalenost je zobecnenim jak eukleidovské, tak manhattanské vzdalenosti, rizenym parametrem p:
+
+<!-- formula-not-decoded -->
+
+Napriklad pro p = 2 ziskame eukleidovskou vzdalenost a pro p = 1 ruznorodych dat.[21[41
+
+## Kosinovavzdalenost
+
+Kosinova vzdalenost meri uhel mezi dvéma vektory, co je uzitecné pri praci s vysokodimenzionalnimi daty, jako jsou textové dokumenty nebo datové matice. Je definovana jako:
+
+<!-- formula-not-decoded -->
+
+Kosinova vzdalenost nezohlednuje absolutni hodnoty vektoru, ale zameruje se na jejich orientaci. [5113]
+
+## Jaccardovavzdalenost
+
+Pouzivá se predevsim pro binarni data, napriklad pri analyze pritomnosti Ci nepritomnosti urcitych vlastnosti. Definice je nasledujici:
+
+<!-- formula-not-decoded -->
+
+## Metody hierarchického shlukovani
+
+Existuji rdzné pristupy, jak shlukovat objekty na zaklade jejich vzdalenosti Ci podobnosti. Mezi zakladni metody patri:
+
+- metodanejblizsihosouseda(singlelinkage,nearestneighbor)vzdalenostshlukujeurcovanavzdalenostidvounejblizsichobjektuz ruznych shluku. Pri pouziti této metody jsou objekty taeny k sobe, vysledkem jsou dlouhé retezy.
+- ea tendence k retezeni.
+- ·centroidnimetoda-vzdálenostshlukujeurcovanavzdalenostijejich center (hypoteticka jednotka s prumérnymi hodnotami znaku). Muze byt nevazena nebo vazena. Ta zohlednujevelikosti shluku a je vhodna pokud ocekavame jejich rozdilnost. Uziva se vyjadreni vzdalenosti objektu Ctvercovou euklidovskou vzdalenosti.
+- o  rs o  (  e  e muzebytvevazenéinevazenépodobe.
+- Wardova metoda - vychazi z analyzy rozptylu. Slucuje takové shluky, kde je minimálni soucet Ctvercu. Obecne Ize rici, e je tato metoda velmi ucinnä, nicméne ma tendenci vytvaret pomérne malé shluky. Vzdalenosti objektu se meri Ctvercovou euklidovskou vzdalenosti.
+
+## Priklady vyuziti Zdravotnictvi
+
+Shlukova analyza je uzitecnym nastrojem ve zdravotnictvi pro porozumeni rozdilum a podobnostem mezi pacienty s Parkinsonovou chorobou (PD), co umoznuje definovat specificke podskupiny. Tyto podskupiny mohou slouzit k presnejsi diagnostice, sledovani prubehu nemoci a planovani lécby. Vyzkumy v této oblasti Casto vyuzivaji klinické Skaly, jako je napriklad UPDRS, k pricem vysledky typicky odhaluji dve a之 pet klastra. Identifikace techto individualnim potrebam pacientu a umoznuje efektivnejsi lécebné strategie. [7]
+
+## Financni sektor
+
+Banka muze pomoci shlukové analyzy rozdelit své klienty do rizikovych skupin na zaklade jejich demografickych a socioekonomickych charakteristik, vcetne kombinace numerickych udaju (napr. prijem, vyse uveru) a pomoci sjednoceného podobnostnihometru mohou byt klienti rozdeleni do aid souopodased  anzea ru a eupar ap 'udnsos prizpusobit podminky nebo nabidnout preventivni opatreni, jako je financni o s  s potencialni ztraty.
+
+## Lesnictvi
+
+Lesni sprava muze pomoci shlukové analyzy efektivne rozdelit lesni a e oa r   ns  os druhové slozeni porostu. Tento pristup umoznuje lépe pochopit, jak se jednotlivastanoviste lisi z hlediska nakladové narocnosti apotrebné péce. Napriklad pomoci matice nepodobnosti a jeji vizualizace Ize stanovisté a s         is o a   e naklady na péci. [9]
+
+## Odkazy
+
+## Reference
+
+1. ↑ a b REZANKOvA, Hana; HUSEK, DuSan a SNASEL, Vaclav. Shlukova analyza dat. 2., rozs. vyd. Praha: Professional Publishing, 2009. ISBN 978-80-86946-81-8
+2. ↑ a b c d MELOUN, Milan; MILITKY, Jiri a HILL, Martin. Statisticka analyza vicerozmernychdatvprikladech.Vydani druhé,vNakladatelstvi Karolinum prvni. Praha: Univerzita Karlova v Praze, nakladatelstvi Karolinum,2017.ISBN 978-80-246-3618-4
+3. ↑ a b c HASTIE, TreVor; TIBSHIRANI, Robert a FRIEDMAN, J. H. The elements of statistical learning: data mining, inference, and predition. a
+4. ↑ a b HEBAK, Petr; HUSTOPECKY, Jiri a MALA, Ivana. Vicerozmérné statistickémetody.[2].Praha:Informatorium,2005.ISBN 80-7333-036-9
+5. ↑ a b c KAUFMAN, Leonard a ROUSSEEUW, Peter J. Finding Groups in Data: An Introduction to Cluster Analysis. 2. vyd. New York: Wiley, 1990. ISBN0-471-87876-6
+6. ↑ a b RENCHER, Alvin C. a CHRISTENSEN, William F. Methods of multivariate analysis. 3rd ed.Wiley series in probability and statistics. Hoboken: John Wiley, c2012. ISBN 978-0-470-17896-6
+7. ↑ HENDRICKS, Renee M.; KHASAWNEH, Mohammad T. A systematic review of Parkinson's disease cluster analysis research. Aging and disease, 2021, 12.7:1567.
+8. ↑ CARUsO, Giulia, et al. Cluster Analysis for mixed data: An application to credit risk evaluation. Socio-Economic Planning Sciences, 2021,73: 100850.
+9. ↑ Economic aspects of silvicultural treatments in 0ak Stands. (2023) Sylwan, 167 (12), pp.828-837.
+
+## Literatura
+
+- A. Lukasova, J. Sarmanova: Metody shlukové analyzy. SNTL, Praha 1985.
+
+## Externi odkazy
+
+- Obrazky,zvuky Ci videa k tématu shlukova analyza naWikimedia Commons
+- Shlukova analyza v Ceské terminologické databazi knihovnictvi a informaCni védy (TDKIV)
+- ·Detailnejsi rozborvcetnematematického aparatu[1]
+- Kapitola z Ceské online ucebnice prostorovych analyz [2]
+- Kapitola z anglické online ucebnice statistiky (anglicky)[3l Archivovano 4. 2. 2007 na Wayback Machine.
+- Popis a ukazka aplikace nekterych shlukovacich algoritmd - fuzzy shluková analyza,shlukovanikolemmedoidu(PAM)a CLARA-a prostredku k hodnoceni klasifikacniho modelu (silhouette plot) [4] Archivovano 15. 2. 2010 na Wayback Machine.
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Shlukova\_analyza&amp;oldid=25323799
+
+Kategorie:
+
+- Data mining
+- Matematicka statistika
+
+Skryté kategorie:
+
+- Monitoring:Stranky pouzivajici kouzelné odkazy ISBN
+- Udrzba:Clanky k upravé
+- Monitoring:Clanky s odkazem na TDkIV
+- Monitoring:Clanky s identifikatorem NKC
+- Monitoring:Clanky s identifikatorem TDKIV
+- Monitoring:Clanky s identifikatorem BNF
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Shlukova analyza
+
+40 jazyku Pridat téma

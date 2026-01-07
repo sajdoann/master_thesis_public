@@ -1,0 +1,51 @@
+Z Wikipedie, otevrené encyklopedie
+
+Skryty Markovuv model (anglicky hidden Markov model - zkracene HMM) je statisticky Markovuv model, ktery modeluje systém za predpokladu, ze jde 0 Markovav proces se skrytymi (nepozorovanymi) stavy. HMM muze byt znazornen pomoci nejjednodussi dynamické bayesovské site. Matematické I Problematika velmi uzce souvisi s drivejsi praci Ruslana L. Stratonoviche (1930-1997), ktery pracoval na linearnim problému filtrovanil4l a jako prvni popsal dopredné zpetny algoritmus. V jednodussich Markovovychmodelech(jako jeMarkovuvretezec)je stav systému viditelny pozorovateli, tudiz pravdepodobnost zmeny stavu je jediny parametr modelu. Naopak ve skrytych Markovovych modelech stav neni pozorovateli viditelny, ale vystup, ktery je na stavu zavisly, viditelny je. Kady stav ma pravdepodobnostni vliv na vystup systému. Tedy posloupnost vystupu skrytého Markovova modelu vypovida o posloupnosti vnitrnich stavu, ktera tuto posloupnost vygenerovala. Privlastek skryty se tedy vztahuje na posloupnost vnitrnich stava, kterymi model prosel, nikoliv na parametry modelu (model se nazyva skryty, ackoliv jsou jeho parametry dany presne a jsou znamé). Skryté Markovovy modely jsou znamé zejména na poli rozpoznavani Casovych vzoru. Mezi ne spada napriklad rozpoznavani reci, rukou psaného pisma, gest[51 I nebo oznacovani slovnich druhu (part of speech tagging). Vyuziti nalézatakévbioinformatice. Skryté Markovovy modely Ize povazovat za zobecneni smisenych modeld, ve druhé, ale naopak jsou navzajem spojené Markovovym procesem. V posledni a tripletové Markovovy modely, které umoznuji vyuziti modelu i na komplexnejsi datove struktury[61171
+
+## Popis pomoci problému uren
+
+PravdepodobnostniparametryskrytehoMarkovova modelu (priklad): a — pravdepodobnost prechodu mezi stavy
+
+X 一 stavy modelu y — mozna pozorovani modelu b - pravdepodobnosti vystupu V jeho diskrétni forme Ize skryty Markovuv proces znazornit zobecnenim tzv. problému uren, ve kterém je kady objekt pred dalsim krokem navracen do sve paivodni urny.[10] Uvazujeme nasledujici priklad: v mistnosti, do které pozorovatel nevidi, je duch. Mistnost obsahuje urny X1, X2, X3... Kadá z uren obsahuje znamy jednu z uren a vytahne z ni nahodny micek. Micek nasledne polozi na prepravni pas, ktery jej vyveze ven. Pozorovatel tedy vidi posloupnost vytazenych micku, ale neni mu znama posloupnost uren, ze kterych bylo vytazeni n-tého micku zavisi pouze na nahodném Cisle a na vyberu urny pro vytazen n-1 micek. A proto se jedna o Markovuv proces. Tento proces popisuje horni cast obrázku. Samotny Markovuv proces nemuze byt pozorovan (lze pozorovat pouze sekvenci vystupu), a proto se tomuto procesu rika skryty Markovuv proces. Znazornuje to spodni cast obrazku, ze kterého je patrné, e v kazdém stavu muze byt tazen micek y1, y2, y3 nebo y4. Tedy ackoliv pozorovatel zna rozmisténi uren a prave videl posloupnost tri vytaenych micku, nemuze si byt jisty, ze které urny duch vytahl treti micek. Lze pouze urcit pravdepodobnosti, s jakymi byl treti micek z jednotlivych uren vytaen.
+
+## Reference
+
+- 1.↑ BAUM,L.E.;PETRIE,T. Statistical Inference for Probabilistic Functions ofFiniteStateMarkovChains.TheAnnalsofMathematicalStatistics. 1966, s. 1554-1563. Dostupné online [cit. 28 November 2011]. doi: 10.1214/a0ms/1177699147.
+2. ↑ BAUM, L. E.; SELL, G. R. Growth transformations for functions on manifolds. Pacific Journal of Mathematics. 1968, s. 211-227. Dostupné online [cit. 28 November 2011]. doi:10.2140/pjm.1968.27.211
+3. ↑ BAUM, L.E. An Inequality and Associated Maximization Technique in StatisticalEstimationofProbabilisticFunctionsofaMarkovProcess. Inequalities. 1972, s. 1-8.
+- 4.↑ STRATONOVICH, R.L.Conditional Markov ProceSSes. S. 156-178. 2020-12-10]. Roc. 5, Cis. 2, s. 156-178. doi:10.1137/1105015. (anglicky)
+- 5.↑ STARNER,Thad; PENTLAND,Alex. Real-time American SignLanguage recognition from video using hidden Markov models. S. 265-270. [online]. 1995-11 [cit. 2020-12-10]. S. 265-270. Dostupné online. doi: 10.1109/1SCV.1995.477012. (anglicky)
+- 6.↑ PIECZYNSKl, Wojciech. Multisensor triplet Markov chains and theory of evidence. S. 1-16.InternationalJournal ofApproximate Reasoning [online].2007-05 [cit.2020-12-10].RoC.45,Cis.1,s.1-16.D0stupné online. doi:10.1016/j.ljar.2006.05.001. (anglicky)
+- 7.↑BOUDAREN,MohamedEIYazid;MONFRINI,Emmanuel;PIECZYNSKl, Advances in Signal Processing [online]. 2012-12 [cit. 2020-12-10]. Roc. 2012, Cis. 1, s. 134. Dostupné 0nline. doi:10.1186/1687-6180-2012-134 (anglicky)
+- o Transactions on Signal Processing[online].2005-08[cit.2020-12-10]. Roc. 53, Cis. 8,s. 3091-3098.Dostupné online. doi:10.1109/TSP. 2005.851131. (anglicky)
+9. ↑ BOUDAREN, M. E. Y; MONFRINI, E.; PIECZYNSKI, W. Unsupervised Segmentation of Random Discrete DataHiddenWithSwitching Noise Distributions. S. 619-622. IEEE Signal Processing Letters [online]. 2012-10 [cit. 2020-12-10]. Ro℃. 19, Cis. 10, s. 619-622. D0stupné online. doi:10.1109/LSP.2012.2209639. (anglicky)
+
+the IEEE[online].1989-02[cit.2020-12-10].RoC.77,Cis.2,s.257-286. Dostupné online. doi:10.1109/5.18626. (anglicky)
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu Skryty Markovuv model na Wikimedia Commons
+
+Tento clanek je prilis strucny nebo postrada dilezité Pahyl informace. Pahyl Pomozte Wikipedii tim, ze jej vhodne rozsirite. Nevkladejte vsak bez opravneni cizi texty.
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Skryty\_Markovdv\_model&amp;oldid=25421475" Kategorie:
+
+- Bioinformatika
+
+Skryté kategorie:
+
+- Udrzba:Clanky s docasne pouzitou sablonou
+- ·Pahyly
+- Monitoring:Clanky s identifikatorem GND
+- Monitoring:Clanky s identifikatorem LCCN
+- Monitoring:Clanky s identifikatorem NLI
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Skryty Markovuv model
+
+27 jazyku Pridat téma

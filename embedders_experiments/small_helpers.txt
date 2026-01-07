@@ -1,0 +1,3 @@
+curl -H "Authorization: Bearer $EINFRA_API_KEY" https://chat.ai.e-infra.cz/api/models | jq .data[].id
+scp -J sajdokova@freki.ms.mff.cuni.cz     ~/codes/master-thesis/embedders_experiments/datasets/devtest_dareczech/{docs.jsonl,queries.j
+sonl}     sajdokova@lrc2.ufal.hide.ms.mff.cuni.cz:~/personal_work_troja/master-thesis/embedders_experiments/datasets/devtest_dareczech/

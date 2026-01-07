@@ -1,0 +1,188 @@
+Z Wikipedie,otevrené encyklopedie ikona Tento Clanek neni dostatecne ozdrojovan, a muze tedy obsahovat informace, které je treba ovérit. Jste-li s popisovanym predmetem seznameni, pomozte dolozit uvedená
+
+tvrzeni doplnénim referenci na vérohodné zdroje.
+
+## llustracelinearniregrese
+
+Linearni regrese je matematicka metoda pouzivana pro prolozeni souboru bodu v grafu primkou. O bodech reprezentujicich merena data se predpoklada, e jejich x-ové souradnice jsou presné, zatimco ypsilonové souradnice mohou byt zatizeny nahodnou chybou, pricem predpokladame, ze zavislost y na x Ize graficky vyjádrit primkou. Pokud mérené body mereného bodu a ypsilonovou hodnotou lezici na primce odchylka. Podstatou linearni regrese je nalezeni takové primky, aby soucet druhych mocnin techto funkci ne之 primkou. Termin linearni regrese proto muze oznacovat dve castecne odlisné veci:
+
+- Linearni regrese predstavuje aproximaci danych hodnot primkou metodou nejmensich Ctvercd. Pokud tuto primku vyjadrime rovnici y = b1 + b2c, jedná se o nalezeni optimalnich hodnot koeficientu b1 a b2.
+- V obecnejsim pripade muze linearni regrese znamenat aproximaci danych hodnot [ci,yi］ takovou funkci y = f(c,b1,... , bk), kterou Ize vyjadrit jako linearni kombinaci funkci f a2 fk: y = bi fi(c) + ... + bk fk(c). Koeficienty bi,... ,bk se opet urcuji metodou nejmensich Ctvercu.
+
+Homoskedasticita( (homogenita ve varianci) dat je benym jevem. Avsak jeji jistych pripadech je tedy nutné uvázit heteroskedasticitu a pouzit vázenou regresi.
+
+## Aproximace primkou
+
+Uvazujme funkcni závislost: f(c) = ac + b
+
+SoucetCtvercu pakbudevypadat takto:
+
+<!-- formula-not-decoded -->
+
+kde [ci, yi] jsou souradnice aproximovanych bodu.
+
+Abychom nasli minimum souctu (nasli koeficienty a, b tak, aby nalezená zavislost vhodne aproximovala dana data), polozime obe parcialni derivace souctu Ctvercu rovny nule:
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+Upravami obdrzime soustavu:
+
+<!-- formula-not-decoded -->
+
+Lze ukazat, e matice této soustavy je regularni pro vsechna n ≥ 2, a má tedy prave jedno reseni. Obecne Ize také ukazat, ze v tomto bode má soucet Etvercu minimum.
+
+Jejim resenim pro konkrétni hodnoty c; a yi dostaneme konecne hledané hodnoty parametru a a b.
+
+{\displaystyle a={\frac {n\sum {x\_{i}y\_{i}}-\sum {x\_{i}}\sum
+
+{y {i}}}{n\sum{x {i}{2}}-\left(\sum{x {i}}\right){2}}}}
+
+<!-- formula-not-decoded -->
+
+Podobny postup Ize aplikovat na jakykoliv druh zavislosti i vice proménnych.
+
+Pokud je kazda hodnota zatizena jinou chybou o; (napr. merime nekolika rznymi pristroji), je vyhodné zahrnout i toto do aproximace. Oznacime-li
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+## Primka prochazejici pocatkem
+
+Pokud je poadovano, aby primka prochazela pocatkem, hleda se aproximace y = ac. Pro konstantu a Ize odvodit nasledujici vztah:
+
+<!-- formula-not-decoded -->
+
+Mame-li zavislost y = ac a hodnoty jsou zatizeny chybami oi, pak pro odhad (cy) n C parametru a plati a = (je uzito oznaceni &lt;α&gt;= a o; znaci (c²) i=1
+
+chybu (smerodatnou odchylku) i-tého mereni).
+
+1 Dale pro rozptyl parametru a plati V[a] = (c²)
+
+## Vypocet na pocitaci
+
+Matlab umonuje pouzit funkci P = POLYFIT(X, Y， 1), kde posledni parametr 1 udavá, e hledame koeficienty polynomu prvniho radu. [1l [2] [nedostupny zdroj]
+
+V Excelu a Calcu (LibreOffice a QpenOffice.org) Ize koeficient a zjistit funkci SLOPE(Y; X) [3l [4] a konstantu b funkci INTERCEPT(Y; X) [5] [6]. Pripadne Ize oba koeficienty zjistit maticové zadanou funkci {=LINEST(Y;X)}. [Zl [8] V Ceském Excelu se tato funkce nazyvá LINREGRESE. [9]
+
+## Obecna linearni regrese
+
+llustrace hledani optimalni linearni kombinace. Zelena plocha colx predstavuje prostor, ve kterém se nacházi vsechny mozné linearni kombinace f(X,β)=β1X1+β2X2. Vektor y, predstavuje vektor hodnot, ke kterym se aproximace βX snai priblizit s nejmensi moznou chybou ε=y-βX, respektive druhou mocninou této chyby. Dalsi popis viz kapitola Odvozeni: Kolmé vektory v Clanku Metoda nejmensich ctverci
+
+V obecnejsim pripade je moné danymi hodnotami [c; yi], i = 1, ... ,n prolozit funkci y = f(c, b1, ... , bk) sestavenou jako linearni kombinaci k funkci y = bifi(x) + ... + bkfk(α), kde fi(α),..., fk(α) jsou libovolné (zpravidla linearne nezavislé) funkce. Regrese se nazyva linearni, nebot funkcni predpis y = f(c, b1,... ,bk) je linearni v promennych bi,... ,bk, tedy v koeficientech, které podrobujeme regresi. Jinymi slovy, úlohu lze formulovat algebraicky jako (linearni) metoda nejmensich Ctvercd.
+
+<!-- formula-not-decoded -->
+
+Poznamenejme, e s proloenim mnoziny bodu parabolou, resp. obecnym polynomem se muzeme v literature setkat pod pojmem kvadraticka, resp. polynomicka (i polynomialni) regrese [1]
+
+Koeficienty b1, ... , bk jsou vypocteny metodou nejmensich Ctvercu, tedy tak, aby soucet druhych mocnin odchylek modelu od danych dat, tj.
+
+<!-- formula-not-decoded -->
+
+byl minimalni.
+
+## 1. zpusob vypoctu: parcialni derivace
+
+Pro koeficienty, které minimalizuji vyse uvedené kritérium S, musi platit, e vsechny prvni parcialni derivace kritéria podle techto koeficientu musi byt rovny nule.
+
+<!-- formula-not-decoded -->
+
+Dalsimi upravami se Ize dostat k soustave linearnich rovnic:
+
+<!-- formula-not-decoded -->
+
+Kde jednotlivé prvky ajk a a; znamenaji:
+
+<!-- formula-not-decoded -->
+
+<!-- formula-not-decoded -->
+
+Vyse uvedenou soustavu rovnic Ize resit nekterou z metod uvedenych v Clanku Soustava linearnich rovnic.
+
+## 2. zpusob vypoctu: preurcena soustava rovnic
+
+soustavy rovnic a jeji vyreseni, opet metodou nejmensich ctvercu, ale ponekud odlisnym postupem. Preurcena soustava rovnic muze vypadat nasledovne:
+
+<!-- formula-not-decoded -->
+
+Hledané koeficienty, umistené ve vektoru x, lze, za predpokladu linearni nezavislosti sloupcu matice A, vyjádrit vztahem:
+
+<!-- image -->
+
+## Vypocet na pocitaci
+
+Matlab umoznuje soustavu rovnic Ax=b resit velmi snadno pomoci operatoru
+
+\(zpétné lomitko), tedy x = A \ b. Ekvivalentni je funkce MLDIVIDE, tedy x = mldivide(A，b).[10] V Excelu a Calcu (LibreOffice a QpenOffice.org) Ize vyse sestavenou preurcenousoustavurovnicresitpouzitimmaticovéfunkce {=LINEST(known\_y's; known\_x's; const)} [11][12](v Ceském Excelu LINREGRESE(pole\_y; pole\_x; b) [13l), kde prvni parametr known\_y's (Cesky pole\_y) je svisla oblast bunek obsahujici slozky vektoru b a druhy parametr known\_x's (cesky pole\_x) je oblast obsahujici prvky matice A. Vysledny vektor x se nacházi ve vodorovné oblasti, pricem2 jeho sloky jsou umistény v bunkach v opacném poradi, tedy bk je v bunce nejvice vlevo a b1 je nejvice vpravo. Treti parametr const (cesky b) musi byt v tomto prikladu roven nule, Spravné pouziti tedy je: {=LINEST(b; A; O)}. Ovsem nejjednodussim zpusobem odhadu parametrd metodou nejmensich Ctvercu je pouziti ekonometrického softwaru jako napr. STATA, Gretl, Eviews nebo R, kde existujf obecné prikazy pro jejich vypocet. Zaroven i tyto
+
+## Prevod mocninné a exponencialni regrese na linearni
+
+Na linearni problém Ize transformovat i aproximaci mocninnou funkci f(x) = a · xb nebo aproximaci funkci exponencialni f(x) = a · b".
+
+## Mocninnafunkce
+
+Problém, jak aproximovat puvodni data [ci, yi] krivkou y = a ·  Ize prevést na podobny problém zlogaritmovanim rovnice krivky. In(y) = In(a) + b · ln(x), pricem misto ln(a) Ize psat c.
+
+<!-- formula-not-decoded -->
+
+Vznikl tak problém, jak aproximovat logaritmovana puvodni data [ln(ci), ln(yi)] primkou y = c + b · , ktery ji problémem neni. Koeficient a v mocninné funkci Ize z koeficientu c vypocitat jako a = ec.
+
+## Exponencialni funkce
+
+Problém, jak aproximovat puvodni data [c, yi］ krivkou y = a · b" Ize prevést na podobny problém zlogaritmovanim rovnice krivky.
+
+<!-- formula-not-decoded -->
+
+pricem misto konstant In(a) a ln(b) Ize psat c a d.
+
+<!-- formula-not-decoded -->
+
+Na rozdil od aproximace mocninnou funkci, staci z puvodnich dat logaritmovat pouze hodnoty yi a resit problém, jak aproximovat data [c, In(yi)] primkou y = c + d · c. Koeficienty a a b v exponencialni funkci Ize z koeficientui c a d vypocitat jako a = e', b = ed.
+
+## Reference
+
+1. ↑ Jiri Likes, Josef Machek, Matematicka statistika, SNTL Praha 1988, S. 165-169
+
+## Souvisejici &amp;lanky
+
+- Aproximace
+- Linearni funkce
+- Kvadraticka regrese
+- Koeficient determinace
+- Metoda nejmensich Ctvercu
+- Polynomicka regrese
+- Regresni analyza
+
+## Externi odkazy
+
+- Obrazky, zvuky Ci videa k tématu linearni regrese na Wikimedia Commons
+- Linearni regrese tak nebo jinak: https://web.archive.org/web/ 20061002153201/http://www.kolej.mff.cuni.cz/%7Elmotm275/skripta/ sbirka/html/node49.html
+- Linearni regrese v Microsoft Excel: http://praktika.kvalitne.cz/index.php? clanek=text navod&amp;text=22 Archivovano 29. 6. 2020 na Wayback Machine.
+- Aproximace obecnou funkci, primkou, polynomem, statistika: http:// amper.ped.muni.cz....
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Linearni regrese&amp;oldid=24250762" Kategorie:
+
+- Ekonometrie
+- Matematicka statistika
+- ·Metody odhadu
+
+Skryté kategorie:
+
+- Udrzba:Clanky k overeni
+- Udrzba:Fakta k ovéreni
+- Udrzba:Clanky obsahujici odkazy na nedostupné zdroje
+- Monitoring:Clanky s identifikatorem GND
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Linearni regrese
+
+42 jazyka Pridat téma

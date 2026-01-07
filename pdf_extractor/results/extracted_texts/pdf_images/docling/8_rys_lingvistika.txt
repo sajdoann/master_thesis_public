@@ -1,0 +1,21 @@
+Z Wikipedie, otevrené encyklopedie Rys, neboli priznak, je rozhodujici vlastnost, pomoci které Ize klasifikovat Fonologicky rys je vlastnosti zvukového segmentu, hlasky. Nikolaj Sergejevic Trubeckoj v dile Grundzuge der Phonologie pouziva rysy pro popis nazalnosti, ktery je pritomen u ,/m/" a nepritomen u ,/b/". Fonologicky rys je distinktivni vlastnosti daného fonému. Jeho hlavnim ukolem je odlisit dany foném ode vsech ostatnich fonému v systému daného jazyka. Dalsi funkci fonologického rysu je poskytnout navod, jak dany foném vyslovit. Proto by mel foném mit vztah k fonetické realizaci. Kady foném Ize povazovat za sloeny z konecného poctu rysu. Jinymi slovy, fonémy jsou ,balicky distinktivnich rysu". NoamChomsky a Morris Hallev knize Sound Patternof English (1968) prevzali dusledny binarismus(tj. kazdy rys muze mit pro dany segment maximalne dve hodnoty: + a - ), ktery navrhl Roman Jakobson a prizpusobili inventar distinktivnich rysu tak, aby mohl fungovat v prepisovacich pravidlech, kterymi se zapis z abstraktni morfosyntaktické roviny prevadi do konkrétni fonetické podoby. Napr. predlozkova fraze /k kostelu/ ma fonetickou podobu[kekostelu] podlepravidla,kterevkladé[e] mezi stejnesouhlasky ve fonetickém slove s jednim prizvukem. Podle autoru SPE maji hodnoty distinktivnich rysu definovat prirozené tridy hlasek. Prirozena trida je mnozina vsech hlasek v daném jazyce, které sdileji urcitou hodnotu daného rysu. Napr. rys zapsany jako [+ znelost] definuje [slabicnost], [prizvuk] , byly nahrazeny strukturou. Geometrická teorie rysu vedla k tomu, e prirozené tridy jsou reprezentovany nejen rysy samotnymi aleisvouvzajemnouhierarchii. t   s morfosyntaktickych rysu. Tak muzeme napr. srovnavat dva tvary morfologické flexe lisici se jedinym rysem: ,sel jsem" versus ,Sel bych".
+
+Morfosyntaktické rysy zahrnuji lexikalni rysy ±N a ±V, které moznymi kombinacemi svych hodnot tvori Ctyri zakladni slovni druhy (substantivum = [+N,-V]; sloveso = [-N,+V]; pridavné jméno = [+N,+V]; predloka = [-N,-V]). Gramatické rysy v úzkém slova smyslu jsou rysy figurujici u podstatnych jmen [osoba], [Cislo] a [rod], nebo rysy spojené s pridavnymi jmény zpusob, slovesny rod: [ ± minulost], [ ± kondicional], [± pasivum]. Jako Rozeznavame inherentni a selektivni gramatické rysy. Inherentni rysy se vyskytujf jako soucast lexikalnich vyrazu (slov) a jako takové je vybirame spolu se slovy primo ze slovniku. Napr. Ceské slovo ,nuzky" má inherentni s s i aa   i l s ay podle funkcni kategorie dominujici dany lexikalni vyraz. Ridici Cleny gramatickych kategori (napr. CAs) Ize opet chapat jako balicky gramatickych rysa. Pouzivani sémantickych rysu, tzv. semu, v oblasti jazykového obsahu ( komponencni analyza. Hjelmslev ve svém hlavnim dile (kapitola 14, Varianty a invarianty) analyzuje vyznam ,hrebec" jako slozeny z rysu [+ kun] a [+ r
+
+## Odkladiste
+
+Pojem ,rys" (recesivni nebo dominantni) pouzivaji genetikové pro popis genotypu.
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Rys\_(lingvistika)&amp;oldid=25473557" Kategorie:
+
+- ·Generativni lingvistika
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+Rys (lingvistika)
+
+5 jazyka Pridat téma

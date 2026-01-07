@@ -1,0 +1,37 @@
+Z Wikipedie, otevrené encyklopedie
+
+Word2vec je zpusob zpracovani prirozeného jazyka, kdy jsou slova reprezentovana vektory.[1l B Bezkontextovymodelpublikovalivroce2013 spolecne vyzkumnici Tomas Mikolov, Kai Chen, Greg Corrado, llya Sutskever a Jeff Dean, kteri pracovali pro Google.Algoritmus word2vecvyuzivá model neuronové site k uceni slovnich asociaci z velkého korpusu textu. Po natrénovani muze takovy model odhalit synonyma nebo navrhnout dalsi slovaprodalsiCastvety.Word2vecreprezentujekazdéodlisnéslovourcitym seznamem Cisel, kterému se rika vektor. Vektory jsou peclive vybrany tak, aby zachycovaly sémantické a syntaktické vlastnosti slov; jednoduché matematická funkce (kosinus uhlu mezi vektory) tak muze indikovat uroven sémantické podobnosti mezi slovy reprezentovanymi temito vektory. Bezkontextové modely, jako je word2vec nebo GloVe, vytvareji pro kadé slovo ve slovniku jedinecnou reprezentaci, pricem BERT bere v uvahu kontext pro kazdyvyskyt daneho slova. Zatimco vektor pro slovo anglické slovo "run" bude mit stejnou reprezentaci z word2vec pro oba jeho vyskyty ve vetách "He is running a company" a "He is running a marathon", BERT poskytne kontextové osazeni, které se bude lisit v zavislosti na vete. Nové se prave pro ynorenf slov pouzivaji novejsi modely jako BERT Ci GPT-3.[21
+
+## Odkazy
+
+## Reference
+
+V tomto Clanku byl pouzit preklad textu z Clanku Word2vec na anglické Wikipedii. 1. I A Beginner's Guide to Word2Vec and Neural Word Embeddings. Pathmind [online]. [cit. 2022-10-29]. Dostupné online. (anglicky)
+
+- [cit. 2022-10-29]. Dostupné 0nline
+
+## Externi odkazy
+
+- ·Obrazky,zvuky Ci videa k tématuWord2Vec naWikimedia Commons
+- Oficiálni stranka projektu
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Word2Vec&amp;oldid=24823261" Kategorie:
+
+- Pocitacova lingvistika
+- Zpracováni prirozeného jazyka
+- Umélé neuronové sité
+
+Skryté kategorie:
+
+- Monitoring:Clanky prelozené z enwiki
+- Monitoring:Autoritni kontrola s 0 identifikatory
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+18 jazyku Pridat téma
+
+Word2Vec

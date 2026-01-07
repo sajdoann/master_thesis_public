@@ -1,0 +1,86 @@
+Lemmatizace jeurcenilemmatu(zakladnihoslovniho tvaru)k ohybanému slovnimu tvaru. Lemmatizator je nastroj (napr. pocitacovy program), ktery vytvori (vyhleda v databazi) k urcitému tvaru slova zakladni tvar, tzv. lemma.
+
+Doplnkovou funkci lemmatizatoru jsou informace o mluvnickych kategorich ",barvé" lemmatizator vrati tvar ,barva", pripadne doplnkovou informaci
+
+Z Wikipedie, otevrené encyklopedie [1] podstatné jméno, ensky rod, jednotné Cislo, 3./6. pad.
+
+strukturovana data slouici k automatické kontrole pravopisu (napr. slovniky pro hunspell). [31
+
+## Vyuziti lemmatizace
+
+- vyhledajf i dokumenty obsahujici tato slova v jinych padech a Cislech (sberné dvory, umisteni sbernych dvori).[4]
+2. Korpusova lingvistika: informace z morfologického analyzatoru se vyuziva pri znackovani korpusd.[5l Lemmatizaci vyuziva software QUITA (QuantitativeIndexTextAnalyzer),kterydokázeposuzovataanalyzovat rozsahlé texty, napr. bohatost slovni zasoby a dalsi lingvistické ukazatele.[6]
+3. Dalsim nastrojem vyuzivajici lemmatizaci je latentni sémanticka analyza (LSA). ,Latentni sémantická analyza je technika, ktera zobrazuje dokumenty a dotazy do prostoru latentnich sémantickych dimenzi, pricem slova, ktera jsou sémanticky podobna (mereno mirou souvyskytu v dokumentech) jsou zobrazovana do stejnych dimenzi a slova sémanticky odlisna do ruznych dimenzi."IZl LsA pro ka2dé slovo vytvari dalsi dimenzi, dokumenty se tak mohou nachazet a v nekolika statisicich dimenzi. Lemmatizace je zde vhodna z toho duvodu, aby pocet slov zredukovala na minimum a to pomoci prevedeni vsech slov
+
+na zakladni tvar. Tim se nevytvari ruzné dimenze pro stejna slova v jiném slovnim tvaru. ,Diky tomu mohou mit velkou sémantickou podobnost i dokumenty (pripadne dotaz a dokument), které spolu nesdileji adna slova."[Z]
+
+## Uskali lemmatizatoru
+
+Nektera slova jsou mnohoznacna (v cestine napr. enu, stat, tancich) a pokud zamysleny vyznam. Napr. ,Jeden z nejhodnotnejsich zdroju o madarskych
+
+Obti2nym specifikem jsou takté viceslovna spojeni, tj. vytvareni lemmat i tam, kde to neni mozné, napr. zdvorilá prosba Dovolite? se nenacházi v adném z registrovanych vyznamu slova dovolit, dale se muze jednat o frazémy, napr. nechat na holickach, popr. se jedná o idiomy napr. z nekoho si vystrelit. [1]
+
+## Dostupné lemmatizatory pro cestinu
+
+## Ceske lemmatizatory
+
+```
+·Ajka[8] · Majka[9] · Morce[10] · MorphoDiTa[11] · Czech "Free" Morphology[13] ·Morfo[14]
+```
+
+## Zahranicni lemmatizatory
+
+```
+· Cistern[15] (Lemming[16] + Marmot[17) · LemmaGen[18]
+```
+
+## Ostatni nastroje
+
+- zaloenynaRippleDownRules
+
+## Poznamky
+
+1. ↑ Tento proces (prirazeni morfologickych kategori) se - v technickém smyslu - nazyva morfologicka analyza.[2]
+
+## Reference
+
+1. ↑ a b CVRCEK, Vaclav; RICHTEROvA, Olga. Slovnicek pojmu [online]. Cesky narodni korpus [cit. 2016-06-21]. Kapitola Lemma. Dostupné online.
+2. ↑ RUSiNOvA, Zdenka; PETKEVIC, Vladimir. Novy encyklopedicky slovnik Cestiny. Priprava vydani Petr Karlik, Marek Nekula, Jana Pleskalova. Praha: NLN, 2017. ISBN 978-80-7422-480-5. Heslo Morfologicka analyza.
+3. ↑ VLCEK, Lukas. Elasticsearch: Vyhledavame hezky Cesky (a taky slovensky). www.zdrojak.cz [online]. Zdrojak.cz, 2013-09-04 [cit. 2018-06-19]. Dostupné online.
+4. ↑ STROSSA, Petr. Cesky lemmatizator Pro? a hlavne jak? [online]. [cit. 2016-06-21]. Dostupné online.
+5. ↑ SEDLACEK, Radek. Morfologicky analyzator CeStiny. Brno, 1999. 78 s. diplomova prace. Masarykova univerzita, Fakulta informatiky. Vedouci prace Pavel Rychly. s. 2. Dostupné online.
+6. ↑ a b BYD之OVSKY, Dominik. Lemmatizace CeStiny. 2017. Bakalarská prace. Fakulta informatiky a managementu Univerzity Hradec Kralové. Vedouci prace Mgr. Jiri Haviger, Ph.D.
+7. ↑ a b MATERNA, Jiri. Sémanticka analyza textu [online]. 2011, ({3,4}) [cit. 2016-06-21]. Dostupné online a té2 zde.
+8. ↑ Ajka
+9. ↑ Majka
+10. ↑ Morce
+11. ↑ MorphoDiTa
+12. ↑ Czech HMM tagger
+13. ↑ Czech "Free" Morphology
+14. ↑ Morfo
+15. ↑ Cistern
+16. ↑ Lemming
+17. ↑ Marmot
+18. ↑ LemmaGen. lemmatise.ijs.si [online]. [cit. 2017-05-11]. Dostupné V archivu porizeném z originalu dne 2017-06-06.
+19. ↑ QUITA
+20. ↑ RDRPOSTagger
+
+Citovano z ,https://cs.wikipedia.org/w/index.php? title=Lemmatizace&amp;oldid=24775281" Kategorie:
+
+- Lexikografie
+- Jazykovy software
+- Pocitacova lingvistika
+
+Skryté kategorie:
+
+- ·Monitoring:Clanky s identifikatoremLNB
+
+Hledani
+
+Specialni:Hledani
+
+Hledat
+
+20 jazyku Pridat téma
+
+Lemmatizace
