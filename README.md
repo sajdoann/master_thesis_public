@@ -12,7 +12,7 @@ focusing on Czech language datasets including DareCzech-Test and cusotm created 
 ```
 ├── embedders_experiments/    # Embedding model evaluation and retrieval experiments
 ├── pdf_extractor/            # PDF extraction tools and dataset creation
-├── dareczech/                # DareCzech dataset processing (redacted)
+├── dareczech_scripts/                # DareCzech dataset processing (redacted)
 └── generation_eval/          # Generation evaluation notebooks
 ```
 
