@@ -37,13 +37,14 @@ OPENAI_API_KEY=your_key  # optional
 ```
 
 ### Run Experiments
-
+From the project root run:
 ```bash
-cd embedders_experiments
-./run_retrieval.sh
+chmod +x ./embedders_experiments/run_retrieval.sh
+./embedders_experiments/run_retrieval.sh
 ```
+This should run the Default OpenWebUI embedder (all-MiniLM-L6-v2) on wikipedia_nlp_small dataset:)
 
-For cluster execution, see the SLURM scripts (`s_cpu_retrieval.slurm`, `s_gpu_retrieval.slurm`).
+For cluster execution, see the SLURM scripts (`s_cpu_retrieval.slurm`, `s_gpu_retrieval.slurm`). They were executed on [LRC](https://ufal.mff.cuni.cz/lrc/index.php?title=Main_Page).
 
 ## Documentation
 
