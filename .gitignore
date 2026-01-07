@@ -214,3 +214,4 @@ czech-pdt-ud-2.5-191206.udpipe
 *.zip
 
 /embedders_experiments/datasets/
+.idea/
