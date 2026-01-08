@@ -2,6 +2,12 @@
 
 A research project evaluating embedding models for Retrieval-Augmented Generation (RAG) systems in Czech language.
 
+
+The main outcome of this research is a pre-packaged, Dockerized OpenWebUI instance designed for further experimentation, 
+the implementation is available at another repository: https://github.com/sajdoann/czech_openwebui
+
+
+
 ## Overview
 
 This repository contains experiments comparing various embedding models for information retrieval tasks, 
